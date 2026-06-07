@@ -1,0 +1,17 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(560): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(546): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(775): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(142): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=30988 RO-data=1132 RW-data=147696 ZI-data=48816  
+FromELF: creating hex file...
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 0 Error(s), 5 Warning(s).

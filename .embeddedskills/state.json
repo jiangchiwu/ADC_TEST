@@ -1,0 +1,34 @@
+{
+  "last_build": {
+    "provider": "keil",
+    "action": "build",
+    "project": "MDK-ARM/07-ADC_Test.uvprojx",
+    "target": "07-ADC_Test_LCD1_8",
+    "log_dir": ".embeddedskills/build",
+    "artifacts": {
+      "axf_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.axf",
+      "hex_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.hex",
+      "bin_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.bin",
+      "flash_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.hex",
+      "debug_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.axf",
+      "output_dir": "MDK-ARM/07-ADC_Test_LCD1_8",
+      "log_file": ".embeddedskills/build/07-ADC_Test-07-ADC_Test_LCD1_8-build.log"
+    },
+    "axf_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.axf",
+    "hex_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.hex",
+    "bin_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.bin",
+    "flash_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.hex",
+    "debug_file": "MDK-ARM/07-ADC_Test_LCD1_8/07-ADC_Test_LCD1_8.axf",
+    "output_dir": "MDK-ARM/07-ADC_Test_LCD1_8",
+    "log_file": ".embeddedskills/build/07-ADC_Test-07-ADC_Test_LCD1_8-build.log",
+    "timestamp": "2026-06-06T09:30:49+08:00"
+  },
+  "last_observe": {
+    "type": "serial_monitor",
+    "port": "COM14",
+    "baudrate": 2000000,
+    "lines": 933,
+    "duration_sec": 10.0,
+    "timestamp": "2026-05-25T08:33:39+08:00"
+  }
+}

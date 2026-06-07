@@ -1,0 +1,12 @@
+{
+  "jlink": {
+    "device": "STM32H750VB",
+    "interface": "SWD",
+    "speed": "4000"
+  },
+  "keil": {
+    "project": "MDK-ARM/07-ADC_Test.uvprojx",
+    "target": "07-ADC_Test_LCD1_8",
+    "log_dir": ".embeddedskills/build"
+  }
+}

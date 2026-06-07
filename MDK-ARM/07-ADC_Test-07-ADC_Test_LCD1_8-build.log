@@ -1,0 +1,33 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(93): warning:  #223-D: function "MX_USART3_UART_Init" declared implicitly
+    MX_USART3_UART_Init();
+../Core/Src/main.c(94): warning:  #223-D: function "MX_UART7_Init" declared implicitly
+    MX_UART7_Init();
+../Core/Src/main.c(100): warning:  #223-D: function "debug_init" declared implicitly
+    debug_init();
+../Core/Src/main.c(169): error:  #136: struct "<unnamed>" has no field "D1PCLK1Divider"
+    RCC_ClkInitStruct.D1PCLK1Divider = RCC_D1PCLK1_DIV2;
+../Core/Src/main.c(169): error:  #20: identifier "RCC_D1PCLK1_DIV2" is undefined
+    RCC_ClkInitStruct.D1PCLK1Divider = RCC_D1PCLK1_DIV2;
+../Core/Src/main.c(170): error:  #136: struct "<unnamed>" has no field "D3PCLK1Divider"
+    RCC_ClkInitStruct.D3PCLK1Divider = RCC_D3PCLK1_DIV2;
+../Core/Src/main.c(170): error:  #20: identifier "RCC_D3PCLK1_DIV2" is undefined
+    RCC_ClkInitStruct.D3PCLK1Divider = RCC_D3PCLK1_DIV2;
+../Core/Src/main.c(193): error:  #20: identifier "LED1_Pin" is undefined
+    HAL_GPIO_WritePin(GPIOD, LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+../Core/Src/main.c(193): error:  #20: identifier "LED2_Pin" is undefined
+    HAL_GPIO_WritePin(GPIOD, LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+../Core/Src/main.c(196): error:  #20: identifier "LED3_Pin" is undefined
+    HAL_GPIO_WritePin(GPIOE, LED3_Pin, GPIO_PIN_RESET);
+../Core/Src/main.c(203): error:  #20: identifier "LED1_GPIO_Port" is undefined
+    HAL_GPIO_Init(LED1_GPIO_Port, &GPIO_InitStruct);
+../Core/Src/main.c(210): error:  #20: identifier "LED2_GPIO_Port" is undefined
+    HAL_GPIO_Init(LED2_GPIO_Port, &GPIO_InitStruct);
+../Core/Src/main.c(217): error:  #20: identifier "LED3_GPIO_Port" is undefined
+    HAL_GPIO_Init(LED3_GPIO_Port, &GPIO_InitStruct);
+../Core/Src/main.c: 4 warnings, 10 errors
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 10 Error(s), 4 Warning(s).
+Target not created.

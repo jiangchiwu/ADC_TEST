@@ -1,0 +1,16 @@
+Build target '07-ADC_Test'
+compiling main.c...
+../Core/Src/main.c(314): warning:  #223-D: function "LCD_Clear" declared implicitly
+    LCD_Clear(WHITE);
+../Core/Src/main.c(397): warning:  #223-D: function "LCD_Init" declared implicitly
+    LCD_Init();
+../Core/Src/main.c(119): warning:  #177-D: function "dwt_cycles" was declared but never referenced
+  static uint32_t dwt_cycles(void) { return DWT->CYCCNT; }
+../Core/Src/main.c: 3 warnings, 0 errors
+linking...
+.\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf: Error: L6971E: adc.o(.DTCMRAM) type RW incompatible with adc.o(.ARM.__AT_0x24000000) type ZI in er RW_IRAM2.
+.\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf: Error: L6971E: main.o(.DTCMRAM) type RW incompatible with adc.o(.ARM.__AT_0x24002000) type ZI in er RW_IRAM2.
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+".\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf" - 2 Error(s), 3 Warning(s).
+Target not created.

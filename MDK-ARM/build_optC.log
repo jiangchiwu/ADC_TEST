@@ -1,0 +1,12 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(543): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(748): error:  #136: struct "<unnamed>" has no field "freq_hz"
+            if(test_cases[current_burst_case].freq_hz == 50000 &&
+../Core/Src/main.c(840): warning:  #1-D: last line of file ends without a newline
+  #endif
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 1 Error(s), 3 Warning(s).
+Target not created.

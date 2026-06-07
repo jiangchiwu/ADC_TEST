@@ -1,0 +1,2615 @@
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=8s745ms500us freq=10388.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=8s806ms472us freq=10388.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=8s806ms472us freq=10385.2
+  [DEDUP_DROP] CH5(PA3) F#4378: dt=10ms < 25ms, treated as glitch (last_valid=8806ms now=8816ms)
+  [DEDUP_DROP] CH6(PA4) F#4378: dt=10ms < 25ms, treated as glitch (last_valid=8806ms now=8816ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=8s989ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=8s989ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#4469: dt=6ms < 25ms, treated as glitch (last_valid=8989ms now=8995ms)
+  [DEDUP_DROP] CH6(PA4) F#4469: dt=6ms < 25ms, treated as glitch (last_valid=8989ms now=8995ms)
+  [DEDUP_DROP] CH5(PA3) F#4470: dt=8ms < 25ms, treated as glitch (last_valid=8989ms now=8997ms)
+  [DEDUP_DROP] CH6(PA4) F#4470: dt=8ms < 25ms, treated as glitch (last_valid=8989ms now=8997ms)
+  [DEDUP_DROP] CH5(PA3) F#4471: dt=10ms < 25ms, treated as glitch (last_valid=8989ms now=8999ms)
+  [DEDUP_DROP] CH6(PA4) F#4471: dt=10ms < 25ms, treated as glitch (last_valid=8989ms now=8999ms)
+  [DEDUP_DROP] CH5(PA3) F#4472: dt=12ms < 25ms, treated as glitch (last_valid=8989ms now=9001ms)
+  [DEDUP_DROP] CH6(PA4) F#4472: dt=12ms < 25ms, treated as glitch (last_valid=8989ms now=9001ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s50ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s50ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#4500: dt=6ms < 25ms, treated as glitch (last_valid=9050ms now=9056ms)
+  [DEDUP_DROP] CH6(PA4) F#4500: dt=6ms < 25ms, treated as glitch (last_valid=9050ms now=9056ms)
+  [DEDUP_DROP] CH5(PA3) F#4501: dt=8ms < 25ms, treated as glitch (last_valid=9050ms now=9058ms)
+  [DEDUP_DROP] CH6(PA4) F#4501: dt=8ms < 25ms, treated as glitch (last_valid=9050ms now=9058ms)
+  [DEDUP_DROP] CH5(PA3) F#4502: dt=10ms < 25ms, treated as glitch (last_valid=9050ms now=9060ms)
+  [DEDUP_DROP] CH6(PA4) F#4502: dt=10ms < 25ms, treated as glitch (last_valid=9050ms now=9060ms)
+  [DEDUP_DROP] CH5(PA3) F#4503: dt=12ms < 25ms, treated as glitch (last_valid=9050ms now=9062ms)
+  [DEDUP_DROP] CH6(PA4) F#4503: dt=12ms < 25ms, treated as glitch (last_valid=9050ms now=9062ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s111ms498us freq=10384.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s170ms629us freq=10375.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s170ms629us freq=10369.2
+  [DEDUP_DROP] CH5(PA3) F#4563: dt=10ms < 25ms, treated as glitch (last_valid=9170ms now=9180ms)
+  [DEDUP_DROP] CH6(PA4) F#4563: dt=10ms < 25ms, treated as glitch (last_valid=9170ms now=9180ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s351ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s351ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#4653: dt=6ms < 25ms, treated as glitch (last_valid=9351ms now=9357ms)
+  [DEDUP_DROP] CH6(PA4) F#4653: dt=6ms < 25ms, treated as glitch (last_valid=9351ms now=9357ms)
+  [DEDUP_DROP] CH5(PA3) F#4654: dt=8ms < 25ms, treated as glitch (last_valid=9351ms now=9359ms)
+  [DEDUP_DROP] CH6(PA4) F#4654: dt=8ms < 25ms, treated as glitch (last_valid=9351ms now=9359ms)
+  [DEDUP_DROP] CH5(PA3) F#4655: dt=10ms < 25ms, treated as glitch (last_valid=9351ms now=9361ms)
+  [DEDUP_DROP] CH6(PA4) F#4655: dt=10ms < 25ms, treated as glitch (last_valid=9351ms now=9361ms)
+  [DEDUP_DROP] CH5(PA3) F#4656: dt=12ms < 25ms, treated as glitch (last_valid=9351ms now=9363ms)
+  [DEDUP_DROP] CH6(PA4) F#4656: dt=12ms < 25ms, treated as glitch (last_valid=9351ms now=9363ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s412ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s412ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#4684: dt=6ms < 25ms, treated as glitch (last_valid=9412ms now=9418ms)
+  [DEDUP_DROP] CH6(PA4) F#4684: dt=6ms < 25ms, treated as glitch (last_valid=9412ms now=9418ms)
+  [DEDUP_DROP] CH5(PA3) F#4685: dt=8ms < 25ms, treated as glitch (last_valid=9412ms now=9420ms)
+  [DEDUP_DROP] CH6(PA4) F#4685: dt=8ms < 25ms, treated as glitch (last_valid=9412ms now=9420ms)
+  [DEDUP_DROP] CH5(PA3) F#4686: dt=10ms < 25ms, treated as glitch (last_valid=9412ms now=9422ms)
+  [DEDUP_DROP] CH6(PA4) F#4686: dt=10ms < 25ms, treated as glitch (last_valid=9412ms now=9422ms)
+  [DEDUP_DROP] CH5(PA3) F#4687: dt=12ms < 25ms, treated as glitch (last_valid=9412ms now=9424ms)
+  [DEDUP_DROP] CH6(PA4) F#4687: dt=12ms < 25ms, treated as glitch (last_valid=9412ms now=9424ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s473ms499us freq=10395.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s532ms875us freq=10454.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s532ms876us freq=10454.5
+  [DEDUP_DROP] CH5(PA3) F#4748: dt=11ms < 25ms, treated as glitch (last_valid=9532ms now=9543ms)
+  [DEDUP_DROP] CH6(PA4) F#4748: dt=11ms < 25ms, treated as glitch (last_valid=9532ms now=9543ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s716ms40us freq=58946.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s716ms39us freq=58945.8
+  [DEDUP_DROP] CH5(PA3) F#4839: dt=6ms < 25ms, treated as glitch (last_valid=9716ms now=9722ms)
+  [DEDUP_DROP] CH6(PA4) F#4839: dt=6ms < 25ms, treated as glitch (last_valid=9716ms now=9722ms)
+  [DEDUP_DROP] CH5(PA3) F#4840: dt=9ms < 25ms, treated as glitch (last_valid=9716ms now=9725ms)
+  [DEDUP_DROP] CH6(PA4) F#4840: dt=9ms < 25ms, treated as glitch (last_valid=9716ms now=9725ms)
+  [DEDUP_DROP] CH5(PA3) F#4841: dt=10ms < 25ms, treated as glitch (last_valid=9716ms now=9726ms)
+  [DEDUP_DROP] CH6(PA4) F#4841: dt=10ms < 25ms, treated as glitch (last_valid=9716ms now=9726ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s775ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s775ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#4869: dt=6ms < 25ms, treated as glitch (last_valid=9775ms now=9781ms)
+  [DEDUP_DROP] CH6(PA4) F#4869: dt=6ms < 25ms, treated as glitch (last_valid=9775ms now=9781ms)
+  [DEDUP_DROP] CH5(PA3) F#4870: dt=9ms < 25ms, treated as glitch (last_valid=9775ms now=9784ms)
+  [DEDUP_DROP] CH6(PA4) F#4870: dt=9ms < 25ms, treated as glitch (last_valid=9775ms now=9784ms)
+  [DEDUP_DROP] CH5(PA3) F#4871: dt=10ms < 25ms, treated as glitch (last_valid=9775ms now=9785ms)
+  [DEDUP_DROP] CH6(PA4) F#4871: dt=10ms < 25ms, treated as glitch (last_valid=9775ms now=9785ms)
+  [DEDUP_DROP] CH5(PA3) F#4872: dt=12ms < 25ms, treated as glitch (last_valid=9775ms now=9787ms)
+  [DEDUP_DROP] CH6(PA4) F#4872: dt=12ms < 25ms, treated as glitch (last_valid=9775ms now=9787ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s836ms498us freq=10396.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=9s897ms472us freq=10379.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=9s897ms470us freq=10380.7
+  [DEDUP_DROP] CH5(PA3) F#4933: dt=10ms < 25ms, treated as glitch (last_valid=9897ms now=9907ms)
+  [DEDUP_DROP] CH6(PA4) F#4933: dt=10ms < 25ms, treated as glitch (last_valid=9897ms now=9907ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s80ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s80ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5024: dt=6ms < 25ms, treated as glitch (last_valid=10080ms now=10086ms)
+  [DEDUP_DROP] CH6(PA4) F#5024: dt=6ms < 25ms, treated as glitch (last_valid=10080ms now=10086ms)
+  [DEDUP_DROP] CH5(PA3) F#5025: dt=8ms < 25ms, treated as glitch (last_valid=10080ms now=10088ms)
+  [DEDUP_DROP] CH6(PA4) F#5025: dt=8ms < 25ms, treated as glitch (last_valid=10080ms now=10088ms)
+  [DEDUP_DROP] CH5(PA3) F#5026: dt=10ms < 25ms, treated as glitch (last_valid=10080ms now=10090ms)
+  [DEDUP_DROP] CH6(PA4) F#5026: dt=10ms < 25ms, treated as glitch (last_valid=10080ms now=10090ms)
+  [DEDUP_DROP] CH5(PA3) F#5027: dt=12ms < 25ms, treated as glitch (last_valid=10080ms now=10092ms)
+  [DEDUP_DROP] CH6(PA4) F#5027: dt=12ms < 25ms, treated as glitch (last_valid=10080ms now=10092ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s141ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s141ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5055: dt=6ms < 25ms, treated as glitch (last_valid=10141ms now=10147ms)
+  [DEDUP_DROP] CH6(PA4) F#5055: dt=6ms < 25ms, treated as glitch (last_valid=10141ms now=10147ms)
+  [DEDUP_DROP] CH5(PA3) F#5056: dt=8ms < 25ms, treated as glitch (last_valid=10141ms now=10149ms)
+  [DEDUP_DROP] CH6(PA4) F#5056: dt=8ms < 25ms, treated as glitch (last_valid=10141ms now=10149ms)
+  [DEDUP_DROP] CH5(PA3) F#5057: dt=10ms < 25ms, treated as glitch (last_valid=10141ms now=10151ms)
+  [DEDUP_DROP] CH6(PA4) F#5057: dt=10ms < 25ms, treated as glitch (last_valid=10141ms now=10151ms)
+  [DEDUP_DROP] CH5(PA3) F#5058: dt=12ms < 25ms, treated as glitch (last_valid=10141ms now=10153ms)
+  [DEDUP_DROP] CH6(PA4) F#5058: dt=12ms < 25ms, treated as glitch (last_valid=10141ms now=10153ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s202ms499us freq=10391.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s263ms472us freq=10378.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s263ms472us freq=10382.1
+  [DEDUP_DROP] CH5(PA3) F#5119: dt=10ms < 25ms, treated as glitch (last_valid=10263ms now=10273ms)
+  [DEDUP_DROP] CH6(PA4) F#5119: dt=10ms < 25ms, treated as glitch (last_valid=10263ms now=10273ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s442ms581us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s442ms580us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5208: dt=6ms < 25ms, treated as glitch (last_valid=10442ms now=10448ms)
+  [DEDUP_DROP] CH6(PA4) F#5208: dt=6ms < 25ms, treated as glitch (last_valid=10442ms now=10448ms)
+  [DEDUP_DROP] CH5(PA3) F#5209: dt=8ms < 25ms, treated as glitch (last_valid=10442ms now=10450ms)
+  [DEDUP_DROP] CH6(PA4) F#5209: dt=8ms < 25ms, treated as glitch (last_valid=10442ms now=10450ms)
+  [DEDUP_DROP] CH5(PA3) F#5210: dt=10ms < 25ms, treated as glitch (last_valid=10442ms now=10452ms)
+  [DEDUP_DROP] CH6(PA4) F#5210: dt=10ms < 25ms, treated as glitch (last_valid=10442ms now=10452ms)
+  [DEDUP_DROP] CH5(PA3) F#5211: dt=12ms < 25ms, treated as glitch (last_valid=10442ms now=10454ms)
+  [DEDUP_DROP] CH6(PA4) F#5211: dt=12ms < 25ms, treated as glitch (last_valid=10442ms now=10454ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s503ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s503ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5239: dt=6ms < 25ms, treated as glitch (last_valid=10503ms now=10509ms)
+  [DEDUP_DROP] CH6(PA4) F#5239: dt=6ms < 25ms, treated as glitch (last_valid=10503ms now=10509ms)
+  [DEDUP_DROP] CH5(PA3) F#5240: dt=8ms < 25ms, treated as glitch (last_valid=10503ms now=10511ms)
+  [DEDUP_DROP] CH6(PA4) F#5240: dt=8ms < 25ms, treated as glitch (last_valid=10503ms now=10511ms)
+  [DEDUP_DROP] CH5(PA3) F#5241: dt=10ms < 25ms, treated as glitch (last_valid=10503ms now=10513ms)
+  [DEDUP_DROP] CH6(PA4) F#5241: dt=10ms < 25ms, treated as glitch (last_valid=10503ms now=10513ms)
+  [DEDUP_DROP] CH5(PA3) F#5242: dt=12ms < 25ms, treated as glitch (last_valid=10503ms now=10515ms)
+  [DEDUP_DROP] CH6(PA4) F#5242: dt=12ms < 25ms, treated as glitch (last_valid=10503ms now=10515ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s564ms498us freq=10389.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s623ms698us freq=10404.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s623ms698us freq=10403.6
+  [DEDUP_DROP] CH5(PA3) F#5302: dt=10ms < 25ms, treated as glitch (last_valid=10623ms now=10633ms)
+  [DEDUP_DROP] CH6(PA4) F#5302: dt=10ms < 25ms, treated as glitch (last_valid=10623ms now=10633ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s804ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s804ms477us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5392: dt=6ms < 25ms, treated as glitch (last_valid=10804ms now=10810ms)
+  [DEDUP_DROP] CH6(PA4) F#5392: dt=6ms < 25ms, treated as glitch (last_valid=10804ms now=10810ms)
+  [DEDUP_DROP] CH5(PA3) F#5393: dt=8ms < 25ms, treated as glitch (last_valid=10804ms now=10812ms)
+  [DEDUP_DROP] CH6(PA4) F#5393: dt=8ms < 25ms, treated as glitch (last_valid=10804ms now=10812ms)
+  [DEDUP_DROP] CH5(PA3) F#5394: dt=10ms < 25ms, treated as glitch (last_valid=10804ms now=10814ms)
+  [DEDUP_DROP] CH6(PA4) F#5394: dt=10ms < 25ms, treated as glitch (last_valid=10804ms now=10814ms)
+  [DEDUP_DROP] CH5(PA3) F#5395: dt=12ms < 25ms, treated as glitch (last_valid=10804ms now=10816ms)
+  [DEDUP_DROP] CH6(PA4) F#5395: dt=12ms < 25ms, treated as glitch (last_valid=10804ms now=10816ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s865ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s865ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5423: dt=6ms < 25ms, treated as glitch (last_valid=10865ms now=10871ms)
+  [DEDUP_DROP] CH6(PA4) F#5423: dt=6ms < 25ms, treated as glitch (last_valid=10865ms now=10871ms)
+  [DEDUP_DROP] CH5(PA3) F#5424: dt=8ms < 25ms, treated as glitch (last_valid=10865ms now=10873ms)
+  [DEDUP_DROP] CH6(PA4) F#5424: dt=8ms < 25ms, treated as glitch (last_valid=10865ms now=10873ms)
+  [DEDUP_DROP] CH5(PA3) F#5425: dt=10ms < 25ms, treated as glitch (last_valid=10865ms now=10875ms)
+  [DEDUP_DROP] CH6(PA4) F#5425: dt=10ms < 25ms, treated as glitch (last_valid=10865ms now=10875ms)
+  [DEDUP_DROP] CH5(PA3) F#5426: dt=12ms < 25ms, treated as glitch (last_valid=10865ms now=10877ms)
+  [DEDUP_DROP] CH6(PA4) F#5426: dt=12ms < 25ms, treated as glitch (last_valid=10865ms now=10877ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s926ms498us freq=10389.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=10s985ms944us freq=10207.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=10s985ms943us freq=10201.1
+  [DEDUP_DROP] CH5(PA3) F#5487: dt=11ms < 25ms, treated as glitch (last_valid=10985ms now=10996ms)
+  [DEDUP_DROP] CH6(PA4) F#5487: dt=11ms < 25ms, treated as glitch (last_valid=10985ms now=10996ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s169ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s169ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5578: dt=6ms < 25ms, treated as glitch (last_valid=11169ms now=11175ms)
+  [DEDUP_DROP] CH6(PA4) F#5578: dt=6ms < 25ms, treated as glitch (last_valid=11169ms now=11175ms)
+  [DEDUP_DROP] CH5(PA3) F#5579: dt=9ms < 25ms, treated as glitch (last_valid=11169ms now=11178ms)
+  [DEDUP_DROP] CH6(PA4) F#5579: dt=9ms < 25ms, treated as glitch (last_valid=11169ms now=11178ms)
+  [DEDUP_DROP] CH5(PA3) F#5580: dt=10ms < 25ms, treated as glitch (last_valid=11169ms now=11179ms)
+  [DEDUP_DROP] CH6(PA4) F#5580: dt=10ms < 25ms, treated as glitch (last_valid=11169ms now=11179ms)
+  [DEDUP_DROP] CH5(PA3) F#5581: dt=12ms < 25ms, treated as glitch (last_valid=11169ms now=11181ms)
+  [DEDUP_DROP] CH6(PA4) F#5581: dt=12ms < 25ms, treated as glitch (last_valid=11169ms now=11181ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s230ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s230ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5609: dt=6ms < 25ms, treated as glitch (last_valid=11230ms now=11236ms)
+  [DEDUP_DROP] CH6(PA4) F#5609: dt=6ms < 25ms, treated as glitch (last_valid=11230ms now=11236ms)
+  [DEDUP_DROP] CH5(PA3) F#5610: dt=9ms < 25ms, treated as glitch (last_valid=11230ms now=11239ms)
+  [DEDUP_DROP] CH6(PA4) F#5610: dt=9ms < 25ms, treated as glitch (last_valid=11230ms now=11239ms)
+  [DEDUP_DROP] CH5(PA3) F#5611: dt=10ms < 25ms, treated as glitch (last_valid=11230ms now=11240ms)
+  [DEDUP_DROP] CH6(PA4) F#5611: dt=10ms < 25ms, treated as glitch (last_valid=11230ms now=11240ms)
+  [DEDUP_DROP] CH5(PA3) F#5612: dt=12ms < 25ms, treated as glitch (last_valid=11230ms now=11242ms)
+  [DEDUP_DROP] CH6(PA4) F#5612: dt=12ms < 25ms, treated as glitch (last_valid=11230ms now=11242ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s291ms497us freq=10393.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s352ms473us freq=10373.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s352ms472us freq=10378.2
+  [DEDUP_DROP] CH5(PA3) F#5673: dt=10ms < 25ms, treated as glitch (last_valid=11352ms now=11362ms)
+  [DEDUP_DROP] CH6(PA4) F#5673: dt=10ms < 25ms, treated as glitch (last_valid=11352ms now=11362ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s535ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s535ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5764: dt=6ms < 25ms, treated as glitch (last_valid=11535ms now=11541ms)
+  [DEDUP_DROP] CH6(PA4) F#5764: dt=6ms < 25ms, treated as glitch (last_valid=11535ms now=11541ms)
+  [DEDUP_DROP] CH5(PA3) F#5765: dt=8ms < 25ms, treated as glitch (last_valid=11535ms now=11543ms)
+  [DEDUP_DROP] CH6(PA4) F#5765: dt=8ms < 25ms, treated as glitch (last_valid=11535ms now=11543ms)
+  [DEDUP_DROP] CH5(PA3) F#5766: dt=10ms < 25ms, treated as glitch (last_valid=11535ms now=11545ms)
+  [DEDUP_DROP] CH6(PA4) F#5766: dt=10ms < 25ms, treated as glitch (last_valid=11535ms now=11545ms)
+  [DEDUP_DROP] CH5(PA3) F#5767: dt=12ms < 25ms, treated as glitch (last_valid=11535ms now=11547ms)
+  [DEDUP_DROP] CH6(PA4) F#5767: dt=12ms < 25ms, treated as glitch (last_valid=11535ms now=11547ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s596ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s596ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5795: dt=6ms < 25ms, treated as glitch (last_valid=11596ms now=11602ms)
+  [DEDUP_DROP] CH6(PA4) F#5795: dt=6ms < 25ms, treated as glitch (last_valid=11596ms now=11602ms)
+  [DEDUP_DROP] CH5(PA3) F#5796: dt=8ms < 25ms, treated as glitch (last_valid=11596ms now=11604ms)
+  [DEDUP_DROP] CH6(PA4) F#5796: dt=8ms < 25ms, treated as glitch (last_valid=11596ms now=11604ms)
+  [DEDUP_DROP] CH5(PA3) F#5797: dt=10ms < 25ms, treated as glitch (last_valid=11596ms now=11606ms)
+  [DEDUP_DROP] CH6(PA4) F#5797: dt=10ms < 25ms, treated as glitch (last_valid=11596ms now=11606ms)
+  [DEDUP_DROP] CH5(PA3) F#5798: dt=12ms < 25ms, treated as glitch (last_valid=11596ms now=11608ms)
+  [DEDUP_DROP] CH6(PA4) F#5798: dt=12ms < 25ms, treated as glitch (last_valid=11596ms now=11608ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s657ms497us freq=10391.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s716ms554us freq=10379.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s716ms554us freq=10386.8
+  [DEDUP_DROP] CH5(PA3) F#5858: dt=10ms < 25ms, treated as glitch (last_valid=11716ms now=11726ms)
+  [DEDUP_DROP] CH6(PA4) F#5858: dt=10ms < 25ms, treated as glitch (last_valid=11716ms now=11726ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s897ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s897ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5948: dt=6ms < 25ms, treated as glitch (last_valid=11897ms now=11903ms)
+  [DEDUP_DROP] CH6(PA4) F#5948: dt=6ms < 25ms, treated as glitch (last_valid=11897ms now=11903ms)
+  [DEDUP_DROP] CH5(PA3) F#5949: dt=8ms < 25ms, treated as glitch (last_valid=11897ms now=11905ms)
+  [DEDUP_DROP] CH6(PA4) F#5949: dt=8ms < 25ms, treated as glitch (last_valid=11897ms now=11905ms)
+  [DEDUP_DROP] CH5(PA3) F#5950: dt=10ms < 25ms, treated as glitch (last_valid=11897ms now=11907ms)
+  [DEDUP_DROP] CH6(PA4) F#5950: dt=10ms < 25ms, treated as glitch (last_valid=11897ms now=11907ms)
+  [DEDUP_DROP] CH5(PA3) F#5951: dt=12ms < 25ms, treated as glitch (last_valid=11897ms now=11909ms)
+  [DEDUP_DROP] CH6(PA4) F#5951: dt=12ms < 25ms, treated as glitch (last_valid=11897ms now=11909ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=11s958ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=11s958ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#5979: dt=6ms < 25ms, treated as glitch (last_valid=11958ms now=11964ms)
+  [DEDUP_DROP] CH6(PA4) F#5979: dt=6ms < 25ms, treated as glitch (last_valid=11958ms now=11964ms)
+  [DEDUP_DROP] CH5(PA3) F#5980: dt=8ms < 25ms, treated as glitch (last_valid=11958ms now=11966ms)
+  [DEDUP_DROP] CH6(PA4) F#5980: dt=8ms < 25ms, treated as glitch (last_valid=11958ms now=11966ms)
+  [DEDUP_DROP] CH5(PA3) F#5981: dt=10ms < 25ms, treated as glitch (last_valid=11958ms now=11968ms)
+  [DEDUP_DROP] CH6(PA4) F#5981: dt=10ms < 25ms, treated as glitch (last_valid=11958ms now=11968ms)
+  [DEDUP_DROP] CH5(PA3) F#5982: dt=12ms < 25ms, treated as glitch (last_valid=11958ms now=11970ms)
+  [DEDUP_DROP] CH6(PA4) F#5982: dt=12ms < 25ms, treated as glitch (last_valid=11958ms now=11970ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s19ms498us freq=10389.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s78ms800us freq=10413.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s78ms799us freq=10412.7
+  [DEDUP_DROP] CH5(PA3) F#6042: dt=10ms < 25ms, treated as glitch (last_valid=12078ms now=12088ms)
+  [DEDUP_DROP] CH6(PA4) F#6042: dt=10ms < 25ms, treated as glitch (last_valid=12078ms now=12088ms)
+  [DEDUP_DROP] CH5(PA3) F#6043: dt=12ms < 25ms, treated as glitch (last_valid=12078ms now=12090ms)
+  [DEDUP_DROP] CH6(PA4) F#6043: dt=12ms < 25ms, treated as glitch (last_valid=12078ms now=12090ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s259ms929us freq=10383.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s259ms929us freq=10383.1
+  [DEDUP_DROP] CH5(PA3) F#6132: dt=6ms < 25ms, treated as glitch (last_valid=12259ms now=12265ms)
+  [DEDUP_DROP] CH6(PA4) F#6132: dt=6ms < 25ms, treated as glitch (last_valid=12259ms now=12265ms)
+  [DEDUP_DROP] CH5(PA3) F#6133: dt=8ms < 25ms, treated as glitch (last_valid=12259ms now=12267ms)
+  [DEDUP_DROP] CH6(PA4) F#6133: dt=8ms < 25ms, treated as glitch (last_valid=12259ms now=12267ms)
+  [DEDUP_DROP] CH5(PA3) F#6134: dt=9ms < 25ms, treated as glitch (last_valid=12259ms now=12268ms)
+  [DEDUP_DROP] CH6(PA4) F#6134: dt=9ms < 25ms, treated as glitch (last_valid=12259ms now=12268ms)
+  [DEDUP_DROP] CH5(PA3) F#6135: dt=11ms < 25ms, treated as glitch (last_valid=12259ms now=12270ms)
+  [DEDUP_DROP] CH6(PA4) F#6135: dt=11ms < 25ms, treated as glitch (last_valid=12259ms now=12270ms)
+  [DEDUP_DROP] CH5(PA3) F#6136: dt=13ms < 25ms, treated as glitch (last_valid=12259ms now=12272ms)
+  [DEDUP_DROP] CH6(PA4) F#6136: dt=13ms < 25ms, treated as glitch (last_valid=12259ms now=12272ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s320ms983us freq=10067.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s320ms983us freq=10067.6
+  [DEDUP_DROP] CH5(PA3) F#6163: dt=5ms < 25ms, treated as glitch (last_valid=12320ms now=12325ms)
+  [DEDUP_DROP] CH6(PA4) F#6163: dt=5ms < 25ms, treated as glitch (last_valid=12320ms now=12325ms)
+  [DEDUP_DROP] CH5(PA3) F#6164: dt=8ms < 25ms, treated as glitch (last_valid=12320ms now=12328ms)
+  [DEDUP_DROP] CH6(PA4) F#6164: dt=8ms < 25ms, treated as glitch (last_valid=12320ms now=12328ms)
+  [DEDUP_DROP] CH5(PA3) F#6165: dt=9ms < 25ms, treated as glitch (last_valid=12320ms now=12329ms)
+  [DEDUP_DROP] CH6(PA4) F#6165: dt=9ms < 25ms, treated as glitch (last_valid=12320ms now=12329ms)
+  [DEDUP_DROP] CH5(PA3) F#6166: dt=11ms < 25ms, treated as glitch (last_valid=12320ms now=12331ms)
+  [DEDUP_DROP] CH6(PA4) F#6166: dt=11ms < 25ms, treated as glitch (last_valid=12320ms now=12331ms)
+  [DEDUP_DROP] CH5(PA3) F#6167: dt=13ms < 25ms, treated as glitch (last_valid=12320ms now=12333ms)
+  [DEDUP_DROP] CH6(PA4) F#6167: dt=13ms < 25ms, treated as glitch (last_valid=12320ms now=12333ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s382ms56us freq=33500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s443ms473us freq=10385.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s443ms473us freq=10384.0
+  [DEDUP_DROP] CH5(PA3) F#6228: dt=10ms < 25ms, treated as glitch (last_valid=12443ms now=12453ms)
+  [DEDUP_DROP] CH6(PA4) F#6228: dt=10ms < 25ms, treated as glitch (last_valid=12443ms now=12453ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s626ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s626ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6319: dt=6ms < 25ms, treated as glitch (last_valid=12626ms now=12632ms)
+  [DEDUP_DROP] CH6(PA4) F#6319: dt=6ms < 25ms, treated as glitch (last_valid=12626ms now=12632ms)
+  [DEDUP_DROP] CH5(PA3) F#6320: dt=8ms < 25ms, treated as glitch (last_valid=12626ms now=12634ms)
+  [DEDUP_DROP] CH6(PA4) F#6320: dt=8ms < 25ms, treated as glitch (last_valid=12626ms now=12634ms)
+  [DEDUP_DROP] CH5(PA3) F#6321: dt=10ms < 25ms, treated as glitch (last_valid=12626ms now=12636ms)
+  [DEDUP_DROP] CH6(PA4) F#6321: dt=10ms < 25ms, treated as glitch (last_valid=12626ms now=12636ms)
+  [DEDUP_DROP] CH5(PA3) F#6322: dt=12ms < 25ms, treated as glitch (last_valid=12626ms now=12638ms)
+  [DEDUP_DROP] CH6(PA4) F#6322: dt=12ms < 25ms, treated as glitch (last_valid=12626ms now=12638ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s687ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s687ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6350: dt=6ms < 25ms, treated as glitch (last_valid=12687ms now=12693ms)
+  [DEDUP_DROP] CH6(PA4) F#6350: dt=6ms < 25ms, treated as glitch (last_valid=12687ms now=12693ms)
+  [DEDUP_DROP] CH5(PA3) F#6351: dt=8ms < 25ms, treated as glitch (last_valid=12687ms now=12695ms)
+  [DEDUP_DROP] CH6(PA4) F#6351: dt=8ms < 25ms, treated as glitch (last_valid=12687ms now=12695ms)
+  [DEDUP_DROP] CH5(PA3) F#6352: dt=10ms < 25ms, treated as glitch (last_valid=12687ms now=12697ms)
+  [DEDUP_DROP] CH6(PA4) F#6352: dt=10ms < 25ms, treated as glitch (last_valid=12687ms now=12697ms)
+  [DEDUP_DROP] CH5(PA3) F#6353: dt=12ms < 25ms, treated as glitch (last_valid=12687ms now=12699ms)
+  [DEDUP_DROP] CH6(PA4) F#6353: dt=12ms < 25ms, treated as glitch (last_valid=12687ms now=12699ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s748ms498us freq=10387.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s809ms472us freq=10384.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s809ms472us freq=10385.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=12s990ms541us freq=58839.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=12s990ms540us freq=58828.3
+  [DEDUP_DROP] CH5(PA3) F#6504: dt=6ms < 25ms, treated as glitch (last_valid=12990ms now=12996ms)
+  [DEDUP_DROP] CH6(PA4) F#6504: dt=6ms < 25ms, treated as glitch (last_valid=12990ms now=12996ms)
+  [DEDUP_DROP] CH5(PA3) F#6505: dt=8ms < 25ms, treated as glitch (last_valid=12990ms now=12998ms)
+  [DEDUP_DROP] CH6(PA4) F#6505: dt=8ms < 25ms, treated as glitch (last_valid=12990ms now=12998ms)
+  [DEDUP_DROP] CH5(PA3) F#6506: dt=10ms < 25ms, treated as glitch (last_valid=12990ms now=13000ms)
+  [DEDUP_DROP] CH6(PA4) F#6506: dt=10ms < 25ms, treated as glitch (last_valid=12990ms now=13000ms)
+  [DEDUP_DROP] CH5(PA3) F#6507: dt=12ms < 25ms, treated as glitch (last_valid=12990ms now=13002ms)
+  [DEDUP_DROP] CH6(PA4) F#6507: dt=12ms < 25ms, treated as glitch (last_valid=12990ms now=13002ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s51ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s51ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6535: dt=6ms < 25ms, treated as glitch (last_valid=13051ms now=13057ms)
+  [DEDUP_DROP] CH6(PA4) F#6535: dt=6ms < 25ms, treated as glitch (last_valid=13051ms now=13057ms)
+  [DEDUP_DROP] CH5(PA3) F#6536: dt=8ms < 25ms, treated as glitch (last_valid=13051ms now=13059ms)
+  [DEDUP_DROP] CH6(PA4) F#6536: dt=8ms < 25ms, treated as glitch (last_valid=13051ms now=13059ms)
+  [DEDUP_DROP] CH5(PA3) F#6537: dt=10ms < 25ms, treated as glitch (last_valid=13051ms now=13061ms)
+  [DEDUP_DROP] CH6(PA4) F#6537: dt=10ms < 25ms, treated as glitch (last_valid=13051ms now=13061ms)
+  [DEDUP_DROP] CH5(PA3) F#6538: dt=12ms < 25ms, treated as glitch (last_valid=13051ms now=13063ms)
+  [DEDUP_DROP] CH6(PA4) F#6538: dt=12ms < 25ms, treated as glitch (last_valid=13051ms now=13063ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s112ms498us freq=10393.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s171ms658us freq=10386.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s171ms657us freq=10390.8
+  [DEDUP_DROP] CH5(PA3) F#6598: dt=10ms < 25ms, treated as glitch (last_valid=13171ms now=13181ms)
+  [DEDUP_DROP] CH6(PA4) F#6598: dt=10ms < 25ms, treated as glitch (last_valid=13171ms now=13181ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s352ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s352ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6688: dt=6ms < 25ms, treated as glitch (last_valid=13352ms now=13358ms)
+  [DEDUP_DROP] CH6(PA4) F#6688: dt=6ms < 25ms, treated as glitch (last_valid=13352ms now=13358ms)
+  [DEDUP_DROP] CH5(PA3) F#6689: dt=8ms < 25ms, treated as glitch (last_valid=13352ms now=13360ms)
+  [DEDUP_DROP] CH6(PA4) F#6689: dt=8ms < 25ms, treated as glitch (last_valid=13352ms now=13360ms)
+  [DEDUP_DROP] CH5(PA3) F#6690: dt=10ms < 25ms, treated as glitch (last_valid=13352ms now=13362ms)
+  [DEDUP_DROP] CH6(PA4) F#6690: dt=10ms < 25ms, treated as glitch (last_valid=13352ms now=13362ms)
+  [DEDUP_DROP] CH5(PA3) F#6691: dt=12ms < 25ms, treated as glitch (last_valid=13352ms now=13364ms)
+  [DEDUP_DROP] CH6(PA4) F#6691: dt=12ms < 25ms, treated as glitch (last_valid=13352ms now=13364ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s413ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s413ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6719: dt=6ms < 25ms, treated as glitch (last_valid=13413ms now=13419ms)
+  [DEDUP_DROP] CH6(PA4) F#6719: dt=6ms < 25ms, treated as glitch (last_valid=13413ms now=13419ms)
+  [DEDUP_DROP] CH5(PA3) F#6720: dt=8ms < 25ms, treated as glitch (last_valid=13413ms now=13421ms)
+  [DEDUP_DROP] CH6(PA4) F#6720: dt=8ms < 25ms, treated as glitch (last_valid=13413ms now=13421ms)
+  [DEDUP_DROP] CH5(PA3) F#6721: dt=10ms < 25ms, treated as glitch (last_valid=13413ms now=13423ms)
+  [DEDUP_DROP] CH6(PA4) F#6721: dt=10ms < 25ms, treated as glitch (last_valid=13413ms now=13423ms)
+  [DEDUP_DROP] CH5(PA3) F#6722: dt=12ms < 25ms, treated as glitch (last_valid=13413ms now=13425ms)
+  [DEDUP_DROP] CH6(PA4) F#6722: dt=12ms < 25ms, treated as glitch (last_valid=13413ms now=13425ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s474ms497us freq=10390.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s533ms902us freq=10454.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s533ms903us freq=10454.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s717ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s717ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6874: dt=6ms < 25ms, treated as glitch (last_valid=13717ms now=13723ms)
+  [DEDUP_DROP] CH6(PA4) F#6874: dt=6ms < 25ms, treated as glitch (last_valid=13717ms now=13723ms)
+  [DEDUP_DROP] CH5(PA3) F#6875: dt=9ms < 25ms, treated as glitch (last_valid=13717ms now=13726ms)
+  [DEDUP_DROP] CH6(PA4) F#6875: dt=9ms < 25ms, treated as glitch (last_valid=13717ms now=13726ms)
+  [DEDUP_DROP] CH5(PA3) F#6876: dt=10ms < 25ms, treated as glitch (last_valid=13717ms now=13727ms)
+  [DEDUP_DROP] CH6(PA4) F#6876: dt=10ms < 25ms, treated as glitch (last_valid=13717ms now=13727ms)
+  [DEDUP_DROP] CH5(PA3) F#6877: dt=12ms < 25ms, treated as glitch (last_valid=13717ms now=13729ms)
+  [DEDUP_DROP] CH6(PA4) F#6877: dt=12ms < 25ms, treated as glitch (last_valid=13717ms now=13729ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s778ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s778ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#6905: dt=6ms < 25ms, treated as glitch (last_valid=13778ms now=13784ms)
+  [DEDUP_DROP] CH6(PA4) F#6905: dt=6ms < 25ms, treated as glitch (last_valid=13778ms now=13784ms)
+  [DEDUP_DROP] CH5(PA3) F#6906: dt=9ms < 25ms, treated as glitch (last_valid=13778ms now=13787ms)
+  [DEDUP_DROP] CH6(PA4) F#6906: dt=9ms < 25ms, treated as glitch (last_valid=13778ms now=13787ms)
+  [DEDUP_DROP] CH5(PA3) F#6907: dt=10ms < 25ms, treated as glitch (last_valid=13778ms now=13788ms)
+  [DEDUP_DROP] CH6(PA4) F#6907: dt=10ms < 25ms, treated as glitch (last_valid=13778ms now=13788ms)
+  [DEDUP_DROP] CH5(PA3) F#6908: dt=12ms < 25ms, treated as glitch (last_valid=13778ms now=13790ms)
+  [DEDUP_DROP] CH6(PA4) F#6908: dt=12ms < 25ms, treated as glitch (last_valid=13778ms now=13790ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s839ms499us freq=10384.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=13s900ms472us freq=10376.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=13s900ms472us freq=10392.3
+  [DEDUP_DROP] CH5(PA3) F#6969: dt=10ms < 25ms, treated as glitch (last_valid=13900ms now=13910ms)
+  [DEDUP_DROP] CH6(PA4) F#6969: dt=10ms < 25ms, treated as glitch (last_valid=13900ms now=13910ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s83ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s83ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7060: dt=6ms < 25ms, treated as glitch (last_valid=14083ms now=14089ms)
+  [DEDUP_DROP] CH6(PA4) F#7060: dt=6ms < 25ms, treated as glitch (last_valid=14083ms now=14089ms)
+  [DEDUP_DROP] CH5(PA3) F#7061: dt=8ms < 25ms, treated as glitch (last_valid=14083ms now=14091ms)
+  [DEDUP_DROP] CH6(PA4) F#7061: dt=8ms < 25ms, treated as glitch (last_valid=14083ms now=14091ms)
+  [DEDUP_DROP] CH5(PA3) F#7062: dt=10ms < 25ms, treated as glitch (last_valid=14083ms now=14093ms)
+  [DEDUP_DROP] CH6(PA4) F#7062: dt=10ms < 25ms, treated as glitch (last_valid=14083ms now=14093ms)
+  [DEDUP_DROP] CH5(PA3) F#7063: dt=12ms < 25ms, treated as glitch (last_valid=14083ms now=14095ms)
+  [DEDUP_DROP] CH6(PA4) F#7063: dt=12ms < 25ms, treated as glitch (last_valid=14083ms now=14095ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s144ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s144ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7091: dt=6ms < 25ms, treated as glitch (last_valid=14144ms now=14150ms)
+  [DEDUP_DROP] CH6(PA4) F#7091: dt=6ms < 25ms, treated as glitch (last_valid=14144ms now=14150ms)
+  [DEDUP_DROP] CH5(PA3) F#7092: dt=8ms < 25ms, treated as glitch (last_valid=14144ms now=14152ms)
+  [DEDUP_DROP] CH6(PA4) F#7092: dt=8ms < 25ms, treated as glitch (last_valid=14144ms now=14152ms)
+  [DEDUP_DROP] CH5(PA3) F#7093: dt=10ms < 25ms, treated as glitch (last_valid=14144ms now=14154ms)
+  [DEDUP_DROP] CH6(PA4) F#7093: dt=10ms < 25ms, treated as glitch (last_valid=14144ms now=14154ms)
+  [DEDUP_DROP] CH5(PA3) F#7094: dt=12ms < 25ms, treated as glitch (last_valid=14144ms now=14156ms)
+  [DEDUP_DROP] CH6(PA4) F#7094: dt=12ms < 25ms, treated as glitch (last_valid=14144ms now=14156ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s205ms498us freq=10387.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s264ms514us freq=10398.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s264ms513us freq=10386.2
+  [DEDUP_DROP] CH5(PA3) F#7154: dt=10ms < 25ms, treated as glitch (last_valid=14264ms now=14274ms)
+  [DEDUP_DROP] CH6(PA4) F#7154: dt=10ms < 25ms, treated as glitch (last_valid=14264ms now=14274ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s445ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s445ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7244: dt=6ms < 25ms, treated as glitch (last_valid=14445ms now=14451ms)
+  [DEDUP_DROP] CH6(PA4) F#7244: dt=6ms < 25ms, treated as glitch (last_valid=14445ms now=14451ms)
+  [DEDUP_DROP] CH5(PA3) F#7245: dt=8ms < 25ms, treated as glitch (last_valid=14445ms now=14453ms)
+  [DEDUP_DROP] CH6(PA4) F#7245: dt=8ms < 25ms, treated as glitch (last_valid=14445ms now=14453ms)
+  [DEDUP_DROP] CH5(PA3) F#7246: dt=10ms < 25ms, treated as glitch (last_valid=14445ms now=14455ms)
+  [DEDUP_DROP] CH6(PA4) F#7246: dt=10ms < 25ms, treated as glitch (last_valid=14445ms now=14455ms)
+  [DEDUP_DROP] CH5(PA3) F#7247: dt=12ms < 25ms, treated as glitch (last_valid=14445ms now=14457ms)
+  [DEDUP_DROP] CH6(PA4) F#7247: dt=12ms < 25ms, treated as glitch (last_valid=14445ms now=14457ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s506ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s506ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7275: dt=6ms < 25ms, treated as glitch (last_valid=14506ms now=14512ms)
+  [DEDUP_DROP] CH6(PA4) F#7275: dt=6ms < 25ms, treated as glitch (last_valid=14506ms now=14512ms)
+  [DEDUP_DROP] CH5(PA3) F#7276: dt=8ms < 25ms, treated as glitch (last_valid=14506ms now=14514ms)
+  [DEDUP_DROP] CH6(PA4) F#7276: dt=8ms < 25ms, treated as glitch (last_valid=14506ms now=14514ms)
+  [DEDUP_DROP] CH5(PA3) F#7277: dt=10ms < 25ms, treated as glitch (last_valid=14506ms now=14516ms)
+  [DEDUP_DROP] CH6(PA4) F#7277: dt=10ms < 25ms, treated as glitch (last_valid=14506ms now=14516ms)
+  [DEDUP_DROP] CH5(PA3) F#7278: dt=12ms < 25ms, treated as glitch (last_valid=14506ms now=14518ms)
+  [DEDUP_DROP] CH6(PA4) F#7278: dt=12ms < 25ms, treated as glitch (last_valid=14506ms now=14518ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s567ms499us freq=10391.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s626ms759us freq=10390.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s626ms759us freq=10395.7
+  [DEDUP_DROP] CH5(PA3) F#7338: dt=10ms < 25ms, treated as glitch (last_valid=14626ms now=14636ms)
+  [DEDUP_DROP] CH6(PA4) F#7338: dt=10ms < 25ms, treated as glitch (last_valid=14626ms now=14636ms)
+  [DEDUP_DROP] CH5(PA3) F#7339: dt=12ms < 25ms, treated as glitch (last_valid=14626ms now=14638ms)
+  [DEDUP_DROP] CH6(PA4) F#7339: dt=12ms < 25ms, treated as glitch (last_valid=14626ms now=14638ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s807ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s807ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7428: dt=6ms < 25ms, treated as glitch (last_valid=14807ms now=14813ms)
+  [DEDUP_DROP] CH6(PA4) F#7428: dt=6ms < 25ms, treated as glitch (last_valid=14807ms now=14813ms)
+  [DEDUP_DROP] CH5(PA3) F#7429: dt=8ms < 25ms, treated as glitch (last_valid=14807ms now=14815ms)
+  [DEDUP_DROP] CH6(PA4) F#7429: dt=8ms < 25ms, treated as glitch (last_valid=14807ms now=14815ms)
+  [DEDUP_DROP] CH5(PA3) F#7430: dt=10ms < 25ms, treated as glitch (last_valid=14807ms now=14817ms)
+  [DEDUP_DROP] CH6(PA4) F#7430: dt=10ms < 25ms, treated as glitch (last_valid=14807ms now=14817ms)
+  [DEDUP_DROP] CH5(PA3) F#7431: dt=12ms < 25ms, treated as glitch (last_valid=14807ms now=14819ms)
+  [DEDUP_DROP] CH6(PA4) F#7431: dt=12ms < 25ms, treated as glitch (last_valid=14807ms now=14819ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s868ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s868ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7459: dt=6ms < 25ms, treated as glitch (last_valid=14868ms now=14874ms)
+  [DEDUP_DROP] CH6(PA4) F#7459: dt=6ms < 25ms, treated as glitch (last_valid=14868ms now=14874ms)
+  [DEDUP_DROP] CH5(PA3) F#7460: dt=8ms < 25ms, treated as glitch (last_valid=14868ms now=14876ms)
+  [DEDUP_DROP] CH6(PA4) F#7460: dt=8ms < 25ms, treated as glitch (last_valid=14868ms now=14876ms)
+  [DEDUP_DROP] CH5(PA3) F#7461: dt=9ms < 25ms, treated as glitch (last_valid=14868ms now=14877ms)
+  [DEDUP_DROP] CH6(PA4) F#7461: dt=9ms < 25ms, treated as glitch (last_valid=14868ms now=14877ms)
+  [DEDUP_DROP] CH5(PA3) F#7462: dt=11ms < 25ms, treated as glitch (last_valid=14868ms now=14879ms)
+  [DEDUP_DROP] CH6(PA4) F#7462: dt=11ms < 25ms, treated as glitch (last_valid=14868ms now=14879ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=14s990ms7us freq=46500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=14s990ms5us freq=46943.6
+  [DEDUP_DROP] CH5(PA3) F#7523: dt=9ms < 25ms, treated as glitch (last_valid=14990ms now=14999ms)
+  [DEDUP_DROP] CH6(PA4) F#7523: dt=9ms < 25ms, treated as glitch (last_valid=14990ms now=14999ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s172ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s172ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7614: dt=6ms < 25ms, treated as glitch (last_valid=15172ms now=15178ms)
+  [DEDUP_DROP] CH6(PA4) F#7614: dt=6ms < 25ms, treated as glitch (last_valid=15172ms now=15178ms)
+  [DEDUP_DROP] CH5(PA3) F#7615: dt=9ms < 25ms, treated as glitch (last_valid=15172ms now=15181ms)
+  [DEDUP_DROP] CH6(PA4) F#7615: dt=9ms < 25ms, treated as glitch (last_valid=15172ms now=15181ms)
+  [DEDUP_DROP] CH5(PA3) F#7616: dt=10ms < 25ms, treated as glitch (last_valid=15172ms now=15182ms)
+  [DEDUP_DROP] CH6(PA4) F#7616: dt=10ms < 25ms, treated as glitch (last_valid=15172ms now=15182ms)
+  [DEDUP_DROP] CH5(PA3) F#7617: dt=12ms < 25ms, treated as glitch (last_valid=15172ms now=15184ms)
+  [DEDUP_DROP] CH6(PA4) F#7617: dt=12ms < 25ms, treated as glitch (last_valid=15172ms now=15184ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s233ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s233ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7645: dt=6ms < 25ms, treated as glitch (last_valid=15233ms now=15239ms)
+  [DEDUP_DROP] CH6(PA4) F#7645: dt=6ms < 25ms, treated as glitch (last_valid=15233ms now=15239ms)
+  [DEDUP_DROP] CH5(PA3) F#7646: dt=8ms < 25ms, treated as glitch (last_valid=15233ms now=15241ms)
+  [DEDUP_DROP] CH6(PA4) F#7646: dt=8ms < 25ms, treated as glitch (last_valid=15233ms now=15241ms)
+  [DEDUP_DROP] CH5(PA3) F#7647: dt=10ms < 25ms, treated as glitch (last_valid=15233ms now=15243ms)
+  [DEDUP_DROP] CH6(PA4) F#7647: dt=10ms < 25ms, treated as glitch (last_valid=15233ms now=15243ms)
+  [DEDUP_DROP] CH5(PA3) F#7648: dt=12ms < 25ms, treated as glitch (last_valid=15233ms now=15245ms)
+  [DEDUP_DROP] CH6(PA4) F#7648: dt=12ms < 25ms, treated as glitch (last_valid=15233ms now=15245ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s294ms498us freq=10385.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s355ms473us freq=10376.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s355ms472us freq=10389.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s538ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s538ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7800: dt=6ms < 25ms, treated as glitch (last_valid=15538ms now=15544ms)
+  [DEDUP_DROP] CH6(PA4) F#7800: dt=6ms < 25ms, treated as glitch (last_valid=15538ms now=15544ms)
+  [DEDUP_DROP] CH5(PA3) F#7801: dt=8ms < 25ms, treated as glitch (last_valid=15538ms now=15546ms)
+  [DEDUP_DROP] CH6(PA4) F#7801: dt=8ms < 25ms, treated as glitch (last_valid=15538ms now=15546ms)
+  [DEDUP_DROP] CH5(PA3) F#7802: dt=10ms < 25ms, treated as glitch (last_valid=15538ms now=15548ms)
+  [DEDUP_DROP] CH6(PA4) F#7802: dt=10ms < 25ms, treated as glitch (last_valid=15538ms now=15548ms)
+  [DEDUP_DROP] CH5(PA3) F#7803: dt=12ms < 25ms, treated as glitch (last_valid=15538ms now=15550ms)
+  [DEDUP_DROP] CH6(PA4) F#7803: dt=12ms < 25ms, treated as glitch (last_valid=15538ms now=15550ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s599ms481us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s599ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7831: dt=6ms < 25ms, treated as glitch (last_valid=15599ms now=15605ms)
+  [DEDUP_DROP] CH6(PA4) F#7831: dt=6ms < 25ms, treated as glitch (last_valid=15599ms now=15605ms)
+  [DEDUP_DROP] CH5(PA3) F#7832: dt=8ms < 25ms, treated as glitch (last_valid=15599ms now=15607ms)
+  [DEDUP_DROP] CH6(PA4) F#7832: dt=8ms < 25ms, treated as glitch (last_valid=15599ms now=15607ms)
+  [DEDUP_DROP] CH5(PA3) F#7833: dt=10ms < 25ms, treated as glitch (last_valid=15599ms now=15609ms)
+  [DEDUP_DROP] CH6(PA4) F#7833: dt=10ms < 25ms, treated as glitch (last_valid=15599ms now=15609ms)
+  [DEDUP_DROP] CH5(PA3) F#7834: dt=12ms < 25ms, treated as glitch (last_valid=15599ms now=15611ms)
+  [DEDUP_DROP] CH6(PA4) F#7834: dt=12ms < 25ms, treated as glitch (last_valid=15599ms now=15611ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s660ms498us freq=10388.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s719ms617us freq=10382.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s719ms617us freq=10380.6
+  [DEDUP_DROP] CH5(PA3) F#7894: dt=10ms < 25ms, treated as glitch (last_valid=15719ms now=15729ms)
+  [DEDUP_DROP] CH6(PA4) F#7894: dt=10ms < 25ms, treated as glitch (last_valid=15719ms now=15729ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s900ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s900ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#7984: dt=6ms < 25ms, treated as glitch (last_valid=15900ms now=15906ms)
+  [DEDUP_DROP] CH6(PA4) F#7984: dt=6ms < 25ms, treated as glitch (last_valid=15900ms now=15906ms)
+  [DEDUP_DROP] CH5(PA3) F#7985: dt=8ms < 25ms, treated as glitch (last_valid=15900ms now=15908ms)
+  [DEDUP_DROP] CH6(PA4) F#7985: dt=8ms < 25ms, treated as glitch (last_valid=15900ms now=15908ms)
+  [DEDUP_DROP] CH5(PA3) F#7986: dt=10ms < 25ms, treated as glitch (last_valid=15900ms now=15910ms)
+  [DEDUP_DROP] CH6(PA4) F#7986: dt=10ms < 25ms, treated as glitch (last_valid=15900ms now=15910ms)
+  [DEDUP_DROP] CH5(PA3) F#7987: dt=12ms < 25ms, treated as glitch (last_valid=15900ms now=15912ms)
+  [DEDUP_DROP] CH6(PA4) F#7987: dt=12ms < 25ms, treated as glitch (last_valid=15900ms now=15912ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=15s961ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=15s961ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8015: dt=6ms < 25ms, treated as glitch (last_valid=15961ms now=15967ms)
+  [DEDUP_DROP] CH6(PA4) F#8015: dt=6ms < 25ms, treated as glitch (last_valid=15961ms now=15967ms)
+  [DEDUP_DROP] CH5(PA3) F#8016: dt=8ms < 25ms, treated as glitch (last_valid=15961ms now=15969ms)
+  [DEDUP_DROP] CH6(PA4) F#8016: dt=8ms < 25ms, treated as glitch (last_valid=15961ms now=15969ms)
+  [DEDUP_DROP] CH5(PA3) F#8017: dt=10ms < 25ms, treated as glitch (last_valid=15961ms now=15971ms)
+  [DEDUP_DROP] CH6(PA4) F#8017: dt=10ms < 25ms, treated as glitch (last_valid=15961ms now=15971ms)
+  [DEDUP_DROP] CH5(PA3) F#8018: dt=12ms < 25ms, treated as glitch (last_valid=15961ms now=15973ms)
+  [DEDUP_DROP] CH6(PA4) F#8018: dt=12ms < 25ms, treated as glitch (last_valid=15961ms now=15973ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s22ms499us freq=10393.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s81ms863us freq=10400.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s81ms862us freq=10400.9
+  [DEDUP_DROP] CH5(PA3) F#8079: dt=11ms < 25ms, treated as glitch (last_valid=16081ms now=16092ms)
+  [DEDUP_DROP] CH6(PA4) F#8079: dt=11ms < 25ms, treated as glitch (last_valid=16081ms now=16092ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s262ms991us freq=10029.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s262ms991us freq=10029.1
+  [DEDUP_DROP] CH5(PA3) F#8168: dt=5ms < 25ms, treated as glitch (last_valid=16262ms now=16267ms)
+  [DEDUP_DROP] CH6(PA4) F#8168: dt=5ms < 25ms, treated as glitch (last_valid=16262ms now=16267ms)
+  [DEDUP_DROP] CH5(PA3) F#8169: dt=8ms < 25ms, treated as glitch (last_valid=16262ms now=16270ms)
+  [DEDUP_DROP] CH6(PA4) F#8169: dt=8ms < 25ms, treated as glitch (last_valid=16262ms now=16270ms)
+  [DEDUP_DROP] CH5(PA3) F#8170: dt=9ms < 25ms, treated as glitch (last_valid=16262ms now=16271ms)
+  [DEDUP_DROP] CH6(PA4) F#8170: dt=9ms < 25ms, treated as glitch (last_valid=16262ms now=16271ms)
+  [DEDUP_DROP] CH5(PA3) F#8171: dt=11ms < 25ms, treated as glitch (last_valid=16262ms now=16273ms)
+  [DEDUP_DROP] CH6(PA4) F#8171: dt=11ms < 25ms, treated as glitch (last_valid=16262ms now=16273ms)
+  [DEDUP_DROP] CH5(PA3) F#8172: dt=13ms < 25ms, treated as glitch (last_valid=16262ms now=16275ms)
+  [DEDUP_DROP] CH6(PA4) F#8172: dt=13ms < 25ms, treated as glitch (last_valid=16262ms now=16275ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s324ms45us freq=58944.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s324ms45us freq=58944.2
+  [DEDUP_DROP] CH5(PA3) F#8200: dt=6ms < 25ms, treated as glitch (last_valid=16324ms now=16330ms)
+  [DEDUP_DROP] CH6(PA4) F#8200: dt=6ms < 25ms, treated as glitch (last_valid=16324ms now=16330ms)
+  [DEDUP_DROP] CH5(PA3) F#8201: dt=9ms < 25ms, treated as glitch (last_valid=16324ms now=16333ms)
+  [DEDUP_DROP] CH6(PA4) F#8201: dt=9ms < 25ms, treated as glitch (last_valid=16324ms now=16333ms)
+  [DEDUP_DROP] CH5(PA3) F#8202: dt=10ms < 25ms, treated as glitch (last_valid=16324ms now=16334ms)
+  [DEDUP_DROP] CH6(PA4) F#8202: dt=10ms < 25ms, treated as glitch (last_valid=16324ms now=16334ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s383ms497us freq=10388.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s444ms473us freq=10377.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s444ms473us freq=10380.6
+  [DEDUP_DROP] CH5(PA3) F#8263: dt=10ms < 25ms, treated as glitch (last_valid=16444ms now=16454ms)
+  [DEDUP_DROP] CH6(PA4) F#8263: dt=10ms < 25ms, treated as glitch (last_valid=16444ms now=16454ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s627ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s627ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8354: dt=6ms < 25ms, treated as glitch (last_valid=16627ms now=16633ms)
+  [DEDUP_DROP] CH6(PA4) F#8354: dt=6ms < 25ms, treated as glitch (last_valid=16627ms now=16633ms)
+  [DEDUP_DROP] CH5(PA3) F#8355: dt=8ms < 25ms, treated as glitch (last_valid=16627ms now=16635ms)
+  [DEDUP_DROP] CH6(PA4) F#8355: dt=8ms < 25ms, treated as glitch (last_valid=16627ms now=16635ms)
+  [DEDUP_DROP] CH5(PA3) F#8356: dt=10ms < 25ms, treated as glitch (last_valid=16627ms now=16637ms)
+  [DEDUP_DROP] CH6(PA4) F#8356: dt=10ms < 25ms, treated as glitch (last_valid=16627ms now=16637ms)
+  [DEDUP_DROP] CH5(PA3) F#8357: dt=12ms < 25ms, treated as glitch (last_valid=16627ms now=16639ms)
+  [DEDUP_DROP] CH6(PA4) F#8357: dt=12ms < 25ms, treated as glitch (last_valid=16627ms now=16639ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s688ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s688ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8385: dt=6ms < 25ms, treated as glitch (last_valid=16688ms now=16694ms)
+  [DEDUP_DROP] CH6(PA4) F#8385: dt=6ms < 25ms, treated as glitch (last_valid=16688ms now=16694ms)
+  [DEDUP_DROP] CH5(PA3) F#8386: dt=8ms < 25ms, treated as glitch (last_valid=16688ms now=16696ms)
+  [DEDUP_DROP] CH6(PA4) F#8386: dt=8ms < 25ms, treated as glitch (last_valid=16688ms now=16696ms)
+  [DEDUP_DROP] CH5(PA3) F#8387: dt=10ms < 25ms, treated as glitch (last_valid=16688ms now=16698ms)
+  [DEDUP_DROP] CH6(PA4) F#8387: dt=10ms < 25ms, treated as glitch (last_valid=16688ms now=16698ms)
+  [DEDUP_DROP] CH5(PA3) F#8388: dt=12ms < 25ms, treated as glitch (last_valid=16688ms now=16700ms)
+  [DEDUP_DROP] CH6(PA4) F#8388: dt=12ms < 25ms, treated as glitch (last_valid=16688ms now=16700ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s749ms497us freq=10390.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s810ms473us freq=10384.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s810ms473us freq=10388.1
+  [DEDUP_DROP] CH5(PA3) F#8449: dt=10ms < 25ms, treated as glitch (last_valid=16810ms now=16820ms)
+  [DEDUP_DROP] CH6(PA4) F#8449: dt=10ms < 25ms, treated as glitch (last_valid=16810ms now=16820ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=16s991ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=16s991ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8539: dt=6ms < 25ms, treated as glitch (last_valid=16991ms now=16997ms)
+  [DEDUP_DROP] CH6(PA4) F#8539: dt=6ms < 25ms, treated as glitch (last_valid=16991ms now=16997ms)
+  [DEDUP_DROP] CH5(PA3) F#8540: dt=8ms < 25ms, treated as glitch (last_valid=16991ms now=16999ms)
+  [DEDUP_DROP] CH6(PA4) F#8540: dt=8ms < 25ms, treated as glitch (last_valid=16991ms now=16999ms)
+  [DEDUP_DROP] CH5(PA3) F#8541: dt=10ms < 25ms, treated as glitch (last_valid=16991ms now=17001ms)
+  [DEDUP_DROP] CH6(PA4) F#8541: dt=10ms < 25ms, treated as glitch (last_valid=16991ms now=17001ms)
+  [DEDUP_DROP] CH5(PA3) F#8542: dt=12ms < 25ms, treated as glitch (last_valid=16991ms now=17003ms)
+  [DEDUP_DROP] CH6(PA4) F#8542: dt=12ms < 25ms, treated as glitch (last_valid=16991ms now=17003ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s52ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s52ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8570: dt=6ms < 25ms, treated as glitch (last_valid=17052ms now=17058ms)
+  [DEDUP_DROP] CH6(PA4) F#8570: dt=6ms < 25ms, treated as glitch (last_valid=17052ms now=17058ms)
+  [DEDUP_DROP] CH5(PA3) F#8571: dt=8ms < 25ms, treated as glitch (last_valid=17052ms now=17060ms)
+  [DEDUP_DROP] CH6(PA4) F#8571: dt=8ms < 25ms, treated as glitch (last_valid=17052ms now=17060ms)
+  [DEDUP_DROP] CH5(PA3) F#8572: dt=10ms < 25ms, treated as glitch (last_valid=17052ms now=17062ms)
+  [DEDUP_DROP] CH6(PA4) F#8572: dt=10ms < 25ms, treated as glitch (last_valid=17052ms now=17062ms)
+  [DEDUP_DROP] CH5(PA3) F#8573: dt=12ms < 25ms, treated as glitch (last_valid=17052ms now=17064ms)
+  [DEDUP_DROP] CH6(PA4) F#8573: dt=12ms < 25ms, treated as glitch (last_valid=17052ms now=17064ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s113ms500us freq=10390.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s172ms685us freq=10414.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s172ms684us freq=10414.2
+  [DEDUP_DROP] CH5(PA3) F#8633: dt=10ms < 25ms, treated as glitch (last_valid=17172ms now=17182ms)
+  [DEDUP_DROP] CH6(PA4) F#8633: dt=10ms < 25ms, treated as glitch (last_valid=17172ms now=17182ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s353ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s353ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8723: dt=6ms < 25ms, treated as glitch (last_valid=17353ms now=17359ms)
+  [DEDUP_DROP] CH6(PA4) F#8723: dt=6ms < 25ms, treated as glitch (last_valid=17353ms now=17359ms)
+  [DEDUP_DROP] CH5(PA3) F#8724: dt=8ms < 25ms, treated as glitch (last_valid=17353ms now=17361ms)
+  [DEDUP_DROP] CH6(PA4) F#8724: dt=8ms < 25ms, treated as glitch (last_valid=17353ms now=17361ms)
+  [DEDUP_DROP] CH5(PA3) F#8725: dt=10ms < 25ms, treated as glitch (last_valid=17353ms now=17363ms)
+  [DEDUP_DROP] CH6(PA4) F#8725: dt=10ms < 25ms, treated as glitch (last_valid=17353ms now=17363ms)
+  [DEDUP_DROP] CH5(PA3) F#8726: dt=12ms < 25ms, treated as glitch (last_valid=17353ms now=17365ms)
+  [DEDUP_DROP] CH6(PA4) F#8726: dt=12ms < 25ms, treated as glitch (last_valid=17353ms now=17365ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s414ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s414ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8754: dt=6ms < 25ms, treated as glitch (last_valid=17414ms now=17420ms)
+  [DEDUP_DROP] CH6(PA4) F#8754: dt=6ms < 25ms, treated as glitch (last_valid=17414ms now=17420ms)
+  [DEDUP_DROP] CH5(PA3) F#8755: dt=8ms < 25ms, treated as glitch (last_valid=17414ms now=17422ms)
+  [DEDUP_DROP] CH6(PA4) F#8755: dt=8ms < 25ms, treated as glitch (last_valid=17414ms now=17422ms)
+  [DEDUP_DROP] CH5(PA3) F#8756: dt=10ms < 25ms, treated as glitch (last_valid=17414ms now=17424ms)
+  [DEDUP_DROP] CH6(PA4) F#8756: dt=10ms < 25ms, treated as glitch (last_valid=17414ms now=17424ms)
+  [DEDUP_DROP] CH5(PA3) F#8757: dt=12ms < 25ms, treated as glitch (last_valid=17414ms now=17426ms)
+  [DEDUP_DROP] CH6(PA4) F#8757: dt=12ms < 25ms, treated as glitch (last_valid=17414ms now=17426ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s475ms498us freq=10388.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s534ms931us freq=10286.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s534ms930us freq=10286.4
+  [DEDUP_DROP] CH5(PA3) F#8818: dt=11ms < 25ms, treated as glitch (last_valid=17534ms now=17545ms)
+  [DEDUP_DROP] CH6(PA4) F#8818: dt=11ms < 25ms, treated as glitch (last_valid=17534ms now=17545ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s718ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s718ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8909: dt=6ms < 25ms, treated as glitch (last_valid=17718ms now=17724ms)
+  [DEDUP_DROP] CH6(PA4) F#8909: dt=6ms < 25ms, treated as glitch (last_valid=17718ms now=17724ms)
+  [DEDUP_DROP] CH5(PA3) F#8910: dt=9ms < 25ms, treated as glitch (last_valid=17718ms now=17727ms)
+  [DEDUP_DROP] CH6(PA4) F#8910: dt=9ms < 25ms, treated as glitch (last_valid=17718ms now=17727ms)
+  [DEDUP_DROP] CH5(PA3) F#8911: dt=10ms < 25ms, treated as glitch (last_valid=17718ms now=17728ms)
+  [DEDUP_DROP] CH6(PA4) F#8911: dt=10ms < 25ms, treated as glitch (last_valid=17718ms now=17728ms)
+  [DEDUP_DROP] CH5(PA3) F#8912: dt=12ms < 25ms, treated as glitch (last_valid=17718ms now=17730ms)
+  [DEDUP_DROP] CH6(PA4) F#8912: dt=12ms < 25ms, treated as glitch (last_valid=17718ms now=17730ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s779ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s779ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#8940: dt=6ms < 25ms, treated as glitch (last_valid=17779ms now=17785ms)
+  [DEDUP_DROP] CH6(PA4) F#8940: dt=6ms < 25ms, treated as glitch (last_valid=17779ms now=17785ms)
+  [DEDUP_DROP] CH5(PA3) F#8941: dt=9ms < 25ms, treated as glitch (last_valid=17779ms now=17788ms)
+  [DEDUP_DROP] CH6(PA4) F#8941: dt=9ms < 25ms, treated as glitch (last_valid=17779ms now=17788ms)
+  [DEDUP_DROP] CH5(PA3) F#8942: dt=10ms < 25ms, treated as glitch (last_valid=17779ms now=17789ms)
+  [DEDUP_DROP] CH6(PA4) F#8942: dt=10ms < 25ms, treated as glitch (last_valid=17779ms now=17789ms)
+  [DEDUP_DROP] CH5(PA3) F#8943: dt=12ms < 25ms, treated as glitch (last_valid=17779ms now=17791ms)
+  [DEDUP_DROP] CH6(PA4) F#8943: dt=12ms < 25ms, treated as glitch (last_valid=17779ms now=17791ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s840ms499us freq=10394.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=17s901ms474us freq=10384.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=17s901ms474us freq=10383.7
+  [DEDUP_DROP] CH5(PA3) F#9004: dt=10ms < 25ms, treated as glitch (last_valid=17901ms now=17911ms)
+  [DEDUP_DROP] CH6(PA4) F#9004: dt=10ms < 25ms, treated as glitch (last_valid=17901ms now=17911ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s84ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s84ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9095: dt=6ms < 25ms, treated as glitch (last_valid=18084ms now=18090ms)
+  [DEDUP_DROP] CH6(PA4) F#9095: dt=6ms < 25ms, treated as glitch (last_valid=18084ms now=18090ms)
+  [DEDUP_DROP] CH5(PA3) F#9096: dt=8ms < 25ms, treated as glitch (last_valid=18084ms now=18092ms)
+  [DEDUP_DROP] CH6(PA4) F#9096: dt=8ms < 25ms, treated as glitch (last_valid=18084ms now=18092ms)
+  [DEDUP_DROP] CH5(PA3) F#9097: dt=10ms < 25ms, treated as glitch (last_valid=18084ms now=18094ms)
+  [DEDUP_DROP] CH6(PA4) F#9097: dt=10ms < 25ms, treated as glitch (last_valid=18084ms now=18094ms)
+  [DEDUP_DROP] CH5(PA3) F#9098: dt=12ms < 25ms, treated as glitch (last_valid=18084ms now=18096ms)
+  [DEDUP_DROP] CH6(PA4) F#9098: dt=12ms < 25ms, treated as glitch (last_valid=18084ms now=18096ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s145ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s145ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9126: dt=6ms < 25ms, treated as glitch (last_valid=18145ms now=18151ms)
+  [DEDUP_DROP] CH6(PA4) F#9126: dt=6ms < 25ms, treated as glitch (last_valid=18145ms now=18151ms)
+  [DEDUP_DROP] CH5(PA3) F#9127: dt=8ms < 25ms, treated as glitch (last_valid=18145ms now=18153ms)
+  [DEDUP_DROP] CH6(PA4) F#9127: dt=8ms < 25ms, treated as glitch (last_valid=18145ms now=18153ms)
+  [DEDUP_DROP] CH5(PA3) F#9128: dt=10ms < 25ms, treated as glitch (last_valid=18145ms now=18155ms)
+  [DEDUP_DROP] CH6(PA4) F#9128: dt=10ms < 25ms, treated as glitch (last_valid=18145ms now=18155ms)
+  [DEDUP_DROP] CH5(PA3) F#9129: dt=12ms < 25ms, treated as glitch (last_valid=18145ms now=18157ms)
+  [DEDUP_DROP] CH6(PA4) F#9129: dt=12ms < 25ms, treated as glitch (last_valid=18145ms now=18157ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s206ms499us freq=10396.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s265ms541us freq=10376.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s265ms542us freq=10380.9
+  [DEDUP_DROP] CH5(PA3) F#9189: dt=10ms < 25ms, treated as glitch (last_valid=18265ms now=18275ms)
+  [DEDUP_DROP] CH6(PA4) F#9189: dt=10ms < 25ms, treated as glitch (last_valid=18265ms now=18275ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s446ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s446ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9279: dt=6ms < 25ms, treated as glitch (last_valid=18446ms now=18452ms)
+  [DEDUP_DROP] CH6(PA4) F#9279: dt=6ms < 25ms, treated as glitch (last_valid=18446ms now=18452ms)
+  [DEDUP_DROP] CH5(PA3) F#9280: dt=8ms < 25ms, treated as glitch (last_valid=18446ms now=18454ms)
+  [DEDUP_DROP] CH6(PA4) F#9280: dt=8ms < 25ms, treated as glitch (last_valid=18446ms now=18454ms)
+  [DEDUP_DROP] CH5(PA3) F#9281: dt=10ms < 25ms, treated as glitch (last_valid=18446ms now=18456ms)
+  [DEDUP_DROP] CH6(PA4) F#9281: dt=10ms < 25ms, treated as glitch (last_valid=18446ms now=18456ms)
+  [DEDUP_DROP] CH5(PA3) F#9282: dt=12ms < 25ms, treated as glitch (last_valid=18446ms now=18458ms)
+  [DEDUP_DROP] CH6(PA4) F#9282: dt=12ms < 25ms, treated as glitch (last_valid=18446ms now=18458ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s507ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s507ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9310: dt=6ms < 25ms, treated as glitch (last_valid=18507ms now=18513ms)
+  [DEDUP_DROP] CH6(PA4) F#9310: dt=6ms < 25ms, treated as glitch (last_valid=18507ms now=18513ms)
+  [DEDUP_DROP] CH5(PA3) F#9311: dt=8ms < 25ms, treated as glitch (last_valid=18507ms now=18515ms)
+  [DEDUP_DROP] CH6(PA4) F#9311: dt=8ms < 25ms, treated as glitch (last_valid=18507ms now=18515ms)
+  [DEDUP_DROP] CH5(PA3) F#9312: dt=10ms < 25ms, treated as glitch (last_valid=18507ms now=18517ms)
+  [DEDUP_DROP] CH6(PA4) F#9312: dt=10ms < 25ms, treated as glitch (last_valid=18507ms now=18517ms)
+  [DEDUP_DROP] CH5(PA3) F#9313: dt=12ms < 25ms, treated as glitch (last_valid=18507ms now=18519ms)
+  [DEDUP_DROP] CH6(PA4) F#9313: dt=12ms < 25ms, treated as glitch (last_valid=18507ms now=18519ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s568ms498us freq=10391.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s627ms786us freq=10432.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s627ms788us freq=10431.7
+  [DEDUP_DROP] CH5(PA3) F#9373: dt=10ms < 25ms, treated as glitch (last_valid=18627ms now=18637ms)
+  [DEDUP_DROP] CH6(PA4) F#9373: dt=10ms < 25ms, treated as glitch (last_valid=18627ms now=18637ms)
+  [DEDUP_DROP] CH5(PA3) F#9374: dt=12ms < 25ms, treated as glitch (last_valid=18627ms now=18639ms)
+  [DEDUP_DROP] CH6(PA4) F#9374: dt=12ms < 25ms, treated as glitch (last_valid=18627ms now=18639ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s808ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s808ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9463: dt=6ms < 25ms, treated as glitch (last_valid=18808ms now=18814ms)
+  [DEDUP_DROP] CH6(PA4) F#9463: dt=6ms < 25ms, treated as glitch (last_valid=18808ms now=18814ms)
+  [DEDUP_DROP] CH5(PA3) F#9464: dt=8ms < 25ms, treated as glitch (last_valid=18808ms now=18816ms)
+  [DEDUP_DROP] CH6(PA4) F#9464: dt=8ms < 25ms, treated as glitch (last_valid=18808ms now=18816ms)
+  [DEDUP_DROP] CH5(PA3) F#9465: dt=10ms < 25ms, treated as glitch (last_valid=18808ms now=18818ms)
+  [DEDUP_DROP] CH6(PA4) F#9465: dt=10ms < 25ms, treated as glitch (last_valid=18808ms now=18818ms)
+  [DEDUP_DROP] CH5(PA3) F#9466: dt=11ms < 25ms, treated as glitch (last_valid=18808ms now=18819ms)
+  [DEDUP_DROP] CH6(PA4) F#9466: dt=11ms < 25ms, treated as glitch (last_valid=18808ms now=18819ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s869ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s869ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9494: dt=5ms < 25ms, treated as glitch (last_valid=18869ms now=18874ms)
+  [DEDUP_DROP] CH6(PA4) F#9494: dt=5ms < 25ms, treated as glitch (last_valid=18869ms now=18874ms)
+  [DEDUP_DROP] CH5(PA3) F#9495: dt=8ms < 25ms, treated as glitch (last_valid=18869ms now=18877ms)
+  [DEDUP_DROP] CH6(PA4) F#9495: dt=8ms < 25ms, treated as glitch (last_valid=18869ms now=18877ms)
+  [DEDUP_DROP] CH5(PA3) F#9496: dt=9ms < 25ms, treated as glitch (last_valid=18869ms now=18878ms)
+  [DEDUP_DROP] CH6(PA4) F#9496: dt=9ms < 25ms, treated as glitch (last_valid=18869ms now=18878ms)
+  [DEDUP_DROP] CH5(PA3) F#9497: dt=11ms < 25ms, treated as glitch (last_valid=18869ms now=18880ms)
+  [DEDUP_DROP] CH6(PA4) F#9497: dt=11ms < 25ms, treated as glitch (last_valid=18869ms now=18880ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s930ms6us freq=31529.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=18s990ms34us freq=44825.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=18s990ms34us freq=45500.0
+  [DEDUP_DROP] CH5(PA3) F#9558: dt=10ms < 25ms, treated as glitch (last_valid=18990ms now=19000ms)
+  [DEDUP_DROP] CH6(PA4) F#9558: dt=10ms < 25ms, treated as glitch (last_valid=18990ms now=19000ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s173ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s173ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9649: dt=6ms < 25ms, treated as glitch (last_valid=19173ms now=19179ms)
+  [DEDUP_DROP] CH6(PA4) F#9649: dt=6ms < 25ms, treated as glitch (last_valid=19173ms now=19179ms)
+  [DEDUP_DROP] CH5(PA3) F#9650: dt=9ms < 25ms, treated as glitch (last_valid=19173ms now=19182ms)
+  [DEDUP_DROP] CH6(PA4) F#9650: dt=9ms < 25ms, treated as glitch (last_valid=19173ms now=19182ms)
+  [DEDUP_DROP] CH5(PA3) F#9651: dt=10ms < 25ms, treated as glitch (last_valid=19173ms now=19183ms)
+  [DEDUP_DROP] CH6(PA4) F#9651: dt=10ms < 25ms, treated as glitch (last_valid=19173ms now=19183ms)
+  [DEDUP_DROP] CH5(PA3) F#9652: dt=12ms < 25ms, treated as glitch (last_valid=19173ms now=19185ms)
+  [DEDUP_DROP] CH6(PA4) F#9652: dt=12ms < 25ms, treated as glitch (last_valid=19173ms now=19185ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s234ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s234ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9680: dt=6ms < 25ms, treated as glitch (last_valid=19234ms now=19240ms)
+  [DEDUP_DROP] CH6(PA4) F#9680: dt=6ms < 25ms, treated as glitch (last_valid=19234ms now=19240ms)
+  [DEDUP_DROP] CH5(PA3) F#9681: dt=8ms < 25ms, treated as glitch (last_valid=19234ms now=19242ms)
+  [DEDUP_DROP] CH6(PA4) F#9681: dt=8ms < 25ms, treated as glitch (last_valid=19234ms now=19242ms)
+  [DEDUP_DROP] CH5(PA3) F#9682: dt=10ms < 25ms, treated as glitch (last_valid=19234ms now=19244ms)
+  [DEDUP_DROP] CH6(PA4) F#9682: dt=10ms < 25ms, treated as glitch (last_valid=19234ms now=19244ms)
+  [DEDUP_DROP] CH5(PA3) F#9683: dt=12ms < 25ms, treated as glitch (last_valid=19234ms now=19246ms)
+  [DEDUP_DROP] CH6(PA4) F#9683: dt=12ms < 25ms, treated as glitch (last_valid=19234ms now=19246ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s295ms499us freq=10396.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s356ms473us freq=10380.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s356ms472us freq=10385.0
+  [DEDUP_DROP] CH5(PA3) F#9744: dt=10ms < 25ms, treated as glitch (last_valid=19356ms now=19366ms)
+  [DEDUP_DROP] CH6(PA4) F#9744: dt=10ms < 25ms, treated as glitch (last_valid=19356ms now=19366ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s539ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s539ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9835: dt=6ms < 25ms, treated as glitch (last_valid=19539ms now=19545ms)
+  [DEDUP_DROP] CH6(PA4) F#9835: dt=6ms < 25ms, treated as glitch (last_valid=19539ms now=19545ms)
+  [DEDUP_DROP] CH5(PA3) F#9836: dt=8ms < 25ms, treated as glitch (last_valid=19539ms now=19547ms)
+  [DEDUP_DROP] CH6(PA4) F#9836: dt=8ms < 25ms, treated as glitch (last_valid=19539ms now=19547ms)
+  [DEDUP_DROP] CH5(PA3) F#9837: dt=10ms < 25ms, treated as glitch (last_valid=19539ms now=19549ms)
+  [DEDUP_DROP] CH6(PA4) F#9837: dt=10ms < 25ms, treated as glitch (last_valid=19539ms now=19549ms)
+  [DEDUP_DROP] CH5(PA3) F#9838: dt=12ms < 25ms, treated as glitch (last_valid=19539ms now=19551ms)
+  [DEDUP_DROP] CH6(PA4) F#9838: dt=12ms < 25ms, treated as glitch (last_valid=19539ms now=19551ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s600ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s600ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#9866: dt=6ms < 25ms, treated as glitch (last_valid=19600ms now=19606ms)
+  [DEDUP_DROP] CH6(PA4) F#9866: dt=6ms < 25ms, treated as glitch (last_valid=19600ms now=19606ms)
+  [DEDUP_DROP] CH5(PA3) F#9867: dt=8ms < 25ms, treated as glitch (last_valid=19600ms now=19608ms)
+  [DEDUP_DROP] CH6(PA4) F#9867: dt=8ms < 25ms, treated as glitch (last_valid=19600ms now=19608ms)
+  [DEDUP_DROP] CH5(PA3) F#9868: dt=10ms < 25ms, treated as glitch (last_valid=19600ms now=19610ms)
+  [DEDUP_DROP] CH6(PA4) F#9868: dt=10ms < 25ms, treated as glitch (last_valid=19600ms now=19610ms)
+  [DEDUP_DROP] CH5(PA3) F#9869: dt=12ms < 25ms, treated as glitch (last_valid=19600ms now=19612ms)
+  [DEDUP_DROP] CH6(PA4) F#9869: dt=12ms < 25ms, treated as glitch (last_valid=19600ms now=19612ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s661ms500us freq=10389.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s720ms645us freq=10370.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s720ms644us freq=10376.8
+  [DEDUP_DROP] CH5(PA3) F#9929: dt=10ms < 25ms, treated as glitch (last_valid=19720ms now=19730ms)
+  [DEDUP_DROP] CH6(PA4) F#9929: dt=10ms < 25ms, treated as glitch (last_valid=19720ms now=19730ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s901ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s901ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10019: dt=6ms < 25ms, treated as glitch (last_valid=19901ms now=19907ms)
+  [DEDUP_DROP] CH6(PA4) F#10019: dt=6ms < 25ms, treated as glitch (last_valid=19901ms now=19907ms)
+  [DEDUP_DROP] CH5(PA3) F#10020: dt=8ms < 25ms, treated as glitch (last_valid=19901ms now=19909ms)
+  [DEDUP_DROP] CH6(PA4) F#10020: dt=8ms < 25ms, treated as glitch (last_valid=19901ms now=19909ms)
+  [DEDUP_DROP] CH5(PA3) F#10021: dt=10ms < 25ms, treated as glitch (last_valid=19901ms now=19911ms)
+  [DEDUP_DROP] CH6(PA4) F#10021: dt=10ms < 25ms, treated as glitch (last_valid=19901ms now=19911ms)
+  [DEDUP_DROP] CH5(PA3) F#10022: dt=12ms < 25ms, treated as glitch (last_valid=19901ms now=19913ms)
+  [DEDUP_DROP] CH6(PA4) F#10022: dt=12ms < 25ms, treated as glitch (last_valid=19901ms now=19913ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=19s962ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=19s962ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10050: dt=6ms < 25ms, treated as glitch (last_valid=19962ms now=19968ms)
+  [DEDUP_DROP] CH6(PA4) F#10050: dt=6ms < 25ms, treated as glitch (last_valid=19962ms now=19968ms)
+  [DEDUP_DROP] CH5(PA3) F#10051: dt=8ms < 25ms, treated as glitch (last_valid=19962ms now=19970ms)
+  [DEDUP_DROP] CH6(PA4) F#10051: dt=8ms < 25ms, treated as glitch (last_valid=19962ms now=19970ms)
+  [DEDUP_DROP] CH5(PA3) F#10052: dt=10ms < 25ms, treated as glitch (last_valid=19962ms now=19972ms)
+  [DEDUP_DROP] CH6(PA4) F#10052: dt=10ms < 25ms, treated as glitch (last_valid=19962ms now=19972ms)
+  [DEDUP_DROP] CH5(PA3) F#10053: dt=12ms < 25ms, treated as glitch (last_valid=19962ms now=19974ms)
+  [DEDUP_DROP] CH6(PA4) F#10053: dt=12ms < 25ms, treated as glitch (last_valid=19962ms now=19974ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s23ms500us freq=10390.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s82ms890us freq=10480.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s82ms889us freq=10480.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s266ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s266ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10205: dt=6ms < 25ms, treated as glitch (last_valid=20266ms now=20272ms)
+  [DEDUP_DROP] CH6(PA4) F#10205: dt=6ms < 25ms, treated as glitch (last_valid=20266ms now=20272ms)
+  [DEDUP_DROP] CH5(PA3) F#10206: dt=9ms < 25ms, treated as glitch (last_valid=20266ms now=20275ms)
+  [DEDUP_DROP] CH6(PA4) F#10206: dt=9ms < 25ms, treated as glitch (last_valid=20266ms now=20275ms)
+  [DEDUP_DROP] CH5(PA3) F#10207: dt=10ms < 25ms, treated as glitch (last_valid=20266ms now=20276ms)
+  [DEDUP_DROP] CH6(PA4) F#10207: dt=10ms < 25ms, treated as glitch (last_valid=20266ms now=20276ms)
+  [DEDUP_DROP] CH5(PA3) F#10208: dt=12ms < 25ms, treated as glitch (last_valid=20266ms now=20278ms)
+  [DEDUP_DROP] CH6(PA4) F#10208: dt=12ms < 25ms, treated as glitch (last_valid=20266ms now=20278ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s327ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s327ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10236: dt=6ms < 25ms, treated as glitch (last_valid=20327ms now=20333ms)
+  [DEDUP_DROP] CH6(PA4) F#10236: dt=6ms < 25ms, treated as glitch (last_valid=20327ms now=20333ms)
+  [DEDUP_DROP] CH5(PA3) F#10237: dt=9ms < 25ms, treated as glitch (last_valid=20327ms now=20336ms)
+  [DEDUP_DROP] CH6(PA4) F#10237: dt=9ms < 25ms, treated as glitch (last_valid=20327ms now=20336ms)
+  [DEDUP_DROP] CH5(PA3) F#10238: dt=10ms < 25ms, treated as glitch (last_valid=20327ms now=20337ms)
+  [DEDUP_DROP] CH6(PA4) F#10238: dt=10ms < 25ms, treated as glitch (last_valid=20327ms now=20337ms)
+  [DEDUP_DROP] CH5(PA3) F#10239: dt=12ms < 25ms, treated as glitch (last_valid=20327ms now=20339ms)
+  [DEDUP_DROP] CH6(PA4) F#10239: dt=12ms < 25ms, treated as glitch (last_valid=20327ms now=20339ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s388ms498us freq=10395.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s449ms473us freq=10380.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s449ms472us freq=10389.1
+  [DEDUP_DROP] CH5(PA3) F#10300: dt=10ms < 25ms, treated as glitch (last_valid=20449ms now=20459ms)
+  [DEDUP_DROP] CH6(PA4) F#10300: dt=10ms < 25ms, treated as glitch (last_valid=20449ms now=20459ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s632ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s632ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10391: dt=6ms < 25ms, treated as glitch (last_valid=20632ms now=20638ms)
+  [DEDUP_DROP] CH6(PA4) F#10391: dt=6ms < 25ms, treated as glitch (last_valid=20632ms now=20638ms)
+  [DEDUP_DROP] CH5(PA3) F#10392: dt=8ms < 25ms, treated as glitch (last_valid=20632ms now=20640ms)
+  [DEDUP_DROP] CH6(PA4) F#10392: dt=8ms < 25ms, treated as glitch (last_valid=20632ms now=20640ms)
+  [DEDUP_DROP] CH5(PA3) F#10393: dt=10ms < 25ms, treated as glitch (last_valid=20632ms now=20642ms)
+  [DEDUP_DROP] CH6(PA4) F#10393: dt=10ms < 25ms, treated as glitch (last_valid=20632ms now=20642ms)
+  [DEDUP_DROP] CH5(PA3) F#10394: dt=12ms < 25ms, treated as glitch (last_valid=20632ms now=20644ms)
+  [DEDUP_DROP] CH6(PA4) F#10394: dt=12ms < 25ms, treated as glitch (last_valid=20632ms now=20644ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s693ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s693ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10422: dt=6ms < 25ms, treated as glitch (last_valid=20693ms now=20699ms)
+  [DEDUP_DROP] CH6(PA4) F#10422: dt=6ms < 25ms, treated as glitch (last_valid=20693ms now=20699ms)
+  [DEDUP_DROP] CH5(PA3) F#10423: dt=8ms < 25ms, treated as glitch (last_valid=20693ms now=20701ms)
+  [DEDUP_DROP] CH6(PA4) F#10423: dt=8ms < 25ms, treated as glitch (last_valid=20693ms now=20701ms)
+  [DEDUP_DROP] CH5(PA3) F#10424: dt=10ms < 25ms, treated as glitch (last_valid=20693ms now=20703ms)
+  [DEDUP_DROP] CH6(PA4) F#10424: dt=10ms < 25ms, treated as glitch (last_valid=20693ms now=20703ms)
+  [DEDUP_DROP] CH5(PA3) F#10425: dt=12ms < 25ms, treated as glitch (last_valid=20693ms now=20705ms)
+  [DEDUP_DROP] CH6(PA4) F#10425: dt=12ms < 25ms, treated as glitch (last_valid=20693ms now=20705ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s754ms499us freq=10388.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s813ms501us freq=10395.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s813ms502us freq=10394.5
+  [DEDUP_DROP] CH5(PA3) F#10485: dt=10ms < 25ms, treated as glitch (last_valid=20813ms now=20823ms)
+  [DEDUP_DROP] CH6(PA4) F#10485: dt=10ms < 25ms, treated as glitch (last_valid=20813ms now=20823ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=20s994ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=20s994ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10575: dt=6ms < 25ms, treated as glitch (last_valid=20994ms now=21000ms)
+  [DEDUP_DROP] CH6(PA4) F#10575: dt=6ms < 25ms, treated as glitch (last_valid=20994ms now=21000ms)
+  [DEDUP_DROP] CH5(PA3) F#10576: dt=8ms < 25ms, treated as glitch (last_valid=20994ms now=21002ms)
+  [DEDUP_DROP] CH6(PA4) F#10576: dt=8ms < 25ms, treated as glitch (last_valid=20994ms now=21002ms)
+  [DEDUP_DROP] CH5(PA3) F#10577: dt=10ms < 25ms, treated as glitch (last_valid=20994ms now=21004ms)
+  [DEDUP_DROP] CH6(PA4) F#10577: dt=10ms < 25ms, treated as glitch (last_valid=20994ms now=21004ms)
+  [DEDUP_DROP] CH5(PA3) F#10578: dt=12ms < 25ms, treated as glitch (last_valid=20994ms now=21006ms)
+  [DEDUP_DROP] CH6(PA4) F#10578: dt=12ms < 25ms, treated as glitch (last_valid=20994ms now=21006ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s55ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s55ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10606: dt=6ms < 25ms, treated as glitch (last_valid=21055ms now=21061ms)
+  [DEDUP_DROP] CH6(PA4) F#10606: dt=6ms < 25ms, treated as glitch (last_valid=21055ms now=21061ms)
+  [DEDUP_DROP] CH5(PA3) F#10607: dt=8ms < 25ms, treated as glitch (last_valid=21055ms now=21063ms)
+  [DEDUP_DROP] CH6(PA4) F#10607: dt=8ms < 25ms, treated as glitch (last_valid=21055ms now=21063ms)
+  [DEDUP_DROP] CH5(PA3) F#10608: dt=10ms < 25ms, treated as glitch (last_valid=21055ms now=21065ms)
+  [DEDUP_DROP] CH6(PA4) F#10608: dt=10ms < 25ms, treated as glitch (last_valid=21055ms now=21065ms)
+  [DEDUP_DROP] CH5(PA3) F#10609: dt=12ms < 25ms, treated as glitch (last_valid=21055ms now=21067ms)
+  [DEDUP_DROP] CH6(PA4) F#10609: dt=12ms < 25ms, treated as glitch (last_valid=21055ms now=21067ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s116ms500us freq=10395.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s175ms746us freq=10363.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s175ms747us freq=10366.8
+  [DEDUP_DROP] CH5(PA3) F#10669: dt=10ms < 25ms, treated as glitch (last_valid=21175ms now=21185ms)
+  [DEDUP_DROP] CH6(PA4) F#10669: dt=10ms < 25ms, treated as glitch (last_valid=21175ms now=21185ms)
+  [DEDUP_DROP] CH5(PA3) F#10670: dt=12ms < 25ms, treated as glitch (last_valid=21175ms now=21187ms)
+  [DEDUP_DROP] CH6(PA4) F#10670: dt=12ms < 25ms, treated as glitch (last_valid=21175ms now=21187ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s356ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s356ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10759: dt=6ms < 25ms, treated as glitch (last_valid=21356ms now=21362ms)
+  [DEDUP_DROP] CH6(PA4) F#10759: dt=6ms < 25ms, treated as glitch (last_valid=21356ms now=21362ms)
+  [DEDUP_DROP] CH5(PA3) F#10760: dt=8ms < 25ms, treated as glitch (last_valid=21356ms now=21364ms)
+  [DEDUP_DROP] CH6(PA4) F#10760: dt=8ms < 25ms, treated as glitch (last_valid=21356ms now=21364ms)
+  [DEDUP_DROP] CH5(PA3) F#10761: dt=10ms < 25ms, treated as glitch (last_valid=21356ms now=21366ms)
+  [DEDUP_DROP] CH6(PA4) F#10761: dt=10ms < 25ms, treated as glitch (last_valid=21356ms now=21366ms)
+  [DEDUP_DROP] CH5(PA3) F#10762: dt=12ms < 25ms, treated as glitch (last_valid=21356ms now=21368ms)
+  [DEDUP_DROP] CH6(PA4) F#10762: dt=12ms < 25ms, treated as glitch (last_valid=21356ms now=21368ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s417ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s417ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10790: dt=6ms < 25ms, treated as glitch (last_valid=21417ms now=21423ms)
+  [DEDUP_DROP] CH6(PA4) F#10790: dt=6ms < 25ms, treated as glitch (last_valid=21417ms now=21423ms)
+  [DEDUP_DROP] CH5(PA3) F#10791: dt=8ms < 25ms, treated as glitch (last_valid=21417ms now=21425ms)
+  [DEDUP_DROP] CH6(PA4) F#10791: dt=8ms < 25ms, treated as glitch (last_valid=21417ms now=21425ms)
+  [DEDUP_DROP] CH5(PA3) F#10792: dt=10ms < 25ms, treated as glitch (last_valid=21417ms now=21427ms)
+  [DEDUP_DROP] CH6(PA4) F#10792: dt=10ms < 25ms, treated as glitch (last_valid=21417ms now=21427ms)
+  [DEDUP_DROP] CH5(PA3) F#10793: dt=11ms < 25ms, treated as glitch (last_valid=21417ms now=21428ms)
+  [DEDUP_DROP] CH6(PA4) F#10793: dt=11ms < 25ms, treated as glitch (last_valid=21417ms now=21428ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s478ms497us freq=10391.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s539ms16us freq=33256.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s539ms16us freq=45868.9
+  [DEDUP_DROP] CH5(PA3) F#10854: dt=9ms < 25ms, treated as glitch (last_valid=21539ms now=21548ms)
+  [DEDUP_DROP] CH6(PA4) F#10854: dt=9ms < 25ms, treated as glitch (last_valid=21539ms now=21548ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s721ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s721ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10945: dt=6ms < 25ms, treated as glitch (last_valid=21721ms now=21727ms)
+  [DEDUP_DROP] CH6(PA4) F#10945: dt=6ms < 25ms, treated as glitch (last_valid=21721ms now=21727ms)
+  [DEDUP_DROP] CH5(PA3) F#10946: dt=9ms < 25ms, treated as glitch (last_valid=21721ms now=21730ms)
+  [DEDUP_DROP] CH6(PA4) F#10946: dt=9ms < 25ms, treated as glitch (last_valid=21721ms now=21730ms)
+  [DEDUP_DROP] CH5(PA3) F#10947: dt=10ms < 25ms, treated as glitch (last_valid=21721ms now=21731ms)
+  [DEDUP_DROP] CH6(PA4) F#10947: dt=10ms < 25ms, treated as glitch (last_valid=21721ms now=21731ms)
+  [DEDUP_DROP] CH5(PA3) F#10948: dt=12ms < 25ms, treated as glitch (last_valid=21721ms now=21733ms)
+  [DEDUP_DROP] CH6(PA4) F#10948: dt=12ms < 25ms, treated as glitch (last_valid=21721ms now=21733ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s782ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s782ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#10976: dt=6ms < 25ms, treated as glitch (last_valid=21782ms now=21788ms)
+  [DEDUP_DROP] CH6(PA4) F#10976: dt=6ms < 25ms, treated as glitch (last_valid=21782ms now=21788ms)
+  [DEDUP_DROP] CH5(PA3) F#10977: dt=9ms < 25ms, treated as glitch (last_valid=21782ms now=21791ms)
+  [DEDUP_DROP] CH6(PA4) F#10977: dt=9ms < 25ms, treated as glitch (last_valid=21782ms now=21791ms)
+  [DEDUP_DROP] CH5(PA3) F#10978: dt=10ms < 25ms, treated as glitch (last_valid=21782ms now=21792ms)
+  [DEDUP_DROP] CH6(PA4) F#10978: dt=10ms < 25ms, treated as glitch (last_valid=21782ms now=21792ms)
+  [DEDUP_DROP] CH5(PA3) F#10979: dt=12ms < 25ms, treated as glitch (last_valid=21782ms now=21794ms)
+  [DEDUP_DROP] CH6(PA4) F#10979: dt=12ms < 25ms, treated as glitch (last_valid=21782ms now=21794ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s843ms500us freq=10391.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=21s904ms472us freq=10385.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=21s904ms472us freq=10387.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s87ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s87ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11131: dt=6ms < 25ms, treated as glitch (last_valid=22087ms now=22093ms)
+  [DEDUP_DROP] CH6(PA4) F#11131: dt=6ms < 25ms, treated as glitch (last_valid=22087ms now=22093ms)
+  [DEDUP_DROP] CH5(PA3) F#11132: dt=8ms < 25ms, treated as glitch (last_valid=22087ms now=22095ms)
+  [DEDUP_DROP] CH6(PA4) F#11132: dt=8ms < 25ms, treated as glitch (last_valid=22087ms now=22095ms)
+  [DEDUP_DROP] CH5(PA3) F#11133: dt=10ms < 25ms, treated as glitch (last_valid=22087ms now=22097ms)
+  [DEDUP_DROP] CH6(PA4) F#11133: dt=10ms < 25ms, treated as glitch (last_valid=22087ms now=22097ms)
+  [DEDUP_DROP] CH5(PA3) F#11134: dt=12ms < 25ms, treated as glitch (last_valid=22087ms now=22099ms)
+  [DEDUP_DROP] CH6(PA4) F#11134: dt=12ms < 25ms, treated as glitch (last_valid=22087ms now=22099ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s148ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s148ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11162: dt=6ms < 25ms, treated as glitch (last_valid=22148ms now=22154ms)
+  [DEDUP_DROP] CH6(PA4) F#11162: dt=6ms < 25ms, treated as glitch (last_valid=22148ms now=22154ms)
+  [DEDUP_DROP] CH5(PA3) F#11163: dt=8ms < 25ms, treated as glitch (last_valid=22148ms now=22156ms)
+  [DEDUP_DROP] CH6(PA4) F#11163: dt=8ms < 25ms, treated as glitch (last_valid=22148ms now=22156ms)
+  [DEDUP_DROP] CH5(PA3) F#11164: dt=10ms < 25ms, treated as glitch (last_valid=22148ms now=22158ms)
+  [DEDUP_DROP] CH6(PA4) F#11164: dt=10ms < 25ms, treated as glitch (last_valid=22148ms now=22158ms)
+  [DEDUP_DROP] CH5(PA3) F#11165: dt=12ms < 25ms, treated as glitch (last_valid=22148ms now=22160ms)
+  [DEDUP_DROP] CH6(PA4) F#11165: dt=12ms < 25ms, treated as glitch (last_valid=22148ms now=22160ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s209ms500us freq=10392.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s268ms605us freq=10392.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s268ms604us freq=10392.1
+  [DEDUP_DROP] CH5(PA3) F#11225: dt=10ms < 25ms, treated as glitch (last_valid=22268ms now=22278ms)
+  [DEDUP_DROP] CH6(PA4) F#11225: dt=10ms < 25ms, treated as glitch (last_valid=22268ms now=22278ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s449ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s449ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11315: dt=6ms < 25ms, treated as glitch (last_valid=22449ms now=22455ms)
+  [DEDUP_DROP] CH6(PA4) F#11315: dt=6ms < 25ms, treated as glitch (last_valid=22449ms now=22455ms)
+  [DEDUP_DROP] CH5(PA3) F#11316: dt=8ms < 25ms, treated as glitch (last_valid=22449ms now=22457ms)
+  [DEDUP_DROP] CH6(PA4) F#11316: dt=8ms < 25ms, treated as glitch (last_valid=22449ms now=22457ms)
+  [DEDUP_DROP] CH5(PA3) F#11317: dt=10ms < 25ms, treated as glitch (last_valid=22449ms now=22459ms)
+  [DEDUP_DROP] CH6(PA4) F#11317: dt=10ms < 25ms, treated as glitch (last_valid=22449ms now=22459ms)
+  [DEDUP_DROP] CH5(PA3) F#11318: dt=12ms < 25ms, treated as glitch (last_valid=22449ms now=22461ms)
+  [DEDUP_DROP] CH6(PA4) F#11318: dt=12ms < 25ms, treated as glitch (last_valid=22449ms now=22461ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s510ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s510ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11346: dt=6ms < 25ms, treated as glitch (last_valid=22510ms now=22516ms)
+  [DEDUP_DROP] CH6(PA4) F#11346: dt=6ms < 25ms, treated as glitch (last_valid=22510ms now=22516ms)
+  [DEDUP_DROP] CH5(PA3) F#11347: dt=8ms < 25ms, treated as glitch (last_valid=22510ms now=22518ms)
+  [DEDUP_DROP] CH6(PA4) F#11347: dt=8ms < 25ms, treated as glitch (last_valid=22510ms now=22518ms)
+  [DEDUP_DROP] CH5(PA3) F#11348: dt=10ms < 25ms, treated as glitch (last_valid=22510ms now=22520ms)
+  [DEDUP_DROP] CH6(PA4) F#11348: dt=10ms < 25ms, treated as glitch (last_valid=22510ms now=22520ms)
+  [DEDUP_DROP] CH5(PA3) F#11349: dt=12ms < 25ms, treated as glitch (last_valid=22510ms now=22522ms)
+  [DEDUP_DROP] CH6(PA4) F#11349: dt=12ms < 25ms, treated as glitch (last_valid=22510ms now=22522ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s571ms500us freq=10395.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s630ms850us freq=10347.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s630ms849us freq=10348.7
+  [DEDUP_DROP] CH5(PA3) F#11410: dt=11ms < 25ms, treated as glitch (last_valid=22630ms now=22641ms)
+  [DEDUP_DROP] CH6(PA4) F#11410: dt=11ms < 25ms, treated as glitch (last_valid=22630ms now=22641ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s811ms978us freq=10098.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s811ms978us freq=10098.3
+  [DEDUP_DROP] CH5(PA3) F#11499: dt=5ms < 25ms, treated as glitch (last_valid=22811ms now=22816ms)
+  [DEDUP_DROP] CH6(PA4) F#11499: dt=5ms < 25ms, treated as glitch (last_valid=22811ms now=22816ms)
+  [DEDUP_DROP] CH5(PA3) F#11500: dt=8ms < 25ms, treated as glitch (last_valid=22811ms now=22819ms)
+  [DEDUP_DROP] CH6(PA4) F#11500: dt=8ms < 25ms, treated as glitch (last_valid=22811ms now=22819ms)
+  [DEDUP_DROP] CH5(PA3) F#11501: dt=9ms < 25ms, treated as glitch (last_valid=22811ms now=22820ms)
+  [DEDUP_DROP] CH6(PA4) F#11501: dt=9ms < 25ms, treated as glitch (last_valid=22811ms now=22820ms)
+  [DEDUP_DROP] CH5(PA3) F#11502: dt=11ms < 25ms, treated as glitch (last_valid=22811ms now=22822ms)
+  [DEDUP_DROP] CH6(PA4) F#11502: dt=11ms < 25ms, treated as glitch (last_valid=22811ms now=22822ms)
+  [DEDUP_DROP] CH5(PA3) F#11503: dt=13ms < 25ms, treated as glitch (last_valid=22811ms now=22824ms)
+  [DEDUP_DROP] CH6(PA4) F#11503: dt=13ms < 25ms, treated as glitch (last_valid=22811ms now=22824ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s873ms31us freq=58944.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s873ms31us freq=58947.5
+  [DEDUP_DROP] CH5(PA3) F#11531: dt=6ms < 25ms, treated as glitch (last_valid=22873ms now=22879ms)
+  [DEDUP_DROP] CH6(PA4) F#11531: dt=6ms < 25ms, treated as glitch (last_valid=22873ms now=22879ms)
+  [DEDUP_DROP] CH5(PA3) F#11532: dt=9ms < 25ms, treated as glitch (last_valid=22873ms now=22882ms)
+  [DEDUP_DROP] CH6(PA4) F#11532: dt=9ms < 25ms, treated as glitch (last_valid=22873ms now=22882ms)
+  [DEDUP_DROP] CH5(PA3) F#11533: dt=10ms < 25ms, treated as glitch (last_valid=22873ms now=22883ms)
+  [DEDUP_DROP] CH6(PA4) F#11533: dt=10ms < 25ms, treated as glitch (last_valid=22873ms now=22883ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s932ms499us freq=10390.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=22s993ms473us freq=10384.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=22s993ms472us freq=10380.7
+  [DEDUP_DROP] CH5(PA3) F#11594: dt=10ms < 25ms, treated as glitch (last_valid=22993ms now=23003ms)
+  [DEDUP_DROP] CH6(PA4) F#11594: dt=10ms < 25ms, treated as glitch (last_valid=22993ms now=23003ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s176ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s176ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11685: dt=6ms < 25ms, treated as glitch (last_valid=23176ms now=23182ms)
+  [DEDUP_DROP] CH6(PA4) F#11685: dt=6ms < 25ms, treated as glitch (last_valid=23176ms now=23182ms)
+  [DEDUP_DROP] CH5(PA3) F#11686: dt=8ms < 25ms, treated as glitch (last_valid=23176ms now=23184ms)
+  [DEDUP_DROP] CH6(PA4) F#11686: dt=8ms < 25ms, treated as glitch (last_valid=23176ms now=23184ms)
+  [DEDUP_DROP] CH5(PA3) F#11687: dt=10ms < 25ms, treated as glitch (last_valid=23176ms now=23186ms)
+  [DEDUP_DROP] CH6(PA4) F#11687: dt=10ms < 25ms, treated as glitch (last_valid=23176ms now=23186ms)
+  [DEDUP_DROP] CH5(PA3) F#11688: dt=12ms < 25ms, treated as glitch (last_valid=23176ms now=23188ms)
+  [DEDUP_DROP] CH6(PA4) F#11688: dt=12ms < 25ms, treated as glitch (last_valid=23176ms now=23188ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s237ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s237ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11716: dt=6ms < 25ms, treated as glitch (last_valid=23237ms now=23243ms)
+  [DEDUP_DROP] CH6(PA4) F#11716: dt=6ms < 25ms, treated as glitch (last_valid=23237ms now=23243ms)
+  [DEDUP_DROP] CH5(PA3) F#11717: dt=8ms < 25ms, treated as glitch (last_valid=23237ms now=23245ms)
+  [DEDUP_DROP] CH6(PA4) F#11717: dt=8ms < 25ms, treated as glitch (last_valid=23237ms now=23245ms)
+  [DEDUP_DROP] CH5(PA3) F#11718: dt=10ms < 25ms, treated as glitch (last_valid=23237ms now=23247ms)
+  [DEDUP_DROP] CH6(PA4) F#11718: dt=10ms < 25ms, treated as glitch (last_valid=23237ms now=23247ms)
+  [DEDUP_DROP] CH5(PA3) F#11719: dt=12ms < 25ms, treated as glitch (last_valid=23237ms now=23249ms)
+  [DEDUP_DROP] CH6(PA4) F#11719: dt=12ms < 25ms, treated as glitch (last_valid=23237ms now=23249ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s298ms500us freq=10390.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s359ms473us freq=10389.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s359ms472us freq=10382.0
+  [DEDUP_DROP] CH5(PA3) F#11780: dt=10ms < 25ms, treated as glitch (last_valid=23359ms now=23369ms)
+  [DEDUP_DROP] CH6(PA4) F#11780: dt=10ms < 25ms, treated as glitch (last_valid=23359ms now=23369ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s540ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s540ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11870: dt=6ms < 25ms, treated as glitch (last_valid=23540ms now=23546ms)
+  [DEDUP_DROP] CH6(PA4) F#11870: dt=6ms < 25ms, treated as glitch (last_valid=23540ms now=23546ms)
+  [DEDUP_DROP] CH5(PA3) F#11871: dt=8ms < 25ms, treated as glitch (last_valid=23540ms now=23548ms)
+  [DEDUP_DROP] CH6(PA4) F#11871: dt=8ms < 25ms, treated as glitch (last_valid=23540ms now=23548ms)
+  [DEDUP_DROP] CH5(PA3) F#11872: dt=10ms < 25ms, treated as glitch (last_valid=23540ms now=23550ms)
+  [DEDUP_DROP] CH6(PA4) F#11872: dt=10ms < 25ms, treated as glitch (last_valid=23540ms now=23550ms)
+  [DEDUP_DROP] CH5(PA3) F#11873: dt=12ms < 25ms, treated as glitch (last_valid=23540ms now=23552ms)
+  [DEDUP_DROP] CH6(PA4) F#11873: dt=12ms < 25ms, treated as glitch (last_valid=23540ms now=23552ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s601ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s601ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#11901: dt=6ms < 25ms, treated as glitch (last_valid=23601ms now=23607ms)
+  [DEDUP_DROP] CH6(PA4) F#11901: dt=6ms < 25ms, treated as glitch (last_valid=23601ms now=23607ms)
+  [DEDUP_DROP] CH5(PA3) F#11902: dt=8ms < 25ms, treated as glitch (last_valid=23601ms now=23609ms)
+  [DEDUP_DROP] CH6(PA4) F#11902: dt=8ms < 25ms, treated as glitch (last_valid=23601ms now=23609ms)
+  [DEDUP_DROP] CH5(PA3) F#11903: dt=10ms < 25ms, treated as glitch (last_valid=23601ms now=23611ms)
+  [DEDUP_DROP] CH6(PA4) F#11903: dt=10ms < 25ms, treated as glitch (last_valid=23601ms now=23611ms)
+  [DEDUP_DROP] CH5(PA3) F#11904: dt=12ms < 25ms, treated as glitch (last_valid=23601ms now=23613ms)
+  [DEDUP_DROP] CH6(PA4) F#11904: dt=12ms < 25ms, treated as glitch (last_valid=23601ms now=23613ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s662ms500us freq=10386.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s721ms673us freq=10406.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s721ms672us freq=10408.0
+  [DEDUP_DROP] CH5(PA3) F#11964: dt=10ms < 25ms, treated as glitch (last_valid=23721ms now=23731ms)
+  [DEDUP_DROP] CH6(PA4) F#11964: dt=10ms < 25ms, treated as glitch (last_valid=23721ms now=23731ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s902ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s902ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12054: dt=6ms < 25ms, treated as glitch (last_valid=23902ms now=23908ms)
+  [DEDUP_DROP] CH6(PA4) F#12054: dt=6ms < 25ms, treated as glitch (last_valid=23902ms now=23908ms)
+  [DEDUP_DROP] CH5(PA3) F#12055: dt=8ms < 25ms, treated as glitch (last_valid=23902ms now=23910ms)
+  [DEDUP_DROP] CH6(PA4) F#12055: dt=8ms < 25ms, treated as glitch (last_valid=23902ms now=23910ms)
+  [DEDUP_DROP] CH5(PA3) F#12056: dt=10ms < 25ms, treated as glitch (last_valid=23902ms now=23912ms)
+  [DEDUP_DROP] CH6(PA4) F#12056: dt=10ms < 25ms, treated as glitch (last_valid=23902ms now=23912ms)
+  [DEDUP_DROP] CH5(PA3) F#12057: dt=12ms < 25ms, treated as glitch (last_valid=23902ms now=23914ms)
+  [DEDUP_DROP] CH6(PA4) F#12057: dt=12ms < 25ms, treated as glitch (last_valid=23902ms now=23914ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=23s963ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=23s963ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12085: dt=6ms < 25ms, treated as glitch (last_valid=23963ms now=23969ms)
+  [DEDUP_DROP] CH6(PA4) F#12085: dt=6ms < 25ms, treated as glitch (last_valid=23963ms now=23969ms)
+  [DEDUP_DROP] CH5(PA3) F#12086: dt=8ms < 25ms, treated as glitch (last_valid=23963ms now=23971ms)
+  [DEDUP_DROP] CH6(PA4) F#12086: dt=8ms < 25ms, treated as glitch (last_valid=23963ms now=23971ms)
+  [DEDUP_DROP] CH5(PA3) F#12087: dt=10ms < 25ms, treated as glitch (last_valid=23963ms now=23973ms)
+  [DEDUP_DROP] CH6(PA4) F#12087: dt=10ms < 25ms, treated as glitch (last_valid=23963ms now=23973ms)
+  [DEDUP_DROP] CH5(PA3) F#12088: dt=12ms < 25ms, treated as glitch (last_valid=23963ms now=23975ms)
+  [DEDUP_DROP] CH6(PA4) F#12088: dt=12ms < 25ms, treated as glitch (last_valid=23963ms now=23975ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s24ms498us freq=10391.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s83ms918us freq=10378.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s83ms917us freq=10378.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s267ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s267ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12240: dt=6ms < 25ms, treated as glitch (last_valid=24267ms now=24273ms)
+  [DEDUP_DROP] CH6(PA4) F#12240: dt=6ms < 25ms, treated as glitch (last_valid=24267ms now=24273ms)
+  [DEDUP_DROP] CH5(PA3) F#12241: dt=9ms < 25ms, treated as glitch (last_valid=24267ms now=24276ms)
+  [DEDUP_DROP] CH6(PA4) F#12241: dt=9ms < 25ms, treated as glitch (last_valid=24267ms now=24276ms)
+  [DEDUP_DROP] CH5(PA3) F#12242: dt=10ms < 25ms, treated as glitch (last_valid=24267ms now=24277ms)
+  [DEDUP_DROP] CH6(PA4) F#12242: dt=10ms < 25ms, treated as glitch (last_valid=24267ms now=24277ms)
+  [DEDUP_DROP] CH5(PA3) F#12243: dt=12ms < 25ms, treated as glitch (last_valid=24267ms now=24279ms)
+  [DEDUP_DROP] CH6(PA4) F#12243: dt=12ms < 25ms, treated as glitch (last_valid=24267ms now=24279ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s328ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s328ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12271: dt=6ms < 25ms, treated as glitch (last_valid=24328ms now=24334ms)
+  [DEDUP_DROP] CH6(PA4) F#12271: dt=6ms < 25ms, treated as glitch (last_valid=24328ms now=24334ms)
+  [DEDUP_DROP] CH5(PA3) F#12272: dt=9ms < 25ms, treated as glitch (last_valid=24328ms now=24337ms)
+  [DEDUP_DROP] CH6(PA4) F#12272: dt=9ms < 25ms, treated as glitch (last_valid=24328ms now=24337ms)
+  [DEDUP_DROP] CH5(PA3) F#12273: dt=10ms < 25ms, treated as glitch (last_valid=24328ms now=24338ms)
+  [DEDUP_DROP] CH6(PA4) F#12273: dt=10ms < 25ms, treated as glitch (last_valid=24328ms now=24338ms)
+  [DEDUP_DROP] CH5(PA3) F#12274: dt=12ms < 25ms, treated as glitch (last_valid=24328ms now=24340ms)
+  [DEDUP_DROP] CH6(PA4) F#12274: dt=12ms < 25ms, treated as glitch (last_valid=24328ms now=24340ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s389ms499us freq=10394.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s450ms473us freq=10389.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s450ms472us freq=10387.0
+  [DEDUP_DROP] CH5(PA3) F#12335: dt=10ms < 25ms, treated as glitch (last_valid=24450ms now=24460ms)
+  [DEDUP_DROP] CH6(PA4) F#12335: dt=10ms < 25ms, treated as glitch (last_valid=24450ms now=24460ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s633ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s633ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12426: dt=6ms < 25ms, treated as glitch (last_valid=24633ms now=24639ms)
+  [DEDUP_DROP] CH6(PA4) F#12426: dt=6ms < 25ms, treated as glitch (last_valid=24633ms now=24639ms)
+  [DEDUP_DROP] CH5(PA3) F#12427: dt=8ms < 25ms, treated as glitch (last_valid=24633ms now=24641ms)
+  [DEDUP_DROP] CH6(PA4) F#12427: dt=8ms < 25ms, treated as glitch (last_valid=24633ms now=24641ms)
+  [DEDUP_DROP] CH5(PA3) F#12428: dt=10ms < 25ms, treated as glitch (last_valid=24633ms now=24643ms)
+  [DEDUP_DROP] CH6(PA4) F#12428: dt=10ms < 25ms, treated as glitch (last_valid=24633ms now=24643ms)
+  [DEDUP_DROP] CH5(PA3) F#12429: dt=12ms < 25ms, treated as glitch (last_valid=24633ms now=24645ms)
+  [DEDUP_DROP] CH6(PA4) F#12429: dt=12ms < 25ms, treated as glitch (last_valid=24633ms now=24645ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s694ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s694ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12457: dt=6ms < 25ms, treated as glitch (last_valid=24694ms now=24700ms)
+  [DEDUP_DROP] CH6(PA4) F#12457: dt=6ms < 25ms, treated as glitch (last_valid=24694ms now=24700ms)
+  [DEDUP_DROP] CH5(PA3) F#12458: dt=8ms < 25ms, treated as glitch (last_valid=24694ms now=24702ms)
+  [DEDUP_DROP] CH6(PA4) F#12458: dt=8ms < 25ms, treated as glitch (last_valid=24694ms now=24702ms)
+  [DEDUP_DROP] CH5(PA3) F#12459: dt=10ms < 25ms, treated as glitch (last_valid=24694ms now=24704ms)
+  [DEDUP_DROP] CH6(PA4) F#12459: dt=10ms < 25ms, treated as glitch (last_valid=24694ms now=24704ms)
+  [DEDUP_DROP] CH5(PA3) F#12460: dt=12ms < 25ms, treated as glitch (last_valid=24694ms now=24706ms)
+  [DEDUP_DROP] CH6(PA4) F#12460: dt=12ms < 25ms, treated as glitch (last_valid=24694ms now=24706ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s755ms500us freq=10394.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s814ms530us freq=10381.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s814ms528us freq=10385.1
+  [DEDUP_DROP] CH5(PA3) F#12520: dt=10ms < 25ms, treated as glitch (last_valid=24814ms now=24824ms)
+  [DEDUP_DROP] CH6(PA4) F#12520: dt=10ms < 25ms, treated as glitch (last_valid=24814ms now=24824ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=24s995ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=24s995ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12610: dt=7ms < 25ms, treated as glitch (last_valid=24995ms now=25002ms)
+  [DEDUP_DROP] CH6(PA4) F#12610: dt=7ms < 25ms, treated as glitch (last_valid=24995ms now=25002ms)
+  [DEDUP_DROP] CH5(PA3) F#12611: dt=9ms < 25ms, treated as glitch (last_valid=24995ms now=25004ms)
+  [DEDUP_DROP] CH6(PA4) F#12611: dt=9ms < 25ms, treated as glitch (last_valid=24995ms now=25004ms)
+  [DEDUP_DROP] CH5(PA3) F#12612: dt=11ms < 25ms, treated as glitch (last_valid=24995ms now=25006ms)
+  [DEDUP_DROP] CH6(PA4) F#12612: dt=11ms < 25ms, treated as glitch (last_valid=24995ms now=25006ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s54ms677us freq=10400.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s54ms677us freq=10402.4
+  [DEDUP_DROP] CH5(PA3) F#12640: dt=6ms < 25ms, treated as glitch (last_valid=25054ms now=25060ms)
+  [DEDUP_DROP] CH6(PA4) F#12640: dt=6ms < 25ms, treated as glitch (last_valid=25054ms now=25060ms)
+  [DEDUP_DROP] CH5(PA3) F#12641: dt=8ms < 25ms, treated as glitch (last_valid=25054ms now=25062ms)
+  [DEDUP_DROP] CH6(PA4) F#12641: dt=8ms < 25ms, treated as glitch (last_valid=25054ms now=25062ms)
+  [DEDUP_DROP] CH5(PA3) F#12642: dt=10ms < 25ms, treated as glitch (last_valid=25054ms now=25064ms)
+  [DEDUP_DROP] CH6(PA4) F#12642: dt=10ms < 25ms, treated as glitch (last_valid=25054ms now=25064ms)
+  [DEDUP_DROP] CH5(PA3) F#12643: dt=12ms < 25ms, treated as glitch (last_valid=25054ms now=25066ms)
+  [DEDUP_DROP] CH6(PA4) F#12643: dt=12ms < 25ms, treated as glitch (last_valid=25054ms now=25066ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s115ms499us freq=10389.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s174ms741us freq=10356.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s174ms738us freq=10359.2
+  [DEDUP_DROP] CH5(PA3) F#12703: dt=10ms < 25ms, treated as glitch (last_valid=25174ms now=25184ms)
+  [DEDUP_DROP] CH6(PA4) F#12703: dt=10ms < 25ms, treated as glitch (last_valid=25174ms now=25184ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s355ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s355ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12793: dt=6ms < 25ms, treated as glitch (last_valid=25355ms now=25361ms)
+  [DEDUP_DROP] CH6(PA4) F#12793: dt=6ms < 25ms, treated as glitch (last_valid=25355ms now=25361ms)
+  [DEDUP_DROP] CH5(PA3) F#12794: dt=8ms < 25ms, treated as glitch (last_valid=25355ms now=25363ms)
+  [DEDUP_DROP] CH6(PA4) F#12794: dt=8ms < 25ms, treated as glitch (last_valid=25355ms now=25363ms)
+  [DEDUP_DROP] CH5(PA3) F#12795: dt=10ms < 25ms, treated as glitch (last_valid=25355ms now=25365ms)
+  [DEDUP_DROP] CH6(PA4) F#12795: dt=10ms < 25ms, treated as glitch (last_valid=25355ms now=25365ms)
+  [DEDUP_DROP] CH5(PA3) F#12796: dt=12ms < 25ms, treated as glitch (last_valid=25355ms now=25367ms)
+  [DEDUP_DROP] CH6(PA4) F#12796: dt=12ms < 25ms, treated as glitch (last_valid=25355ms now=25367ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s416ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s416ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12824: dt=6ms < 25ms, treated as glitch (last_valid=25416ms now=25422ms)
+  [DEDUP_DROP] CH6(PA4) F#12824: dt=6ms < 25ms, treated as glitch (last_valid=25416ms now=25422ms)
+  [DEDUP_DROP] CH5(PA3) F#12825: dt=8ms < 25ms, treated as glitch (last_valid=25416ms now=25424ms)
+  [DEDUP_DROP] CH6(PA4) F#12825: dt=8ms < 25ms, treated as glitch (last_valid=25416ms now=25424ms)
+  [DEDUP_DROP] CH5(PA3) F#12826: dt=10ms < 25ms, treated as glitch (last_valid=25416ms now=25426ms)
+  [DEDUP_DROP] CH6(PA4) F#12826: dt=10ms < 25ms, treated as glitch (last_valid=25416ms now=25426ms)
+  [DEDUP_DROP] CH5(PA3) F#12827: dt=11ms < 25ms, treated as glitch (last_valid=25416ms now=25427ms)
+  [DEDUP_DROP] CH6(PA4) F#12827: dt=11ms < 25ms, treated as glitch (last_valid=25416ms now=25427ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s477ms500us freq=10390.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s538ms10us freq=46229.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s538ms10us freq=33061.9
+  [DEDUP_DROP] CH5(PA3) F#12888: dt=9ms < 25ms, treated as glitch (last_valid=25538ms now=25547ms)
+  [DEDUP_DROP] CH6(PA4) F#12888: dt=9ms < 25ms, treated as glitch (last_valid=25538ms now=25547ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s720ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s720ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#12979: dt=6ms < 25ms, treated as glitch (last_valid=25720ms now=25726ms)
+  [DEDUP_DROP] CH6(PA4) F#12979: dt=6ms < 25ms, treated as glitch (last_valid=25720ms now=25726ms)
+  [DEDUP_DROP] CH5(PA3) F#12980: dt=9ms < 25ms, treated as glitch (last_valid=25720ms now=25729ms)
+  [DEDUP_DROP] CH6(PA4) F#12980: dt=9ms < 25ms, treated as glitch (last_valid=25720ms now=25729ms)
+  [DEDUP_DROP] CH5(PA3) F#12981: dt=10ms < 25ms, treated as glitch (last_valid=25720ms now=25730ms)
+  [DEDUP_DROP] CH6(PA4) F#12981: dt=10ms < 25ms, treated as glitch (last_valid=25720ms now=25730ms)
+  [DEDUP_DROP] CH5(PA3) F#12982: dt=12ms < 25ms, treated as glitch (last_valid=25720ms now=25732ms)
+  [DEDUP_DROP] CH6(PA4) F#12982: dt=12ms < 25ms, treated as glitch (last_valid=25720ms now=25732ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s781ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s781ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13010: dt=6ms < 25ms, treated as glitch (last_valid=25781ms now=25787ms)
+  [DEDUP_DROP] CH6(PA4) F#13010: dt=6ms < 25ms, treated as glitch (last_valid=25781ms now=25787ms)
+  [DEDUP_DROP] CH5(PA3) F#13011: dt=9ms < 25ms, treated as glitch (last_valid=25781ms now=25790ms)
+  [DEDUP_DROP] CH6(PA4) F#13011: dt=9ms < 25ms, treated as glitch (last_valid=25781ms now=25790ms)
+  [DEDUP_DROP] CH5(PA3) F#13012: dt=10ms < 25ms, treated as glitch (last_valid=25781ms now=25791ms)
+  [DEDUP_DROP] CH6(PA4) F#13012: dt=10ms < 25ms, treated as glitch (last_valid=25781ms now=25791ms)
+  [DEDUP_DROP] CH5(PA3) F#13013: dt=12ms < 25ms, treated as glitch (last_valid=25781ms now=25793ms)
+  [DEDUP_DROP] CH6(PA4) F#13013: dt=12ms < 25ms, treated as glitch (last_valid=25781ms now=25793ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s842ms498us freq=10388.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=25s903ms473us freq=10387.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=25s903ms472us freq=10385.9
+  [DEDUP_DROP] CH5(PA3) F#13074: dt=10ms < 25ms, treated as glitch (last_valid=25903ms now=25913ms)
+  [DEDUP_DROP] CH6(PA4) F#13074: dt=10ms < 25ms, treated as glitch (last_valid=25903ms now=25913ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s86ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s86ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13165: dt=6ms < 25ms, treated as glitch (last_valid=26086ms now=26092ms)
+  [DEDUP_DROP] CH6(PA4) F#13165: dt=6ms < 25ms, treated as glitch (last_valid=26086ms now=26092ms)
+  [DEDUP_DROP] CH5(PA3) F#13166: dt=8ms < 25ms, treated as glitch (last_valid=26086ms now=26094ms)
+  [DEDUP_DROP] CH6(PA4) F#13166: dt=8ms < 25ms, treated as glitch (last_valid=26086ms now=26094ms)
+  [DEDUP_DROP] CH5(PA3) F#13167: dt=10ms < 25ms, treated as glitch (last_valid=26086ms now=26096ms)
+  [DEDUP_DROP] CH6(PA4) F#13167: dt=10ms < 25ms, treated as glitch (last_valid=26086ms now=26096ms)
+  [DEDUP_DROP] CH5(PA3) F#13168: dt=12ms < 25ms, treated as glitch (last_valid=26086ms now=26098ms)
+  [DEDUP_DROP] CH6(PA4) F#13168: dt=12ms < 25ms, treated as glitch (last_valid=26086ms now=26098ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s147ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s147ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13196: dt=6ms < 25ms, treated as glitch (last_valid=26147ms now=26153ms)
+  [DEDUP_DROP] CH6(PA4) F#13196: dt=6ms < 25ms, treated as glitch (last_valid=26147ms now=26153ms)
+  [DEDUP_DROP] CH5(PA3) F#13197: dt=8ms < 25ms, treated as glitch (last_valid=26147ms now=26155ms)
+  [DEDUP_DROP] CH6(PA4) F#13197: dt=8ms < 25ms, treated as glitch (last_valid=26147ms now=26155ms)
+  [DEDUP_DROP] CH5(PA3) F#13198: dt=10ms < 25ms, treated as glitch (last_valid=26147ms now=26157ms)
+  [DEDUP_DROP] CH6(PA4) F#13198: dt=10ms < 25ms, treated as glitch (last_valid=26147ms now=26157ms)
+  [DEDUP_DROP] CH5(PA3) F#13199: dt=12ms < 25ms, treated as glitch (last_valid=26147ms now=26159ms)
+  [DEDUP_DROP] CH6(PA4) F#13199: dt=12ms < 25ms, treated as glitch (last_valid=26147ms now=26159ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s208ms500us freq=10396.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s267ms598us freq=10398.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s267ms597us freq=10394.3
+  [DEDUP_DROP] CH5(PA3) F#13259: dt=10ms < 25ms, treated as glitch (last_valid=26267ms now=26277ms)
+  [DEDUP_DROP] CH6(PA4) F#13259: dt=10ms < 25ms, treated as glitch (last_valid=26267ms now=26277ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s448ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s448ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13349: dt=6ms < 25ms, treated as glitch (last_valid=26448ms now=26454ms)
+  [DEDUP_DROP] CH6(PA4) F#13349: dt=6ms < 25ms, treated as glitch (last_valid=26448ms now=26454ms)
+  [DEDUP_DROP] CH5(PA3) F#13350: dt=8ms < 25ms, treated as glitch (last_valid=26448ms now=26456ms)
+  [DEDUP_DROP] CH6(PA4) F#13350: dt=8ms < 25ms, treated as glitch (last_valid=26448ms now=26456ms)
+  [DEDUP_DROP] CH5(PA3) F#13351: dt=10ms < 25ms, treated as glitch (last_valid=26448ms now=26458ms)
+  [DEDUP_DROP] CH6(PA4) F#13351: dt=10ms < 25ms, treated as glitch (last_valid=26448ms now=26458ms)
+  [DEDUP_DROP] CH5(PA3) F#13352: dt=12ms < 25ms, treated as glitch (last_valid=26448ms now=26460ms)
+  [DEDUP_DROP] CH6(PA4) F#13352: dt=12ms < 25ms, treated as glitch (last_valid=26448ms now=26460ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s509ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s509ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13380: dt=6ms < 25ms, treated as glitch (last_valid=26509ms now=26515ms)
+  [DEDUP_DROP] CH6(PA4) F#13380: dt=6ms < 25ms, treated as glitch (last_valid=26509ms now=26515ms)
+  [DEDUP_DROP] CH5(PA3) F#13381: dt=8ms < 25ms, treated as glitch (last_valid=26509ms now=26517ms)
+  [DEDUP_DROP] CH6(PA4) F#13381: dt=8ms < 25ms, treated as glitch (last_valid=26509ms now=26517ms)
+  [DEDUP_DROP] CH5(PA3) F#13382: dt=10ms < 25ms, treated as glitch (last_valid=26509ms now=26519ms)
+  [DEDUP_DROP] CH6(PA4) F#13382: dt=10ms < 25ms, treated as glitch (last_valid=26509ms now=26519ms)
+  [DEDUP_DROP] CH5(PA3) F#13383: dt=12ms < 25ms, treated as glitch (last_valid=26509ms now=26521ms)
+  [DEDUP_DROP] CH6(PA4) F#13383: dt=12ms < 25ms, treated as glitch (last_valid=26509ms now=26521ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s570ms499us freq=10396.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s629ms844us freq=10329.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s629ms842us freq=10331.2
+  [DEDUP_DROP] CH5(PA3) F#13444: dt=11ms < 25ms, treated as glitch (last_valid=26629ms now=26640ms)
+  [DEDUP_DROP] CH6(PA4) F#13444: dt=11ms < 25ms, treated as glitch (last_valid=26629ms now=26640ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s810ms971us freq=10107.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s810ms971us freq=10107.2
+  [DEDUP_DROP] CH5(PA3) F#13533: dt=5ms < 25ms, treated as glitch (last_valid=26810ms now=26815ms)
+  [DEDUP_DROP] CH6(PA4) F#13533: dt=5ms < 25ms, treated as glitch (last_valid=26810ms now=26815ms)
+  [DEDUP_DROP] CH5(PA3) F#13534: dt=8ms < 25ms, treated as glitch (last_valid=26810ms now=26818ms)
+  [DEDUP_DROP] CH6(PA4) F#13534: dt=8ms < 25ms, treated as glitch (last_valid=26810ms now=26818ms)
+  [DEDUP_DROP] CH5(PA3) F#13535: dt=9ms < 25ms, treated as glitch (last_valid=26810ms now=26819ms)
+  [DEDUP_DROP] CH6(PA4) F#13535: dt=9ms < 25ms, treated as glitch (last_valid=26810ms now=26819ms)
+  [DEDUP_DROP] CH5(PA3) F#13536: dt=11ms < 25ms, treated as glitch (last_valid=26810ms now=26821ms)
+  [DEDUP_DROP] CH6(PA4) F#13536: dt=11ms < 25ms, treated as glitch (last_valid=26810ms now=26821ms)
+  [DEDUP_DROP] CH5(PA3) F#13537: dt=13ms < 25ms, treated as glitch (last_valid=26810ms now=26823ms)
+  [DEDUP_DROP] CH6(PA4) F#13537: dt=13ms < 25ms, treated as glitch (last_valid=26810ms now=26823ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s872ms25us freq=58950.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s872ms25us freq=58945.4
+  [DEDUP_DROP] CH5(PA3) F#13565: dt=6ms < 25ms, treated as glitch (last_valid=26872ms now=26878ms)
+  [DEDUP_DROP] CH6(PA4) F#13565: dt=6ms < 25ms, treated as glitch (last_valid=26872ms now=26878ms)
+  [DEDUP_DROP] CH5(PA3) F#13566: dt=9ms < 25ms, treated as glitch (last_valid=26872ms now=26881ms)
+  [DEDUP_DROP] CH6(PA4) F#13566: dt=9ms < 25ms, treated as glitch (last_valid=26872ms now=26881ms)
+  [DEDUP_DROP] CH5(PA3) F#13567: dt=10ms < 25ms, treated as glitch (last_valid=26872ms now=26882ms)
+  [DEDUP_DROP] CH6(PA4) F#13567: dt=10ms < 25ms, treated as glitch (last_valid=26872ms now=26882ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s931ms500us freq=10381.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=26s992ms472us freq=10382.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=26s992ms473us freq=10387.3
+  [DEDUP_DROP] CH5(PA3) F#13628: dt=10ms < 25ms, treated as glitch (last_valid=26992ms now=27002ms)
+  [DEDUP_DROP] CH6(PA4) F#13628: dt=10ms < 25ms, treated as glitch (last_valid=26992ms now=27002ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s175ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s175ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13719: dt=6ms < 25ms, treated as glitch (last_valid=27175ms now=27181ms)
+  [DEDUP_DROP] CH6(PA4) F#13719: dt=6ms < 25ms, treated as glitch (last_valid=27175ms now=27181ms)
+  [DEDUP_DROP] CH5(PA3) F#13720: dt=8ms < 25ms, treated as glitch (last_valid=27175ms now=27183ms)
+  [DEDUP_DROP] CH6(PA4) F#13720: dt=8ms < 25ms, treated as glitch (last_valid=27175ms now=27183ms)
+  [DEDUP_DROP] CH5(PA3) F#13721: dt=10ms < 25ms, treated as glitch (last_valid=27175ms now=27185ms)
+  [DEDUP_DROP] CH6(PA4) F#13721: dt=10ms < 25ms, treated as glitch (last_valid=27175ms now=27185ms)
+  [DEDUP_DROP] CH5(PA3) F#13722: dt=12ms < 25ms, treated as glitch (last_valid=27175ms now=27187ms)
+  [DEDUP_DROP] CH6(PA4) F#13722: dt=12ms < 25ms, treated as glitch (last_valid=27175ms now=27187ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s236ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s236ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13750: dt=6ms < 25ms, treated as glitch (last_valid=27236ms now=27242ms)
+  [DEDUP_DROP] CH6(PA4) F#13750: dt=6ms < 25ms, treated as glitch (last_valid=27236ms now=27242ms)
+  [DEDUP_DROP] CH5(PA3) F#13751: dt=8ms < 25ms, treated as glitch (last_valid=27236ms now=27244ms)
+  [DEDUP_DROP] CH6(PA4) F#13751: dt=8ms < 25ms, treated as glitch (last_valid=27236ms now=27244ms)
+  [DEDUP_DROP] CH5(PA3) F#13752: dt=10ms < 25ms, treated as glitch (last_valid=27236ms now=27246ms)
+  [DEDUP_DROP] CH6(PA4) F#13752: dt=10ms < 25ms, treated as glitch (last_valid=27236ms now=27246ms)
+  [DEDUP_DROP] CH5(PA3) F#13753: dt=12ms < 25ms, treated as glitch (last_valid=27236ms now=27248ms)
+  [DEDUP_DROP] CH6(PA4) F#13753: dt=12ms < 25ms, treated as glitch (last_valid=27236ms now=27248ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s297ms499us freq=10389.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s358ms472us freq=10379.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s358ms471us freq=10386.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s539ms548us freq=59396.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s539ms548us freq=59403.5
+  [DEDUP_DROP] CH5(PA3) F#13904: dt=6ms < 25ms, treated as glitch (last_valid=27539ms now=27545ms)
+  [DEDUP_DROP] CH6(PA4) F#13904: dt=6ms < 25ms, treated as glitch (last_valid=27539ms now=27545ms)
+  [DEDUP_DROP] CH5(PA3) F#13905: dt=8ms < 25ms, treated as glitch (last_valid=27539ms now=27547ms)
+  [DEDUP_DROP] CH6(PA4) F#13905: dt=8ms < 25ms, treated as glitch (last_valid=27539ms now=27547ms)
+  [DEDUP_DROP] CH5(PA3) F#13906: dt=10ms < 25ms, treated as glitch (last_valid=27539ms now=27549ms)
+  [DEDUP_DROP] CH6(PA4) F#13906: dt=10ms < 25ms, treated as glitch (last_valid=27539ms now=27549ms)
+  [DEDUP_DROP] CH5(PA3) F#13907: dt=12ms < 25ms, treated as glitch (last_valid=27539ms now=27551ms)
+  [DEDUP_DROP] CH6(PA4) F#13907: dt=12ms < 25ms, treated as glitch (last_valid=27539ms now=27551ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s600ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s600ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#13935: dt=6ms < 25ms, treated as glitch (last_valid=27600ms now=27606ms)
+  [DEDUP_DROP] CH6(PA4) F#13935: dt=6ms < 25ms, treated as glitch (last_valid=27600ms now=27606ms)
+  [DEDUP_DROP] CH5(PA3) F#13936: dt=8ms < 25ms, treated as glitch (last_valid=27600ms now=27608ms)
+  [DEDUP_DROP] CH6(PA4) F#13936: dt=8ms < 25ms, treated as glitch (last_valid=27600ms now=27608ms)
+  [DEDUP_DROP] CH5(PA3) F#13937: dt=10ms < 25ms, treated as glitch (last_valid=27600ms now=27610ms)
+  [DEDUP_DROP] CH6(PA4) F#13937: dt=10ms < 25ms, treated as glitch (last_valid=27600ms now=27610ms)
+  [DEDUP_DROP] CH5(PA3) F#13938: dt=12ms < 25ms, treated as glitch (last_valid=27600ms now=27612ms)
+  [DEDUP_DROP] CH6(PA4) F#13938: dt=12ms < 25ms, treated as glitch (last_valid=27600ms now=27612ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s661ms499us freq=10394.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s720ms666us freq=10391.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s720ms665us freq=10400.7
+  [DEDUP_DROP] CH5(PA3) F#13998: dt=10ms < 25ms, treated as glitch (last_valid=27720ms now=27730ms)
+  [DEDUP_DROP] CH6(PA4) F#13998: dt=10ms < 25ms, treated as glitch (last_valid=27720ms now=27730ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s901ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s901ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14088: dt=6ms < 25ms, treated as glitch (last_valid=27901ms now=27907ms)
+  [DEDUP_DROP] CH6(PA4) F#14088: dt=6ms < 25ms, treated as glitch (last_valid=27901ms now=27907ms)
+  [DEDUP_DROP] CH5(PA3) F#14089: dt=8ms < 25ms, treated as glitch (last_valid=27901ms now=27909ms)
+  [DEDUP_DROP] CH6(PA4) F#14089: dt=8ms < 25ms, treated as glitch (last_valid=27901ms now=27909ms)
+  [DEDUP_DROP] CH5(PA3) F#14090: dt=10ms < 25ms, treated as glitch (last_valid=27901ms now=27911ms)
+  [DEDUP_DROP] CH6(PA4) F#14090: dt=10ms < 25ms, treated as glitch (last_valid=27901ms now=27911ms)
+  [DEDUP_DROP] CH5(PA3) F#14091: dt=12ms < 25ms, treated as glitch (last_valid=27901ms now=27913ms)
+  [DEDUP_DROP] CH6(PA4) F#14091: dt=12ms < 25ms, treated as glitch (last_valid=27901ms now=27913ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=27s962ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=27s962ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14119: dt=6ms < 25ms, treated as glitch (last_valid=27962ms now=27968ms)
+  [DEDUP_DROP] CH6(PA4) F#14119: dt=6ms < 25ms, treated as glitch (last_valid=27962ms now=27968ms)
+  [DEDUP_DROP] CH5(PA3) F#14120: dt=8ms < 25ms, treated as glitch (last_valid=27962ms now=27970ms)
+  [DEDUP_DROP] CH6(PA4) F#14120: dt=8ms < 25ms, treated as glitch (last_valid=27962ms now=27970ms)
+  [DEDUP_DROP] CH5(PA3) F#14121: dt=10ms < 25ms, treated as glitch (last_valid=27962ms now=27972ms)
+  [DEDUP_DROP] CH6(PA4) F#14121: dt=10ms < 25ms, treated as glitch (last_valid=27962ms now=27972ms)
+  [DEDUP_DROP] CH5(PA3) F#14122: dt=12ms < 25ms, treated as glitch (last_valid=27962ms now=27974ms)
+  [DEDUP_DROP] CH6(PA4) F#14122: dt=12ms < 25ms, treated as glitch (last_valid=27962ms now=27974ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s23ms499us freq=10391.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s82ms912us freq=10419.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s82ms911us freq=10413.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s266ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s266ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14274: dt=6ms < 25ms, treated as glitch (last_valid=28266ms now=28272ms)
+  [DEDUP_DROP] CH6(PA4) F#14274: dt=6ms < 25ms, treated as glitch (last_valid=28266ms now=28272ms)
+  [DEDUP_DROP] CH5(PA3) F#14275: dt=9ms < 25ms, treated as glitch (last_valid=28266ms now=28275ms)
+  [DEDUP_DROP] CH6(PA4) F#14275: dt=9ms < 25ms, treated as glitch (last_valid=28266ms now=28275ms)
+  [DEDUP_DROP] CH5(PA3) F#14276: dt=10ms < 25ms, treated as glitch (last_valid=28266ms now=28276ms)
+  [DEDUP_DROP] CH6(PA4) F#14276: dt=10ms < 25ms, treated as glitch (last_valid=28266ms now=28276ms)
+  [DEDUP_DROP] CH5(PA3) F#14277: dt=12ms < 25ms, treated as glitch (last_valid=28266ms now=28278ms)
+  [DEDUP_DROP] CH6(PA4) F#14277: dt=12ms < 25ms, treated as glitch (last_valid=28266ms now=28278ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s327ms481us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s327ms481us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14305: dt=6ms < 25ms, treated as glitch (last_valid=28327ms now=28333ms)
+  [DEDUP_DROP] CH6(PA4) F#14305: dt=6ms < 25ms, treated as glitch (last_valid=28327ms now=28333ms)
+  [DEDUP_DROP] CH5(PA3) F#14306: dt=9ms < 25ms, treated as glitch (last_valid=28327ms now=28336ms)
+  [DEDUP_DROP] CH6(PA4) F#14306: dt=9ms < 25ms, treated as glitch (last_valid=28327ms now=28336ms)
+  [DEDUP_DROP] CH5(PA3) F#14307: dt=10ms < 25ms, treated as glitch (last_valid=28327ms now=28337ms)
+  [DEDUP_DROP] CH6(PA4) F#14307: dt=10ms < 25ms, treated as glitch (last_valid=28327ms now=28337ms)
+  [DEDUP_DROP] CH5(PA3) F#14308: dt=12ms < 25ms, treated as glitch (last_valid=28327ms now=28339ms)
+  [DEDUP_DROP] CH6(PA4) F#14308: dt=12ms < 25ms, treated as glitch (last_valid=28327ms now=28339ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s388ms496us freq=10392.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s449ms472us freq=10384.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s449ms472us freq=10384.8
+  [DEDUP_DROP] CH5(PA3) F#14369: dt=10ms < 25ms, treated as glitch (last_valid=28449ms now=28459ms)
+  [DEDUP_DROP] CH6(PA4) F#14369: dt=10ms < 25ms, treated as glitch (last_valid=28449ms now=28459ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s632ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s632ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14460: dt=6ms < 25ms, treated as glitch (last_valid=28632ms now=28638ms)
+  [DEDUP_DROP] CH6(PA4) F#14460: dt=6ms < 25ms, treated as glitch (last_valid=28632ms now=28638ms)
+  [DEDUP_DROP] CH5(PA3) F#14461: dt=8ms < 25ms, treated as glitch (last_valid=28632ms now=28640ms)
+  [DEDUP_DROP] CH6(PA4) F#14461: dt=8ms < 25ms, treated as glitch (last_valid=28632ms now=28640ms)
+  [DEDUP_DROP] CH5(PA3) F#14462: dt=10ms < 25ms, treated as glitch (last_valid=28632ms now=28642ms)
+  [DEDUP_DROP] CH6(PA4) F#14462: dt=10ms < 25ms, treated as glitch (last_valid=28632ms now=28642ms)
+  [DEDUP_DROP] CH5(PA3) F#14463: dt=12ms < 25ms, treated as glitch (last_valid=28632ms now=28644ms)
+  [DEDUP_DROP] CH6(PA4) F#14463: dt=12ms < 25ms, treated as glitch (last_valid=28632ms now=28644ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s693ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s693ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14491: dt=6ms < 25ms, treated as glitch (last_valid=28693ms now=28699ms)
+  [DEDUP_DROP] CH6(PA4) F#14491: dt=6ms < 25ms, treated as glitch (last_valid=28693ms now=28699ms)
+  [DEDUP_DROP] CH5(PA3) F#14492: dt=8ms < 25ms, treated as glitch (last_valid=28693ms now=28701ms)
+  [DEDUP_DROP] CH6(PA4) F#14492: dt=8ms < 25ms, treated as glitch (last_valid=28693ms now=28701ms)
+  [DEDUP_DROP] CH5(PA3) F#14493: dt=10ms < 25ms, treated as glitch (last_valid=28693ms now=28703ms)
+  [DEDUP_DROP] CH6(PA4) F#14493: dt=10ms < 25ms, treated as glitch (last_valid=28693ms now=28703ms)
+  [DEDUP_DROP] CH5(PA3) F#14494: dt=12ms < 25ms, treated as glitch (last_valid=28693ms now=28705ms)
+  [DEDUP_DROP] CH6(PA4) F#14494: dt=12ms < 25ms, treated as glitch (last_valid=28693ms now=28705ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s754ms499us freq=10388.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s813ms523us freq=10387.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s813ms523us freq=10384.2
+  [DEDUP_DROP] CH5(PA3) F#14554: dt=10ms < 25ms, treated as glitch (last_valid=28813ms now=28823ms)
+  [DEDUP_DROP] CH6(PA4) F#14554: dt=10ms < 25ms, treated as glitch (last_valid=28813ms now=28823ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=28s994ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=28s994ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14644: dt=6ms < 25ms, treated as glitch (last_valid=28994ms now=29000ms)
+  [DEDUP_DROP] CH6(PA4) F#14644: dt=6ms < 25ms, treated as glitch (last_valid=28994ms now=29000ms)
+  [DEDUP_DROP] CH5(PA3) F#14645: dt=8ms < 25ms, treated as glitch (last_valid=28994ms now=29002ms)
+  [DEDUP_DROP] CH6(PA4) F#14645: dt=8ms < 25ms, treated as glitch (last_valid=28994ms now=29002ms)
+  [DEDUP_DROP] CH5(PA3) F#14646: dt=10ms < 25ms, treated as glitch (last_valid=28994ms now=29004ms)
+  [DEDUP_DROP] CH6(PA4) F#14646: dt=10ms < 25ms, treated as glitch (last_valid=28994ms now=29004ms)
+  [DEDUP_DROP] CH5(PA3) F#14647: dt=12ms < 25ms, treated as glitch (last_valid=28994ms now=29006ms)
+  [DEDUP_DROP] CH6(PA4) F#14647: dt=12ms < 25ms, treated as glitch (last_valid=28994ms now=29006ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s55ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s55ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14675: dt=6ms < 25ms, treated as glitch (last_valid=29055ms now=29061ms)
+  [DEDUP_DROP] CH6(PA4) F#14675: dt=6ms < 25ms, treated as glitch (last_valid=29055ms now=29061ms)
+  [DEDUP_DROP] CH5(PA3) F#14676: dt=8ms < 25ms, treated as glitch (last_valid=29055ms now=29063ms)
+  [DEDUP_DROP] CH6(PA4) F#14676: dt=8ms < 25ms, treated as glitch (last_valid=29055ms now=29063ms)
+  [DEDUP_DROP] CH5(PA3) F#14677: dt=10ms < 25ms, treated as glitch (last_valid=29055ms now=29065ms)
+  [DEDUP_DROP] CH6(PA4) F#14677: dt=10ms < 25ms, treated as glitch (last_valid=29055ms now=29065ms)
+  [DEDUP_DROP] CH5(PA3) F#14678: dt=12ms < 25ms, treated as glitch (last_valid=29055ms now=29067ms)
+  [DEDUP_DROP] CH6(PA4) F#14678: dt=12ms < 25ms, treated as glitch (last_valid=29055ms now=29067ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s116ms499us freq=10387.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s175ms768us freq=10410.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s175ms767us freq=10414.3
+  [DEDUP_DROP] CH5(PA3) F#14738: dt=10ms < 25ms, treated as glitch (last_valid=29175ms now=29185ms)
+  [DEDUP_DROP] CH6(PA4) F#14738: dt=10ms < 25ms, treated as glitch (last_valid=29175ms now=29185ms)
+  [DEDUP_DROP] CH5(PA3) F#14739: dt=12ms < 25ms, treated as glitch (last_valid=29175ms now=29187ms)
+  [DEDUP_DROP] CH6(PA4) F#14739: dt=12ms < 25ms, treated as glitch (last_valid=29175ms now=29187ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s356ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s356ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14828: dt=6ms < 25ms, treated as glitch (last_valid=29356ms now=29362ms)
+  [DEDUP_DROP] CH6(PA4) F#14828: dt=6ms < 25ms, treated as glitch (last_valid=29356ms now=29362ms)
+  [DEDUP_DROP] CH5(PA3) F#14829: dt=8ms < 25ms, treated as glitch (last_valid=29356ms now=29364ms)
+  [DEDUP_DROP] CH6(PA4) F#14829: dt=8ms < 25ms, treated as glitch (last_valid=29356ms now=29364ms)
+  [DEDUP_DROP] CH5(PA3) F#14830: dt=10ms < 25ms, treated as glitch (last_valid=29356ms now=29366ms)
+  [DEDUP_DROP] CH6(PA4) F#14830: dt=10ms < 25ms, treated as glitch (last_valid=29356ms now=29366ms)
+  [DEDUP_DROP] CH5(PA3) F#14831: dt=12ms < 25ms, treated as glitch (last_valid=29356ms now=29368ms)
+  [DEDUP_DROP] CH6(PA4) F#14831: dt=12ms < 25ms, treated as glitch (last_valid=29356ms now=29368ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s417ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s417ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#14859: dt=5ms < 25ms, treated as glitch (last_valid=29417ms now=29422ms)
+  [DEDUP_DROP] CH6(PA4) F#14859: dt=5ms < 25ms, treated as glitch (last_valid=29417ms now=29422ms)
+  [DEDUP_DROP] CH5(PA3) F#14860: dt=8ms < 25ms, treated as glitch (last_valid=29417ms now=29425ms)
+  [DEDUP_DROP] CH6(PA4) F#14860: dt=8ms < 25ms, treated as glitch (last_valid=29417ms now=29425ms)
+  [DEDUP_DROP] CH5(PA3) F#14861: dt=9ms < 25ms, treated as glitch (last_valid=29417ms now=29426ms)
+  [DEDUP_DROP] CH6(PA4) F#14861: dt=9ms < 25ms, treated as glitch (last_valid=29417ms now=29426ms)
+  [DEDUP_DROP] CH5(PA3) F#14862: dt=11ms < 25ms, treated as glitch (last_valid=29417ms now=29428ms)
+  [DEDUP_DROP] CH6(PA4) F#14862: dt=11ms < 25ms, treated as glitch (last_valid=29417ms now=29428ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s538ms14us freq=44500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s538ms10us freq=46364.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s721ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s721ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15014: dt=6ms < 25ms, treated as glitch (last_valid=29721ms now=29727ms)
+  [DEDUP_DROP] CH6(PA4) F#15014: dt=6ms < 25ms, treated as glitch (last_valid=29721ms now=29727ms)
+  [DEDUP_DROP] CH5(PA3) F#15015: dt=9ms < 25ms, treated as glitch (last_valid=29721ms now=29730ms)
+  [DEDUP_DROP] CH6(PA4) F#15015: dt=9ms < 25ms, treated as glitch (last_valid=29721ms now=29730ms)
+  [DEDUP_DROP] CH5(PA3) F#15016: dt=10ms < 25ms, treated as glitch (last_valid=29721ms now=29731ms)
+  [DEDUP_DROP] CH6(PA4) F#15016: dt=10ms < 25ms, treated as glitch (last_valid=29721ms now=29731ms)
+  [DEDUP_DROP] CH5(PA3) F#15017: dt=12ms < 25ms, treated as glitch (last_valid=29721ms now=29733ms)
+  [DEDUP_DROP] CH6(PA4) F#15017: dt=12ms < 25ms, treated as glitch (last_valid=29721ms now=29733ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s782ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s782ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15045: dt=6ms < 25ms, treated as glitch (last_valid=29782ms now=29788ms)
+  [DEDUP_DROP] CH6(PA4) F#15045: dt=6ms < 25ms, treated as glitch (last_valid=29782ms now=29788ms)
+  [DEDUP_DROP] CH5(PA3) F#15046: dt=8ms < 25ms, treated as glitch (last_valid=29782ms now=29790ms)
+  [DEDUP_DROP] CH6(PA4) F#15046: dt=8ms < 25ms, treated as glitch (last_valid=29782ms now=29790ms)
+  [DEDUP_DROP] CH5(PA3) F#15047: dt=10ms < 25ms, treated as glitch (last_valid=29782ms now=29792ms)
+  [DEDUP_DROP] CH6(PA4) F#15047: dt=10ms < 25ms, treated as glitch (last_valid=29782ms now=29792ms)
+  [DEDUP_DROP] CH5(PA3) F#15048: dt=12ms < 25ms, treated as glitch (last_valid=29782ms now=29794ms)
+  [DEDUP_DROP] CH6(PA4) F#15048: dt=12ms < 25ms, treated as glitch (last_valid=29782ms now=29794ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s843ms500us freq=10387.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=29s904ms473us freq=10381.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=29s904ms472us freq=10386.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s87ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s87ms477us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15200: dt=6ms < 25ms, treated as glitch (last_valid=30087ms now=30093ms)
+  [DEDUP_DROP] CH6(PA4) F#15200: dt=6ms < 25ms, treated as glitch (last_valid=30087ms now=30093ms)
+  [DEDUP_DROP] CH5(PA3) F#15201: dt=8ms < 25ms, treated as glitch (last_valid=30087ms now=30095ms)
+  [DEDUP_DROP] CH6(PA4) F#15201: dt=8ms < 25ms, treated as glitch (last_valid=30087ms now=30095ms)
+  [DEDUP_DROP] CH5(PA3) F#15202: dt=10ms < 25ms, treated as glitch (last_valid=30087ms now=30097ms)
+  [DEDUP_DROP] CH6(PA4) F#15202: dt=10ms < 25ms, treated as glitch (last_valid=30087ms now=30097ms)
+  [DEDUP_DROP] CH5(PA3) F#15203: dt=12ms < 25ms, treated as glitch (last_valid=30087ms now=30099ms)
+  [DEDUP_DROP] CH6(PA4) F#15203: dt=12ms < 25ms, treated as glitch (last_valid=30087ms now=30099ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s148ms481us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s148ms481us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15231: dt=6ms < 25ms, treated as glitch (last_valid=30148ms now=30154ms)
+  [DEDUP_DROP] CH6(PA4) F#15231: dt=6ms < 25ms, treated as glitch (last_valid=30148ms now=30154ms)
+  [DEDUP_DROP] CH5(PA3) F#15232: dt=8ms < 25ms, treated as glitch (last_valid=30148ms now=30156ms)
+  [DEDUP_DROP] CH6(PA4) F#15232: dt=8ms < 25ms, treated as glitch (last_valid=30148ms now=30156ms)
+  [DEDUP_DROP] CH5(PA3) F#15233: dt=10ms < 25ms, treated as glitch (last_valid=30148ms now=30158ms)
+  [DEDUP_DROP] CH6(PA4) F#15233: dt=10ms < 25ms, treated as glitch (last_valid=30148ms now=30158ms)
+  [DEDUP_DROP] CH5(PA3) F#15234: dt=12ms < 25ms, treated as glitch (last_valid=30148ms now=30160ms)
+  [DEDUP_DROP] CH6(PA4) F#15234: dt=12ms < 25ms, treated as glitch (last_valid=30148ms now=30160ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s209ms500us freq=10392.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s268ms626us freq=10367.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s268ms625us freq=10373.7
+  [DEDUP_DROP] CH5(PA3) F#15294: dt=10ms < 25ms, treated as glitch (last_valid=30268ms now=30278ms)
+  [DEDUP_DROP] CH6(PA4) F#15294: dt=10ms < 25ms, treated as glitch (last_valid=30268ms now=30278ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s449ms477us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s449ms477us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15384: dt=6ms < 25ms, treated as glitch (last_valid=30449ms now=30455ms)
+  [DEDUP_DROP] CH6(PA4) F#15384: dt=6ms < 25ms, treated as glitch (last_valid=30449ms now=30455ms)
+  [DEDUP_DROP] CH5(PA3) F#15385: dt=8ms < 25ms, treated as glitch (last_valid=30449ms now=30457ms)
+  [DEDUP_DROP] CH6(PA4) F#15385: dt=8ms < 25ms, treated as glitch (last_valid=30449ms now=30457ms)
+  [DEDUP_DROP] CH5(PA3) F#15386: dt=10ms < 25ms, treated as glitch (last_valid=30449ms now=30459ms)
+  [DEDUP_DROP] CH6(PA4) F#15386: dt=10ms < 25ms, treated as glitch (last_valid=30449ms now=30459ms)
+  [DEDUP_DROP] CH5(PA3) F#15387: dt=12ms < 25ms, treated as glitch (last_valid=30449ms now=30461ms)
+  [DEDUP_DROP] CH6(PA4) F#15387: dt=12ms < 25ms, treated as glitch (last_valid=30449ms now=30461ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s510ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s510ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15415: dt=6ms < 25ms, treated as glitch (last_valid=30510ms now=30516ms)
+  [DEDUP_DROP] CH6(PA4) F#15415: dt=6ms < 25ms, treated as glitch (last_valid=30510ms now=30516ms)
+  [DEDUP_DROP] CH5(PA3) F#15416: dt=8ms < 25ms, treated as glitch (last_valid=30510ms now=30518ms)
+  [DEDUP_DROP] CH6(PA4) F#15416: dt=8ms < 25ms, treated as glitch (last_valid=30510ms now=30518ms)
+  [DEDUP_DROP] CH5(PA3) F#15417: dt=10ms < 25ms, treated as glitch (last_valid=30510ms now=30520ms)
+  [DEDUP_DROP] CH6(PA4) F#15417: dt=10ms < 25ms, treated as glitch (last_valid=30510ms now=30520ms)
+  [DEDUP_DROP] CH5(PA3) F#15418: dt=12ms < 25ms, treated as glitch (last_valid=30510ms now=30522ms)
+  [DEDUP_DROP] CH6(PA4) F#15418: dt=12ms < 25ms, treated as glitch (last_valid=30510ms now=30522ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s571ms500us freq=10394.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s630ms871us freq=10436.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s630ms870us freq=10435.3
+  [DEDUP_DROP] CH5(PA3) F#15479: dt=11ms < 25ms, treated as glitch (last_valid=30630ms now=30641ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s814ms35us freq=58950.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s814ms35us freq=58941.9
+  [DEDUP_DROP] CH5(PA3) F#15570: dt=6ms < 25ms, treated as glitch (last_valid=30814ms now=30820ms)
+  [DEDUP_DROP] CH6(PA4) F#15570: dt=6ms < 25ms, treated as glitch (last_valid=30814ms now=30820ms)
+  [DEDUP_DROP] CH5(PA3) F#15571: dt=9ms < 25ms, treated as glitch (last_valid=30814ms now=30823ms)
+  [DEDUP_DROP] CH6(PA4) F#15571: dt=9ms < 25ms, treated as glitch (last_valid=30814ms now=30823ms)
+  [DEDUP_DROP] CH5(PA3) F#15572: dt=10ms < 25ms, treated as glitch (last_valid=30814ms now=30824ms)
+  [DEDUP_DROP] CH6(PA4) F#15572: dt=10ms < 25ms, treated as glitch (last_valid=30814ms now=30824ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s873ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s873ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15600: dt=6ms < 25ms, treated as glitch (last_valid=30873ms now=30879ms)
+  [DEDUP_DROP] CH6(PA4) F#15600: dt=6ms < 25ms, treated as glitch (last_valid=30873ms now=30879ms)
+  [DEDUP_DROP] CH5(PA3) F#15601: dt=9ms < 25ms, treated as glitch (last_valid=30873ms now=30882ms)
+  [DEDUP_DROP] CH6(PA4) F#15601: dt=9ms < 25ms, treated as glitch (last_valid=30873ms now=30882ms)
+  [DEDUP_DROP] CH5(PA3) F#15602: dt=10ms < 25ms, treated as glitch (last_valid=30873ms now=30883ms)
+  [DEDUP_DROP] CH6(PA4) F#15602: dt=10ms < 25ms, treated as glitch (last_valid=30873ms now=30883ms)
+  [DEDUP_DROP] CH5(PA3) F#15603: dt=12ms < 25ms, treated as glitch (last_valid=30873ms now=30885ms)
+  [DEDUP_DROP] CH6(PA4) F#15603: dt=12ms < 25ms, treated as glitch (last_valid=30873ms now=30885ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s934ms500us freq=10392.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=30s995ms472us freq=10376.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=30s995ms472us freq=10383.4
+  [DEDUP_DROP] CH5(PA3) F#15664: dt=10ms < 25ms, treated as glitch (last_valid=30995ms now=31005ms)
+  [DEDUP_DROP] CH6(PA4) F#15664: dt=10ms < 25ms, treated as glitch (last_valid=30995ms now=31005ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s178ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s178ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15755: dt=6ms < 25ms, treated as glitch (last_valid=31178ms now=31184ms)
+  [DEDUP_DROP] CH6(PA4) F#15755: dt=6ms < 25ms, treated as glitch (last_valid=31178ms now=31184ms)
+  [DEDUP_DROP] CH5(PA3) F#15756: dt=8ms < 25ms, treated as glitch (last_valid=31178ms now=31186ms)
+  [DEDUP_DROP] CH6(PA4) F#15756: dt=8ms < 25ms, treated as glitch (last_valid=31178ms now=31186ms)
+  [DEDUP_DROP] CH5(PA3) F#15757: dt=10ms < 25ms, treated as glitch (last_valid=31178ms now=31188ms)
+  [DEDUP_DROP] CH6(PA4) F#15757: dt=10ms < 25ms, treated as glitch (last_valid=31178ms now=31188ms)
+  [DEDUP_DROP] CH5(PA3) F#15758: dt=12ms < 25ms, treated as glitch (last_valid=31178ms now=31190ms)
+  [DEDUP_DROP] CH6(PA4) F#15758: dt=12ms < 25ms, treated as glitch (last_valid=31178ms now=31190ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s239ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s239ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15786: dt=6ms < 25ms, treated as glitch (last_valid=31239ms now=31245ms)
+  [DEDUP_DROP] CH6(PA4) F#15786: dt=6ms < 25ms, treated as glitch (last_valid=31239ms now=31245ms)
+  [DEDUP_DROP] CH5(PA3) F#15787: dt=8ms < 25ms, treated as glitch (last_valid=31239ms now=31247ms)
+  [DEDUP_DROP] CH6(PA4) F#15787: dt=8ms < 25ms, treated as glitch (last_valid=31239ms now=31247ms)
+  [DEDUP_DROP] CH5(PA3) F#15788: dt=10ms < 25ms, treated as glitch (last_valid=31239ms now=31249ms)
+  [DEDUP_DROP] CH6(PA4) F#15788: dt=10ms < 25ms, treated as glitch (last_valid=31239ms now=31249ms)
+  [DEDUP_DROP] CH5(PA3) F#15789: dt=12ms < 25ms, treated as glitch (last_valid=31239ms now=31251ms)
+  [DEDUP_DROP] CH6(PA4) F#15789: dt=12ms < 25ms, treated as glitch (last_valid=31239ms now=31251ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s300ms499us freq=10388.7
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s361ms473us freq=10389.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s361ms472us freq=10387.4
+  [DEDUP_DROP] CH5(PA3) F#15850: dt=10ms < 25ms, treated as glitch (last_valid=31361ms now=31371ms)
+  [DEDUP_DROP] CH6(PA4) F#15850: dt=10ms < 25ms, treated as glitch (last_valid=31361ms now=31371ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s540ms576us freq=59255.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s540ms576us freq=59252.0
+  [DEDUP_DROP] CH5(PA3) F#15939: dt=6ms < 25ms, treated as glitch (last_valid=31540ms now=31546ms)
+  [DEDUP_DROP] CH6(PA4) F#15939: dt=6ms < 25ms, treated as glitch (last_valid=31540ms now=31546ms)
+  [DEDUP_DROP] CH5(PA3) F#15940: dt=8ms < 25ms, treated as glitch (last_valid=31540ms now=31548ms)
+  [DEDUP_DROP] CH6(PA4) F#15940: dt=8ms < 25ms, treated as glitch (last_valid=31540ms now=31548ms)
+  [DEDUP_DROP] CH5(PA3) F#15941: dt=10ms < 25ms, treated as glitch (last_valid=31540ms now=31550ms)
+  [DEDUP_DROP] CH6(PA4) F#15941: dt=10ms < 25ms, treated as glitch (last_valid=31540ms now=31550ms)
+  [DEDUP_DROP] CH5(PA3) F#15942: dt=12ms < 25ms, treated as glitch (last_valid=31540ms now=31552ms)
+  [DEDUP_DROP] CH6(PA4) F#15942: dt=12ms < 25ms, treated as glitch (last_valid=31540ms now=31552ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s601ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s601ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#15970: dt=6ms < 25ms, treated as glitch (last_valid=31601ms now=31607ms)
+  [DEDUP_DROP] CH6(PA4) F#15970: dt=6ms < 25ms, treated as glitch (last_valid=31601ms now=31607ms)
+  [DEDUP_DROP] CH5(PA3) F#15971: dt=8ms < 25ms, treated as glitch (last_valid=31601ms now=31609ms)
+  [DEDUP_DROP] CH6(PA4) F#15971: dt=8ms < 25ms, treated as glitch (last_valid=31601ms now=31609ms)
+  [DEDUP_DROP] CH5(PA3) F#15972: dt=10ms < 25ms, treated as glitch (last_valid=31601ms now=31611ms)
+  [DEDUP_DROP] CH6(PA4) F#15972: dt=10ms < 25ms, treated as glitch (last_valid=31601ms now=31611ms)
+  [DEDUP_DROP] CH5(PA3) F#15973: dt=12ms < 25ms, treated as glitch (last_valid=31601ms now=31613ms)
+  [DEDUP_DROP] CH6(PA4) F#15973: dt=12ms < 25ms, treated as glitch (last_valid=31601ms now=31613ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s662ms499us freq=10392.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s721ms694us freq=10411.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s721ms693us freq=10406.8
+  [DEDUP_DROP] CH5(PA3) F#16033: dt=10ms < 25ms, treated as glitch (last_valid=31721ms now=31731ms)
+  [DEDUP_DROP] CH6(PA4) F#16033: dt=10ms < 25ms, treated as glitch (last_valid=31721ms now=31731ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s902ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s902ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16123: dt=6ms < 25ms, treated as glitch (last_valid=31902ms now=31908ms)
+  [DEDUP_DROP] CH6(PA4) F#16123: dt=6ms < 25ms, treated as glitch (last_valid=31902ms now=31908ms)
+  [DEDUP_DROP] CH5(PA3) F#16124: dt=8ms < 25ms, treated as glitch (last_valid=31902ms now=31910ms)
+  [DEDUP_DROP] CH6(PA4) F#16124: dt=8ms < 25ms, treated as glitch (last_valid=31902ms now=31910ms)
+  [DEDUP_DROP] CH5(PA3) F#16125: dt=10ms < 25ms, treated as glitch (last_valid=31902ms now=31912ms)
+  [DEDUP_DROP] CH6(PA4) F#16125: dt=10ms < 25ms, treated as glitch (last_valid=31902ms now=31912ms)
+  [DEDUP_DROP] CH5(PA3) F#16126: dt=12ms < 25ms, treated as glitch (last_valid=31902ms now=31914ms)
+  [DEDUP_DROP] CH6(PA4) F#16126: dt=12ms < 25ms, treated as glitch (last_valid=31902ms now=31914ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=31s963ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=31s963ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16154: dt=6ms < 25ms, treated as glitch (last_valid=31963ms now=31969ms)
+  [DEDUP_DROP] CH6(PA4) F#16154: dt=6ms < 25ms, treated as glitch (last_valid=31963ms now=31969ms)
+  [DEDUP_DROP] CH5(PA3) F#16155: dt=8ms < 25ms, treated as glitch (last_valid=31963ms now=31971ms)
+  [DEDUP_DROP] CH6(PA4) F#16155: dt=8ms < 25ms, treated as glitch (last_valid=31963ms now=31971ms)
+  [DEDUP_DROP] CH5(PA3) F#16156: dt=10ms < 25ms, treated as glitch (last_valid=31963ms now=31973ms)
+  [DEDUP_DROP] CH6(PA4) F#16156: dt=10ms < 25ms, treated as glitch (last_valid=31963ms now=31973ms)
+  [DEDUP_DROP] CH5(PA3) F#16157: dt=12ms < 25ms, treated as glitch (last_valid=31963ms now=31975ms)
+  [DEDUP_DROP] CH6(PA4) F#16157: dt=12ms < 25ms, treated as glitch (last_valid=31963ms now=31975ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s24ms499us freq=10389.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s83ms939us freq=10232.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s83ms938us freq=10232.3
+  [DEDUP_DROP] CH5(PA3) F#16218: dt=11ms < 25ms, treated as glitch (last_valid=32083ms now=32094ms)
+  [DEDUP_DROP] CH6(PA4) F#16218: dt=11ms < 25ms, treated as glitch (last_valid=32083ms now=32094ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s267ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s267ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16309: dt=6ms < 25ms, treated as glitch (last_valid=32267ms now=32273ms)
+  [DEDUP_DROP] CH6(PA4) F#16309: dt=6ms < 25ms, treated as glitch (last_valid=32267ms now=32273ms)
+  [DEDUP_DROP] CH5(PA3) F#16310: dt=9ms < 25ms, treated as glitch (last_valid=32267ms now=32276ms)
+  [DEDUP_DROP] CH6(PA4) F#16310: dt=9ms < 25ms, treated as glitch (last_valid=32267ms now=32276ms)
+  [DEDUP_DROP] CH5(PA3) F#16311: dt=10ms < 25ms, treated as glitch (last_valid=32267ms now=32277ms)
+  [DEDUP_DROP] CH6(PA4) F#16311: dt=10ms < 25ms, treated as glitch (last_valid=32267ms now=32277ms)
+  [DEDUP_DROP] CH5(PA3) F#16312: dt=12ms < 25ms, treated as glitch (last_valid=32267ms now=32279ms)
+  [DEDUP_DROP] CH6(PA4) F#16312: dt=12ms < 25ms, treated as glitch (last_valid=32267ms now=32279ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s328ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s328ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16340: dt=6ms < 25ms, treated as glitch (last_valid=32328ms now=32334ms)
+  [DEDUP_DROP] CH6(PA4) F#16340: dt=6ms < 25ms, treated as glitch (last_valid=32328ms now=32334ms)
+  [DEDUP_DROP] CH5(PA3) F#16341: dt=9ms < 25ms, treated as glitch (last_valid=32328ms now=32337ms)
+  [DEDUP_DROP] CH6(PA4) F#16341: dt=9ms < 25ms, treated as glitch (last_valid=32328ms now=32337ms)
+  [DEDUP_DROP] CH5(PA3) F#16342: dt=10ms < 25ms, treated as glitch (last_valid=32328ms now=32338ms)
+  [DEDUP_DROP] CH6(PA4) F#16342: dt=10ms < 25ms, treated as glitch (last_valid=32328ms now=32338ms)
+  [DEDUP_DROP] CH5(PA3) F#16343: dt=12ms < 25ms, treated as glitch (last_valid=32328ms now=32340ms)
+  [DEDUP_DROP] CH6(PA4) F#16343: dt=12ms < 25ms, treated as glitch (last_valid=32328ms now=32340ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s389ms500us freq=10392.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s450ms472us freq=10381.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s450ms471us freq=10386.6
+  [DEDUP_DROP] CH5(PA3) F#16404: dt=10ms < 25ms, treated as glitch (last_valid=32450ms now=32460ms)
+  [DEDUP_DROP] CH6(PA4) F#16404: dt=10ms < 25ms, treated as glitch (last_valid=32450ms now=32460ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s633ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s633ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16495: dt=6ms < 25ms, treated as glitch (last_valid=32633ms now=32639ms)
+  [DEDUP_DROP] CH6(PA4) F#16495: dt=6ms < 25ms, treated as glitch (last_valid=32633ms now=32639ms)
+  [DEDUP_DROP] CH5(PA3) F#16496: dt=8ms < 25ms, treated as glitch (last_valid=32633ms now=32641ms)
+  [DEDUP_DROP] CH6(PA4) F#16496: dt=8ms < 25ms, treated as glitch (last_valid=32633ms now=32641ms)
+  [DEDUP_DROP] CH5(PA3) F#16497: dt=10ms < 25ms, treated as glitch (last_valid=32633ms now=32643ms)
+  [DEDUP_DROP] CH6(PA4) F#16497: dt=10ms < 25ms, treated as glitch (last_valid=32633ms now=32643ms)
+  [DEDUP_DROP] CH5(PA3) F#16498: dt=12ms < 25ms, treated as glitch (last_valid=32633ms now=32645ms)
+  [DEDUP_DROP] CH6(PA4) F#16498: dt=12ms < 25ms, treated as glitch (last_valid=32633ms now=32645ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s694ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s694ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16526: dt=6ms < 25ms, treated as glitch (last_valid=32694ms now=32700ms)
+  [DEDUP_DROP] CH6(PA4) F#16526: dt=6ms < 25ms, treated as glitch (last_valid=32694ms now=32700ms)
+  [DEDUP_DROP] CH5(PA3) F#16527: dt=8ms < 25ms, treated as glitch (last_valid=32694ms now=32702ms)
+  [DEDUP_DROP] CH6(PA4) F#16527: dt=8ms < 25ms, treated as glitch (last_valid=32694ms now=32702ms)
+  [DEDUP_DROP] CH5(PA3) F#16528: dt=10ms < 25ms, treated as glitch (last_valid=32694ms now=32704ms)
+  [DEDUP_DROP] CH6(PA4) F#16528: dt=10ms < 25ms, treated as glitch (last_valid=32694ms now=32704ms)
+  [DEDUP_DROP] CH5(PA3) F#16529: dt=12ms < 25ms, treated as glitch (last_valid=32694ms now=32706ms)
+  [DEDUP_DROP] CH6(PA4) F#16529: dt=12ms < 25ms, treated as glitch (last_valid=32694ms now=32706ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s755ms499us freq=10381.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s814ms551us freq=10385.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s814ms549us freq=10383.8
+  [DEDUP_DROP] CH5(PA3) F#16589: dt=10ms < 25ms, treated as glitch (last_valid=32814ms now=32824ms)
+  [DEDUP_DROP] CH6(PA4) F#16589: dt=10ms < 25ms, treated as glitch (last_valid=32814ms now=32824ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=32s995ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=32s995ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16679: dt=6ms < 25ms, treated as glitch (last_valid=32995ms now=33001ms)
+  [DEDUP_DROP] CH6(PA4) F#16679: dt=6ms < 25ms, treated as glitch (last_valid=32995ms now=33001ms)
+  [DEDUP_DROP] CH5(PA3) F#16680: dt=8ms < 25ms, treated as glitch (last_valid=32995ms now=33003ms)
+  [DEDUP_DROP] CH6(PA4) F#16680: dt=8ms < 25ms, treated as glitch (last_valid=32995ms now=33003ms)
+  [DEDUP_DROP] CH5(PA3) F#16681: dt=10ms < 25ms, treated as glitch (last_valid=32995ms now=33005ms)
+  [DEDUP_DROP] CH6(PA4) F#16681: dt=10ms < 25ms, treated as glitch (last_valid=32995ms now=33005ms)
+  [DEDUP_DROP] CH5(PA3) F#16682: dt=12ms < 25ms, treated as glitch (last_valid=32995ms now=33007ms)
+  [DEDUP_DROP] CH6(PA4) F#16682: dt=12ms < 25ms, treated as glitch (last_valid=32995ms now=33007ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s56ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s56ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16710: dt=6ms < 25ms, treated as glitch (last_valid=33056ms now=33062ms)
+  [DEDUP_DROP] CH6(PA4) F#16710: dt=6ms < 25ms, treated as glitch (last_valid=33056ms now=33062ms)
+  [DEDUP_DROP] CH5(PA3) F#16711: dt=8ms < 25ms, treated as glitch (last_valid=33056ms now=33064ms)
+  [DEDUP_DROP] CH6(PA4) F#16711: dt=8ms < 25ms, treated as glitch (last_valid=33056ms now=33064ms)
+  [DEDUP_DROP] CH5(PA3) F#16712: dt=10ms < 25ms, treated as glitch (last_valid=33056ms now=33066ms)
+  [DEDUP_DROP] CH6(PA4) F#16712: dt=10ms < 25ms, treated as glitch (last_valid=33056ms now=33066ms)
+  [DEDUP_DROP] CH5(PA3) F#16713: dt=12ms < 25ms, treated as glitch (last_valid=33056ms now=33068ms)
+  [DEDUP_DROP] CH6(PA4) F#16713: dt=12ms < 25ms, treated as glitch (last_valid=33056ms now=33068ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s117ms500us freq=10389.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s176ms796us freq=10424.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s176ms795us freq=10421.7
+  [DEDUP_DROP] CH5(PA3) F#16773: dt=10ms < 25ms, treated as glitch (last_valid=33176ms now=33186ms)
+  [DEDUP_DROP] CH6(PA4) F#16773: dt=10ms < 25ms, treated as glitch (last_valid=33176ms now=33186ms)
+  [DEDUP_DROP] CH5(PA3) F#16774: dt=12ms < 25ms, treated as glitch (last_valid=33176ms now=33188ms)
+  [DEDUP_DROP] CH6(PA4) F#16774: dt=12ms < 25ms, treated as glitch (last_valid=33176ms now=33188ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s357ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s357ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16863: dt=6ms < 25ms, treated as glitch (last_valid=33357ms now=33363ms)
+  [DEDUP_DROP] CH6(PA4) F#16863: dt=6ms < 25ms, treated as glitch (last_valid=33357ms now=33363ms)
+  [DEDUP_DROP] CH5(PA3) F#16864: dt=8ms < 25ms, treated as glitch (last_valid=33357ms now=33365ms)
+  [DEDUP_DROP] CH6(PA4) F#16864: dt=8ms < 25ms, treated as glitch (last_valid=33357ms now=33365ms)
+  [DEDUP_DROP] CH5(PA3) F#16865: dt=10ms < 25ms, treated as glitch (last_valid=33357ms now=33367ms)
+  [DEDUP_DROP] CH6(PA4) F#16865: dt=10ms < 25ms, treated as glitch (last_valid=33357ms now=33367ms)
+  [DEDUP_DROP] CH5(PA3) F#16866: dt=11ms < 25ms, treated as glitch (last_valid=33357ms now=33368ms)
+  [DEDUP_DROP] CH6(PA4) F#16866: dt=11ms < 25ms, treated as glitch (last_valid=33357ms now=33368ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s418ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s418ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#16894: dt=5ms < 25ms, treated as glitch (last_valid=33418ms now=33423ms)
+  [DEDUP_DROP] CH6(PA4) F#16894: dt=5ms < 25ms, treated as glitch (last_valid=33418ms now=33423ms)
+  [DEDUP_DROP] CH5(PA3) F#16895: dt=8ms < 25ms, treated as glitch (last_valid=33418ms now=33426ms)
+  [DEDUP_DROP] CH6(PA4) F#16895: dt=8ms < 25ms, treated as glitch (last_valid=33418ms now=33426ms)
+  [DEDUP_DROP] CH5(PA3) F#16896: dt=9ms < 25ms, treated as glitch (last_valid=33418ms now=33427ms)
+  [DEDUP_DROP] CH6(PA4) F#16896: dt=9ms < 25ms, treated as glitch (last_valid=33418ms now=33427ms)
+  [DEDUP_DROP] CH5(PA3) F#16897: dt=11ms < 25ms, treated as glitch (last_valid=33418ms now=33429ms)
+  [DEDUP_DROP] CH6(PA4) F#16897: dt=11ms < 25ms, treated as glitch (last_valid=33418ms now=33429ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s479ms14us freq=31786.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s539ms473us freq=10387.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s539ms472us freq=10383.7
+  [DEDUP_DROP] CH5(PA3) F#16958: dt=10ms < 25ms, treated as glitch (last_valid=33539ms now=33549ms)
+  [DEDUP_DROP] CH6(PA4) F#16958: dt=10ms < 25ms, treated as glitch (last_valid=33539ms now=33549ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s722ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s722ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17049: dt=6ms < 25ms, treated as glitch (last_valid=33722ms now=33728ms)
+  [DEDUP_DROP] CH6(PA4) F#17049: dt=6ms < 25ms, treated as glitch (last_valid=33722ms now=33728ms)
+  [DEDUP_DROP] CH5(PA3) F#17050: dt=9ms < 25ms, treated as glitch (last_valid=33722ms now=33731ms)
+  [DEDUP_DROP] CH6(PA4) F#17050: dt=9ms < 25ms, treated as glitch (last_valid=33722ms now=33731ms)
+  [DEDUP_DROP] CH5(PA3) F#17051: dt=10ms < 25ms, treated as glitch (last_valid=33722ms now=33732ms)
+  [DEDUP_DROP] CH6(PA4) F#17051: dt=10ms < 25ms, treated as glitch (last_valid=33722ms now=33732ms)
+  [DEDUP_DROP] CH5(PA3) F#17052: dt=12ms < 25ms, treated as glitch (last_valid=33722ms now=33734ms)
+  [DEDUP_DROP] CH6(PA4) F#17052: dt=12ms < 25ms, treated as glitch (last_valid=33722ms now=33734ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s783ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s783ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17080: dt=6ms < 25ms, treated as glitch (last_valid=33783ms now=33789ms)
+  [DEDUP_DROP] CH6(PA4) F#17080: dt=6ms < 25ms, treated as glitch (last_valid=33783ms now=33789ms)
+  [DEDUP_DROP] CH5(PA3) F#17081: dt=8ms < 25ms, treated as glitch (last_valid=33783ms now=33791ms)
+  [DEDUP_DROP] CH6(PA4) F#17081: dt=8ms < 25ms, treated as glitch (last_valid=33783ms now=33791ms)
+  [DEDUP_DROP] CH5(PA3) F#17082: dt=10ms < 25ms, treated as glitch (last_valid=33783ms now=33793ms)
+  [DEDUP_DROP] CH6(PA4) F#17082: dt=10ms < 25ms, treated as glitch (last_valid=33783ms now=33793ms)
+  [DEDUP_DROP] CH5(PA3) F#17083: dt=12ms < 25ms, treated as glitch (last_valid=33783ms now=33795ms)
+  [DEDUP_DROP] CH6(PA4) F#17083: dt=12ms < 25ms, treated as glitch (last_valid=33783ms now=33795ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s844ms500us freq=10393.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=33s905ms473us freq=10381.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=33s905ms472us freq=10389.6
+  [DEDUP_DROP] CH5(PA3) F#17144: dt=10ms < 25ms, treated as glitch (last_valid=33905ms now=33915ms)
+  [DEDUP_DROP] CH6(PA4) F#17144: dt=10ms < 25ms, treated as glitch (last_valid=33905ms now=33915ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s86ms501us freq=58626.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s86ms501us freq=58617.9
+  [DEDUP_DROP] CH5(PA3) F#17234: dt=6ms < 25ms, treated as glitch (last_valid=34086ms now=34092ms)
+  [DEDUP_DROP] CH6(PA4) F#17234: dt=6ms < 25ms, treated as glitch (last_valid=34086ms now=34092ms)
+  [DEDUP_DROP] CH5(PA3) F#17235: dt=8ms < 25ms, treated as glitch (last_valid=34086ms now=34094ms)
+  [DEDUP_DROP] CH6(PA4) F#17235: dt=8ms < 25ms, treated as glitch (last_valid=34086ms now=34094ms)
+  [DEDUP_DROP] CH5(PA3) F#17236: dt=10ms < 25ms, treated as glitch (last_valid=34086ms now=34096ms)
+  [DEDUP_DROP] CH6(PA4) F#17236: dt=10ms < 25ms, treated as glitch (last_valid=34086ms now=34096ms)
+  [DEDUP_DROP] CH5(PA3) F#17237: dt=12ms < 25ms, treated as glitch (last_valid=34086ms now=34098ms)
+  [DEDUP_DROP] CH6(PA4) F#17237: dt=12ms < 25ms, treated as glitch (last_valid=34086ms now=34098ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s147ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s147ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17265: dt=6ms < 25ms, treated as glitch (last_valid=34147ms now=34153ms)
+  [DEDUP_DROP] CH6(PA4) F#17265: dt=6ms < 25ms, treated as glitch (last_valid=34147ms now=34153ms)
+  [DEDUP_DROP] CH5(PA3) F#17266: dt=8ms < 25ms, treated as glitch (last_valid=34147ms now=34155ms)
+  [DEDUP_DROP] CH6(PA4) F#17266: dt=8ms < 25ms, treated as glitch (last_valid=34147ms now=34155ms)
+  [DEDUP_DROP] CH5(PA3) F#17267: dt=10ms < 25ms, treated as glitch (last_valid=34147ms now=34157ms)
+  [DEDUP_DROP] CH6(PA4) F#17267: dt=10ms < 25ms, treated as glitch (last_valid=34147ms now=34157ms)
+  [DEDUP_DROP] CH5(PA3) F#17268: dt=12ms < 25ms, treated as glitch (last_valid=34147ms now=34159ms)
+  [DEDUP_DROP] CH6(PA4) F#17268: dt=12ms < 25ms, treated as glitch (last_valid=34147ms now=34159ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s208ms498us freq=10388.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s267ms618us freq=10373.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s267ms619us freq=10376.8
+  [DEDUP_DROP] CH5(PA3) F#17328: dt=10ms < 25ms, treated as glitch (last_valid=34267ms now=34277ms)
+  [DEDUP_DROP] CH6(PA4) F#17328: dt=10ms < 25ms, treated as glitch (last_valid=34267ms now=34277ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s448ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s448ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17418: dt=6ms < 25ms, treated as glitch (last_valid=34448ms now=34454ms)
+  [DEDUP_DROP] CH6(PA4) F#17418: dt=6ms < 25ms, treated as glitch (last_valid=34448ms now=34454ms)
+  [DEDUP_DROP] CH5(PA3) F#17419: dt=8ms < 25ms, treated as glitch (last_valid=34448ms now=34456ms)
+  [DEDUP_DROP] CH6(PA4) F#17419: dt=8ms < 25ms, treated as glitch (last_valid=34448ms now=34456ms)
+  [DEDUP_DROP] CH5(PA3) F#17420: dt=10ms < 25ms, treated as glitch (last_valid=34448ms now=34458ms)
+  [DEDUP_DROP] CH6(PA4) F#17420: dt=10ms < 25ms, treated as glitch (last_valid=34448ms now=34458ms)
+  [DEDUP_DROP] CH5(PA3) F#17421: dt=12ms < 25ms, treated as glitch (last_valid=34448ms now=34460ms)
+  [DEDUP_DROP] CH6(PA4) F#17421: dt=12ms < 25ms, treated as glitch (last_valid=34448ms now=34460ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s509ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s509ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17449: dt=6ms < 25ms, treated as glitch (last_valid=34509ms now=34515ms)
+  [DEDUP_DROP] CH6(PA4) F#17449: dt=6ms < 25ms, treated as glitch (last_valid=34509ms now=34515ms)
+  [DEDUP_DROP] CH5(PA3) F#17450: dt=8ms < 25ms, treated as glitch (last_valid=34509ms now=34517ms)
+  [DEDUP_DROP] CH6(PA4) F#17450: dt=8ms < 25ms, treated as glitch (last_valid=34509ms now=34517ms)
+  [DEDUP_DROP] CH5(PA3) F#17451: dt=10ms < 25ms, treated as glitch (last_valid=34509ms now=34519ms)
+  [DEDUP_DROP] CH6(PA4) F#17451: dt=10ms < 25ms, treated as glitch (last_valid=34509ms now=34519ms)
+  [DEDUP_DROP] CH5(PA3) F#17452: dt=12ms < 25ms, treated as glitch (last_valid=34509ms now=34521ms)
+  [DEDUP_DROP] CH6(PA4) F#17452: dt=12ms < 25ms, treated as glitch (last_valid=34509ms now=34521ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s570ms498us freq=10390.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s629ms864us freq=10405.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s629ms863us freq=10405.8
+  [DEDUP_DROP] CH5(PA3) F#17513: dt=11ms < 25ms, treated as glitch (last_valid=34629ms now=34640ms)
+  [DEDUP_DROP] CH6(PA4) F#17513: dt=11ms < 25ms, treated as glitch (last_valid=34629ms now=34640ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s810ms992us freq=10026.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s810ms992us freq=10026.5
+  [DEDUP_DROP] CH5(PA3) F#17602: dt=5ms < 25ms, treated as glitch (last_valid=34810ms now=34815ms)
+  [DEDUP_DROP] CH6(PA4) F#17602: dt=5ms < 25ms, treated as glitch (last_valid=34810ms now=34815ms)
+  [DEDUP_DROP] CH5(PA3) F#17603: dt=8ms < 25ms, treated as glitch (last_valid=34810ms now=34818ms)
+  [DEDUP_DROP] CH6(PA4) F#17603: dt=8ms < 25ms, treated as glitch (last_valid=34810ms now=34818ms)
+  [DEDUP_DROP] CH5(PA3) F#17604: dt=9ms < 25ms, treated as glitch (last_valid=34810ms now=34819ms)
+  [DEDUP_DROP] CH6(PA4) F#17604: dt=9ms < 25ms, treated as glitch (last_valid=34810ms now=34819ms)
+  [DEDUP_DROP] CH5(PA3) F#17605: dt=11ms < 25ms, treated as glitch (last_valid=34810ms now=34821ms)
+  [DEDUP_DROP] CH6(PA4) F#17605: dt=11ms < 25ms, treated as glitch (last_valid=34810ms now=34821ms)
+  [DEDUP_DROP] CH5(PA3) F#17606: dt=13ms < 25ms, treated as glitch (last_valid=34810ms now=34823ms)
+  [DEDUP_DROP] CH6(PA4) F#17606: dt=13ms < 25ms, treated as glitch (last_valid=34810ms now=34823ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s872ms424us freq=58944.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s872ms424us freq=58942.8
+  [DEDUP_DROP] CH5(PA3) F#17634: dt=6ms < 25ms, treated as glitch (last_valid=34872ms now=34878ms)
+  [DEDUP_DROP] CH6(PA4) F#17634: dt=6ms < 25ms, treated as glitch (last_valid=34872ms now=34878ms)
+  [DEDUP_DROP] CH5(PA3) F#17635: dt=9ms < 25ms, treated as glitch (last_valid=34872ms now=34881ms)
+  [DEDUP_DROP] CH6(PA4) F#17635: dt=9ms < 25ms, treated as glitch (last_valid=34872ms now=34881ms)
+  [DEDUP_DROP] CH5(PA3) F#17636: dt=10ms < 25ms, treated as glitch (last_valid=34872ms now=34882ms)
+  [DEDUP_DROP] CH6(PA4) F#17636: dt=10ms < 25ms, treated as glitch (last_valid=34872ms now=34882ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s931ms498us freq=10393.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=34s992ms473us freq=10389.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=34s992ms472us freq=10386.5
+  [DEDUP_DROP] CH5(PA3) F#17698: dt=12ms < 25ms, treated as glitch (last_valid=34992ms now=35004ms)
+  [DEDUP_DROP] CH6(PA4) F#17698: dt=12ms < 25ms, treated as glitch (last_valid=34992ms now=35004ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s175ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s175ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17788: dt=6ms < 25ms, treated as glitch (last_valid=35175ms now=35181ms)
+  [DEDUP_DROP] CH6(PA4) F#17788: dt=6ms < 25ms, treated as glitch (last_valid=35175ms now=35181ms)
+  [DEDUP_DROP] CH5(PA3) F#17789: dt=8ms < 25ms, treated as glitch (last_valid=35175ms now=35183ms)
+  [DEDUP_DROP] CH6(PA4) F#17789: dt=8ms < 25ms, treated as glitch (last_valid=35175ms now=35183ms)
+  [DEDUP_DROP] CH5(PA3) F#17790: dt=10ms < 25ms, treated as glitch (last_valid=35175ms now=35185ms)
+  [DEDUP_DROP] CH6(PA4) F#17790: dt=10ms < 25ms, treated as glitch (last_valid=35175ms now=35185ms)
+  [DEDUP_DROP] CH5(PA3) F#17791: dt=12ms < 25ms, treated as glitch (last_valid=35175ms now=35187ms)
+  [DEDUP_DROP] CH6(PA4) F#17791: dt=12ms < 25ms, treated as glitch (last_valid=35175ms now=35187ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s236ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s236ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17819: dt=6ms < 25ms, treated as glitch (last_valid=35236ms now=35242ms)
+  [DEDUP_DROP] CH6(PA4) F#17819: dt=6ms < 25ms, treated as glitch (last_valid=35236ms now=35242ms)
+  [DEDUP_DROP] CH5(PA3) F#17820: dt=8ms < 25ms, treated as glitch (last_valid=35236ms now=35244ms)
+  [DEDUP_DROP] CH6(PA4) F#17820: dt=8ms < 25ms, treated as glitch (last_valid=35236ms now=35244ms)
+  [DEDUP_DROP] CH5(PA3) F#17821: dt=10ms < 25ms, treated as glitch (last_valid=35236ms now=35246ms)
+  [DEDUP_DROP] CH6(PA4) F#17821: dt=10ms < 25ms, treated as glitch (last_valid=35236ms now=35246ms)
+  [DEDUP_DROP] CH5(PA3) F#17822: dt=12ms < 25ms, treated as glitch (last_valid=35236ms now=35248ms)
+  [DEDUP_DROP] CH6(PA4) F#17822: dt=12ms < 25ms, treated as glitch (last_valid=35236ms now=35248ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s297ms499us freq=10396.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s358ms472us freq=10382.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s358ms471us freq=10388.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s539ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s539ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#17973: dt=6ms < 25ms, treated as glitch (last_valid=35539ms now=35545ms)
+  [DEDUP_DROP] CH6(PA4) F#17973: dt=6ms < 25ms, treated as glitch (last_valid=35539ms now=35545ms)
+  [DEDUP_DROP] CH5(PA3) F#17974: dt=8ms < 25ms, treated as glitch (last_valid=35539ms now=35547ms)
+  [DEDUP_DROP] CH6(PA4) F#17974: dt=8ms < 25ms, treated as glitch (last_valid=35539ms now=35547ms)
+  [DEDUP_DROP] CH5(PA3) F#17975: dt=10ms < 25ms, treated as glitch (last_valid=35539ms now=35549ms)
+  [DEDUP_DROP] CH6(PA4) F#17975: dt=10ms < 25ms, treated as glitch (last_valid=35539ms now=35549ms)
+  [DEDUP_DROP] CH5(PA3) F#17976: dt=12ms < 25ms, treated as glitch (last_valid=35539ms now=35551ms)
+  [DEDUP_DROP] CH6(PA4) F#17976: dt=12ms < 25ms, treated as glitch (last_valid=35539ms now=35551ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s600ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s600ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18004: dt=6ms < 25ms, treated as glitch (last_valid=35600ms now=35606ms)
+  [DEDUP_DROP] CH6(PA4) F#18004: dt=6ms < 25ms, treated as glitch (last_valid=35600ms now=35606ms)
+  [DEDUP_DROP] CH5(PA3) F#18005: dt=8ms < 25ms, treated as glitch (last_valid=35600ms now=35608ms)
+  [DEDUP_DROP] CH6(PA4) F#18005: dt=8ms < 25ms, treated as glitch (last_valid=35600ms now=35608ms)
+  [DEDUP_DROP] CH5(PA3) F#18006: dt=10ms < 25ms, treated as glitch (last_valid=35600ms now=35610ms)
+  [DEDUP_DROP] CH6(PA4) F#18006: dt=10ms < 25ms, treated as glitch (last_valid=35600ms now=35610ms)
+  [DEDUP_DROP] CH5(PA3) F#18007: dt=12ms < 25ms, treated as glitch (last_valid=35600ms now=35612ms)
+  [DEDUP_DROP] CH6(PA4) F#18007: dt=12ms < 25ms, treated as glitch (last_valid=35600ms now=35612ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s661ms499us freq=10388.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s720ms686us freq=10413.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s720ms687us freq=10411.2
+  [DEDUP_DROP] CH5(PA3) F#18067: dt=10ms < 25ms, treated as glitch (last_valid=35720ms now=35730ms)
+  [DEDUP_DROP] CH6(PA4) F#18067: dt=10ms < 25ms, treated as glitch (last_valid=35720ms now=35730ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s901ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s901ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18157: dt=6ms < 25ms, treated as glitch (last_valid=35901ms now=35907ms)
+  [DEDUP_DROP] CH6(PA4) F#18157: dt=6ms < 25ms, treated as glitch (last_valid=35901ms now=35907ms)
+  [DEDUP_DROP] CH5(PA3) F#18158: dt=8ms < 25ms, treated as glitch (last_valid=35901ms now=35909ms)
+  [DEDUP_DROP] CH6(PA4) F#18158: dt=8ms < 25ms, treated as glitch (last_valid=35901ms now=35909ms)
+  [DEDUP_DROP] CH5(PA3) F#18159: dt=10ms < 25ms, treated as glitch (last_valid=35901ms now=35911ms)
+  [DEDUP_DROP] CH6(PA4) F#18159: dt=10ms < 25ms, treated as glitch (last_valid=35901ms now=35911ms)
+  [DEDUP_DROP] CH5(PA3) F#18160: dt=12ms < 25ms, treated as glitch (last_valid=35901ms now=35913ms)
+  [DEDUP_DROP] CH6(PA4) F#18160: dt=12ms < 25ms, treated as glitch (last_valid=35901ms now=35913ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=35s962ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=35s962ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18188: dt=6ms < 25ms, treated as glitch (last_valid=35962ms now=35968ms)
+  [DEDUP_DROP] CH6(PA4) F#18188: dt=6ms < 25ms, treated as glitch (last_valid=35962ms now=35968ms)
+  [DEDUP_DROP] CH5(PA3) F#18189: dt=8ms < 25ms, treated as glitch (last_valid=35962ms now=35970ms)
+  [DEDUP_DROP] CH6(PA4) F#18189: dt=8ms < 25ms, treated as glitch (last_valid=35962ms now=35970ms)
+  [DEDUP_DROP] CH5(PA3) F#18190: dt=10ms < 25ms, treated as glitch (last_valid=35962ms now=35972ms)
+  [DEDUP_DROP] CH6(PA4) F#18190: dt=10ms < 25ms, treated as glitch (last_valid=35962ms now=35972ms)
+  [DEDUP_DROP] CH5(PA3) F#18191: dt=12ms < 25ms, treated as glitch (last_valid=35962ms now=35974ms)
+  [DEDUP_DROP] CH6(PA4) F#18191: dt=12ms < 25ms, treated as glitch (last_valid=35962ms now=35974ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s23ms498us freq=10386.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s82ms932us freq=10286.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s82ms931us freq=10279.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s266ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s266ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18343: dt=6ms < 25ms, treated as glitch (last_valid=36266ms now=36272ms)
+  [DEDUP_DROP] CH6(PA4) F#18343: dt=6ms < 25ms, treated as glitch (last_valid=36266ms now=36272ms)
+  [DEDUP_DROP] CH5(PA3) F#18344: dt=9ms < 25ms, treated as glitch (last_valid=36266ms now=36275ms)
+  [DEDUP_DROP] CH6(PA4) F#18344: dt=9ms < 25ms, treated as glitch (last_valid=36266ms now=36275ms)
+  [DEDUP_DROP] CH5(PA3) F#18345: dt=10ms < 25ms, treated as glitch (last_valid=36266ms now=36276ms)
+  [DEDUP_DROP] CH6(PA4) F#18345: dt=10ms < 25ms, treated as glitch (last_valid=36266ms now=36276ms)
+  [DEDUP_DROP] CH5(PA3) F#18346: dt=12ms < 25ms, treated as glitch (last_valid=36266ms now=36278ms)
+  [DEDUP_DROP] CH6(PA4) F#18346: dt=12ms < 25ms, treated as glitch (last_valid=36266ms now=36278ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s327ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s327ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18374: dt=6ms < 25ms, treated as glitch (last_valid=36327ms now=36333ms)
+  [DEDUP_DROP] CH6(PA4) F#18374: dt=6ms < 25ms, treated as glitch (last_valid=36327ms now=36333ms)
+  [DEDUP_DROP] CH5(PA3) F#18375: dt=9ms < 25ms, treated as glitch (last_valid=36327ms now=36336ms)
+  [DEDUP_DROP] CH6(PA4) F#18375: dt=9ms < 25ms, treated as glitch (last_valid=36327ms now=36336ms)
+  [DEDUP_DROP] CH5(PA3) F#18376: dt=10ms < 25ms, treated as glitch (last_valid=36327ms now=36337ms)
+  [DEDUP_DROP] CH6(PA4) F#18376: dt=10ms < 25ms, treated as glitch (last_valid=36327ms now=36337ms)
+  [DEDUP_DROP] CH5(PA3) F#18377: dt=12ms < 25ms, treated as glitch (last_valid=36327ms now=36339ms)
+  [DEDUP_DROP] CH6(PA4) F#18377: dt=12ms < 25ms, treated as glitch (last_valid=36327ms now=36339ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s388ms500us freq=10394.9
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s449ms473us freq=10389.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s449ms472us freq=10383.6
+  [DEDUP_DROP] CH5(PA3) F#18438: dt=10ms < 25ms, treated as glitch (last_valid=36449ms now=36459ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s632ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s632ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18529: dt=6ms < 25ms, treated as glitch (last_valid=36632ms now=36638ms)
+  [DEDUP_DROP] CH6(PA4) F#18529: dt=6ms < 25ms, treated as glitch (last_valid=36632ms now=36638ms)
+  [DEDUP_DROP] CH5(PA3) F#18530: dt=8ms < 25ms, treated as glitch (last_valid=36632ms now=36640ms)
+  [DEDUP_DROP] CH6(PA4) F#18530: dt=8ms < 25ms, treated as glitch (last_valid=36632ms now=36640ms)
+  [DEDUP_DROP] CH5(PA3) F#18531: dt=10ms < 25ms, treated as glitch (last_valid=36632ms now=36642ms)
+  [DEDUP_DROP] CH6(PA4) F#18531: dt=10ms < 25ms, treated as glitch (last_valid=36632ms now=36642ms)
+  [DEDUP_DROP] CH5(PA3) F#18532: dt=12ms < 25ms, treated as glitch (last_valid=36632ms now=36644ms)
+  [DEDUP_DROP] CH6(PA4) F#18532: dt=12ms < 25ms, treated as glitch (last_valid=36632ms now=36644ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s693ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s693ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18560: dt=6ms < 25ms, treated as glitch (last_valid=36693ms now=36699ms)
+  [DEDUP_DROP] CH6(PA4) F#18560: dt=6ms < 25ms, treated as glitch (last_valid=36693ms now=36699ms)
+  [DEDUP_DROP] CH5(PA3) F#18561: dt=8ms < 25ms, treated as glitch (last_valid=36693ms now=36701ms)
+  [DEDUP_DROP] CH6(PA4) F#18561: dt=8ms < 25ms, treated as glitch (last_valid=36693ms now=36701ms)
+  [DEDUP_DROP] CH5(PA3) F#18562: dt=10ms < 25ms, treated as glitch (last_valid=36693ms now=36703ms)
+  [DEDUP_DROP] CH6(PA4) F#18562: dt=10ms < 25ms, treated as glitch (last_valid=36693ms now=36703ms)
+  [DEDUP_DROP] CH5(PA3) F#18563: dt=12ms < 25ms, treated as glitch (last_valid=36693ms now=36705ms)
+  [DEDUP_DROP] CH6(PA4) F#18563: dt=12ms < 25ms, treated as glitch (last_valid=36693ms now=36705ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s754ms499us freq=10398.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s813ms544us freq=10382.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s813ms543us freq=10382.7
+  [DEDUP_DROP] CH5(PA3) F#18623: dt=10ms < 25ms, treated as glitch (last_valid=36813ms now=36823ms)
+  [DEDUP_DROP] CH6(PA4) F#18623: dt=10ms < 25ms, treated as glitch (last_valid=36813ms now=36823ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=36s994ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=36s994ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18713: dt=6ms < 25ms, treated as glitch (last_valid=36994ms now=37000ms)
+  [DEDUP_DROP] CH6(PA4) F#18713: dt=6ms < 25ms, treated as glitch (last_valid=36994ms now=37000ms)
+  [DEDUP_DROP] CH5(PA3) F#18714: dt=8ms < 25ms, treated as glitch (last_valid=36994ms now=37002ms)
+  [DEDUP_DROP] CH6(PA4) F#18714: dt=8ms < 25ms, treated as glitch (last_valid=36994ms now=37002ms)
+  [DEDUP_DROP] CH5(PA3) F#18715: dt=10ms < 25ms, treated as glitch (last_valid=36994ms now=37004ms)
+  [DEDUP_DROP] CH6(PA4) F#18715: dt=10ms < 25ms, treated as glitch (last_valid=36994ms now=37004ms)
+  [DEDUP_DROP] CH5(PA3) F#18716: dt=12ms < 25ms, treated as glitch (last_valid=36994ms now=37006ms)
+  [DEDUP_DROP] CH6(PA4) F#18716: dt=12ms < 25ms, treated as glitch (last_valid=36994ms now=37006ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s55ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s55ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18744: dt=6ms < 25ms, treated as glitch (last_valid=37055ms now=37061ms)
+  [DEDUP_DROP] CH6(PA4) F#18744: dt=6ms < 25ms, treated as glitch (last_valid=37055ms now=37061ms)
+  [DEDUP_DROP] CH5(PA3) F#18745: dt=8ms < 25ms, treated as glitch (last_valid=37055ms now=37063ms)
+  [DEDUP_DROP] CH6(PA4) F#18745: dt=8ms < 25ms, treated as glitch (last_valid=37055ms now=37063ms)
+  [DEDUP_DROP] CH5(PA3) F#18746: dt=10ms < 25ms, treated as glitch (last_valid=37055ms now=37065ms)
+  [DEDUP_DROP] CH6(PA4) F#18746: dt=10ms < 25ms, treated as glitch (last_valid=37055ms now=37065ms)
+  [DEDUP_DROP] CH5(PA3) F#18747: dt=12ms < 25ms, treated as glitch (last_valid=37055ms now=37067ms)
+  [DEDUP_DROP] CH6(PA4) F#18747: dt=12ms < 25ms, treated as glitch (last_valid=37055ms now=37067ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s116ms499us freq=10393.1
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s175ms789us freq=10431.8
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s175ms788us freq=10430.6
+  [DEDUP_DROP] CH5(PA3) F#18807: dt=10ms < 25ms, treated as glitch (last_valid=37175ms now=37185ms)
+  [DEDUP_DROP] CH6(PA4) F#18807: dt=10ms < 25ms, treated as glitch (last_valid=37175ms now=37185ms)
+  [DEDUP_DROP] CH5(PA3) F#18808: dt=12ms < 25ms, treated as glitch (last_valid=37175ms now=37187ms)
+  [DEDUP_DROP] CH6(PA4) F#18808: dt=12ms < 25ms, treated as glitch (last_valid=37175ms now=37187ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s356ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s356ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18897: dt=6ms < 25ms, treated as glitch (last_valid=37356ms now=37362ms)
+  [DEDUP_DROP] CH6(PA4) F#18897: dt=6ms < 25ms, treated as glitch (last_valid=37356ms now=37362ms)
+  [DEDUP_DROP] CH5(PA3) F#18898: dt=8ms < 25ms, treated as glitch (last_valid=37356ms now=37364ms)
+  [DEDUP_DROP] CH6(PA4) F#18898: dt=8ms < 25ms, treated as glitch (last_valid=37356ms now=37364ms)
+  [DEDUP_DROP] CH5(PA3) F#18899: dt=10ms < 25ms, treated as glitch (last_valid=37356ms now=37366ms)
+  [DEDUP_DROP] CH6(PA4) F#18899: dt=10ms < 25ms, treated as glitch (last_valid=37356ms now=37366ms)
+  [DEDUP_DROP] CH5(PA3) F#18900: dt=12ms < 25ms, treated as glitch (last_valid=37356ms now=37368ms)
+  [DEDUP_DROP] CH6(PA4) F#18900: dt=12ms < 25ms, treated as glitch (last_valid=37356ms now=37368ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s417ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s417ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#18928: dt=5ms < 25ms, treated as glitch (last_valid=37417ms now=37422ms)
+  [DEDUP_DROP] CH6(PA4) F#18928: dt=5ms < 25ms, treated as glitch (last_valid=37417ms now=37422ms)
+  [DEDUP_DROP] CH5(PA3) F#18929: dt=8ms < 25ms, treated as glitch (last_valid=37417ms now=37425ms)
+  [DEDUP_DROP] CH6(PA4) F#18929: dt=8ms < 25ms, treated as glitch (last_valid=37417ms now=37425ms)
+  [DEDUP_DROP] CH5(PA3) F#18930: dt=9ms < 25ms, treated as glitch (last_valid=37417ms now=37426ms)
+  [DEDUP_DROP] CH6(PA4) F#18930: dt=9ms < 25ms, treated as glitch (last_valid=37417ms now=37426ms)
+  [DEDUP_DROP] CH5(PA3) F#18931: dt=11ms < 25ms, treated as glitch (last_valid=37417ms now=37428ms)
+  [DEDUP_DROP] CH6(PA4) F#18931: dt=11ms < 25ms, treated as glitch (last_valid=37417ms now=37428ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s478ms9us freq=32500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s538ms36us freq=46500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s538ms33us freq=46500.0
+  [DEDUP_DROP] CH5(PA3) F#18992: dt=10ms < 25ms, treated as glitch (last_valid=37538ms now=37548ms)
+  [DEDUP_DROP] CH6(PA4) F#18992: dt=10ms < 25ms, treated as glitch (last_valid=37538ms now=37548ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s721ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s721ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#19083: dt=6ms < 25ms, treated as glitch (last_valid=37721ms now=37727ms)
+  [DEDUP_DROP] CH6(PA4) F#19083: dt=6ms < 25ms, treated as glitch (last_valid=37721ms now=37727ms)
+  [DEDUP_DROP] CH5(PA3) F#19084: dt=9ms < 25ms, treated as glitch (last_valid=37721ms now=37730ms)
+  [DEDUP_DROP] CH6(PA4) F#19084: dt=9ms < 25ms, treated as glitch (last_valid=37721ms now=37730ms)
+  [DEDUP_DROP] CH5(PA3) F#19085: dt=10ms < 25ms, treated as glitch (last_valid=37721ms now=37731ms)
+  [DEDUP_DROP] CH6(PA4) F#19085: dt=10ms < 25ms, treated as glitch (last_valid=37721ms now=37731ms)
+  [DEDUP_DROP] CH5(PA3) F#19086: dt=12ms < 25ms, treated as glitch (last_valid=37721ms now=37733ms)
+  [DEDUP_DROP] CH6(PA4) F#19086: dt=12ms < 25ms, treated as glitch (last_valid=37721ms now=37733ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s782ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s782ms480us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#19114: dt=6ms < 25ms, treated as glitch (last_valid=37782ms now=37788ms)
+  [DEDUP_DROP] CH6(PA4) F#19114: dt=6ms < 25ms, treated as glitch (last_valid=37782ms now=37788ms)
+  [DEDUP_DROP] CH5(PA3) F#19115: dt=8ms < 25ms, treated as glitch (last_valid=37782ms now=37790ms)
+  [DEDUP_DROP] CH6(PA4) F#19115: dt=8ms < 25ms, treated as glitch (last_valid=37782ms now=37790ms)
+  [DEDUP_DROP] CH5(PA3) F#19116: dt=10ms < 25ms, treated as glitch (last_valid=37782ms now=37792ms)
+  [DEDUP_DROP] CH6(PA4) F#19116: dt=10ms < 25ms, treated as glitch (last_valid=37782ms now=37792ms)
+  [DEDUP_DROP] CH5(PA3) F#19117: dt=12ms < 25ms, treated as glitch (last_valid=37782ms now=37794ms)
+  [DEDUP_DROP] CH6(PA4) F#19117: dt=12ms < 25ms, treated as glitch (last_valid=37782ms now=37794ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s843ms499us freq=10393.2
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=37s904ms472us freq=10384.3
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=37s904ms472us freq=10386.0
+  [DEDUP_DROP] CH5(PA3) F#19178: dt=10ms < 25ms, treated as glitch (last_valid=37904ms now=37914ms)
+  [DEDUP_DROP] CH6(PA4) F#19178: dt=10ms < 25ms, treated as glitch (last_valid=37904ms now=37914ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s87ms478us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=38s87ms478us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#19269: dt=6ms < 25ms, treated as glitch (last_valid=38087ms now=38093ms)
+  [DEDUP_DROP] CH6(PA4) F#19269: dt=6ms < 25ms, treated as glitch (last_valid=38087ms now=38093ms)
+  [DEDUP_DROP] CH5(PA3) F#19270: dt=8ms < 25ms, treated as glitch (last_valid=38087ms now=38095ms)
+  [DEDUP_DROP] CH6(PA4) F#19270: dt=8ms < 25ms, treated as glitch (last_valid=38087ms now=38095ms)
+  [DEDUP_DROP] CH5(PA3) F#19271: dt=10ms < 25ms, treated as glitch (last_valid=38087ms now=38097ms)
+  [DEDUP_DROP] CH6(PA4) F#19271: dt=10ms < 25ms, treated as glitch (last_valid=38087ms now=38097ms)
+  [DEDUP_DROP] CH5(PA3) F#19272: dt=12ms < 25ms, treated as glitch (last_valid=38087ms now=38099ms)
+  [DEDUP_DROP] CH6(PA4) F#19272: dt=12ms < 25ms, treated as glitch (last_valid=38087ms now=38099ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s148ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=38s148ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#19300: dt=6ms < 25ms, treated as glitch (last_valid=38148ms now=38154ms)
+  [DEDUP_DROP] CH6(PA4) F#19300: dt=6ms < 25ms, treated as glitch (last_valid=38148ms now=38154ms)
+  [DEDUP_DROP] CH5(PA3) F#19301: dt=8ms < 25ms, treated as glitch (last_valid=38148ms now=38156ms)
+  [DEDUP_DROP] CH6(PA4) F#19301: dt=8ms < 25ms, treated as glitch (last_valid=38148ms now=38156ms)
+  [DEDUP_DROP] CH5(PA3) F#19302: dt=10ms < 25ms, treated as glitch (last_valid=38148ms now=38158ms)
+  [DEDUP_DROP] CH6(PA4) F#19302: dt=10ms < 25ms, treated as glitch (last_valid=38148ms now=38158ms)
+  [DEDUP_DROP] CH5(PA3) F#19303: dt=12ms < 25ms, treated as glitch (last_valid=38148ms now=38160ms)
+  [DEDUP_DROP] CH6(PA4) F#19303: dt=12ms < 25ms, treated as glitch (last_valid=38148ms now=38160ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s209ms499us freq=10394.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s268ms646us freq=10370.4
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=38s268ms646us freq=10374.6
+  [DEDUP_DROP] CH5(PA3) F#19363: dt=10ms < 25ms, treated as glitch (last_valid=38268ms now=38278ms)
+  [DEDUP_DROP] CH6(PA4) F#19363: dt=10ms < 25ms, treated as glitch (last_valid=38268ms now=38278ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s449ms479us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=38s449ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#19453: dt=6ms < 25ms, treated as glitch (last_valid=38449ms now=38455ms)
+  [DEDUP_DROP] CH6(PA4) F#19453: dt=6ms < 25ms, treated as glitch (last_valid=38449ms now=38455ms)
+  [DEDUP_DROP] CH5(PA3) F#19454: dt=8ms < 25ms, treated as glitch (last_valid=38449ms now=38457ms)
+  [DEDUP_DROP] CH6(PA4) F#19454: dt=8ms < 25ms, treated as glitch (last_valid=38449ms now=38457ms)
+  [DEDUP_DROP] CH5(PA3) F#19455: dt=10ms < 25ms, treated as glitch (last_valid=38449ms now=38459ms)
+  [DEDUP_DROP] CH6(PA4) F#19455: dt=10ms < 25ms, treated as glitch (last_valid=38449ms now=38459ms)
+  [DEDUP_DROP] CH5(PA3) F#19456: dt=12ms < 25ms, treated as glitch (last_valid=38449ms now=38461ms)
+  [DEDUP_DROP] CH6(PA4) F#19456: dt=12ms < 25ms, treated as glitch (last_valid=38449ms now=38461ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s510ms480us freq=59500.0
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=38s510ms479us freq=59500.0
+  [DEDUP_DROP] CH5(PA3) F#19484: dt=6ms < 25ms, treated as glitch (last_valid=38510ms now=38516ms)
+  [DEDUP_DROP] CH6(PA4) F#19484: dt=6ms < 25ms, treated as glitch (last_valid=38510ms now=38516ms)
+  [DEDUP_DROP] CH5(PA3) F#19485: dt=8ms < 25ms, treated as glitch (last_valid=38510ms now=38518ms)
+  [DEDUP_DROP] CH6(PA4) F#19485: dt=8ms < 25ms, treated as glitch (last_valid=38510ms now=38518ms)
+  [DEDUP_DROP] CH5(PA3) F#19486: dt=10ms < 25ms, treated as glitch (last_valid=38510ms now=38520ms)
+  [DEDUP_DROP] CH6(PA4) F#19486: dt=10ms < 25ms, treated as glitch (last_valid=38510ms now=38520ms)
+  [DEDUP_DROP] CH5(PA3) F#19487: dt=12ms < 25ms, treated as glitch (last_valid=38510ms now=38522ms)
+  [DEDUP_DROP] CH6(PA4) F#19487: dt=12ms < 25ms, treated as glitch (last_valid=38510ms now=38522ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s571ms499us freq=10391.5
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH5(PA3) T=38s630ms891us freq=10479.6
+  [FFT_DBG] fft_cyc=0 (0.00us)
+>>> EVENT CH6(PA4) T=38s630ms891us freq=10479.9
+  [DEDUP_DROP] CH5(PA3) F#19548: dt=11ms < 25ms, treated as glitch (last_valid=38630ms now=38641ms)
+  [DEDUP_DROP] CH6(PA4) F#19548: dt=11ms < 25ms, treated as glitch (last_valid=38630ms now=38641ms)
+  [FFT_DBG] fft_cyc=0 (0.00us)

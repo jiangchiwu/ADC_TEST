@@ -1,0 +1,41 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(538): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(704): warning:  #177-D: variable "thr" was declared but never referenced
+          uint16_t thr = thr_ch[ch];
+../Core/Src/main.c(635): warning:  #550-D: variable "ch_ts_s" was set but never used
+        uint32_t ch_ts_s[ADC_NCH];
+../Core/Src/main.c(636): warning:  #550-D: variable "ch_ts_ms" was set but never used
+        uint32_t ch_ts_ms[ADC_NCH];
+../Core/Src/main.c(637): warning:  #550-D: variable "ch_ts_us" was set but never used
+        uint32_t ch_ts_us[ADC_NCH];
+../Core/Src/main.c(501): warning:  #177-D: variable "print_count" was declared but never referenced
+    uint32_t print_count = 0;
+../Core/Src/main.c(505): warning:  #177-D: variable "i" was declared but never referenced
+    uint16_t i;
+../Core/Src/main.c(512): warning:  #177-D: variable "last_print_ms" was declared but never referenced
+    uint32_t last_print_ms = 0;
+../Core/Src/main.c(518): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(812): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(60): warning:  #177-D: function "fmt_time_us" was declared but never referenced
+  static inline void fmt_time_us(uint64_t total_us, uint32_t *s, uint32_t *ms, uint32_t *us)
+../Core/Src/main.c(132): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c(184): warning:  #550-D: variable "tw_cos" was set but never used
+  static float tw_cos[FFT_LENGTH / 2]            __attribute__((aligned(32)));
+../Core/Src/main.c(185): warning:  #550-D: variable "tw_sin" was set but never used
+  static float tw_sin[FFT_LENGTH / 2]            __attribute__((aligned(32)));
+../Core/Src/main.c(186): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c(313): warning:  #177-D: function "Verify_Sustain_in_Frame" was declared but never referenced
+  static uint8_t Verify_Sustain_in_Frame(const uint8_t *buf, uint16_t n_samples, uint8_t ch,
+../Core/Src/main.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=35704 RO-data=79992 RW-data=166144 ZI-data=53984  
+FromELF: creating hex file...
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 0 Error(s), 17 Warning(s).

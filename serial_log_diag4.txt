@@ -1,0 +1,508 @@
+[#31] T=15s 548ms 0us | HT=3663 TC=3664 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@2056 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@2370 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@2624 dev=1]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@2908 dev=1]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@805 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@3506 dev=1]
+  [SCAN] CH1(PC0) F#7540: base=106 noise=0 pp_full=209 peak@691 thr=3 trans@0 hits=100/100 PASS
+  [SCAN] CH2(PC1) F#7540: base=116 noise=0 pp_full=196 peak@782 thr=3 trans@740 hits=97/100 PASS
+  [SCAN] CH3(PC2) F#7540: base=108 noise=0 pp_full=206 peak@718 thr=3 trans@0 hits=100/100 PASS
+  [NOTRANS] CH4(PC3) F#7540: base=116 noise=1 pp_full=6 peak@1517 thr=3 (no transition - signal at index 1517 may be in noise window 0-79?)
+>>> EVENT CH1(PC0) [F#7540 N=3]: T=8s 945ms 848us | freq=40161.8 Hz | base=106 noise=0 thr=3 | trans@0 peak@0(+0.00) rkOff=0.00 | fft=0 cyc (0.00 us) (target=20KHz 0.1V)
+    BEFORE: |<PEAK>|  117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+>>> EVENT CH2(PC1) [F#7540 N=3]: T=8s 946ms 612us | freq=39578.5 Hz | base=116 noise=0 thr=3 | trans@740 peak@783(+-0.50) rkOff=0.17 | fft=0 cyc (0.00 us) (target=20KHz 0.1V)
+    BEFORE:  70  87 106 127 148 166 179 190 198 204 |<PEAK>|  204 199 189 175 157 135 112  89  66  46  30  17  10   8  12  21  36  55  78 102 128 150 167 181 191 199 202 200 192 179 162 141 119  95  73  52  35  22  14  11  14  23  35  52  72  93 115 136 154 169
+>>> EVENT CH3(PC2) [F#7540 N=3]: T=8s 945ms 943us | freq=40348.9 Hz | base=108 noise=0 thr=3 | trans@0 peak@98(+-0.00) rkOff=0.33 | fft=0 cyc (0.00 us) (target=20KHz 0.1V)
+    BEFORE: 116 116 116 116 116 116 116 116 116 116 |<PEAK>|  117 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+[#32] T=16s 48ms 0us | HT=3791 TC=3791 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3050 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#33] T=16s 548ms 0us | HT=3918 TC=3918 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@244 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@150 dev=1]
+[#34] T=17s 48ms 0us | HT=4045 TC=4045 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=115 max=116 pp=1 peak@1129 dev=1]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@142 dev=1]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@30 dev=1]
+  [NOTRANS] CH6(PA4) F#8121: base=116 noise=0 pp_full=5 peak@1687 thr=3 (no transition - signal at index 1687 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8123: base=116 noise=3 pp_full=5 peak@1341 thr=3 (no transition - signal at index 1341 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8124: base=116 noise=0 pp_full=5 peak@1168 thr=3 (no transition - signal at index 1168 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8302: base=116 noise=0 pp_full=5 peak@1079 thr=3 (no transition - signal at index 1079 may be in noise window 0-79?)
+[#35] T=17s 548ms 0us | HT=4172 TC=4173 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1005 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1030 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@871 dev=1]
+[#36] T=18s 48ms 0us | HT=4299 TC=4300 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1093 dev=1]
+  [NOTRANS] CH6(PA4) F#8669: base=116 noise=3 pp_full=5 peak@43 thr=3 (no transition - signal at index 43 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8670: base=116 noise=2 pp_full=5 peak@1120 thr=3 (no transition - signal at index 1120 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8671: base=116 noise=0 pp_full=5 peak@322 thr=3 (no transition - signal at index 322 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8672: base=116 noise=1 pp_full=5 peak@149 thr=3 (no transition - signal at index 149 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#8851: base=116 noise=0 pp_full=5 peak@1787 thr=3 (no transition - signal at index 1787 may be in noise window 0-79?)
+[#37] T=18s 548ms 0us | HT=4426 TC=4427 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@481 dev=3]
+    PEAK@481: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH2(PC1): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@2181 dev=3]
+    PEAK@2181: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@504 dev=2]
+  CH4(PC3): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@1418 dev=3]
+    PEAK@1418: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 116 117
+  CH5(PA3): base=116 noise=32 thr=3 | FULL[min=100 max=134 pp=34 peak@87 dev=18]
+    PEAK@87: 128 122 117 111 106 103 101 101 103 107 112 118 124 129 132 133 134* 129 124 119 113 108 103 101 101 102 106 110 116 122 127 131
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@191 dev=2]
+[#38] T=19s 48ms 0us | HT=4554 TC=4554 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3037 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1102 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#39] T=19s 548ms 0us | HT=4681 TC=4681 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3052 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3332 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH6(PA4) F#9401: base=116 noise=0 pp_full=5 peak@1602 thr=3 (no transition - signal at index 1602 may be in noise window 0-79?)
+[BENCH] 1024pt freq=40000.0 Hz | Full=377.93 us | CFFT=456.41 us (219078 cyc) | RFFT=234.68 us (112648 cyc) | CPU=480MHz rfft_init=1
+[#40] T=20s 48ms 0us | HT=4808 TC=4808 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@1036 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@1580 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@1059 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@1163 dev=2]
+  CH5(PA3): base=117 noise=27 thr=3 | FULL[min=66 max=169 pp=103 peak@1028 dev=52]
+    PEAK@1028: 105  93  81  73  68  66  68  74  84  96 110 125 139 151 161 167 169* 166 160 151 140 127 114 103  93  85  80  78  79  82  88  95
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@400 dev=2]
+  [NOTRANS] CH4(PC3) F#9733: base=116 noise=0 pp_full=5 peak@1878 thr=3 (no transition - signal at index 1878 may be in noise window 0-79?)
+  [NOTRANS] CH4(PC3) F#9734: base=116 noise=3 pp_full=5 peak@506 thr=3 (no transition - signal at index 506 may be in noise window 0-79?)
+[#41] T=20s 548ms 0us | HT=4935 TC=4935 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@4019 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@4019 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#42] T=21s 48ms 0us | HT=5062 TC=5063 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1003 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1006 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@853 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@605 dev=1]
+  [NOTRANS] CH6(PA4) F#10318: base=115 noise=2 pp_full=5 peak@1246 thr=3 (no transition - signal at index 1246 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10322: base=116 noise=2 pp_full=5 peak@554 thr=3 (no transition - signal at index 554 may be in noise window 0-79?)
+[#43] T=21s 548ms 0us | HT=5189 TC=5190 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@389 dev=2]
+  CH2(PC1): base=116 noise=3 thr=3 | FULL[min=115 max=118 pp=3 peak@2 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@597 dev=2]
+  CH4(PC3): base=116 noise=3 thr=3 | FULL[min=115 max=119 pp=4 peak@1460 dev=3]
+    PEAK@1460: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@180 dev=2]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@909 dev=2]
+[#44] T=22s 48ms 0us | HT=5316 TC=5317 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1847 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@208 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@211 dev=1]
+  [NOTRANS] CH6(PA4) F#10684: base=116 noise=0 pp_full=5 peak@233 thr=3 (no transition - signal at index 233 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10685: base=116 noise=2 pp_full=5 peak@685 thr=3 (no transition - signal at index 685 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10686: base=116 noise=1 pp_full=5 peak@461 thr=3 (no transition - signal at index 461 may be in noise window 0-79?)
+  [NOTRANS] CH4(PC3) F#10687: base=117 noise=0 pp_full=5 peak@1381 thr=3 (no transition - signal at index 1381 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10688: base=116 noise=2 pp_full=5 peak@791 thr=3 (no transition - signal at index 791 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10867: base=116 noise=0 pp_full=5 peak@414 thr=3 (no transition - signal at index 414 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10869: base=116 noise=2 pp_full=5 peak@1318 thr=3 (no transition - signal at index 1318 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#10870: base=116 noise=0 pp_full=5 peak@1145 thr=3 (no transition - signal at index 1145 may be in noise window 0-79?)
+[#45] T=22s 548ms 0us | HT=5444 TC=5444 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1579 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1194 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@746 dev=1]
+[#46] T=23s 48ms 0us | HT=5571 TC=5571 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@1026 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@1067 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1041 dev=1]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@1015 dev=1]
+  CH5(PA3): base=117 noise=2 thr=3 | FULL[min=116 max=118 pp=2 peak@0 dev=1]
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@41 dev=1]
+[#47] T=23s 548ms 0us | HT=5698 TC=5698 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@371 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@752 dev=1]
+  [NOTRANS] CH6(PA4) F#11599: base=116 noise=0 pp_full=5 peak@1408 thr=3 (no transition - signal at index 1408 may be in noise window 0-79?)
+[#48] T=24s 48ms 0us | HT=5825 TC=5826 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3398 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1002 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH4(PC3) F#11692: base=116 noise=1 pp_full=5 peak@141 thr=3 (no transition - signal at index 141 may be in noise window 0-79?)
+  [NOTRANS] CH4(PC3) F#11784: base=116 noise=0 pp_full=5 peak@305 thr=3 (no transition - signal at index 305 may be in noise window 0-79?)
+[#49] T=24s 548ms 0us | HT=5952 TC=5953 drop=0
+  CH1(PC0): base=117 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@121 dev=2]
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@199 dev=2]
+  CH3(PC2): base=116 noise=4 thr=3 | FULL[min=114 max=118 pp=4 peak@18 dev=2]
+  CH4(PC3): base=116 noise=3 thr=3 | FULL[min=115 max=119 pp=4 peak@922 dev=3]
+    PEAK@922: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=116 noise=3 thr=3 | FULL[min=115 max=118 pp=3 peak@10 dev=2]
+  CH6(PA4): base=115 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@95 dev=3]
+    PEAK@95: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+  [NOTRANS] CH6(PA4) F#11909: base=115 noise=1 pp_full=5 peak@273 thr=3 (no transition - signal at index 273 may be in noise window 0-79?)
+[BENCH] 1024pt freq=40000.0 Hz | Full=379.01 us | CFFT=455.17 us (218484 cyc) | RFFT=234.49 us (112556 cyc) | CPU=480MHz rfft_init=1
+[#50] T=25s 48ms 0us | HT=6079 TC=6080 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@313 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@748 dev=1]
+  [NOTRANS] CH6(PA4) F#12331: base=116 noise=0 pp_full=5 peak@1587 thr=3 (no transition - signal at index 1587 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#12332: base=116 noise=1 pp_full=5 peak@164 thr=3 (no transition - signal at index 164 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#12333: base=115 noise=2 pp_full=5 peak@616 thr=3 (no transition - signal at index 616 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#12335: base=115 noise=0 pp_full=5 peak@895 thr=3 (no transition - signal at index 895 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#12336: base=116 noise=3 pp_full=5 peak@1347 thr=3 (no transition - signal at index 1347 may be in noise window 0-79?)
+[#51] T=25s 548ms 0us | HT=6207 TC=6207 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3991 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3053 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@193 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@363 dev=1]
+[#52] T=26s 48ms 0us | HT=6334 TC=6334 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1047 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1036 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1534 dev=1]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1003 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@341 dev=1]
+[#53] T=26s 548ms 0us | HT=6461 TC=6461 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1375 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3527 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@664 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@250 dev=1]
+[#54] T=27s 48ms 0us | HT=6588 TC=6589 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3778 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1800 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@2964 dev=1]
+[#55] T=27s 548ms 0us | HT=6715 TC=6716 drop=0
+  CH1(PC0): base=117 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@112 dev=2]
+  CH2(PC1): base=117 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@82 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@186 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@290 dev=2]
+  CH5(PA3): base=117 noise=32 thr=3 | FULL[min=51 max=179 pp=128 peak@3063 dev=66]
+    PEAK@3063: 133 142 150 156 160 162 160 154 145 133 118 102  87  73  62  54  51*  53  59  70  85 101 120 137 154 167 175 179 179 173 163 151
+  CH6(PA4): base=116 noise=3 thr=3 | FULL[min=114 max=118 pp=4 peak@7 dev=2]
+[#56] T=28s 48ms 0us | HT=6842 TC=6843 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2080 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1348 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#57] T=28s 548ms 0us | HT=6969 TC=6970 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1993 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@940 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1611 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH6(PA4) F#13981: base=116 noise=0 pp_full=5 peak@1777 thr=3 (no transition - signal at index 1777 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#13982: base=116 noise=0 pp_full=5 peak@354 thr=3 (no transition - signal at index 354 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#13984: base=115 noise=4 pp_full=5 peak@1883 thr=3 (no transition - signal at index 1883 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#13985: base=116 noise=4 pp_full=5 peak@460 thr=3 (no transition - signal at index 460 may be in noise window 0-79?)
+[#58] T=29s 48ms 0us | HT=7097 TC=7097 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@2032 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@2136 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=117 pp=3 peak@1615 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@1719 dev=2]
+  CH5(PA3): base=116 noise=26 thr=3 | FULL[min=66 max=169 pp=103 peak@1615 dev=53]
+    PEAK@1615: 104  91  80  72  67  66  68  75  85  97 111 126 140 152 162 167 169* 166 160 151 139 126 113 101  91  84  79  77  78  82  88  96
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@95 dev=1]
+[#59] T=29s 548ms 0us | HT=7224 TC=7224 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3275 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1805 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[BENCH] 1024pt freq=40000.0 Hz | Full=378.34 us | CFFT=455.15 us (218476 cyc) | RFFT=234.30 us (112468 cyc) | CPU=480MHz rfft_init=1
+[#60] T=30s 48ms 0us | HT=7351 TC=7351 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3913 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@660 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#61] T=30s 548ms 0us | HT=7478 TC=7479 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=114 max=117 pp=3 peak@350 dev=2]
+  CH2(PC1): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@454 dev=2]
+  CH3(PC2): base=116 noise=1 thr=3 | FULL[min=114 max=117 pp=3 peak@118 dev=2]
+  CH4(PC3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@796 dev=2]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@141 dev=2]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=117 pp=3 peak@245 dev=2]
+[#62] T=31s 48ms 0us | HT=7605 TC=7606 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1101 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#63] T=31s 548ms 0us | HT=7732 TC=7733 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1745 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#64] T=32s 48ms 0us | HT=7860 TC=7860 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@1459 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@1352 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@1326 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@1381 dev=2]
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@2204 dev=3]
+    PEAK@2204: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 116 117
+  CH6(PA4): base=115 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@252 dev=3]
+    PEAK@252: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 115 116
+[#65] T=32s 548ms 0us | HT=7987 TC=7987 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH6(PA4) F#16180: base=115 noise=1 pp_full=5 peak@875 thr=3 (no transition - signal at index 875 may be in noise window 0-79?)
+[#66] T=33s 48ms 0us | HT=8114 TC=8114 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3575 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3666 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@402 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH6(PA4) F#16360: base=116 noise=0 pp_full=5 peak@1705 thr=3 (no transition - signal at index 1705 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#16363: base=116 noise=0 pp_full=5 peak@1186 thr=3 (no transition - signal at index 1186 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#16364: base=116 noise=0 pp_full=5 peak@1013 thr=3 (no transition - signal at index 1013 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#16365: base=116 noise=1 pp_full=5 peak@840 thr=3 (no transition - signal at index 840 may be in noise window 0-79?)
+[#67] T=33s 548ms 0us | HT=8241 TC=8242 drop=0
+  CH1(PC0): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@46 dev=2]
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@145 dev=2]
+  CH3(PC2): base=115 noise=2 thr=3 | FULL[min=114 max=117 pp=3 peak@119 dev=2]
+  CH4(PC3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@123 dev=2]
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@252 dev=2]
+  CH6(PA4): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@152 dev=2]
+[#68] T=34s 48ms 0us | HT=8368 TC=8369 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1847 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#69] T=34s 548ms 0us | HT=8495 TC=8496 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1495 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@406 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[BENCH] 1024pt freq=40000.0 Hz | Full=379.21 us | CFFT=455.67 us (218724 cyc) | RFFT=235.16 us (112880 cyc) | CPU=480MHz rfft_init=1
+[#70] T=35s 48ms 0us | HT=8623 TC=8623 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3048 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@370 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH6(PA4) F#17463: base=115 noise=2 pp_full=5 peak@820 thr=3 (no transition - signal at index 820 may be in noise window 0-79?)
+[#71] T=35s 548ms 0us | HT=8750 TC=8750 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2139 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#72] T=36s 48ms 0us | HT=8877 TC=8877 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2261 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#73] T=36s 548ms 0us | HT=9004 TC=9004 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@3060 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@133 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@237 dev=2]
+  CH4(PC3): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@3761 dev=3]
+    PEAK@3761: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=117 noise=32 thr=3 | FULL[min=51 max=179 pp=128 peak@3063 dev=66]
+    PEAK@3063: 133 142 150 156 160 162 160 154 145 133 118 103  87  73  62  54  51*  53  59  70  84 101 119 137 153 166 175 179 178 173 163 151
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@549 dev=2]
+[#74] T=37s 48ms 0us | HT=9131 TC=9132 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH4(PC3) F#18484: base=116 noise=3 pp_full=5 peak@83 thr=3 (no transition - signal at index 83 may be in noise window 0-79?)
+[#75] T=37s 548ms 0us | HT=9258 TC=9259 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1250 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1249 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#76] T=38s 48ms 0us | HT=9385 TC=9386 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@983 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@1712 dev=3]
+    PEAK@1712: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 114* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@1191 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@1295 dev=2]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=67 max=167 pp=100 peak@1015 dev=50]
+    PEAK@1015: 123 131 138 144 148 151 152 149 144 135 125 113 100  88  78  70  67*  67  71  79  89 102 116 131 144 155 163 167 167 163 156 146
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=117 pp=3 peak@1063 dev=2]
+  [NOTRANS] CH6(PA4) F#18926: base=115 noise=1 pp_full=5 peak@187 thr=3 (no transition - signal at index 187 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#18927: base=116 noise=3 pp_full=5 peak@1889 thr=3 (no transition - signal at index 1889 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#18929: base=116 noise=1 pp_full=5 peak@293 thr=3 (no transition - signal at index 293 may be in noise window 0-79?)
+[#77] T=38s 548ms 0us | HT=9513 TC=9513 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1285 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@884 dev=1]
+  CH6(PA4): base=115 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@165 dev=2]
+[#78] T=39s 48ms 0us | HT=9640 TC=9640 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3171 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1857 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@728 dev=1]
+  [NOTRANS] CH6(PA4) F#19293: base=115 noise=1 pp_full=5 peak@146 thr=3 (no transition - signal at index 146 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#19295: base=115 noise=2 pp_full=5 peak@425 thr=3 (no transition - signal at index 425 may be in noise window 0-79?)
+[#79] T=39s 548ms 0us | HT=9767 TC=9767 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@3477 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@27 dev=1]
+  CH3(PC2): base=115 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@265 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@96 dev=1]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@200 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=117 pp=3 peak@392 dev=2]
+[BENCH] 1024pt freq=40000.0 Hz | Full=380.06 us | CFFT=455.09 us (218446 cyc) | RFFT=234.49 us (112558 cyc) | CPU=480MHz rfft_init=1
+[#80] T=40s 48ms 0us | HT=9894 TC=9895 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@462 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  [NOTRANS] CH6(PA4) F#20022: base=116 noise=0 pp_full=5 peak@1329 thr=3 (no transition - signal at index 1329 may be in noise window 0-79?)
+[#81] T=40s 548ms 0us | HT=10021 TC=10022 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3213 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@225 dev=1]
+[#82] T=41s 48ms 0us | HT=10148 TC=10149 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@1044 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@1018 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@992 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@1276 dev=2]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@1021 dev=2]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@995 dev=2]
+  [NOTRANS] CH4(PC3) F#20389: base=116 noise=1 pp_full=5 peak@95 thr=3 (no transition - signal at index 95 may be in noise window 0-79?)
+[#83] T=41s 548ms 0us | HT=10276 TC=10276 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1110 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3054 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@169 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@639 dev=1]
+  [NOTRANS] CH4(PC3) F#20575: base=116 noise=2 pp_full=5 peak@452 thr=3 (no transition - signal at index 452 may be in noise window 0-79?)
+[#84] T=42s 48ms 0us | HT=10403 TC=10403 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@913 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@83 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@963 dev=1]
+[#85] T=42s 548ms 0us | HT=10530 TC=10530 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@3094 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@3068 dev=2]
+  CH3(PC2): base=115 noise=3 thr=3 | FULL[min=114 max=118 pp=4 peak@3086 dev=3]
+    PEAK@3086: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+  CH4(PC3): base=117 noise=3 thr=3 | FULL[min=115 max=119 pp=4 peak@49 dev=2]
+  CH5(PA3): base=117 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@178 dev=2]
+  CH6(PA4): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@152 dev=2]
+  [NOTRANS] CH6(PA4) F#21064: base=116 noise=3 pp_full=5 peak@53 thr=3 (no transition - signal at index 53 may be in noise window 0-79?)
+[#86] T=43s 48ms 0us | HT=10657 TC=10658 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@2313 dev=1]
+[#87] T=43s 548ms 0us | HT=10784 TC=10785 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1284 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1287 dev=1]
+[#88] T=44s 48ms 0us | HT=10911 TC=10912 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@1374 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1948 dev=1]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=118 pp=1 peak@1417 dev=1]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@672 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@1460 dev=2]
+  [NOTRANS] CH6(PA4) F#22039: base=115 noise=0 pp_full=5 peak@1638 thr=3 (no transition - signal at index 1638 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#22040: base=116 noise=0 pp_full=5 peak@215 thr=3 (no transition - signal at index 215 may be in noise window 0-79?)
+  [NOTRANS] CH6(PA4) F#22041: base=115 noise=2 pp_full=5 peak@667 thr=3 (no transition - signal at index 667 may be in noise window 0-79?)
+[#89] T=44s 548ms 0us | HT=11038 TC=11039 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1322 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3177 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1982 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=116 pp=1 peak@149 dev=1]
+[BENCH] 1024pt freq=40000.0 Hz | Full=378.65 us | CFFT=454.97 us (218388 cyc) | RFFT=234.79 us (112702 cyc) | CPU=480MHz rfft_init=1
+[#90] T=45s 48ms 0us | HT=11166 TC=11166 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@474 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@3736 dev=1]
+[#91] T=45s 548ms 0us | HT=11293 TC=11293 drop=0

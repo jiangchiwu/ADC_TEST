@@ -1,0 +1,9 @@
+device STM32H750VBT6
+speed 4000
+si SWD
+connect
+erase
+loadfile f:\ADC_FFT\Myproject\ADC_FFT_TEST\MDK-ARM\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.hex
+r
+g
+exit

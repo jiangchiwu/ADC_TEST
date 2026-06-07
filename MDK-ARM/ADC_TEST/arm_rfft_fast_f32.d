@@ -1,0 +1,9 @@
+.\adc_test\arm_rfft_fast_f32.o: ../Middlewares/CMSIS/DSP/Source/arm_rfft_fast_f32.c
+.\adc_test\arm_rfft_fast_f32.o: ../Middlewares/CMSIS/DSP/Include/arm_math.h
+.\adc_test\arm_rfft_fast_f32.o: ../Drivers/CMSIS/Include/core_cm7.h
+.\adc_test\arm_rfft_fast_f32.o: D:\soft\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\adc_test\arm_rfft_fast_f32.o: ../Drivers/CMSIS/Include/cmsis_version.h
+.\adc_test\arm_rfft_fast_f32.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+.\adc_test\arm_rfft_fast_f32.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+.\adc_test\arm_rfft_fast_f32.o: D:\soft\keil5\ARM\ARMCC\Bin\..\include\string.h
+.\adc_test\arm_rfft_fast_f32.o: D:\soft\keil5\ARM\ARMCC\Bin\..\include\math.h

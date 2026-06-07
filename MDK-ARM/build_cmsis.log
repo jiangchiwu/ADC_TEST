@@ -1,0 +1,184 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling debug.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/debug.c: 1 warning, 0 errors
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/CMSIS/DSP/Include/arm_math.h(36): warning:  #1-D: last line of file ends without a newline
+  #endif /* ARM_MATH_H */
+../Core/Src/main.c(293): warning:  #223-D: function "arm_cfft_init_f32" declared implicitly
+    arm_cfft_init_f32();
+../Core/Src/main.c(481): error:  #20: identifier "arm_cfft_sR_f32_len1024" is undefined
+    arm_cfft_f32(&arm_cfft_sR_f32_len1024, fft_buf, 0, 1);
+../Core/Src/main.c(555): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(613): warning:  #177-D: variable "cyc" was declared but never referenced
+          uint32_t cyc;
+../Core/Src/main.c(540): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(827): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(151): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c(218): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c: 9 warnings, 1 error
+compiling gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/gpio.c: 1 warning, 0 errors
+compiling adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/adc.c(395): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/adc.c: 2 warnings, 0 errors
+compiling tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/tim.c: 1 warning, 0 errors
+compiling stm32h7xx_it.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_it.c(77): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/stm32h7xx_it.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_msp.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_hal_msp.c: 1 warning, 0 errors
+compiling dac.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/dac.c: 1 warning, 0 errors
+compiling usart.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/usart.c(177): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/usart.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_adc_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_rcc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_rcc_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_hsem.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_mdma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_pwr.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_pwr_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_cortex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c(531): error: At end of source:  #5: cannot open source input file ".\07-adc_test_lcd1_8\stm32h7xx_hal_cortex.crf": Invalid argument
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c: 1 warning, 1 error
+compiling stm32h7xx_hal.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_i2c.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_i2c_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_exti.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_spi.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_spi_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_tim_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_uart.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_uart_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c: 1 warning, 0 errors
+compiling system_stm32h7xx.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/system_stm32h7xx.c: 1 warning, 0 errors
+compiling arm_cfft_f32.c...
+../Middlewares/CMSIS/DSP/Include/arm_math.h(36): warning:  #1-D: last line of file ends without a newline
+  #endif /* ARM_MATH_H */
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c(42): warning:  #177-D: variable "n4" was declared but never referenced
+      uint32_t n4 = n2 >> 1;
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c(14): warning:  #177-D: variable "inB0" was declared but never referenced
+    float32_t inA0, inA1, inB0, inB1;
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c(14): warning:  #177-D: variable "inB1" was declared but never referenced
+    float32_t inA0, inA1, inB0, inB1;
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c(117): warning:  #1-D: last line of file ends without a newline
+  }
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c: 5 warnings, 0 errors
+compiling arm_cfft_init_f32.c...
+../Middlewares/CMSIS/DSP/Include/arm_math.h(36): warning:  #1-D: last line of file ends without a newline
+  #endif /* ARM_MATH_H */
+../Middlewares/CMSIS/DSP/Source/arm_cfft_init_f32.c(21): warning:  #177-D: variable "j" was declared but never referenced
+    uint16_t j = 0;
+../Middlewares/CMSIS/DSP/Source/arm_cfft_init_f32.c(73): warning:  #1-D: last line of file ends without a newline
+  }
+../Middlewares/CMSIS/DSP/Source/arm_cfft_init_f32.c: 3 warnings, 0 errors
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 2 Error(s), 53 Warning(s).
+Target not created.

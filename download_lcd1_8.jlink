@@ -1,0 +1,7 @@
+connect
+h
+loadfile F:\ADC_FFT\Myproject\ADC_FFT_TEST\MDK-ARM\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.hex 0x08000000 noreset verify
+r
+g
+sleep 500
+exit

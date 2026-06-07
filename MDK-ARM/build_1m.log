@@ -1,0 +1,25 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(603): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(588): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(819): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(148): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c(223): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c: 6 warnings, 0 errors
+compiling adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/adc.c(62): error:  #136: struct "<unnamed>" has no field "BoostMode"
+    hadc1.Init.BoostMode                = ENABLE;
+../Core/Src/adc.c(395): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/adc.c: 2 warnings, 1 error
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 1 Error(s), 8 Warning(s).
+Target not created.

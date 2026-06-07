@@ -1,0 +1,25 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/CMSIS/DSP/Include/arm_math.h(305): error:  #35: #error directive: "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+    #error "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+../Core/Src/main.c: 1 warning, 1 error
+compiling stm32h7xx_hal_cortex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c: 1 warning, 0 errors
+compiling arm_cfft_f32.c...
+../Middlewares/CMSIS/DSP/Include/arm_math.h(305): error:  #35: #error directive: "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+    #error "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_f32.c...
+../Middlewares/CMSIS/DSP/Include/arm_math.h(305): error:  #35: #error directive: "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+    #error "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+../Middlewares/CMSIS/DSP/Source/arm_cfft_radix2_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_init_f32.c...
+../Middlewares/CMSIS/DSP/Include/arm_math.h(305): error:  #35: #error directive: "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+    #error "Define according the used Cortex core ARM_MATH_CM7, ARM_MATH_CM4, ARM_MATH_CM3, ARM_MATH_CM0PLUS or ARM_MATH_CM0"
+../Middlewares/CMSIS/DSP/Source/arm_cfft_radix2_init_f32.c: 0 warnings, 1 error
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 4 Error(s), 2 Warning(s).
+Target not created.

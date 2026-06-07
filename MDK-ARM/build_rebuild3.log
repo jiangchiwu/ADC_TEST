@@ -1,0 +1,6 @@
+Rebuild target '07-ADC_Test'
+assembling startup_stm32h750xx.s...
+startup_stm32h750xx.s: Error: A1067E: Output file specified as 'startup_stm32h750xx.s', but it has already been specified as '.\07-adc_test\startup_stm32h750xx.o'
+startup_stm32h750xx.s: error: A1023E: File "F:\ADC_FFT\Myproject\ADC_FFT_TEST\MDK-ARM\RTE" could not be opened: No error
+".\07-ADC_Test\07-ADC_Test.axf" - 2 Error(s), 0 Warning(s).
+Target not created.

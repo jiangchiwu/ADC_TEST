@@ -1,0 +1,141 @@
+Rebuild target '07-ADC_Test_LCD1_8'
+assembling startup_stm32h750xx.s...
+compiling debug.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/debug.c: 1 warning, 0 errors
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(295): warning:  #223-D: function "arm_cfft_init_f32" declared implicitly
+    arm_cfft_init_f32(&fft_inst, FFT_LENGTH);
+../Core/Src/main.c(557): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(615): warning:  #177-D: variable "cyc" was declared but never referenced
+          uint32_t cyc;
+../Core/Src/main.c(542): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(829): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(151): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c(218): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c: 8 warnings, 0 errors
+compiling gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/gpio.c: 1 warning, 0 errors
+compiling adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/adc.c(395): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/adc.c: 2 warnings, 0 errors
+compiling tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/tim.c: 1 warning, 0 errors
+compiling stm32h7xx_it.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_it.c(77): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/stm32h7xx_it.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_msp.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_hal_msp.c: 1 warning, 0 errors
+compiling dac.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/dac.c: 1 warning, 0 errors
+compiling usart.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/usart.c(177): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/usart.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_adc_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_rcc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_rcc_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_hsem.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma_ex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_dma_ex.__i'.
+compiling stm32h7xx_hal_mdma.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_mdma.__i'.
+compiling stm32h7xx_hal_pwr.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_pwr.__i'.
+compiling stm32h7xx_hal_pwr_ex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_pwr_ex.__i'.
+compiling stm32h7xx_hal_cortex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_cortex.__i'.
+compiling stm32h7xx_hal.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal.__i'.
+compiling stm32h7xx_hal_i2c.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_i2c.__i'.
+compiling stm32h7xx_hal_i2c_ex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_i2c_ex.__i'.
+compiling stm32h7xx_hal_exti.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_exti.__i'.
+compiling stm32h7xx_hal_spi.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_spi.__i'.
+compiling stm32h7xx_hal_spi_ex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_spi_ex.__i'.
+compiling stm32h7xx_hal_tim.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_tim.__i'.
+compiling stm32h7xx_hal_tim_ex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_tim_ex.__i'.
+compiling stm32h7xx_hal_uart.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_uart.__i'.
+compiling stm32h7xx_hal_uart_ex.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\stm32h7xx_hal_uart_ex.__i'.
+compiling system_stm32h7xx.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\system_stm32h7xx.__i'.
+compiling arm_cfft_f32.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\arm_cfft_f32.__i'.
+compiling arm_cfft_radix2_f32.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\arm_cfft_radix2_f32.__i'.
+compiling arm_cfft_radix2_init_f32.c...
+Fatal error: C3904U: Could not open via file '.\07-adc_test_lcd1_8\arm_cfft_radix2_init_f32.__i'.
+linking...
+.\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf: error: L6002U: Could not open file .\07-adc_test_lcd1_8\main.o: No such file or directory
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 1 Error(s), 28 Warning(s).
+Target not created.
+ile .\07-adc_test_lcd1_8\debug.o: No such file or directory
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 1 Error(s), 30 Warning(s).
+Target not created.

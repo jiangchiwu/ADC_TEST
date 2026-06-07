@@ -1,0 +1,2 @@
+Build target '07-ADC_Test_LCD1_8'
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,5 @@
+h
+loadfile f:\ADC_FFT\myproject\adc_fft_test\MDK-ARM\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.hex
+r
+g
+exit

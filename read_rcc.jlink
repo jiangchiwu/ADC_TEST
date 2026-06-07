@@ -1,0 +1,11 @@
+device STM32H750VB
+si SWD
+speed 4000
+connect
+mem 0x58024400 4
+mem 0x58024404 4
+mem 0x58024418 4
+mem 0x58024434 4
+mem 0x58024450 4
+mem 0x58024428 4
+q

@@ -1,0 +1,164 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/* ----------------------------------------------------
+                       ------------------
+    2 00000000         ; * Project:      CMSIS DSP Library
+    3 00000000         ; * Title:        arm_bitreversal2.S
+    4 00000000         ; * Description:  arm_bitreversal_32 function for Cortex
+                       -M7 (ARM ASM syntax)
+    5 00000000         ; *               Pre-processed for Keil MDK ARMCC v5 (s
+                       ingle arch path)
+    6 00000000         ; * ----------------------------------------------------
+                       ---------------- */
+    7 00000000         
+    8 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    9 00000000                 THUMB
+   10 00000000         
+   11 00000000                 EXPORT           arm_bitreversal_32
+   12 00000000                 EXPORT           arm_bitreversal_16
+   13 00000000         
+   14 00000000         ;/* In-place bit reversal function for 32-bit data (Cort
+                       ex-M3/M4/M7) */
+   15 00000000         arm_bitreversal_32
+                               PROC
+   16 00000000 1C4B            ADDS             r3,r1,#1
+   17 00000002 2B01            CMP              r3,#1
+   18 00000004 BF98            IT               LS
+   19 00000006 4770            BXLS             lr
+   20 00000008 E92D 03F0       PUSH             {r4-r9}
+   21 0000000C 1C91            ADDS             r1,r2,#2
+   22 0000000E 089B            LSRS             r3,r3,#2
+   23 00000010         arm_bitreversal_32_0
+   24 00000010 F8B1 8004       LDRH             r8,[r1,#4]
+   25 00000014 F8B1 9002       LDRH             r9,[r1,#2]
+   26 00000018 880A            LDRH             r2,[r1,#0]
+   27 0000001A F831 CC02       LDRH             r12,[r1,#-2]
+   28 0000001E 4480            ADD              r8,r0,r8
+   29 00000020 4481            ADD              r9,r0,r9
+   30 00000022 4402            ADD              r2,r0,r2
+   31 00000024 4484            ADD              r12,r0,r12
+   32 00000026 F8D9 7000       LDR              r7,[r9,#0]
+   33 0000002A F8D8 6000       LDR              r6,[r8,#0]
+   34 0000002E 6815            LDR              r5,[r2,#0]
+   35 00000030 F8DC 4000       LDR              r4,[r12,#0]
+   36 00000034 F8C9 6000       STR              r6,[r9,#0]
+   37 00000038 F8C8 7000       STR              r7,[r8,#0]
+   38 0000003C F8CC 5000       STR              r5,[r12,#0]
+   39 00000040 6014            STR              r4,[r2,#0]
+   40 00000042 F8D9 7004       LDR              r7,[r9,#4]
+   41 00000046 F8D8 6004       LDR              r6,[r8,#4]
+   42 0000004A 6855            LDR              r5,[r2,#4]
+   43 0000004C F8DC 4004       LDR              r4,[r12,#4]
+   44 00000050 F8C9 6004       STR              r6,[r9,#4]
+   45 00000054 F8C8 7004       STR              r7,[r8,#4]
+   46 00000058 F8CC 5004       STR              r5,[r12,#4]
+   47 0000005C 6054            STR              r4,[r2,#4]
+   48 0000005E 3108            ADDS             r1,r1,#8
+   49 00000060 1E5B            SUBS             r3,r3,#1
+   50 00000062 D1D5            BNE              arm_bitreversal_32_0
+   51 00000064 E8BD 03F0       POP              {r4-r9}
+   52 00000068 4770            BX               lr
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   53 0000006A                 ENDP
+   54 0000006A         
+   55 0000006A         ;/* In-place bit reversal function for 16-bit data (Cort
+                       ex-M3/M4/M7) */
+   56 0000006A         arm_bitreversal_16
+                               PROC
+   57 0000006A 1C4B            ADDS             r3,r1,#1
+   58 0000006C 2B01            CMP              r3,#1
+   59 0000006E BF98            IT               LS
+   60 00000070 4770            BXLS             lr
+   61 00000072 E92D 03F0       PUSH             {r4-r9}
+   62 00000076 1C91            ADDS             r1,r2,#2
+   63 00000078 089B            LSRS             r3,r3,#2
+   64 0000007A         arm_bitreversal_16_0
+   65 0000007A F8B1 8004       LDRH             r8,[r1,#4]
+   66 0000007E F8B1 9002       LDRH             r9,[r1,#2]
+   67 00000082 880A            LDRH             r2,[r1,#0]
+   68 00000084 F831 CC02       LDRH             r12,[r1,#-2]
+   69 00000088 EB00 0858       ADD              r8,r0,r8,LSR #1
+   70 0000008C EB00 0959       ADD              r9,r0,r9,LSR #1
+   71 00000090 EB00 0252       ADD              r2,r0,r2,LSR #1
+   72 00000094 EB00 0C5C       ADD              r12,r0,r12,LSR #1
+   73 00000098 F8D9 7000       LDR              r7,[r9,#0]
+   74 0000009C F8D8 6000       LDR              r6,[r8,#0]
+   75 000000A0 6815            LDR              r5,[r2,#0]
+   76 000000A2 F8DC 4000       LDR              r4,[r12,#0]
+   77 000000A6 F8C9 6000       STR              r6,[r9,#0]
+   78 000000AA F8C8 7000       STR              r7,[r8,#0]
+   79 000000AE F8CC 5000       STR              r5,[r12,#0]
+   80 000000B2 6014            STR              r4,[r2,#0]
+   81 000000B4 3108            ADDS             r1,r1,#8
+   82 000000B6 1E5B            SUBS             r3,r3,#1
+   83 000000B8 D1DF            BNE              arm_bitreversal_16_0
+   84 000000BA E8BD 03F0       POP              {r4-r9}
+   85 000000BE 4770            BX               lr
+   86 000000C0                 ENDP
+   87 000000C0         
+   88 000000C0                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.dp --apcs=
+interwork --depend=.\adc_test\arm_bitreversal2.d -o.\adc_test\arm_bitreversal2.
+o -IF:\work\ADC_TEST\MDK-ARM\RTE -ID:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Cor
+e\Include -ID:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0 --predefine="__MICROLIB
+ SETA 1" --predefine="__UVISION_VERSION SETA 514" --predefine="_RTE_ SETA 1" --
+predefine="STM32H750xx SETA 1" --list=arm_bitreversal2.lst ../Middlewares/CMSIS
+/DSP/Source/arm_bitreversal2.S
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 8 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+   Uses
+      None
+Comment: .text unused
+arm_bitreversal_16 0000006A
+
+Symbol: arm_bitreversal_16
+   Definitions
+      At line 56 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+   Uses
+      At line 12 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+Comment: arm_bitreversal_16 used once
+arm_bitreversal_16_0 0000007A
+
+Symbol: arm_bitreversal_16_0
+   Definitions
+      At line 64 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+   Uses
+      At line 83 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+Comment: arm_bitreversal_16_0 used once
+arm_bitreversal_32 00000000
+
+Symbol: arm_bitreversal_32
+   Definitions
+      At line 15 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+   Uses
+      At line 11 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+Comment: arm_bitreversal_32 used once
+arm_bitreversal_32_0 00000010
+
+Symbol: arm_bitreversal_32_0
+   Definitions
+      At line 23 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+   Uses
+      At line 50 in file ../Middlewares/CMSIS/DSP/Source/arm_bitreversal2.S
+Comment: arm_bitreversal_32_0 used once
+5 symbols
+340 symbols in table

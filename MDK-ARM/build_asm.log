@@ -1,0 +1,21 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(512): error:  #18: expected a ")"
+    __asm volatile ("MRC p15, 0, %0, c9, c13, 0" : "=r" (cyc_start));
+../Core/Src/main.c(569): error:  #18: expected a ")"
+    __asm volatile ("MRC p15, 0, %0, c9, c13, 0" : "=r" (cyc_end));
+../Core/Src/main.c(611): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(596): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(880): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(149): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c(224): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c: 6 warnings, 2 errors
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 2 Error(s), 6 Warning(s).
+Target not created.

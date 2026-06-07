@@ -1,0 +1,45 @@
+Build target '07-ADC_Test'
+compiling debug.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/debug.c: 1 warning, 0 errors
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(522): error:  #167: argument of type "arm_cfft_instance_f32 *" is incompatible with parameter of type "const arm_cfft_radix2_instance_f32 *"
+    arm_cfft_radix2_f32(&fft_inst, fft_re);
+../Core/Src/main.c(589): error:  #167: argument of type "arm_cfft_instance_f32 *" is incompatible with parameter of type "arm_cfft_radix2_instance_f32 *"
+    arm_cfft_radix2_init_f32(&fft_inst, FFT_LENGTH, 0, 1);  /* 初始化官�?FFT 实例 */
+../Core/Src/main.c(597): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(655): warning:  #177-D: variable "cyc" was declared but never referenced
+          uint32_t cyc;
+../Core/Src/main.c(581): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 30;
+../Core/Src/main.c(869): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(153): warning:  #177-D: function "DWT_GetUs" was declared but never referenced
+  static uint64_t DWT_GetUs(void) { return DWT_CycToUs(DWT->CYCCNT); }
+../Core/Src/main.c(222): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c(290): warning:  #177-D: function "my_cfft_f32" was declared but never referenced
+  static void my_cfft_f32(float *re, float *im, int n, int inverse)
+../Core/Src/main.c: 8 warnings, 2 errors
+compiling arm_cfft_f32.c...
+../Drivers/CMSIS/Include/core_cm7.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+../Middlewares/CMSIS/DSP/Source/arm_cfft_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_f32.c...
+../Drivers/CMSIS/Include/core_cm7.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+../Middlewares/CMSIS/DSP/Source/arm_cfft_radix2_f32.c: 0 warnings, 1 error
+compiling arm_cfft_radix2_init_f32.c...
+../Drivers/CMSIS/Include/core_cm7.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+../Middlewares/CMSIS/DSP/Source/arm_cfft_radix2_init_f32.c: 0 warnings, 1 error
+compiling arm_common_tables.c...
+../Drivers/CMSIS/Include/core_cm7.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+../Middlewares/CMSIS/DSP/Source/arm_common_tables.c: 0 warnings, 1 error
+".\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf" - 6 Error(s), 9 Warning(s).
+Target not created.

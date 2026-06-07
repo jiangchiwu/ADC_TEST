@@ -1,0 +1,15 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(528): warning:  #223-D: function "MX_DEBUG_UART_Init" declared implicitly
+    MX_DEBUG_UART_Init();
+../Core/Src/main.c(694): warning:  #177-D: variable "thr" was declared but never referenced
+          uint16_t thr = thr_ch[ch];
+../Core/Src/main.c(625): warning:  #550-D: variable "ch_ts_s" was set but never used
+        uint32_t ch_ts_s[ADC_NCH];
+linking...
+.\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf: error: L6002U: Could not open file .\07-adc_test_lcd1_8\main.o: No such file or directory
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 1 Error(s), 4 Warning(s).
+Target not created.

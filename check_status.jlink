@@ -1,0 +1,8 @@
+h
+r
+sleep 100
+mem32 0xE0001004 1  // Read CPUID
+sleep 100
+reg
+sleep 200
+exit

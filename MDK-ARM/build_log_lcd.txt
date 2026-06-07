@@ -1,0 +1,9 @@
+Build target '07-ADC_Test'
+compiling main.c...
+../Core/Src/main.c(119): warning:  #177-D: function "dwt_cycles" was declared but never referenced
+  static uint32_t dwt_cycles(void) { return DWT->CYCCNT; }
+../Core/Src/main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=35364 RO-data=3412 RW-data=200 ZI-data=16696  
+FromELF: creating hex file...
+".\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf" - 0 Error(s), 1 Warning(s).

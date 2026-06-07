@@ -1,0 +1,11 @@
+Build target '07-ADC_Test_LCD1_8'
+compiling adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/adc.c(395): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/adc.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=31148 RO-data=1144 RW-data=147704 ZI-data=62120  
+FromELF: creating hex file...
+".\07-ADC_Test_LCD1_8\07-ADC_Test_LCD1_8.axf" - 0 Error(s), 2 Warning(s).

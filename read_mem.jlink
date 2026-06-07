@@ -1,0 +1,14 @@
+device STM32H750VB
+si SWD
+speed 4000
+connect
+mem 0x20000014 4
+mem 0x200000F0 4
+mem 0x200000F8 4
+mem 0x20000130 8
+sleep 2000
+mem 0x20000014 4
+mem 0x200000F0 4
+mem 0x200000F8 4
+mem 0x20000130 8
+q

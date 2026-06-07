@@ -1,0 +1,464 @@
+[BENCH] 1024pt freq=40000.0 Hz | Full=382.52 us | CFFT=456.42 us (219086 cyc) | RFFT=236.55 us (113546 cyc) | CPU=480MHz rfft_init=1
+[#30] T=15s 7ms 0us | HT=3669 TC=3669 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3059 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@96 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1507 dev=1]
+[#31] T=15s 507ms 0us | HT=3796 TC=3796 drop=0
+  CH1(PC0): base=116 noise=2 thr=3 | FULL[min=114 max=119 pp=5 peak@876 dev=3]
+    PEAK@876: 117 117 117 117 117 116 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH2(PC1): base=116 noise=3 thr=3 | FULL[min=114 max=119 pp=5 peak@1160 dev=3]
+    PEAK@1160: 117 117 117 117 117 116 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=115 noise=2 thr=3 | FULL[min=113 max=118 pp=5 peak@603 dev=3]
+    PEAK@603: 115 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+  CH4(PC3): base=116 noise=3 thr=3 | FULL[min=114 max=119 pp=5 peak@112 dev=3]
+    PEAK@112: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=114 max=119 pp=5 peak@1016 dev=3]
+    PEAK@1016: 116 117 116 116 116 116 117 117 117 117 116 116 117 117 117 117 119* 117 116 116 117 117 117 117 117 117 116 117 117 117 116 117
+  CH6(PA4): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@30 dev=2]
+[#32] T=16s 7ms 0us | HT=3923 TC=3924 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2996 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3153 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@2305 dev=1]
+[#33] T=16s 507ms 0us | HT=4050 TC=4051 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@678 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1238 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@369 dev=1]
+[#34] T=17s 7ms 0us | HT=4177 TC=4178 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@99 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=119 pp=3 peak@283 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@272 dev=2]
+  CH4(PC3): base=117 noise=1 thr=3 | FULL[min=116 max=119 pp=3 peak@326 dev=2]
+  CH5(PA3): base=117 noise=1 thr=3 | FULL[min=116 max=118 pp=2 peak@55 dev=1]
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@369 dev=2]
+[#35] T=17s 507ms 0us | HT=4305 TC=4305 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1662 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1104 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1053 dev=1]
+[#36] T=18s 7ms 0us | HT=4432 TC=4432 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1499 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1448 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@596 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@306 dev=1]
+[#37] T=18s 507ms 0us | HT=4559 TC=4559 drop=0
+  CH1(PC0): base=116 noise=3 thr=3 | FULL[min=114 max=119 pp=5 peak@653 dev=3]
+    PEAK@653: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=114 max=119 pp=5 peak@757 dev=3]
+    PEAK@757: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 116
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@381 dev=2]
+  CH4(PC3): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@568 dev=3]
+    PEAK@568: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=114 max=119 pp=5 peak@98 dev=3]
+    PEAK@98: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 116 117 117 117 117 117 117 116 116 117 116 117
+  CH6(PA4): base=115 noise=32 thr=3 | FULL[min=100 max=133 pp=33 peak@202 dev=18]
+    PEAK@202: 131 129 125 120 114 109 105 102 100 101 103 108 113 119 124 128 133* 132 130 127 122 117 111 106 103 101 101 102 106 111 117 122
+[#38] T=19s 7ms 0us | HT=4686 TC=4687 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1979 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@942 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@700 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@560 dev=1]
+[#39] T=19s 507ms 0us | HT=4813 TC=4814 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@991 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@737 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@647 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@990 dev=1]
+[BENCH] 1024pt freq=40000.0 Hz | Full=382.97 us | CFFT=455.58 us (218682 cyc) | RFFT=236.65 us (113596 cyc) | CPU=480MHz rfft_init=1
+[#40] T=20s 7ms 0us | HT=4940 TC=4941 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@1997 dev=3]
+    PEAK@1997: 117 117 117 117 117 117 117 117 117 117 117 116 116 117 117 117 117* 117 117 117 117 117 117 117 117 117 117 117 116 117 117 117
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@269 dev=2]
+  CH3(PC2): base=115 noise=1 thr=3 | FULL[min=114 max=117 pp=3 peak@1049 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@139 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@192 dev=2]
+  CH6(PA4): base=115 noise=29 thr=3 | FULL[min=101 max=132 pp=31 peak@296 dev=17]
+    PEAK@296: 127 122 117 112 107 104 102 102 103 106 111 116 121 126 129 131 132* 128 124 119 114 109 105 103 102 103 105 109 114 120 124 128
+[#41] T=20s 507ms 0us | HT=5068 TC=5068 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1441 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1819 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@595 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#42] T=21s 7ms 0us | HT=5195 TC=5195 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1414 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@4061 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@816 dev=1]
+  CH6(PA4): base=115 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@272 dev=2]
+[#43] T=21s 507ms 0us | HT=5322 TC=5322 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@605 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@320 dev=2]
+  CH3(PC2): base=116 noise=1 thr=3 | FULL[min=114 max=117 pp=3 peak@424 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@182 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@624 dev=2]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@1125 dev=2]
+[#44] T=22s 7ms 0us | HT=5449 TC=5450 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@844 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1776 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@694 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@500 dev=1]
+[#45] T=22s 507ms 0us | HT=5576 TC=5577 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1036 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1433 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@933 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#46] T=23s 7ms 0us | HT=5703 TC=5704 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@363 dev=2]
+  CH2(PC1): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@27 dev=2]
+  CH3(PC2): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@237 dev=2]
+  CH4(PC3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@130 dev=2]
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@104 dev=2]
+  CH6(PA4): base=115 noise=3 thr=3 | FULL[min=114 max=118 pp=4 peak@388 dev=3]
+    PEAK@388: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 115 116
+[#47] T=23s 507ms 0us | HT=5830 TC=5831 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2026 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2026 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@266 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1597 dev=1]
+[#48] T=24s 7ms 0us | HT=5958 TC=5958 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@867 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1102 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1231 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1006 dev=1]
+[#49] T=24s 507ms 0us | HT=6085 TC=6085 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@627 dev=3]
+    PEAK@627: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH2(PC1): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@911 dev=3]
+    PEAK@911: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@125 dev=2]
+  CH4(PC3): base=117 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@99 dev=2]
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@767 dev=3]
+    PEAK@767: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH6(PA4): base=115 noise=3 thr=3 | FULL[min=114 max=118 pp=4 peak@276 dev=3]
+    PEAK@276: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+[BENCH] 1024pt freq=40000.0 Hz | Full=382.16 us | CFFT=455.69 us (218734 cyc) | RFFT=236.90 us (113712 cyc) | CPU=480MHz rfft_init=1
+[#50] T=25s 7ms 0us | HT=6212 TC=6212 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2683 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1317 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1084 dev=1]
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@51 dev=1]
+[#51] T=25s 507ms 0us | HT=6339 TC=6340 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2022 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@734 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@934 dev=1]
+[#52] T=26s 7ms 0us | HT=6466 TC=6467 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3326 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@227 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1180 dev=1]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1377 dev=1]
+[#53] T=26s 507ms 0us | HT=6593 TC=6594 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2958 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@237 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#54] T=27s 7ms 0us | HT=6721 TC=6721 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1638 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1193 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@506 dev=1]
+[#55] T=27s 507ms 0us | HT=6848 TC=6848 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@289 dev=2]
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@393 dev=2]
+  CH3(PC2): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@1307 dev=2]
+  CH4(PC3): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@1411 dev=3]
+    PEAK@1411: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@756 dev=2]
+  CH6(PA4): base=115 noise=32 thr=3 | FULL[min=100 max=133 pp=33 peak@463 dev=18]
+    PEAK@463: 130 127 122 117 111 106 103 101 101 102 106 111 116 122 127 130 133* 131 129 125 119 113 108 104 101 100 101 104 109 114 120 125
+[#56] T=28s 7ms 0us | HT=6975 TC=6975 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@947 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1137 dev=1]
+[#57] T=28s 507ms 0us | HT=7102 TC=7103 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2138 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@110 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1473 dev=1]
+[#58] T=29s 7ms 0us | HT=7229 TC=7230 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@807 dev=3]
+    PEAK@807: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@337 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@1066 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@2766 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@598 dev=2]
+  CH6(PA4): base=116 noise=29 thr=3 | FULL[min=101 max=132 pp=31 peak@702 dev=16]
+    PEAK@702: 126 122 117 111 107 104 102 102 104 107 111 116 122 126 129 131 132* 128 124 119 113 108 105 102 101 102 106 109 114 120 125 128
+[#59] T=29s 507ms 0us | HT=7356 TC=7357 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1531 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=116 pp=1 peak@3356 dev=1]
+[BENCH] 1024pt freq=40000.0 Hz | Full=382.20 us | CFFT=455.69 us (218734 cyc) | RFFT=237.35 us (113932 cyc) | CPU=480MHz rfft_init=1
+[#60] T=30s 7ms 0us | HT=7484 TC=7484 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1943 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1681 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@951 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@757 dev=1]
+[#61] T=30s 507ms 0us | HT=7611 TC=7611 drop=0
+  CH1(PC0): base=117 noise=4 thr=3 | FULL[min=115 max=119 pp=4 peak@6 dev=2]
+  CH2(PC1): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@1360 dev=3]
+    PEAK@1360: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@29 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=119 pp=4 peak@133 dev=2]
+  CH5(PA3): base=117 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@422 dev=2]
+  CH6(PA4): base=115 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@180 dev=3]
+    PEAK@180: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+[#62] T=31s 7ms 0us | HT=7738 TC=7738 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3449 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1615 dev=1]
+[#63] T=31s 507ms 0us | HT=7865 TC=7865 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@4095 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@1 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@113 dev=1]
+[#64] T=32s 7ms 0us | HT=7992 TC=7993 drop=0
+  CH1(PC0): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@144 dev=2]
+  CH2(PC1): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@1122 dev=3]
+    PEAK@1122: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 115 117 117 117 117 117 117 116 117
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@173 dev=2]
+  CH4(PC3): base=117 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@147 dev=2]
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@40 dev=2]
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@95 dev=2]
+[#65] T=32s 507ms 0us | HT=8119 TC=8120 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1094 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3188 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@264 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=116 pp=1 peak@3092 dev=1]
+[#66] T=33s 7ms 0us | HT=8246 TC=8247 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1157 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3966 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1334 dev=1]
+[#67] T=33s 507ms 0us | HT=8374 TC=8374 drop=0
+  CH1(PC0): base=116 noise=3 thr=3 | FULL[min=115 max=119 pp=4 peak@2158 dev=3]
+    PEAK@2158: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH2(PC1): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@117 dev=3]
+    PEAK@117: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@172 dev=2]
+  CH4(PC3): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@309 dev=3]
+    PEAK@309: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=119 pp=4 peak@1899 dev=3]
+    PEAK@1899: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 116 117
+  CH6(PA4): base=115 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@257 dev=3]
+    PEAK@257: 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116 118* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+[#68] T=34s 7ms 0us | HT=8501 TC=8501 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3201 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@508 dev=1]
+[#69] T=34s 507ms 0us | HT=8628 TC=8628 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3602 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1454 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@252 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3042 dev=1]
+[BENCH] 1024pt freq=40000.0 Hz | Full=382.52 us | CFFT=455.32 us (218556 cyc) | RFFT=236.70 us (113616 cyc) | CPU=480MHz rfft_init=1
+[#70] T=35s 7ms 0us | HT=8755 TC=8756 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@195 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1289 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@318 dev=1]
+  CH4(PC3): base=116 noise=1 thr=3 | FULL[min=116 max=118 pp=2 peak@892 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=118 pp=2 peak@166 dev=2]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@2691 dev=1]
+[#71] T=35s 507ms 0us | HT=8882 TC=8883 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1034 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1894 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@619 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[#72] T=36s 7ms 0us | HT=9009 TC=9010 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1641 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@417 dev=1]
+[#73] T=36s 507ms 0us | HT=9137 TC=9137 drop=0
+  CH1(PC0): base=116 noise=1 thr=3 | FULL[min=114 max=118 pp=4 peak@216 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@945 dev=3]
+    PEAK@945: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 114* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=117 pp=3 peak@424 dev=2]
+  CH4(PC3): base=116 noise=1 thr=3 | FULL[min=115 max=119 pp=4 peak@1287 dev=3]
+    PEAK@1287: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@3757 dev=3]
+    PEAK@3757: 116 117 117 117 117 117 116 116 116 117 117 117 117 117 116 116 114* 117 117 117 117 117 116 116 116 117 117 117 117 117 117 116
+  CH6(PA4): base=115 noise=32 thr=3 | FULL[min=99 max=132 pp=33 peak@11 dev=17]
+    PEAK@11: 108 104 101 100 102 105 109 115 120 125 129 132* 132 130 126 121 115 110 105 102 101 101 103 107 113 118 124
+[#74] T=37s 7ms 0us | HT=9264 TC=9264 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1763 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@177 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@377 dev=1]
+[#75] T=37s 507ms 0us | HT=9391 TC=9391 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1518 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@3599 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=1 thr=3 | FULL[min=115 max=117 pp=2 peak@71 dev=1]
+[#76] T=38s 7ms 0us | HT=9518 TC=9519 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@394 dev=2]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@498 dev=2]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=114 max=118 pp=4 peak@551 dev=2]
+  CH4(PC3): base=117 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@81 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@134 dev=2]
+  CH6(PA4): base=115 noise=30 thr=3 | FULL[min=59 max=172 pp=113 peak@3015 dev=57]
+    PEAK@3015: 101  87  75  66  60  59  62  69  79  93 108 125 140 154 164 170 172* 170 163 153 141 127 114 102  92  84  79  78  79  84  89  96
+[#77] T=38s 507ms 0us | HT=9645 TC=9646 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@945 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1862 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@698 dev=1]
+[#78] T=39s 7ms 0us | HT=9772 TC=9773 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1075 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@594 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@95 dev=1]
+[#79] T=39s 507ms 0us | HT=9899 TC=9900 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@438 dev=2]
+  CH2(PC1): base=117 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@542 dev=2]
+  CH3(PC2): base=115 noise=2 thr=3 | FULL[min=114 max=117 pp=3 peak@155 dev=2]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=115 max=118 pp=3 peak@125 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@178 dev=2]
+  CH6(PA4): base=116 noise=5 thr=3 | FULL[min=113 max=118 pp=5 peak@15 dev=3]
+    PEAK@15: 117 117 118 118 118 118 117 117 117 116 116 115 114 114 114 113* 113 114 114 114 115 115 116 116 117 118 118 118 118 118 118
+[BENCH] 1024pt freq=40000.0 Hz | Full=383.95 us | CFFT=455.85 us (218808 cyc) | RFFT=236.64 us (113590 cyc) | CPU=480MHz rfft_init=1
+[#80] T=40s 7ms 0us | HT=10027 TC=10027 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1242 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@91 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2668 dev=1]
+[#81] T=40s 507ms 0us | HT=10154 TC=10154 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@2960 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1198 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@182 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@827 dev=1]
+[#82] T=41s 7ms 0us | HT=10281 TC=10281 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=118 pp=2 peak@1413 dev=1]
+  CH2(PC1): base=117 noise=2 thr=3 | FULL[min=116 max=118 pp=2 peak@59 dev=1]
+  CH3(PC2): base=116 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@188 dev=2]
+  CH4(PC3): base=117 noise=1 thr=3 | FULL[min=116 max=119 pp=3 peak@782 dev=2]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=119 pp=3 peak@446 dev=3]
+    PEAK@446: 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 117 119* 117 117 117 117 117 117 117 117 117 117 117 117 117 116 117
+  CH6(PA4): base=116 noise=2 thr=3 | FULL[min=109 max=124 pp=15 peak@1925 dev=8]
+    PEAK@1925: 113 111 110 109 109 116 116 116 116 116 116 116 116 116 116 116 116* 116 116 116 116 116 116 116 116 116 116 116 116 116 116 116
+[#83] T=41s 507ms 0us | HT=10408 TC=10409 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@680 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@801 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@190 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@730 dev=1]
+[#84] T=42s 7ms 0us | HT=10535 TC=10536 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@592 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@299 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1036 dev=1]
+[#85] T=42s 507ms 0us | HT=10662 TC=10663 drop=0
+  CH1(PC0): base=116 noise=2 thr=3 | FULL[min=114 max=118 pp=4 peak@99 dev=2]
+  CH2(PC1): base=116 noise=3 thr=3 | FULL[min=114 max=118 pp=4 peak@73 dev=2]
+  CH3(PC2): base=116 noise=2 thr=3 | FULL[min=114 max=117 pp=3 peak@283 dev=2]
+  CH4(PC3): base=117 noise=1 thr=3 | FULL[min=115 max=118 pp=3 peak@102 dev=2]
+  CH5(PA3): base=116 noise=2 thr=3 | FULL[min=115 max=118 pp=3 peak@25 dev=2]
+  CH6(PA4): base=115 noise=2 thr=3 | FULL[min=114 max=117 pp=3 peak@124 dev=2]
+[#86] T=43s 7ms 0us | HT=10790 TC=10790 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@102 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1543 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1512 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=117 pp=2 peak@1658 dev=1]
+[#87] T=43s 507ms 0us | HT=10917 TC=10917 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1204 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1743 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=116 noise=1 thr=3 | FULL[min=116 max=117 pp=1 peak@0 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=116 pp=1 peak@1595 dev=1]
+[#88] T=44s 7ms 0us | HT=11044 TC=11044 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1266 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1883 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@427 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=115 max=116 pp=1 peak@716 dev=1]
+[#89] T=44s 507ms 0us | HT=11171 TC=11172 drop=0
+  CH1(PC0): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@951 dev=1]
+  CH2(PC1): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@1671 dev=1]
+  CH3(PC2): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+  CH4(PC3): base=117 noise=0 thr=3 | FULL[min=117 max=117 pp=0 peak@0 dev=0]
+  CH5(PA3): base=117 noise=0 thr=3 | FULL[min=116 max=117 pp=1 peak@485 dev=1]
+  CH6(PA4): base=116 noise=0 thr=3 | FULL[min=116 max=116 pp=0 peak@0 dev=0]
+[BENCH] 1024pt freq=40000.0 Hz | Full=382.52 us | CFFT=456.51 us (219126 cyc) | RFFT=236.57 us (113556 cyc) | CPU=480MHz rfft_init=1

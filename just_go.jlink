@@ -1,0 +1,6 @@
+device STM32H750VB
+si SWD
+speed 4000
+connect
+g
+q

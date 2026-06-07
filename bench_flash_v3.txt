@@ -1,0 +1,118 @@
+[#9] T=18s 3ms 0us | HT=4510 TC=4490 drop=0
+  CH1(PC0): base=116 pp=3 peak@219 dev=2
+  CH2(PC1): base=116 pp=3 peak@38 dev=2
+  CH3(PC2): base=115 pp=3 peak@167 dev=2
+  CH4(PC3): base=116 pp=3 peak@606 dev=2
+  CH5(PA3): base=116 pp=3 peak@1045 dev=2
+  CH6(PA4): base=115 pp=199 peak@2075 dev=110
+[BENCH] 1024pt freq=40000.0 Hz | Full=379.57 us | CFFT=456.29 us (219022 cyc) | RFFT=234.82 us (112714 cyc) | CPU=480MHz rfft_init=1
+[#10] T=20s 4ms 0us | HT=5019 TC=4999 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=116 pp=2 peak@1485 dev=1
+[BENCH_FUNC] iter=100 trans=65535 hits=0 | Baseline@0x08000cbd(FLASH)=0 cyc(0.00us) | Detect@0x080015d5(FLASH)=0 cyc(0.00us) | VerifyLoop=0 cyc(0.00us)
+[#11] T=22s 4ms 0us | HT=5523 TC=5503 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[#12] T=24s 4ms 0us | HT=6032 TC=6011 drop=0
+  CH1(PC0): base=116 pp=3 peak@3628 dev=2
+  CH2(PC1): base=116 pp=3 peak@3732 dev=2
+  CH3(PC2): base=115 pp=2 peak@365 dev=2
+  CH4(PC3): base=116 pp=2 peak@469 dev=2
+  CH5(PA3): base=116 pp=3 peak@573 dev=2
+  CH6(PA4): base=115 pp=124 peak@3647 dev=64
+[BENCH] 1024pt freq=40000.0 Hz | Full=378.52 us | CFFT=456.10 us (218928 cyc) | RFFT=235.10 us (112848 cyc) | CPU=480MHz rfft_init=1
+[#13] T=26s 5ms 0us | HT=6541 TC=6520 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[#14] T=28s 5ms 0us | HT=7049 TC=7029 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[BENCH] 1024pt freq=40000.0 Hz | Full=379.19 us | CFFT=455.20 us (218500 cyc) | RFFT=235.04 us (112822 cyc) | CPU=480MHz rfft_init=1
+[#15] T=30s 5ms 0us | HT=7558 TC=7538 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[BENCH_FUNC] iter=100 trans=65535 hits=0 | Baseline@0x08000cbd(FLASH)=0 cyc(0.00us) | Detect@0x080015d5(FLASH)=0 cyc(0.00us) | VerifyLoop=0 cyc(0.00us)
+[#16] T=32s 5ms 0us | HT=8062 TC=8042 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[#17] T=34s 5ms 0us | HT=8570 TC=8551 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[BENCH] 1024pt freq=40000.0 Hz | Full=378.51 us | CFFT=455.53 us (218656 cyc) | RFFT=234.70 us (112658 cyc) | CPU=480MHz rfft_init=1
+[#18] T=36s 5ms 0us | HT=9079 TC=9059 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[#19] T=38s 6ms 0us | HT=9588 TC=9568 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[BENCH] 1024pt freq=40000.0 Hz | Full=381.13 us | CFFT=459.06 us (220352 cyc) | RFFT=236.79 us (113660 cyc) | CPU=480MHz rfft_init=1
+[#20] T=40s 6ms 0us | HT=10096 TC=10077 drop=0
+  CH1(PC0): base=116 pp=3 peak@128 dev=2
+  CH2(PC1): base=116 pp=3 peak@102 dev=2
+  CH3(PC2): base=115 pp=4 peak@2932 dev=3
+  CH4(PC3): base=116 pp=3 peak@50 dev=2
+  CH5(PA3): base=116 pp=3 peak@489 dev=2
+  CH6(PA4): base=115 pp=199 peak@1693 dev=110
+[BENCH_FUNC] iter=100 trans=65535 hits=0 | Baseline@0x08000cbd(FLASH)=0 cyc(0.00us) | Detect@0x080015d5(FLASH)=0 cyc(0.00us) | VerifyLoop=0 cyc(0.00us)
+[#21] T=42s 6ms 0us | HT=10600 TC=10582 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[#22] T=44s 6ms 0us | HT=11109 TC=11090 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+[BENCH] 1024pt freq=40000.0 Hz | Full=378.65 us | CFFT=455.79 us (218782 cyc) | RFFT=235.16 us (112880 cyc) | CPU=480MHz rfft_init=1
+[#23] T=46s 6ms 0us | HT=11617 TC=11599 drop=0
+  CH1(PC0): base=116 pp=1 peak@0 dev=1
+  CH2(PC1): base=116 pp=1 peak@0 dev=1
+  CH3(PC2): base=116 pp=0 peak@0 dev=0
+  CH4(PC3): base=117 pp=0 peak@0 dev=0
+  CH5(PA3): base=116 pp=1 peak@0 dev=1
+  CH6(PA4): base=115 pp=1 peak@0 dev=1
+>>> EVENT CH1(PC0) [F#23439 N=2]: T=8s 946ms 28us | freq=39500.0 Hz | base=99 noise=12 thr=3 | trans@0 peak@184(+0.10) rkOff=0.00 | fft=0 cyc (0.00 us) (target=50KHz 0.1V)
+    BEFORE:  66  81  98 118 138 158 174 187 196 204 |<PEAK>|  207 205 196 183 165 143 119  93  68  45  25  10   0   0   0   6  20  39  63  90 118 144 163 178 189 198 205 206 200 187 169 146 120  90  60  30   4   0   0   0   0   0   0   0  16  37  63  91 121 145
+>>> EVENT CH2(PC1) [F#23439 N=2]: T=8s 946ms 44us | freq=39993.4 Hz | base=115 noise=0 thr=3 | trans@156 peak@201(+-0.50) rkOff=0.17 | fft=0 cyc (0.00 us) (target=50KHz 0.1V)
+    BEFORE:  71  89 110 132 153 169 182 192 199 205 |<PEAK>|  205 200 189 173 153 130 105  80  56  35  18   5   0   0   0   8  22  41  64  89 114 139 158 173 185 194 199 198 191 179 163 143 121  98  76  56  40  27  19  16  18  25  37  53  72  92 112 132 149 163

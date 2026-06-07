@@ -1,0 +1,12 @@
+Build target '07-ADC_Test'
+compiling main.c...
+../Core/Src/main.c(119): warning:  #177-D: function "dwt_cycles" was declared but never referenced
+  static uint32_t dwt_cycles(void) { return DWT->CYCCNT; }
+../Core/Src/main.c: 1 warning, 0 errors
+compiling adc.c...
+linking...
+.\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf: Error: L6971E: main.o(.data) type RW incompatible with adc.o(.ARM.__AT_0x24000000) type ZI in er RW_IRAM2.
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\07-ADC_Test_LCD0_96\07-ADC_Test_LCD0_96.axf" - 1 Error(s), 1 Warning(s).
+Target not created.
