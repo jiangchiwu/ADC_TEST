@@ -1,0 +1,215 @@
+Build target 'ADC_TEST'
+compiling debug.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/debug.c: 1 warning, 0 errors
+compiling main.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(1930): warning:  #63-D: shift count is too large
+    diag_time_base_hi = (uint32_t)(diag_dwt_baseline >> 32);
+../Core/Src/main.c(1945): warning:  #550-D: variable "bench_buf" was set but never used
+      static uint16_t bench_buf[FFT_LENGTH * ADC_NCH];
+../Core/Src/main.c(2246): warning:  #550-D: variable "real_fs" was set but never used
+          float real_fs;
+../Core/Src/main.c(2174): warning:  #550-D: variable "fft_us" was set but never used
+        float fft_us, frame_us, max_frame_us;
+../Core/Src/main.c(2174): warning:  #550-D: variable "frame_us" was set but never used
+        float fft_us, frame_us, max_frame_us;
+../Core/Src/main.c(2174): warning:  #550-D: variable "max_frame_us" was set but never used
+        float fft_us, frame_us, max_frame_us;
+../Core/Src/main.c(2525): warning:  #550-D: variable "thr_ch" was set but never used
+        uint16_t thr_ch[ADC_NCH];
+../Core/Src/main.c(1804): warning:  #177-D: variable "print_count" was declared but never referenced
+    uint32_t print_count = 0;
+../Core/Src/main.c(1805): warning:  #177-D: variable "case_idx" was declared but never referenced
+    uint32_t case_idx = 0;
+../Core/Src/main.c(1807): warning:  #177-D: variable "tc" was declared but never referenced
+    const test_case_t *tc;
+../Core/Src/main.c(1809): warning:  #177-D: variable "i" was declared but never referenced
+    uint16_t i;
+../Core/Src/main.c(1810): warning:  #177-D: variable "baselines" was declared but never referenced
+    int32_t baselines[ADC_NCH];
+../Core/Src/main.c(1811): warning:  #177-D: variable "noises" was declared but never referenced
+    uint16_t noises[ADC_NCH];
+../Core/Src/main.c(1812): warning:  #177-D: variable "trans" was declared but never referenced
+    uint16_t trans[ADC_NCH];
+../Core/Src/main.c(1813): warning:  #177-D: variable "freq" was declared but never referenced
+    float freq[ADC_NCH];
+../Core/Src/main.c(1814): warning:  #550-D: variable "last_event_ms" was set but never used
+    uint32_t last_event_ms[ADC_NCH] = {0};
+../Core/Src/main.c(1817): warning:  #177-D: variable "last_print_ms" was declared but never referenced
+    uint32_t last_print_ms = 0;
+../Core/Src/main.c(1818): warning:  #177-D: variable "last_self_test_ms" was declared but never referenced
+    uint32_t last_self_test_ms = 0;
+../Core/Src/main.c(1819): warning:  #550-D: variable "last_dac_switch_ms" was set but never used
+    uint32_t last_dac_switch_ms = 0;
+../Core/Src/main.c(1820): warning:  #177-D: variable "dac_phase" was declared but never referenced
+    uint8_t dac_phase = 0;
+../Core/Src/main.c(1821): warning:  #177-D: variable "burst_event_sent" was declared but never referenced
+    uint8_t burst_event_sent = 0;
+../Core/Src/main.c(1822): warning:  #177-D: variable "burst_sent_mask" was declared but never referenced
+    uint8_t burst_sent_mask = 0;
+../Core/Src/main.c(1823): warning:  #177-D: variable "burst_sent_count" was declared but never referenced
+    uint8_t burst_sent_count = 0;
+../Core/Src/main.c(1824): warning:  #177-D: variable "burst_candidate_mask" was declared but never referenced
+    uint8_t burst_candidate_mask = 0;
+../Core/Src/main.c(1825): warning:  #177-D: variable "burst_best_dev" was declared but never referenced
+    uint32_t burst_best_dev[ADC_NCH] = {0};
+../Core/Src/main.c(1826): warning:  #177-D: variable "burst_best_freq" was declared but never referenced
+    uint32_t burst_best_freq[ADC_NCH] = {0};
+../Core/Src/main.c(1827): warning:  #177-D: variable "burst_best_time_us" was declared but never referenced
+    uint64_t burst_best_time_us[ADC_NCH] = {0};
+../Core/Src/main.c(1828): warning:  #177-D: variable "lock_score" was declared but never referenced
+    uint32_t lock_score[ADC_NCH] = {0};
+../Core/Src/main.c(1829): warning:  #177-D: variable "locked_input_mask" was declared but never referenced
+    uint8_t locked_input_mask = 0;
+../Core/Src/main.c(1830): warning:  #177-D: variable "lock_burst_cnt" was declared but never referenced
+    uint32_t lock_burst_cnt = 0;
+../Core/Src/main.c(1831): warning:  #177-D: variable "burst_start_ms" was declared but never referenced
+    uint32_t burst_start_ms = 0;
+../Core/Src/main.c(1834): warning:  #177-D: variable "tx_freq" was declared but never referenced
+    uint32_t tx_freq;
+../Core/Src/main.c(1835): warning:  #177-D: variable "tx_time_us" was declared but never referenced
+    uint64_t tx_time_us;
+../Core/Src/main.c(1836): warning:  #177-D: variable "uart_st" was declared but never referenced
+    HAL_StatusTypeDef uart_st;
+../Core/Src/main.c(1837): warning:  #177-D: variable "selected_mask" was declared but never referenced
+    uint8_t selected_mask;
+../Core/Src/main.c(1838): warning:  #177-D: variable "filtered_mask" was declared but never referenced
+    uint8_t filtered_mask;
+../Core/Src/main.c(1839): warning:  #177-D: variable "select_count" was declared but never referenced
+    uint8_t select_count;
+../Core/Src/main.c(1840): warning:  #177-D: variable "best_ch" was declared but never referenced
+    uint8_t best_ch;
+../Core/Src/main.c(1841): warning:  #177-D: variable "best_dev" was declared but never referenced
+    uint32_t best_dev;
+../Core/Src/main.c(1842): warning:  #177-D: variable "f_u32" was declared but never referenced
+    uint32_t f_u32;
+../Core/Src/main.c(1890): warning:  #177-D: variable "DAC_DC_DURATION_MS" was declared but never referenced
+    const uint32_t DAC_DC_DURATION_MS    = 30;   /* 30ms 直流持续时间 (场景 A 默认; �?10 �?场景 B) */
+../Core/Src/main.c(1891): warning:  #177-D: variable "DAC_BURST_DURATION_MS" was declared but never referenced
+    const uint32_t DAC_BURST_DURATION_MS = 5;    /* 5ms 正弦突发持续时间 (固定不变) */
+../Core/Src/main.c(1892): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+    const uint32_t EVENT_COOLDOWN_MS     = 50;   /* burst 最小间�?50ms (CH340 接收上限 120 evt/s) */
+../Core/Src/main.c(2889): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(269): warning:  #177-D: function "fmt_time_us" was declared but never referenced
+  static inline void fmt_time_us(uint64_t total_us, uint32_t *s, uint32_t *ms, uint32_t *us)
+../Core/Src/main.c(447): warning:  #177-D: variable "fft_inst_ptr" was declared but never referenced
+  static const arm_cfft_instance_f32 *fft_inst_ptr = &arm_cfft_sR_f32_len1024;
+../Core/Src/main.c(815): warning:  #550-D: variable "tw_cos" was set but never used
+  static float tw_cos[FFT_LENGTH / 2]            __attribute__((aligned(32)));    /* 旋转因子cos分量 */
+../Core/Src/main.c(816): warning:  #550-D: variable "tw_sin" was set but never used
+  static float tw_sin[FFT_LENGTH / 2]            __attribute__((aligned(32)));    /* 旋转因子sin分量 */
+../Core/Src/main.c(817): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;    /* FFT表初始化完成标志 */
+../Core/Src/main.c(837): warning:  #550-D: variable "test_cases" was set but never used
+  static const test_case_t test_cases[] = {
+../Core/Src/main.c(844): warning:  #177-D: variable "full_cycle_count" was declared but never referenced
+  static uint32_t full_cycle_count = 0;
+../Core/Src/main.c(880): warning:  #177-D: variable "ch_names" was declared but never referenced
+  static const char *ch_names[ADC_NCH] = {
+../Core/Src/main.c(1255): warning:  #177-D: function "Verify_Sustain_in_Frame" was declared but never referenced
+  static uint8_t Verify_Sustain_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
+../Core/Src/main.c(1321): warning:  #177-D: function "Refine_Transition_SubSample" was declared but never referenced
+  static float Refine_Transition_SubSample(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
+../Core/Src/main.c(1451): warning:  #177-D: function "Calc_ZeroCross_Frequency_in_Frame" was declared but never referenced
+  static float Calc_ZeroCross_Frequency_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
+../Core/Src/main.c(1796): warning:  #177-D: function "Calc_FFT_Frequency_in_Frame" was declared but never referenced
+  static float Calc_FFT_Frequency_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch, uint16_t start_idx)
+../Core/Src/main.c: 57 warnings, 0 errors
+compiling gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/gpio.c: 1 warning, 0 errors
+compiling adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/adc.c: 1 warning, 0 errors
+compiling tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/tim.c: 1 warning, 0 errors
+compiling stm32h7xx_it.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_it.c(295): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/stm32h7xx_it.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_msp.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_hal_msp.c: 1 warning, 0 errors
+compiling dac.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/dac.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_hsem.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_mdma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_pwr.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_pwr_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_cortex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_i2c.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_i2c_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_spi_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_tim_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c: 1 warning, 0 errors
+linking...
+Program Size: Code=37548 RO-data=79864 RW-data=453332 ZI-data=160548  
+FromELF: creating hex file...
+".\ADC_TEST\ADC_TEST.axf" - 0 Error(s), 81 Warning(s).

@@ -16,15 +16,48 @@
 
 /* USER CODE BEGIN 0 */
 
-#define SINE_TABLE_LEN 32       /* 32点波形表 */
+/* 非阻塞 DMA 停止函数
+ * 替代 HAL_DMA_Abort()（内部有 5ms 轮询超时，会阻塞主循环导致 ADC 帧丢失）
+ * 原理：直接操作 DMA Stream CR 寄存器禁用，再清理 HAL 状态，零等待
+ * 仅用于 DAC DMA（DMA1_Stream1），不涉及中断回调清理 */
+static void DAC_DMA_Stop_NonBlocking(DMA_HandleTypeDef *hdma)
+{
+  DMA_Stream_TypeDef *stream = (DMA_Stream_TypeDef *)hdma->Instance;
+
+  /* 1. 禁用 DMA Stream */
+  stream->CR &= ~DMA_SxCR_EN;
+
+  /* 2. 等待 EN 位清零（硬件需要几个时钟周期完成当前传输） */
+  {
+    volatile uint32_t timeout = 100U;
+    while((stream->CR & DMA_SxCR_EN) && (--timeout)) { ; }
+  }
+
+  /* 3. 清除所有 DMA 中断标志（防止残留中断触发） */
+  /* DMA1 Stream1 的 LIFCR 寄存器位: CT1IF=bit11, CB1IF=bit10, CTCIF=bit9, CHTIF=bit8, CTEIF=bit6 */
+  DMA1->LIFCR = (DMA_LIFCR_CTCIF1 | DMA_LIFCR_CHTIF1 | DMA_LIFCR_CTEIF1
+               | DMA_LIFCR_CDMEIF1 | DMA_LIFCR_CFEIF1);
+
+  /* 4. 更新 HAL 状态 */
+  hdma->State = HAL_DMA_STATE_READY;
+}
+
+#define SINE_TABLE_LEN 32       /* v9: 32→256→32（256 导致 DMA1 ISR 风暴卡死 UART TX，回退到 32）
+                                 *     32 点 × 40KHz = 1.28 MHz DMA 触发频率（可承受）
+                                 *     合成谐波只能到 (32/2-1)=15 次以下，2/3 次谐波仍 OK */
 #define DAC_OFFSET     2047     /* 中心: 1.65V (4095/2)，最大输出 ±1.65V = 3.3Vpp */
 #define DAC_AMPLITUDE  1241     /* 默认振幅 1V */
 #define DAC_DC_VALUE   2047     /* 直流电平: 1.65V，与正弦中心一致避免起跳阶跃 */
 #define DAC_PWM_HIGH   3103     /* PWM高电平: 2.5V */
 #define DAC_PWM_LOW    621      /* PWM低电平: 0.5V */
 
-static uint32_t dac_sine_table[SINE_TABLE_LEN] __attribute__((at(0x2406F000), aligned(32)));
-static uint32_t dac_pwm_table[SINE_TABLE_LEN] __attribute__((at(0x2406F080), aligned(32)));
+/* AXI SRAM (0x24000000~0x2407FFFF, 512KB)
+ * 必须用 .at() 固定地址（不能用 section(".AXI_SRAM")），原因：
+ *   uVision 自动生成的 sct 用 .ANY (+RW +ZI) 把所有 RW 数据塞入 DTCM (0x20000000)，
+ *   导致 dac_sine_table 落到 DMA1 不可访问的 DTCM 区，PA5 永远只输出 DC。
+ * 修复：用 at() 强制固定到 AXI SRAM 0x2406E000（距 ADC1 buffer 0x24070000 留 8KB 安全间隔）。 */
+static uint32_t dac_sine_table[SINE_TABLE_LEN] __attribute__((at(0x2406E000), aligned(32)));
+static uint32_t dac_pwm_table[SINE_TABLE_LEN]  __attribute__((at(0x2406E400), aligned(32)));
 static uint8_t sine_table_inited = 0;
 static uint16_t current_sine_amp = DAC_AMPLITUDE;  /* 当前正弦振幅 */
 volatile uint32_t dac_diag_tim_clk_hz = 0;
@@ -43,7 +76,7 @@ DMA_HandleTypeDef hdma_dac1_ch2;
 void MX_DAC1_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  
+
   __HAL_RCC_DAC12_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_DMA1_CLK_ENABLE();
@@ -55,14 +88,12 @@ void MX_DAC1_Init(void)
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   hdac1.Instance = DAC1;
-  
+
   /* 重置DAC */
   DAC1->CR = 0;
   DAC1->MCR = 0;
-  
-  /* DMA1_Stream1 - TIM7_UP drives writes to DAC1_CH2 data register.
-   * This avoids DAC TSEL2 encoding differences and keeps PA5 timing locked to TIM7.
-   */
+
+  /* DMA1_Stream1 - TIM7_UP drives writes to DAC1_CH2 data register. */
   hdma_dac1_ch2.Instance = DMA1_Stream1;
   hdma_dac1_ch2.Init.Request = DMA_REQUEST_TIM7_UP;
   hdma_dac1_ch2.Init.Direction = DMA_MEMORY_TO_PERIPH;
@@ -113,6 +144,71 @@ static void dac_sine_table_init(void)
       dac_pwm_table[i] = DAC_PWM_LOW;
     }
   }
+}
+
+/* =============================================================================
+ * v9 增强：合成波形表 - 基波 + 谐波 + 白噪声
+ * =============================================================================
+ *  amp_fund_mv : 基波幅值 (mV, 单端，<=1650)
+ *  h2_pct      : 二次谐波占基波幅值百分比 (0..100)
+ *  h3_pct      : 三次谐波占基波幅值百分比 (0..100)
+ *  noise_pct   : 白噪声占基波幅值百分比 (0..100)，使用 LFSR 伪随机
+ *
+ *  应用：模拟真实信号（带谐波失真 + 背景噪声），用于压力测试 ADC + FFT 鲁棒性
+ * ========================================================================= */
+static uint32_t dac_lfsr = 0xACE1u;
+static uint16_t dac_quick_rand(void)
+{
+  /* 16-bit LFSR Galois, period 65535 */
+  uint16_t lsb;
+  lsb = (uint16_t)(dac_lfsr & 1U);
+  dac_lfsr >>= 1;
+  if(lsb) dac_lfsr ^= 0xB400u;
+  return (uint16_t)dac_lfsr;
+}
+
+void DAC_Build_Composite_Waveform(uint16_t amp_fund_mv,
+                                  uint8_t h2_pct, uint8_t h3_pct,
+                                  uint8_t noise_pct)
+{
+  int i;
+  float fund_dac;
+  float h2_dac;
+  float h3_dac;
+  float noise_dac;
+  float phase;
+  float val;
+  int32_t ival;
+  uint32_t amp_dac;
+
+  if(amp_fund_mv == 0U) amp_fund_mv = 1000U;
+  if(amp_fund_mv > 1650U) amp_fund_mv = 1650U;
+  amp_dac = (uint32_t)amp_fund_mv * 4095U / 3300U;
+  if(amp_dac > DAC_OFFSET) amp_dac = DAC_OFFSET;
+  fund_dac  = (float)amp_dac;
+  h2_dac    = fund_dac * (float)h2_pct / 100.0f;
+  h3_dac    = fund_dac * (float)h3_pct / 100.0f;
+  noise_dac = fund_dac * (float)noise_pct / 100.0f;
+
+  for(i = 0; i < SINE_TABLE_LEN; i++) {
+    phase = 2.0f * 3.14159265358979f * (float)i / (float)SINE_TABLE_LEN;
+    val  = fund_dac * sinf(phase);
+    val += h2_dac   * sinf(2.0f * phase);
+    val += h3_dac   * sinf(3.0f * phase);
+    if(noise_pct > 0U) {
+      /* (-1..+1) × noise_dac */
+      val += ((float)dac_quick_rand() / 32767.5f - 1.0f) * noise_dac;
+    }
+    ival = (int32_t)(val + (float)DAC_OFFSET + 0.5f);
+    if(ival < 0) ival = 0;
+    if(ival > 4095) ival = 4095;
+    dac_sine_table[i] = (uint32_t)ival;
+  }
+  current_sine_amp = (uint16_t)amp_dac;
+  sine_table_inited = 1;
+
+  /* AXI SRAM 上的表必须 clean DCache 后 DMA 才能读到最新数据 */
+  SCB_CleanDCache_by_Addr((uint32_t*)dac_sine_table, SINE_TABLE_LEN * 4);
 }
 
 /* 设置正弦波振幅（单位: 毫伏 mV, 范围 50~1650）*/
@@ -167,7 +263,7 @@ void DAC_Output_DC(void)
   uint32_t cr;
 
   /* 停止DMA和触发 */
-  HAL_DMA_Abort(&hdma_dac1_ch2);
+  DAC_DMA_Stop_NonBlocking(&hdma_dac1_ch2);
   HAL_TIM_Base_Stop(&htim7);
   htim7.Instance->DIER &= ~TIM_DIER_UDE;
   
@@ -200,7 +296,7 @@ void DAC_Output_PWM(uint32_t freq_hz)
   
   /* 完全关闭DAC并停止之前的DMA和定时器 */
   DAC1->CR &= ~((1UL << 16) | (1UL << 17) | (1UL << 28) | (1UL << 30));
-  HAL_DMA_Abort(&hdma_dac1_ch2);
+  DAC_DMA_Stop_NonBlocking(&hdma_dac1_ch2);
   HAL_TIM_Base_Stop(&htim7);
   htim7.Instance->DIER &= ~TIM_DIER_UDE;
   
@@ -215,6 +311,8 @@ void DAC_Output_PWM(uint32_t freq_hz)
   /* 启动 DMA1_Stream1 -> DAC1->DHR12R2 (使用PWM表) */
   HAL_DMA_Start(&hdma_dac1_ch2, (uint32_t)dac_pwm_table,
                 (uint32_t)&DAC1->DHR12R2, SINE_TABLE_LEN);
+  /* 关闭 DAC DMA 所有中断使能位（同 DAC_Output_Sine 注释） */
+  ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->CR &= ~(DMA_SxCR_TCIE | DMA_SxCR_HTIE | DMA_SxCR_TEIE | DMA_SxCR_DMEIE);
   
   /* 启动 TIM7 Update DMA 触发 */
   htim7.Instance->DIER |= TIM_DIER_UDE;
@@ -240,7 +338,7 @@ void DAC_Output_Sine(uint32_t freq_hz)
   
   /* 完全关闭DAC并停止之前的DMA和定时器 */
   DAC1->CR &= ~((1UL << 16) | (1UL << 17) | (1UL << 28) | (1UL << 30));
-  HAL_DMA_Abort(&hdma_dac1_ch2);
+  DAC_DMA_Stop_NonBlocking(&hdma_dac1_ch2);
   HAL_TIM_Base_Stop(&htim7);
   htim7.Instance->DIER &= ~TIM_DIER_UDE;
   
@@ -255,11 +353,15 @@ void DAC_Output_Sine(uint32_t freq_hz)
   /* 启动 DMA1_Stream1 -> DAC1->DHR12R2 */
   HAL_DMA_Start(&hdma_dac1_ch2, (uint32_t)dac_sine_table,
                 (uint32_t)&DAC1->DHR12R2, SINE_TABLE_LEN);
-  
+  /* 【关键】关闭 DAC DMA 的所有中断使能位
+   * HAL_DMA_Start 内部会 enable HTIE/TCIE/TEIE/DMEIE，但 DAC 在循环模式下根本不需要 ISR，
+   * 每秒 256×40K=10M 次 HT/TC 中断会让 CPU 100% 卡在 IRQHandler 里，主循环饿死。 */
+  ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->CR &= ~(DMA_SxCR_TCIE | DMA_SxCR_HTIE | DMA_SxCR_TEIE | DMA_SxCR_DMEIE);
+
   /* 启动 TIM7 Update DMA 触发 */
   htim7.Instance->DIER |= TIM_DIER_UDE;
   HAL_TIM_Base_Start(&htim7);
-  
+
   /* DAC CH2 direct output; DMA is triggered by TIM7_UP through DMAMUX. */
   cr = DAC1->CR;
   cr &= ~((1UL << 17) | (1UL << 28) | (1UL << 30));
@@ -276,7 +378,7 @@ void MY_DAC_Start(void)
 
 void MY_DAC_Stop(void)
 {
-  HAL_DMA_Abort(&hdma_dac1_ch2);
+  DAC_DMA_Stop_NonBlocking(&hdma_dac1_ch2);
   DAC1->CR = 0;
   HAL_TIM_Base_Stop(&htim7);
   htim7.Instance->DIER &= ~TIM_DIER_UDE;

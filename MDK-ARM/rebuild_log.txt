@@ -1,4 +1,5 @@
-Build target 'ADC_TEST'
+Rebuild target 'ADC_TEST'
+assembling startup_stm32h750xx.s...
 compiling debug.c...
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -127,7 +128,139 @@ compiling adc.c...
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
   #endif
 ../Core/Src/adc.c: 1 warning, 0 errors
+compiling tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/tim.c: 1 warning, 0 errors
+compiling stm32h7xx_it.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_it.c(295): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/stm32h7xx_it.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_msp.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32h7xx_hal_msp.c: 1 warning, 0 errors
+compiling dac.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/dac.c: 1 warning, 0 errors
+compiling usart.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/usart.c(253): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/usart.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_adc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_adc_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_rcc.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_rcc_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_flash_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_gpio.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_hsem.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_dma_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_mdma.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_pwr.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_pwr_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_cortex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_i2c.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_i2c_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_exti.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_spi.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_spi_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_tim.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_tim_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_uart.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c: 1 warning, 0 errors
+compiling stm32h7xx_hal_uart_ex.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c: 1 warning, 0 errors
+compiling system_stm32h7xx.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/system_stm32h7xx.c: 1 warning, 0 errors
+compiling arm_cfft_f32.c...
+compiling arm_cfft_radix8_f32.c...
+assembling arm_bitreversal2.S...
+compiling arm_common_tables.c...
+compiling arm_const_structs.c...
+compiling arm_cmplx_mag_squared_f32.c...
+compiling arm_rfft_fast_f32.c...
+compiling arm_rfft_fast_init_f32.c...
 linking...
 Program Size: Code=37552 RO-data=79864 RW-data=453588 ZI-data=160324  
 FromELF: creating hex file...
-".\ADC_TEST\ADC_TEST.axf" - 0 Error(s), 60 Warning(s).
+".\ADC_TEST\ADC_TEST.axf" - 0 Error(s), 92 Warning(s).

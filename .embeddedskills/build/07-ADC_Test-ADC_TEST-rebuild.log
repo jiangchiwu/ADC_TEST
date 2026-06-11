@@ -1,30 +1,3 @@
-<html>
-<body>
-<pre>
-<h1>�Vision Build Log</h1>
-<h2>Tool Versions:</h2>
-IDE-Version: ��Vision V5.14.0.0
-Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: AAA AAA, AAA, LIC=UJWP0-BACBN-2ZAW4-FARGA-2LW2I-5BC5C
- 
-Tool Versions:
-Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
-Toolchain Path:  D:\soft\keil5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.05 update 1 (build 106)
-Assembler:       Armasm.exe V5.05 update 1 (build 106)
-Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
-Library Manager: ArmAr.exe V5.05 update 1 (build 106)
-Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
-CPU DLL:         SARMCM3.DLL V5.14.0.0
-Dialog DLL:      DCM.DLL V1.13.1.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
-Dialog DLL:      TCM.DLL V1.14.4.0
- 
-<h2>Project:</h2>
-F:\work\ADC_TEST\MDK-ARM\07-ADC_Test.uvprojx
-Project File Date:  06/09/2026
-
-<h2>Output:</h2>
 Rebuild target 'ADC_TEST'
 assembling startup_stm32h750xx.s...
 compiling debug.c...
@@ -34,117 +7,117 @@ compiling debug.c...
 compiling main.c...
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Src/main.c(1934): warning:  #63-D: shift count is too large
+../Core/Src/main.c(1662): warning:  #63-D: shift count is too large
     diag_time_base_hi = (uint32_t)(diag_dwt_baseline >> 32);
-../Core/Src/main.c(1949): warning:  #550-D: variable "bench_buf" was set but never used
+../Core/Src/main.c(1677): warning:  #550-D: variable "bench_buf" was set but never used
       static uint16_t bench_buf[FFT_LENGTH * ADC_NCH];
-../Core/Src/main.c(2250): warning:  #550-D: variable "real_fs" was set but never used
+../Core/Src/main.c(1976): warning:  #550-D: variable "real_fs" was set but never used
           float real_fs;
-../Core/Src/main.c(2178): warning:  #550-D: variable "fft_us" was set but never used
+../Core/Src/main.c(1904): warning:  #550-D: variable "fft_us" was set but never used
         float fft_us, frame_us, max_frame_us;
-../Core/Src/main.c(2178): warning:  #550-D: variable "frame_us" was set but never used
+../Core/Src/main.c(1904): warning:  #550-D: variable "frame_us" was set but never used
         float fft_us, frame_us, max_frame_us;
-../Core/Src/main.c(2178): warning:  #550-D: variable "max_frame_us" was set but never used
+../Core/Src/main.c(1904): warning:  #550-D: variable "max_frame_us" was set but never used
         float fft_us, frame_us, max_frame_us;
-../Core/Src/main.c(2529): warning:  #550-D: variable "thr_ch" was set but never used
+../Core/Src/main.c(2255): warning:  #550-D: variable "thr_ch" was set but never used
         uint16_t thr_ch[ADC_NCH];
-../Core/Src/main.c(1808): warning:  #177-D: variable "print_count" was declared but never referenced
+../Core/Src/main.c(1536): warning:  #177-D: variable "print_count" was declared but never referenced
     uint32_t print_count = 0;
-../Core/Src/main.c(1809): warning:  #177-D: variable "case_idx" was declared but never referenced
+../Core/Src/main.c(1537): warning:  #177-D: variable "case_idx" was declared but never referenced
     uint32_t case_idx = 0;
-../Core/Src/main.c(1811): warning:  #177-D: variable "tc" was declared but never referenced
+../Core/Src/main.c(1539): warning:  #177-D: variable "tc" was declared but never referenced
     const test_case_t *tc;
-../Core/Src/main.c(1813): warning:  #177-D: variable "i" was declared but never referenced
+../Core/Src/main.c(1541): warning:  #177-D: variable "i" was declared but never referenced
     uint16_t i;
-../Core/Src/main.c(1814): warning:  #177-D: variable "baselines" was declared but never referenced
+../Core/Src/main.c(1542): warning:  #177-D: variable "baselines" was declared but never referenced
     int32_t baselines[ADC_NCH];
-../Core/Src/main.c(1815): warning:  #177-D: variable "noises" was declared but never referenced
+../Core/Src/main.c(1543): warning:  #177-D: variable "noises" was declared but never referenced
     uint16_t noises[ADC_NCH];
-../Core/Src/main.c(1816): warning:  #177-D: variable "trans" was declared but never referenced
+../Core/Src/main.c(1544): warning:  #177-D: variable "trans" was declared but never referenced
     uint16_t trans[ADC_NCH];
-../Core/Src/main.c(1817): warning:  #177-D: variable "freq" was declared but never referenced
+../Core/Src/main.c(1545): warning:  #177-D: variable "freq" was declared but never referenced
     float freq[ADC_NCH];
-../Core/Src/main.c(1818): warning:  #550-D: variable "last_event_ms" was set but never used
+../Core/Src/main.c(1546): warning:  #550-D: variable "last_event_ms" was set but never used
     uint32_t last_event_ms[ADC_NCH] = {0};
-../Core/Src/main.c(1821): warning:  #177-D: variable "last_print_ms" was declared but never referenced
+../Core/Src/main.c(1549): warning:  #177-D: variable "last_print_ms" was declared but never referenced
     uint32_t last_print_ms = 0;
-../Core/Src/main.c(1822): warning:  #177-D: variable "last_self_test_ms" was declared but never referenced
+../Core/Src/main.c(1550): warning:  #177-D: variable "last_self_test_ms" was declared but never referenced
     uint32_t last_self_test_ms = 0;
-../Core/Src/main.c(1823): warning:  #550-D: variable "last_dac_switch_ms" was set but never used
+../Core/Src/main.c(1551): warning:  #550-D: variable "last_dac_switch_ms" was set but never used
     uint32_t last_dac_switch_ms = 0;
-../Core/Src/main.c(1824): warning:  #177-D: variable "dac_phase" was declared but never referenced
+../Core/Src/main.c(1552): warning:  #177-D: variable "dac_phase" was declared but never referenced
     uint8_t dac_phase = 0;
-../Core/Src/main.c(1825): warning:  #177-D: variable "burst_event_sent" was declared but never referenced
+../Core/Src/main.c(1553): warning:  #177-D: variable "burst_event_sent" was declared but never referenced
     uint8_t burst_event_sent = 0;
-../Core/Src/main.c(1826): warning:  #177-D: variable "burst_sent_mask" was declared but never referenced
+../Core/Src/main.c(1554): warning:  #177-D: variable "burst_sent_mask" was declared but never referenced
     uint8_t burst_sent_mask = 0;
-../Core/Src/main.c(1827): warning:  #177-D: variable "burst_sent_count" was declared but never referenced
+../Core/Src/main.c(1555): warning:  #177-D: variable "burst_sent_count" was declared but never referenced
     uint8_t burst_sent_count = 0;
-../Core/Src/main.c(1828): warning:  #177-D: variable "burst_candidate_mask" was declared but never referenced
+../Core/Src/main.c(1556): warning:  #177-D: variable "burst_candidate_mask" was declared but never referenced
     uint8_t burst_candidate_mask = 0;
-../Core/Src/main.c(1829): warning:  #177-D: variable "burst_best_dev" was declared but never referenced
+../Core/Src/main.c(1557): warning:  #177-D: variable "burst_best_dev" was declared but never referenced
     uint32_t burst_best_dev[ADC_NCH] = {0};
-../Core/Src/main.c(1830): warning:  #177-D: variable "burst_best_freq" was declared but never referenced
+../Core/Src/main.c(1558): warning:  #177-D: variable "burst_best_freq" was declared but never referenced
     uint32_t burst_best_freq[ADC_NCH] = {0};
-../Core/Src/main.c(1831): warning:  #177-D: variable "burst_best_time_us" was declared but never referenced
+../Core/Src/main.c(1559): warning:  #177-D: variable "burst_best_time_us" was declared but never referenced
     uint64_t burst_best_time_us[ADC_NCH] = {0};
-../Core/Src/main.c(1832): warning:  #177-D: variable "lock_score" was declared but never referenced
+../Core/Src/main.c(1560): warning:  #177-D: variable "lock_score" was declared but never referenced
     uint32_t lock_score[ADC_NCH] = {0};
-../Core/Src/main.c(1833): warning:  #177-D: variable "locked_input_mask" was declared but never referenced
+../Core/Src/main.c(1561): warning:  #177-D: variable "locked_input_mask" was declared but never referenced
     uint8_t locked_input_mask = 0;
-../Core/Src/main.c(1834): warning:  #177-D: variable "lock_burst_cnt" was declared but never referenced
+../Core/Src/main.c(1562): warning:  #177-D: variable "lock_burst_cnt" was declared but never referenced
     uint32_t lock_burst_cnt = 0;
-../Core/Src/main.c(1835): warning:  #177-D: variable "burst_start_ms" was declared but never referenced
+../Core/Src/main.c(1563): warning:  #177-D: variable "burst_start_ms" was declared but never referenced
     uint32_t burst_start_ms = 0;
-../Core/Src/main.c(1838): warning:  #177-D: variable "tx_freq" was declared but never referenced
+../Core/Src/main.c(1566): warning:  #177-D: variable "tx_freq" was declared but never referenced
     uint32_t tx_freq;
-../Core/Src/main.c(1839): warning:  #177-D: variable "tx_time_us" was declared but never referenced
+../Core/Src/main.c(1567): warning:  #177-D: variable "tx_time_us" was declared but never referenced
     uint64_t tx_time_us;
-../Core/Src/main.c(1840): warning:  #177-D: variable "uart_st" was declared but never referenced
+../Core/Src/main.c(1568): warning:  #177-D: variable "uart_st" was declared but never referenced
     HAL_StatusTypeDef uart_st;
-../Core/Src/main.c(1841): warning:  #177-D: variable "selected_mask" was declared but never referenced
+../Core/Src/main.c(1569): warning:  #177-D: variable "selected_mask" was declared but never referenced
     uint8_t selected_mask;
-../Core/Src/main.c(1842): warning:  #177-D: variable "filtered_mask" was declared but never referenced
+../Core/Src/main.c(1570): warning:  #177-D: variable "filtered_mask" was declared but never referenced
     uint8_t filtered_mask;
-../Core/Src/main.c(1843): warning:  #177-D: variable "select_count" was declared but never referenced
+../Core/Src/main.c(1571): warning:  #177-D: variable "select_count" was declared but never referenced
     uint8_t select_count;
-../Core/Src/main.c(1844): warning:  #177-D: variable "best_ch" was declared but never referenced
+../Core/Src/main.c(1572): warning:  #177-D: variable "best_ch" was declared but never referenced
     uint8_t best_ch;
-../Core/Src/main.c(1845): warning:  #177-D: variable "best_dev" was declared but never referenced
+../Core/Src/main.c(1573): warning:  #177-D: variable "best_dev" was declared but never referenced
     uint32_t best_dev;
-../Core/Src/main.c(1846): warning:  #177-D: variable "f_u32" was declared but never referenced
+../Core/Src/main.c(1574): warning:  #177-D: variable "f_u32" was declared but never referenced
     uint32_t f_u32;
-../Core/Src/main.c(1894): warning:  #177-D: variable "DAC_DC_DURATION_MS" was declared but never referenced
+../Core/Src/main.c(1622): warning:  #177-D: variable "DAC_DC_DURATION_MS" was declared but never referenced
     const uint32_t DAC_DC_DURATION_MS    = 30;   /* 30ms 直流持续时间 (场景 A 默认; �?10 �?场景 B) */
-../Core/Src/main.c(1895): warning:  #177-D: variable "DAC_BURST_DURATION_MS" was declared but never referenced
+../Core/Src/main.c(1623): warning:  #177-D: variable "DAC_BURST_DURATION_MS" was declared but never referenced
     const uint32_t DAC_BURST_DURATION_MS = 5;    /* 5ms 正弦突发持续时间 (固定不变) */
-../Core/Src/main.c(1896): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
+../Core/Src/main.c(1624): warning:  #177-D: variable "EVENT_COOLDOWN_MS" was declared but never referenced
     const uint32_t EVENT_COOLDOWN_MS     = 50;   /* burst 最小间�?50ms (CH340 接收上限 120 evt/s) */
-../Core/Src/main.c(2893): warning:  #1-D: last line of file ends without a newline
+../Core/Src/main.c(2600): warning:  #1-D: last line of file ends without a newline
   #endif
 ../Core/Src/main.c(269): warning:  #177-D: function "fmt_time_us" was declared but never referenced
   static inline void fmt_time_us(uint64_t total_us, uint32_t *s, uint32_t *ms, uint32_t *us)
-../Core/Src/main.c(437): warning:  #177-D: variable "fft_inst_ptr" was declared but never referenced
+../Core/Src/main.c(447): warning:  #177-D: variable "fft_inst_ptr" was declared but never referenced
   static const arm_cfft_instance_f32 *fft_inst_ptr = &arm_cfft_sR_f32_len1024;
-../Core/Src/main.c(803): warning:  #550-D: variable "tw_cos" was set but never used
-  static float tw_cos[FFT_LENGTH / 2]            __attribute__((aligned(32)));    /* 旋转因子cos分量 */
-../Core/Src/main.c(804): warning:  #550-D: variable "tw_sin" was set but never used
-  static float tw_sin[FFT_LENGTH / 2]            __attribute__((aligned(32)));    /* 旋转因子sin分量 */
-../Core/Src/main.c(805): warning:  #550-D: variable "fft_tables_ready" was set but never used
-  static uint8_t fft_tables_ready = 0;    /* FFT表初始化完成标志 */
-../Core/Src/main.c(825): warning:  #550-D: variable "test_cases" was set but never used
+../Core/Src/main.c(752): warning:  #550-D: variable "tw_cos" was set but never used
+  static float tw_cos[FFT_LENGTH / 2]            __attribute__((aligned(32)));
+../Core/Src/main.c(753): warning:  #550-D: variable "tw_sin" was set but never used
+  static float tw_sin[FFT_LENGTH / 2]            __attribute__((aligned(32)));
+../Core/Src/main.c(754): warning:  #550-D: variable "fft_tables_ready" was set but never used
+  static uint8_t fft_tables_ready = 0;
+../Core/Src/main.c(774): warning:  #550-D: variable "test_cases" was set but never used
   static const test_case_t test_cases[] = {
-../Core/Src/main.c(832): warning:  #177-D: variable "full_cycle_count" was declared but never referenced
+../Core/Src/main.c(781): warning:  #177-D: variable "full_cycle_count" was declared but never referenced
   static uint32_t full_cycle_count = 0;
-../Core/Src/main.c(867): warning:  #177-D: variable "ch_names" was declared but never referenced
+../Core/Src/main.c(817): warning:  #177-D: variable "ch_names" was declared but never referenced
   static const char *ch_names[ADC_NCH] = {
-../Core/Src/main.c(1259): warning:  #177-D: function "Verify_Sustain_in_Frame" was declared but never referenced
+../Core/Src/main.c(1067): warning:  #177-D: function "Verify_Sustain_in_Frame" was declared but never referenced
   static uint8_t Verify_Sustain_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
-../Core/Src/main.c(1325): warning:  #177-D: function "Refine_Transition_SubSample" was declared but never referenced
+../Core/Src/main.c(1112): warning:  #177-D: function "Refine_Transition_SubSample" was declared but never referenced
   static float Refine_Transition_SubSample(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
-../Core/Src/main.c(1455): warning:  #177-D: function "Calc_ZeroCross_Frequency_in_Frame" was declared but never referenced
+../Core/Src/main.c(1213): warning:  #177-D: function "Calc_ZeroCross_Frequency_in_Frame" was declared but never referenced
   static float Calc_ZeroCross_Frequency_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
-../Core/Src/main.c(1800): warning:  #177-D: function "Calc_FFT_Frequency_in_Frame" was declared but never referenced
+../Core/Src/main.c(1528): warning:  #177-D: function "Calc_FFT_Frequency_in_Frame" was declared but never referenced
   static float Calc_FFT_Frequency_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch, uint16_t start_idx)
 ../Core/Src/main.c: 57 warnings, 0 errors
 compiling gpio.c...
@@ -162,7 +135,7 @@ compiling tim.c...
 compiling stm32h7xx_it.c...
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Src/stm32h7xx_it.c(295): warning:  #1-D: last line of file ends without a newline
+../Core/Src/stm32h7xx_it.c(112): warning:  #1-D: last line of file ends without a newline
   /* USER CODE END 1 */
 ../Core/Src/stm32h7xx_it.c: 2 warnings, 0 errors
 compiling stm32h7xx_hal_msp.c...
@@ -288,29 +261,6 @@ compiling arm_cmplx_mag_squared_f32.c...
 compiling arm_rfft_fast_f32.c...
 compiling arm_rfft_fast_init_f32.c...
 linking...
-Program Size: Code=37584 RO-data=79864 RW-data=453588 ZI-data=160324  
+Program Size: Code=37364 RO-data=79864 RW-data=453332 ZI-data=160332  
 FromELF: creating hex file...
 ".\ADC_TEST\ADC_TEST.axf" - 0 Error(s), 92 Warning(s).
-
-<h2>Software Packages used:</h2>
-
-Package Vendor: ARM
-                https://www.keil.com/pack/ARM.CMSIS.6.3.0.pack
-                ARM::CMSIS:CORE:6.2.0
-                CMSIS (Common Microcontroller Software Interface Standard)
-   * Component: CORE Version: 6.2.0
-
-<h2>Collection of Component include folders:</h2>
-  F:\work\ADC_TEST\MDK-ARM\RTE
-  D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include
-  D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0
-
-<h2>Collection of Component Files used:</h2>
-
-   * Component: ARM::CMSIS:CORE:6.2.0
-      Include file:  CMSIS\Core\Include\tz_context.h
-      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
-      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
-</pre>
-</body>
-</html>

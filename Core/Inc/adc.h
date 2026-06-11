@@ -35,57 +35,84 @@ extern "C" {
 
 /* USER CODE END Includes */
 
-/* --------------- ADC handles --------------- */
-extern ADC_HandleTypeDef hadc1;
-extern ADC_HandleTypeDef hadc2;
-extern ADC_HandleTypeDef hadc3;
+/* ====================================================================== */
+/*  ADC句柄 — 每个ADC实例对应一个HAL句柄                                   */
+/* ====================================================================== */
+extern ADC_HandleTypeDef hadc1;    /* ADC1: PC0(CH1) + PC1(CH2) */
+extern ADC_HandleTypeDef hadc2;    /* ADC2: PA3(CH5) + PA4(CH6) */
+extern ADC_HandleTypeDef hadc3;    /* ADC3: PC2(CH3) + PC3(CH4) */
 
-/* --------------- DMA handles --------------- */
-extern DMA_HandleTypeDef hdma_adc1;
-extern DMA_HandleTypeDef hdma_adc2;
-extern DMA_HandleTypeDef hdma_adc3;
+/* ====================================================================== */
+/*  DMA句柄 — ADC1/ADC2使用DMA2, ADC3使用BDMA                             */
+/* ====================================================================== */
+extern DMA_HandleTypeDef hdma_adc1;    /* ADC1 DMA: DMA2_Stream0 */
+extern DMA_HandleTypeDef hdma_adc2;    /* ADC2 DMA: DMA2_Stream1 */
+extern DMA_HandleTypeDef hdma_adc3;    /* ADC3 DMA: BDMA_Channel0 */
 
-/* --------------- 通道数定义 --------------- */
+/* ====================================================================== */
+/*  通道数定义 — 6逻辑通道，3个ADC实例各2通道                             */
+/* ====================================================================== */
 #define ADC_NCH              6      /* 6 个逻辑通道（保持原有 main.c 兼容） */
 #define ADC_CH_PER_INST      2      /* 每个 ADC 2 通道 */
 #define ADC_INST_COUNT       3      /* ADC1 + ADC2 + ADC3 */
 
-/* --------------- DMA buffers --------------- */
-/* 每个 ADC 2 通道，单通道 ~2.6 MSPS，缓冲区时长 ~3 ms（单半区 ~1.5ms）
- * 每个 ADC 的缓冲区大小：4096 samples/ch * 2 ch = 8192 samples (uint16)
- */
+/* ====================================================================== */
+/*  DMA缓冲区大小定义                                                     */
+/*  每个ADC缓冲区16384个uint16_t = 32KB                                  */
+/*  DMA循环模式: 前半8192=HT中断, 后半8192=TC中断                        */
+/*  半区每通道4096样本(ADC_HALF_SCANS), 约1.165ms@3.515MSPS              */
+/* ====================================================================== */
 #define ADC_HALF_SCANS       4096   /* 每个 ADC 半区每通道样本数 */
 #define ADC_DMA_BUF_SIZE     (ADC_HALF_SCANS * ADC_CH_PER_INST * 2)  /* 16384 = full buf per ADC */
 
+/* ====================================================================== */
+/*  DMA缓冲区 — 固定地址分配                                              */
+/*  ADC1/ADC2在AXI SRAM(0x24070000/0x24078000), ADC3在SRAM4(0x38000000)  */
+/* ====================================================================== */
 extern uint16_t adc1_buf[ADC_DMA_BUF_SIZE] __attribute__((section(".AXI_SRAM"), aligned(32)));
 extern uint16_t adc2_buf[ADC_DMA_BUF_SIZE] __attribute__((section(".AXI_SRAM"), aligned(32)));
 extern uint16_t adc3_buf[ADC_DMA_BUF_SIZE] __attribute__((section(".AXI_SRAM"), aligned(32)));
 
-/* --------------- DMA flags (3 个 ADC 各自一组) --------------- */
-extern volatile uint8_t adc1_dma_half;
-extern volatile uint8_t adc1_dma_full;
-extern volatile uint8_t adc2_dma_half;
-extern volatile uint8_t adc2_dma_full;
-extern volatile uint8_t adc3_dma_half;
-extern volatile uint8_t adc3_dma_full;
+/* ====================================================================== */
+/*  DMA标志 — ISR置位, 主循环消费                                         */
+/* ====================================================================== */
+extern volatile uint8_t adc1_dma_half;    /* ADC1 DMA前半区完成标志 */
+extern volatile uint8_t adc1_dma_full;    /* ADC1 DMA后半区完成标志 */
+extern volatile uint8_t adc2_dma_half;    /* ADC2 DMA前半区完成标志 */
+extern volatile uint8_t adc2_dma_full;    /* ADC2 DMA后半区完成标志 */
+extern volatile uint8_t adc3_dma_half;    /* ADC3 DMA前半区完成标志 */
+extern volatile uint8_t adc3_dma_full;    /* ADC3 DMA后半区完成标志 */
 
-/* DMA 完成时刻 CYCCNT（用于精确时间戳） */
-extern volatile uint32_t adc1_dma_half_cyc;
-extern volatile uint32_t adc1_dma_full_cyc;
-extern volatile uint32_t adc2_dma_half_cyc;
-extern volatile uint32_t adc2_dma_full_cyc;
-extern volatile uint32_t adc3_dma_half_cyc;
-extern volatile uint32_t adc3_dma_full_cyc;
+/* ====================================================================== */
+/*  DMA完成时间戳（DWT周期计数）— 用于采样率校准                          */
+/* ====================================================================== */
+extern volatile uint32_t adc1_dma_half_cyc;    /* ADC1 HT中断DWT周期 */
+extern volatile uint32_t adc1_dma_full_cyc;    /* ADC1 TC中断DWT周期 */
+extern volatile uint32_t adc2_dma_half_cyc;    /* ADC2 HT中断DWT周期 */
+extern volatile uint32_t adc2_dma_full_cyc;    /* ADC2 TC中断DWT周期 */
+extern volatile uint32_t adc3_dma_half_cyc;    /* ADC3 HT中断DWT周期 */
+extern volatile uint32_t adc3_dma_full_cyc;    /* ADC3 TC中断DWT周期 */
 
-/* --------------- Sampling rate (per channel) --------------- */
+/* ====================================================================== */
+/*  采样率 — 主循环EMA在线校准                                             */
+/* ====================================================================== */
 extern float adc_sample_rate;  /* Msps per channel, calibrated online */
 
-/* --------------- Public functions --------------- */
-void MY_ADC1_Init(void);
-void MY_ADC2_Init(void);
-void MY_ADC3_Init(void);
-void MY_ADC_Start(void);   /* 同步启动 3 个 ADC */
-void MY_ADC_Stop(void);
+/* ====================================================================== */
+/*  ADC错误诊断计数器                                                      */
+/* ====================================================================== */
+extern volatile uint32_t diag_adc_err_cnt[3];           /* ADC错误回调触发次数 */
+extern volatile uint32_t diag_adc_err_code[3];          /* 最近一次ADC错误码 */
+extern volatile uint32_t diag_adc_err_recover_cnt[3];   /* ADC看门狗恢复次数 */
+
+/* ====================================================================== */
+/*  公共函数接口                                                           */
+/* ====================================================================== */
+void MY_ADC1_Init(void);      /* 初始化ADC1 (PC0+PC1) */
+void MY_ADC2_Init(void);      /* 初始化ADC2 (PA3+PA4) */
+void MY_ADC3_Init(void);      /* 初始化ADC3 (PC2+PC3) */
+void MY_ADC_Start(void);      /* 同步启动3个ADC DMA采集 */
+void MY_ADC_Stop(void);       /* 停止3个ADC DMA采集 */
 
 /* USER CODE BEGIN Prototypes */
 

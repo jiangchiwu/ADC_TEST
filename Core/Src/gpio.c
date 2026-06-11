@@ -66,6 +66,18 @@
   * @param  None
   * @retval None
   */
+/***********************************************************
+函数名：MX_GPIO_Init
+参数：  无
+返回值：无
+描述：  GPIO初始化函数
+        配置以下GPIO引脚：
+        1. LED指示灯（PB12/PB13/PB14）- 推挽输出，初始高电平（熄灭）
+           采用共阴极接法，低电平点亮LED
+        2. CH340 USB复位引脚（PE10）- 推挽输出，初始高电平（不复位状态）
+        时钟使能：GPIOB（LED）和 GPIOE（USB RST）
+修改记录：
+***********************************************************/
 void MX_GPIO_Init(void)
 {
   /* GPIO初始化结构体，初始化为0避免未初始化成员导致问题 */
@@ -73,53 +85,58 @@ void MX_GPIO_Init(void)
 
   /* ========================================================================
    * 步骤1: 使能GPIO端口时钟
-   * 
-继续   * GPIOB: RUN_LED/HEART_LED/READY_LED所在端口
+   * GPIOB: RUN_LED/HEART_LED/READY_LED所在端口
+   * GPIOE: USB_RST所在端口（与GPIOB分开使能，但PE10的使能在步骤4）
    * ========================================================================*/
-	__HAL_RCC_GPIOB_CLK_ENABLE();
+	RUN_LED_PORT_CLK_EN();
+	HEART_LED_PORT_CLK_EN(); 
+	READY_LED_PORT_CLK_EN(); 
 
   /* ========================================================================
    * 步骤2: 设置GPIO初始输出电平
-   * 
    * 由于LED采用共阴极接法（低电平点亮），初始状态设置为高电平（熄灭）
    * GPIO_PIN_SET = 高电平 = LED熄灭
    * GPIO_PIN_RESET = 低电平 = LED点亮
+   * 必须在配置为输出模式之前设置电平，避免上电瞬间LED闪烁
    * ========================================================================*/
-  HAL_GPIO_WritePin(GPIOB, RUN_LED_PIN | HEART_LED_PIN | READY_LED_PIN, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(RUN_LED_PORT, RUN_LED_PIN, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(HEART_LED_PORT, HEART_LED_PIN, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(READY_LED_PORT, READY_LED_PIN, GPIO_PIN_SET);
 
   /* ========================================================================
    * 步骤3: 配置LED引脚为推挽输出模式
    * 
    * 配置参数说明：
-   * - Pin:      RUN_LED/HEART_LED/READY_LED引脚（PB12/PB13/PB14）
    * - Mode:     GPIO_MODE_OUTPUT_PP - 推挽输出模式
    *             推挽输出可以提供更大的驱动能力，适合驱动LED
    * - Pull:     GPIO_NOPULL - 无上下拉电阻
    *             LED有独立的限流电阻，不需要内部上下拉
    * - Speed:    GPIO_SPEED_FREQ_LOW - 低速模式
    *             LED状态变化频率低，低速模式足够且更省电
+   * 
+   * 三个LED共用同一组参数（Mode/Pull/Speed），仅Pin不同
    * ========================================================================*/
-  GPIO_InitStruct.Pin = RUN_LED_PIN | HEART_LED_PIN | READY_LED_PIN;
+  
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
- 
-//  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_3, GPIO_PIN_SET);
-//  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3;
-//  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-//  GPIO_InitStruct.Pull = GPIO_NOPULL;
-//  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-//	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-//	
-//	while(1)
-//	{
-//		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_3, GPIO_PIN_SET);
-//		HAL_Delay(100);
-//		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_3, GPIO_PIN_RESET);
-//		HAL_Delay(100);
-//	}
+	GPIO_InitStruct.Pin = RUN_LED_PIN;
+  HAL_GPIO_Init(RUN_LED_PORT, &GPIO_InitStruct);
+	
+	GPIO_InitStruct.Pin = HEART_LED_PIN;
+  HAL_GPIO_Init(HEART_LED_PORT, &GPIO_InitStruct);
+	
+	GPIO_InitStruct.Pin = READY_LED_PIN;
+  HAL_GPIO_Init(READY_LED_PORT, &GPIO_InitStruct);
+	
+  /* ========================================================================
+   * 步骤4: 配置CH340 USB复位引脚
+   * PE10: USB_RST - CH340 USB-Serial芯片复位控制
+   * 默认高电平（不复位状态），低电平触发CH340复位
+   * 【2026-06-09 修复】HAL_GPIO_WritePin 需要 3 个参数 (Port, Pin, PinState)
+   * ========================================================================*/
+	USB_RST_PORT_CLK_EN();
+	HAL_GPIO_WritePin(USB_RST_PORT, USB_RST_PIN, GPIO_PIN_SET);
 
 }
 

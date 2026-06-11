@@ -1,23 +1,30 @@
 ; *************************************************************
-; STM32H750VBT6 Scatter File - Stable Flash Version
+; STM32H750VBT6 Scatter File - Optimized Memory Layout
 ; Flash: 128KB (0x08000000 - 0x0801FFFF)
-; DTCM:  128KB (0x20000000 - 0x2001FFFF)
+; ITCM:   64KB (0x00000000 - 0x0000FFFF) ← 运行时拷贝热代码
+; DTCM:  128KB (0x20000000 - 0x2001FFFF) ← FFT缓冲+栈+关键数据
 ; AXI SRAM: 512KB (0x24000000 - 0x2407FFFF)
+; SRAM4:  64KB (0x38000000 - 0x3800FFFF)
+;
+; ★ ITCM 策略：armcc v5.05 不支持 named section 在独立 ER 中，
+;   代码在 Flash + I-Cache 执行。若需确定性零等待，可运行时
+;   手动 memcpy Flash→ITCM（需独立 .c 文件 whole-object placement）。
 ; *************************************************************
 
-LR_IROM1 0x08000000 0x00020000  {    ; load region size 128KB
-  ER_IROM1 0x08000000 0x00020000  {  ; code region
+LR_IROM1 0x08000000 0x00020000  {
+  ER_IROM1 0x08000000  {
    *.o (RESET, +First)
    *(InRoot$$Sections)
    .ANY (+RO)
   }
-  RW_IRAM1 0x20000000 0x00020000  {  ; DTCM 128KB
+  RW_IRAM1 0x20000000 0x00020000  {
+   .DTCMRAM (+RW +ZI)
    .ANY (+RW +ZI)
   }
-  RW_IRAM2 0x24000000 0x00080000  {  ; AXI SRAM 512KB
+  RW_IRAM2 0x24000000 0x00080000  {
    .AXI_SRAM (+RW +ZI)
   }
-  RW_IRAM3 0x38000000 0x00010000  {  ; SRAM4 64KB
+  RW_IRAM3 0x38000000 0x00010000  {
    .SRAM4 (+RW +ZI)
   }
 }

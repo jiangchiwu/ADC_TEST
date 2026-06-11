@@ -51,7 +51,7 @@ extern "C" {
 extern UART_HandleTypeDef hdebug_uart;
 extern DMA_HandleTypeDef  hdma_uart7_tx;  /* 2026-06-07: TX DMA 句柄（零阻塞发送） */
 #define DEBUG_UART_INSTANCE      UART7
-#define DEBUG_UART_BAUDRATE      115200
+#define DEBUG_UART_BAUDRATE      460800    /* 【2026-06-09 修复】与 usart.c 实际初始化一致 */
 
 /* RS485_UART - RS485通信串口（UART4）*/
 extern UART_HandleTypeDef hrs485_uart;
@@ -71,8 +71,30 @@ extern UART_HandleTypeDef hlog_uart;
 
 /* USER CODE END Private defines */
 
+/***********************************************************
+函数名：MX_DEBUG_UART_Init
+参数：  无
+返回值：无
+描述：  初始化调试串口UART7（事件帧上送+调试日志）
+        波特率460800, 8N1, TX=DMA1_Stream0(零阻塞)
+***********************************************************/
 void MX_DEBUG_UART_Init(void);
+
+/***********************************************************
+函数名：MX_RS485_UART_Init
+参数：  无
+返回值：无
+描述：  初始化RS485通信串口UART4，波特率9600, 8N1
+        DE/RE控制引脚PE10
+***********************************************************/
 void MX_RS485_UART_Init(void);
+
+/***********************************************************
+函数名：MX_LOG_UART_Init
+参数：  无
+返回值：无
+描述：  初始化日志串口USART3，波特率115200, 8N1
+***********************************************************/
 void MX_LOG_UART_Init(void);
 
 #define RS485_SetTxMode() HAL_GPIO_WritePin(RS485_DE_RE_PORT, RS485_DE_RE_PIN, GPIO_PIN_SET)

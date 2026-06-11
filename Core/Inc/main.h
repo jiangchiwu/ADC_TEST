@@ -51,10 +51,33 @@ extern "C" {
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
+/* ====================================================================== */
+/*  公共函数声明                                                           */
+/* ====================================================================== */
+
+/***********************************************************
+函数名：Error_Handler
+参数：  无
+返回值：无
+描述：  错误处理函数，点亮LED后进入死循环
+        在初始化失败时调用（HAL外设初始化返回非HAL_OK时）
+***********************************************************/
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
+/***********************************************************
+函数名：systick_tx_poll
+参数：  无
+返回值：无
+描述：  SysTick中断驱动的UART DMA发送轮询函数
+        每1ms由SysTick_Handler调用，检查tx_ring环形队列：
+        - 若有待发事件帧且UART7 DMA空闲，启动DMA异步发送
+        - 若UART忙或无待发帧，立即返回（<1μs）
+        三级流水线第三级：Step A(触发) → Step B(FFT) → SysTick(TX)
+修改记录：
+***********************************************************/
+void systick_tx_poll(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -114,6 +137,13 @@ void Error_Handler(void);
 #define READY_LED_PORT_CLK_EN() __HAL_RCC_GPIOB_CLK_ENABLE()
 #define READY_LED_PIN           GPIO_PIN_14
 #define READY_LED_PORT          GPIOB
+
+
+/* USB_RST - CH340 USB RST*/
+#define  USB_RST_PORT_CLK_EN() __HAL_RCC_GPIOE_CLK_ENABLE()
+#define  USB_RST_PIN           GPIO_PIN_10
+#define  USB_RST_PORT          GPIOE
+
 
 /* USER CODE BEGIN Private defines */
 

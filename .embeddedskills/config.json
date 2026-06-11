@@ -6,7 +6,7 @@
   },
   "keil": {
     "project": "MDK-ARM/07-ADC_Test.uvprojx",
-    "target": "07-ADC_Test_LCD1_8",
+    "target": "ADC_TEST",
     "log_dir": ".embeddedskills/build"
   }
 }
