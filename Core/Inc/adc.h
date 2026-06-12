@@ -6,7 +6,7 @@
   *          ADC1: PC0(INP10) + PC1(INP11)  → 逻辑通道 CH1/CH2
   *          ADC2: PA3(INP15) + PA4(INP18)  → 逻辑通道 CH5/CH6
   *          ADC3: PC2(INP0)  + PC3(INP1)   → 逻辑通道 CH3/CH4
-  *          8-bit resolution, DMA circular mode, ~2.6 MSPS/channel
+  *          12-bit resolution, DMA circular mode, ~3.515 MSPS/channel
   *
   *          注：PA3/PA4 在 ADC3 上不可用（仅 ADC1/2），故分配到 ADC2；
   *              PC2/PC3 同时可用于 ADC1/2/3，分配到 ADC3 以分散负载。
@@ -69,9 +69,9 @@ extern DMA_HandleTypeDef hdma_adc3;    /* ADC3 DMA: BDMA_Channel0 */
 /*  DMA缓冲区 — 固定地址分配                                              */
 /*  ADC1/ADC2在AXI SRAM(0x24070000/0x24078000), ADC3在SRAM4(0x38000000)  */
 /* ====================================================================== */
-extern uint16_t adc1_buf[ADC_DMA_BUF_SIZE] __attribute__((section(".AXI_SRAM"), aligned(32)));
-extern uint16_t adc2_buf[ADC_DMA_BUF_SIZE] __attribute__((section(".AXI_SRAM"), aligned(32)));
-extern uint16_t adc3_buf[ADC_DMA_BUF_SIZE] __attribute__((section(".AXI_SRAM"), aligned(32)));
+extern uint16_t adc1_buf[ADC_DMA_BUF_SIZE] __attribute__((aligned(32)));
+extern uint16_t adc2_buf[ADC_DMA_BUF_SIZE] __attribute__((aligned(32)));
+extern uint16_t adc3_buf[ADC_DMA_BUF_SIZE] __attribute__((aligned(32)));
 
 /* ====================================================================== */
 /*  DMA标志 — ISR置位, 主循环消费                                         */

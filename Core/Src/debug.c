@@ -100,19 +100,22 @@ void debug_push_raw(const uint8_t *buf, uint16_t len)
 }
 
 /* 主循环周期性调用：把环形缓冲数据非阻塞地分块写入 UART
- * v6.5: 加 state 检查避免与 tx_ring_poll 抢 UART → 若 UART BUSY 跳过本轮 */
+ * 【2026-06-12 优化】改用 DMA 发送替代阻塞式 HAL_UART_Transmit(timeout=3ms)
+ * 原问题：HAL_UART_Transmit 阻塞最多 3ms，期间主循环无法消费 ADC DMA 帧
+ * 新方案：HAL_UART_Transmit_DMA 非阻塞发送，立即返回主循环
+ *         下一轮 poll 时检查 UART 状态，BUSY 则跳过等下轮 */
 void debug_poll(void)
 {
   uint16_t avail;
   uint16_t chunk;
   uint16_t head = dbg_head;
   uint16_t tail = dbg_tail;
-  uint8_t  tmp[64];
+  static uint8_t tmp[64];
   uint16_t i;
 
   if(head == tail) return;
 
-  /* v6.5: 如果 UART 正忙发事件帧，跳过本轮，下次再刷 */
+  /* UART BUSY（上轮 DMA 还在发或事件帧在发）→ 跳过本轮 */
   if(HAL_UART_GetState(&hdebug_uart) != HAL_UART_STATE_READY) return;
 
   if(head > tail) avail = head - tail;
@@ -123,9 +126,11 @@ void debug_poll(void)
     tmp[i] = dbg_ring[tail];
     tail = (uint16_t)((tail + 1) % DBG_RING_SIZE);
   }
-  /* 64 字节 @ 460800 baud = 1389 us，timeout 3 ms 是 ~2× 余量 */
-  HAL_UART_Transmit(&hdebug_uart, tmp, chunk, 3);
-  dbg_tail = tail;
+  /* DMA 发送：非阻塞，64B@460800≈1.4ms 在后台完成 */
+  if(HAL_UART_Transmit_DMA(&hdebug_uart, tmp, chunk) == HAL_OK) {
+    dbg_tail = tail;
+  }
+  /* DMA 发送失败（UART 不就绪等）→ 不更新 tail，下轮重试 */
 }
 
 uint32_t debug_get_drop_bytes(void)

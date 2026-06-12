@@ -9,6 +9,7 @@
 ".\adc_test\stm32h7xx_hal_msp.o"
 ".\adc_test\dac.o"
 ".\adc_test\usart.o"
+".\adc_test\test.o"
 ".\adc_test\stm32h7xx_hal_adc.o"
 ".\adc_test\stm32h7xx_hal_adc_ex.o"
 ".\adc_test\stm32h7xx_hal_rcc.o"

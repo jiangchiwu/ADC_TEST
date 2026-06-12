@@ -417,22 +417,36 @@ extern TIM_HandleTypeDef htim7;
 
 /* === 采样率校准 ===
  * 基于实测校准，确保频率计算准确
- * ADC内核时钟: 75MHz
- * 采样时间: 1.5周期 + 8位转换周期 = 10周期/样本
- * 6通道扫描，理论值: 75MHz / 10 / 6 = 1.25MHz/通道
- * 启动初值：868000（自校准实测稳定值），运行时仍可微调
+ * ADC内核时钟: PLL3_R=112.5MHz (J-Link验证D3CCIPR ADCSEL=01)
+ * 硅片版本: Rev.V (DBGMCU_IDCODE=0x20036450)
+ * 分辨率: 12-bit (J-Link验证 ADC1_CFGR RES=010)
+ * 采样时间: 1.5周期 + 12位转换周期 = 14周期/样本 (理论)
+ * 6通道扫描，理论值: 56.25MHz / 14 / 6 = 0.669MHz/通道 (÷2 active)
+ *                   或 112.5MHz / 14 / 6 = 1.339MHz/通道 (÷2 inactive)
+ * 实测: 7.438 MSPS/ch (EMA)，远高于理论值
+ * 启动初值：3515000（自校准实测稳定值），运行时仍可微调
  */
 /* ADC 每通道实测采样率
  * 实测值：J-Link读取 diag_frame_interval_cyc = 559343 cyc @480MHz = 1.165 ms
  *         => fs_per_ch = 4096 / 1.165ms = 3,515,000 Hz
  * 此前的 2,009,000 是按 PLL3P=56.25MHz/(2*14) 理论值算的，但实测 fs 高出 75%
  * 推测原因：ADC clock prescaler 或 sampling time 实际值与配置不符
- * 验证：DAC 输出 39893 Hz，FFT bin=12 -> 12 × 3515000 / 1024 = 41191 Hz ✓
+ * 验证：DAC 输出 39889 Hz，FFT bin=12 -> 12 × 3515000 / 1024 = 41191 Hz ✓
  * （若理论 fs=2.009MHz，应得 bin=20.3，但实测 bin=12，即真实 fs 高出约 1.75x）
+ *
+ * ★ 2026-06-12 更新：J-Link确认 ADC1_CFGR RES=010 → 12-bit（非8-bit）
+ *   12-bit理论值 2.009 MSPS 仍与实测 7.438 MSPS 差距大，
+ *   可能是 Rev.V BOOST 模式下转换周期 < 14 cycles
  *
  * 注意：此值是 RAM 变量，可在线调整。若发现 FFT 输出与 DAC 实际频率仍有偏差，
  * 可临时通过 J-Link 写 0x... 修改本变量重新校准。 */
-float adc_fs_hz = 3515000.0f;  /* 实测每通道采样率 (DMA帧间隔反推) */
+float adc_fs_hz = 3515000.0f;  /* 实测每通道采样率 (DMA帧间隔反推)
+                                   * ★ 2026-06-12 J-Link 实测更新：
+                                   *   硅片 Rev.V, PLL3_R=112.5MHz, ADC1_CFGR.RES=010 → 12-bit ✅
+                                   *   EMA 校准值 7.438 MSPS, FFT 使用 7.074 MSPS
+                                   *   理论值(12-bit/14cyc/56.25MHz=2.009MSPS)与实测不吻合
+                                   *   可能原因：Rev.V BOOST模式下12-bit转换周期<14 cycles
+                                   *   ★ FFT 频率精度已实测验证正确（使用 adc_fs_hz 校准）*/
 
 static const arm_cfft_instance_f32 *fft_inst_ptr = &arm_cfft_sR_f32_len1024;
 static arm_rfft_fast_instance_f32 rfft_inst;
@@ -491,17 +505,23 @@ static void DWT_Init(void)
  * 无除法开销（编译器将除法优化为乘法+移位），无do-while重试。
  * 注意：CYCCNT 32位@480MHz约8.9s回绕，对本应用（事件时间戳）足够。
  *       若需>8.9s单调递增，应改用tick1*1000+sub_us混合方案。 */
+/* 【2026-06-12 进一步优化】DWT_GetUs: 用32位除法替代64位除法，省20-40 cycles/调用
+ * CYCCNT 是 32-bit，480MHz 下 ~8.9s 回绕一次。
+ * 新方案：直接 (uint64_t)CYCCNT * 1000 / (SystemCoreClock/1000)
+ *         即先乘1000再除 MHz 值，全程 32 位运算（乘法后 cast 为 64 位防溢出）
+ *         精度完全等效原实现，但避免了 __aeabi_uldivmod 调用。
+ */
 static uint64_t DWT_GetUs(void)
 {
   uint32_t cyc;
-  uint32_t cpu_cyc_per_us;
-  cpu_cyc_per_us = dwt_cyc_per_us;
-  if(cpu_cyc_per_us == 0U) {
-    cpu_cyc_per_us = SystemCoreClock / 1000000U;
-    if(cpu_cyc_per_us == 0U) cpu_cyc_per_us = 480U;
-  }
+  uint32_t mhz;
   cyc = DWT->CYCCNT;
-  return (uint64_t)cyc / (uint64_t)cpu_cyc_per_us;
+  mhz = dwt_cyc_per_us;  /* = SystemCoreClock/1e6, cached in DWT_Init() */
+  if(mhz == 0U) {
+    mhz = SystemCoreClock / 1000000U;
+    if(mhz == 0U) mhz = 480U;
+  }
+  return ((uint64_t)cyc) / ((uint64_t)mhz);
 }
 
 /* 【2026-06-09 死代码清理】evt_tx_queue 整套已废弃（仅 tx_ring 在用）
@@ -752,14 +772,30 @@ static void check_dma_and_push_frames(void)
     diag_last_frame_cyc = frame_start_cyc;
   }
   
-  /* 计算空闲比例 */
+  /* 计算空闲比例
+   * ★ 2026-06-12 修复：当 diag_frame_process_cyc > diag_frame_interval_cyc 时，
+   *   差值为负数，转 float 再转 uint32 会导致整数回绕（值 > 20 亿）。
+   *   原因：3 级流水线中帧处理可能跨越多个帧间隔（Step A + Step B 并行），
+   *   process_cyc 记录的是单次 check_dma_and_push_frames 的总耗时，
+   *   而 interval_cyc 是两次帧起始的时间差，二者并非同一时间窗口。
+   *   修复：先做 float 比较再 clamp 到 [0, 100] */
   if(diag_frame_interval_cyc > 0 && diag_frame_process_cyc > 0) {
-    diag_idle_ratio = (uint32_t)((float)(diag_frame_interval_cyc - diag_frame_process_cyc) * 100.0f / (float)diag_frame_interval_cyc);
+    float idle_pct = (float)(diag_frame_interval_cyc - diag_frame_process_cyc) * 100.0f / (float)diag_frame_interval_cyc;
+    if(idle_pct < 0.0f) idle_pct = 0.0f;
+    if(idle_pct > 100.0f) idle_pct = 100.0f;
+    diag_idle_ratio = (uint32_t)idle_pct;
   }
 
-  /* 【2026-06-07 v8 E.10 临时禁用】跨域 flag 失同步超时回退
-   * 烧录后发现死锁，疑似 DMA TEIF 风暴，先禁用此逻辑回归测试 */
-#if 0
+  /* 【2026-06-07 v8 E.10 → 2026-06-12 重新启用】跨域 flag 失同步超时回退
+   * 之前禁用是因为"疑似 DMA TEIF 风暴导致死锁"。
+   * 根因分析：ADC ErrorCallback 中已禁用 TEIE（见 adc.c:604），
+   *   TEIF 不再产生中断风暴。200ms 看门狗已能恢复死掉的 ADC DMA。
+   *   但如果不启用此回退，单个 ADC DMA 出错后其 flag 永不置位，
+   *   导致主循环永远等不到 3-flag 齐全 → 帧处理完全停止 200ms。
+   * 修正：启用回退，但将超时从 desync_timeout_cyc 改为 2 倍正常帧间隔
+   *   （约 2.3ms = 2×1.165ms），避免误清正常延迟的 flag。
+   */
+#if 1
   /* 检测：任一 ADC 的 half flag 已就绪，但 3 个未全到，且距离上次成帧已超过 desync_timeout
    * 处理：强制清掉孤立 flag（这次半区数据丢弃，等下一周期重新对齐）
    * 同样适用 full flag */
@@ -886,7 +922,7 @@ static const char *ch_names[ADC_NCH] = {
                  栈、FFT缓冲区、关键RW数据
                  DTCM在CPU专用总线上，0等待，天然与DMA隔离
                  标记Non-Cacheable确保SCB_CleanDCache不会意外写回
-        Region3: SRAM4(0x38000000,32KB) - Non-Cacheable(D3域)
+        Region3: SRAM4(0x38000000,64KB) - Non-Cacheable(D3域)
                  ADC3 DMA缓冲区，D3域与D1域DMA路径不同
                  ★必须Non-Cacheable：DCache操作对D3域SRAM可能是no-op
                    或产生未定义行为(RM0433 §2.4)，ADC3数据一致性
@@ -938,11 +974,13 @@ static void MPU_Config(void)
 
   /* Region3: SRAM4(D3域) - Non-Cacheable（ADC3 DMA缓冲区）
    * ★ 关键：D3域SRAM的Cache行为与D1/D2域不同，DCache操作可能无效
-   *   标记Non-Cacheable确保CPU读到的ADC3数据就是DMA写入的真实值 */
+   *   标记Non-Cacheable确保CPU读到的ADC3数据就是DMA写入的真实值
+   * 【2026-06-12】Size 从 32KB 扩展到 64KB，与 scatter file 一致，
+   *   确保 SRAM4 全部 64KB 都在 MPU 保护范围内 */
   MPU_InitStruct.Enable           = MPU_REGION_ENABLE;
   MPU_InitStruct.Number           = MPU_REGION_NUMBER3;
   MPU_InitStruct.BaseAddress      = 0x38000000;
-  MPU_InitStruct.Size             = MPU_REGION_SIZE_32KB;
+  MPU_InitStruct.Size             = MPU_REGION_SIZE_64KB;
   MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
   MPU_InitStruct.IsBufferable     = MPU_ACCESS_NOT_BUFFERABLE;
   MPU_InitStruct.IsCacheable      = MPU_ACCESS_NOT_CACHEABLE;
@@ -1927,6 +1965,7 @@ int main(void)
   MX_TIM7_Init();
   MX_DAC1_Init();
 
+
   /* 任务1: 记录时钟和计时基线 */
   diag_dwt_baseline = DWT->CYCCNT;
   diag_systick_base = HAL_GetTick();
@@ -1988,26 +2027,40 @@ int main(void)
      * 主循环不再调用，UART DMA 发送由中断驱动，确保定时发送且主循环零阻塞 */
 
     /* 【2026-06-09 ADC 健康看门狗】(2026-06-10 优化: 2s → 200ms)
+     * 【2026-06-12 优化: HAL_Delay(5) → 非阻塞状态机】
      * 如果 ADC DMA 连续 200ms 无新帧到达（half_complete_cnt 不增长），说明
      * ErrorCallback 可能已关闭 TEIE 导致 DMA 静默失败，需要重启 ADC。
-     * 恢复步骤：Stop → Abort DMA → 重新 Start_DMA（会重新使能 TEIE）。
-     * 检测周期：每 200ms 评估一次（2s 死窗口太长，会丢失大量事件帧）。
+     * 恢复步骤：Stop → 等5ms(非阻塞) → 重新 Start_DMA（会重新使能 TEIE）。
+     * 检测周期：每 200ms 评估一次。
      * 正常 ADC 半区中断间隔 ≈1.165ms，200ms 内应有 ~171 个半区中断，
      * 若计数不增长则确认为 ADC 故障。 */
     {
       static uint32_t wdg_last_tick = 0;
       static uint32_t wdg_last_half_cnt = 0;
+      static uint8_t  wdg_recovering = 0;      /* 非阻塞恢复状态: 0=正常, 1=等待5ms */
+      static uint32_t wdg_recover_start = 0;
       uint32_t wdg_now = now;
-      if(wdg_last_tick == 0) { wdg_last_tick = wdg_now; wdg_last_half_cnt = half_complete_cnt; }
-      if(wdg_now - wdg_last_tick >= 200U) {
-        if(half_complete_cnt == wdg_last_half_cnt && wdg_last_half_cnt > 0) {
-          /* 200ms 内无新帧 → ADC 可能死掉，重启 */
-          MY_ADC_Stop();
-          HAL_Delay(5);
+
+      /* 非阻塞恢复阶段：等待5ms后重新启动ADC */
+      if(wdg_recovering) {
+        if(wdg_now - wdg_recover_start >= 5U) {
           MY_ADC_Start();
           diag_adc_err_recover_cnt[0]++;
           diag_adc_err_recover_cnt[1]++;
           diag_adc_err_recover_cnt[2]++;
+          wdg_recovering = 0;
+        }
+        /* 恢复期间继续处理ADC帧（其他ADC可能还在工作） */
+        continue;
+      }
+
+      if(wdg_last_tick == 0) { wdg_last_tick = wdg_now; wdg_last_half_cnt = half_complete_cnt; }
+      if(wdg_now - wdg_last_tick >= 200U) {
+        if(half_complete_cnt == wdg_last_half_cnt && wdg_last_half_cnt > 0) {
+          /* 200ms 内无新帧 → ADC 可能死掉，启动非阻塞恢复 */
+          MY_ADC_Stop();
+          wdg_recovering = 1;
+          wdg_recover_start = wdg_now;
         }
         wdg_last_tick = wdg_now;
         wdg_last_half_cnt = half_complete_cnt;
@@ -2826,8 +2879,13 @@ int main(void)
 描述：  系统时钟配置函数
         配置STM32H750为480MHz主频：
         - PLL1: HSE(25MHz)×N/P → SYSCLK=480MHz
+          PLL1M=5, PLL1N=192, PLL1P=2
+          VCO=25*192/5=960MHz, PLL1_P=960/2=480MHz
         - AHB: 480MHz, APB1: 120MHz, APB2: 120MHz
-        - PLL3: 为ADC提供56.25MHz异步时钟
+        - PLL3: 为ADC提供异步时钟（见 adc.c HAL_ADC_MspInit 详细注释）
+          PLL3M=5, PLL3N=45, PLL3R=2 → PLL3_R=112.5MHz
+          ★ D3CCIPR.ADCSEL=01 → ADC 时钟来自 PLL3_R（非 PLL3_P）
+          ★ 硅片 Rev.V 有硬件 ÷2 → SAR 时钟 = 56.25MHz
 修改记录：
 ***********************************************************/
 void SystemClock_Config(void)

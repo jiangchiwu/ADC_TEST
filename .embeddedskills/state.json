@@ -21,7 +21,7 @@
     "debug_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
     "output_dir": "MDK-ARM/ADC_TEST",
     "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-build.log",
-    "timestamp": "2026-06-11T00:27:28+08:00"
+    "timestamp": "2026-06-12T21:26:06+08:00"
   },
   "last_observe": {
     "type": "serial_monitor",
@@ -30,5 +30,23 @@
     "lines": 933,
     "duration_sec": 10.0,
     "timestamp": "2026-05-25T08:33:39+08:00"
+  },
+  "last_debug": {
+    "provider": "jlink",
+    "action": "reset",
+    "device": "STM32H750VBTx",
+    "interface": "SWD",
+    "speed": "4000",
+    "serial_no": "",
+    "timestamp": "2026-06-12T21:26:43+08:00"
+  },
+  "last_flash": {
+    "provider": "jlink",
+    "action": "flash",
+    "device": "STM32H750VBTx",
+    "interface": "SWD",
+    "speed": "4000",
+    "serial_no": "",
+    "timestamp": "2026-06-12T21:26:27+08:00"
   }
 }

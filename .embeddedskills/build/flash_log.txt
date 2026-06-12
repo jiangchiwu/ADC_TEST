@@ -1,0 +1,3 @@
+Load "F:\\work\\ADC_TEST\\MDK-ARM\\ADC_TEST\\ADC_TEST.axf" 
+Error: Flash Download failed  -  Target DLL has been cancelled
+Flash Load finished at 08:13:15

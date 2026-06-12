@@ -1,6 +1,6 @@
 {
   "jlink": {
-    "device": "STM32H750VB",
+    "device": "STM32H750VBTx",
     "interface": "SWD",
     "speed": "4000"
   },
@@ -8,5 +8,11 @@
     "project": "MDK-ARM/07-ADC_Test.uvprojx",
     "target": "ADC_TEST",
     "log_dir": ".embeddedskills/build"
+  },
+  "openocd": {
+    "interface": "interface/stlink.cfg",
+    "target": "target/stm32h7x.cfg",
+    "adapter_speed": "4000",
+    "transport": "swd"
   }
 }

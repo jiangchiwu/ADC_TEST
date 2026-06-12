@@ -1,6 +1,6 @@
 Dependencies for Project '07-ADC_Test', Target 'ADC_TEST': (DO NOT MODIFY !)
 F (startup_stm32h750xx.s)(0x6A2984E4)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0--pd "__UVISION_VERSION SETA 514" --pd "_RTE_ SETA 1" --pd "STM32H750xx SETA 1"--list startup_stm32h750xx.lst --xref -o .\adc_test\startup_stm32h750xx.o --depend .\adc_test\startup_stm32h750xx.d)
-F (../Core/Src/debug.c)(0x6A2543ED)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\debug.o --omf_browse .\adc_test\debug.crf --depend .\adc_test\debug.d)
+F (../Core/Src/debug.c)(0x6A2AF67E)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\debug.o --omf_browse .\adc_test\debug.crf --depend .\adc_test\debug.d)
 I (../Core/Inc/debug.h)(0x6A25423E)
 I (../Core/Inc/main.h)(0x6A297D49)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x69FF40C0)
@@ -42,7 +42,7 @@ I (D:\soft\keil5\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
 I (D:\soft\keil5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (../Core/Inc/usart.h)(0x6A297D38)
 I (D:\soft\keil5\ARM\ARMCC\include\string.h)(0x5475F300)
-F (../Core/Src/main.c)(0x6A2ADA63)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\main.o --omf_browse .\adc_test\main.crf --depend .\adc_test\main.d)
+F (../Core/Src/main.c)(0x6A2C08D8)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\main.o --omf_browse .\adc_test\main.crf --depend .\adc_test\main.d)
 I (../Core/Inc/main.h)(0x6A297D49)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x69FF40C0)
 I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6A2987EB)
@@ -81,7 +81,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64ABC7D1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64ABC7D1)
 I (../Core/Inc/tim.h)(0x6A2212F7)
 I (../Core/Inc/gpio.h)(0x69FF40C0)
-I (../Core/Inc/adc.h)(0x6A297D27)
+I (../Core/Inc/adc.h)(0x6A2AF3E8)
 I (../Core/Inc/dac.h)(0x6A260C66)
 I (../Core/Inc/debug.h)(0x6A25423E)
 I (D:\soft\keil5\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
@@ -130,8 +130,8 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x69FF40C0)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x69FF40C0)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64ABC7D1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64ABC7D1)
-F (../Core/Src/adc.c)(0x6A297C40)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\adc.o --omf_browse .\adc_test\adc.crf --depend .\adc_test\adc.d)
-I (../Core/Inc/adc.h)(0x6A297D27)
+F (../Core/Src/adc.c)(0x6A2C06DD)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\adc.o --omf_browse .\adc_test\adc.crf --depend .\adc_test\adc.d)
+I (../Core/Inc/adc.h)(0x6A2AF3E8)
 I (../Core/Inc/main.h)(0x6A297D49)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x69FF40C0)
 I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6A2987EB)
@@ -245,7 +245,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x69FF40C0)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64ABC7D1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64ABC7D1)
 I (../Core/Inc/stm32h7xx_it.h)(0x69FF40C0)
-I (../Core/Inc/adc.h)(0x6A297D27)
+I (../Core/Inc/adc.h)(0x6A2AF3E8)
 I (../Core/Inc/usart.h)(0x6A297D38)
 F (../Core/Src/stm32h7xx_hal_msp.c)(0x69FF40C0)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\stm32h7xx_hal_msp.o --omf_browse .\adc_test\stm32h7xx_hal_msp.crf --depend .\adc_test\stm32h7xx_hal_msp.d)
 I (../Core/Inc/main.h)(0x6A297D49)
@@ -361,6 +361,48 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x69FF40C0)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64ABC7D1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64ABC7D1)
 I (../Core/Inc/main.h)(0x6A297D49)
+I (D:\soft\keil5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\Core\Src\test.c)(0x6A2C08F9)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\test.o --omf_browse .\adc_test\test.crf --depend .\adc_test\test.d)
+I (../Core/Inc/test.h)(0x6A2212F7)
+I (../Core/Inc/main.h)(0x6A297D49)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x69FF40C0)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x6A2987EB)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x69FF40C0)
+I (D:\soft\keil5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69FF40C0)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69FF40C0)
+I (D:\soft\keil5\ARM\ARMCC\include\stddef.h)(0x5475F300)
+I (D:\soft\keil5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h)(0x6A095FB2)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x69FF40C0)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64ABC7D1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64ABC7D1)
+I (../Core/Inc/tim.h)(0x6A2212F7)
+I (../Core/Inc/debug.h)(0x6A25423E)
+I (D:\soft\keil5\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
 I (D:\soft\keil5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c)(0x69FF40C0)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I..\Drivers\BSP\ST7735 -I../Middlewares/CMSIS/DSP/Include-I F:\work\ADC_TEST\MDK-ARM\RTE-I D:\soft\keil5\pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include-I D:\soft\keil5\pack\Keil\STM32H7xx_DFP\2.8.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32H750xx -DUSE_HAL_DRIVER -DSTM32H750xx -DTFT18 -DARM_MATH_CM7 -D__FPU_PRESENT="1U" -D__FPU_USED="1U"-o .\adc_test\stm32h7xx_hal_adc.o --omf_browse .\adc_test\stm32h7xx_hal_adc.crf --depend .\adc_test\stm32h7xx_hal_adc.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x69FF40C0)

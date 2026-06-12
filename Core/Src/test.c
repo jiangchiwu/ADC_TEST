@@ -98,3 +98,19 @@ void test_pwm_main(void)
     }
   }
 }
+
+
+
+
+void test_main(void)
+{
+  // MX_DEBUG_UART_Init();
+  // debug_init();
+  debug_printf("test_main\r\n");
+
+}
+ /* hal_init 硬件初始化 */
+void hal_init(void)
+{
+  
+}
