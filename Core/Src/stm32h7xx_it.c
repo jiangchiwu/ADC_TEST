@@ -8,19 +8,23 @@
   *   - Cortex-M7 系统异常处理（NMI、HardFault、MemManage 等）
   *   - SysTick 定时器中断（1ms 周期，驱动 HAL 时基 + UART DMA 发送）
   *   - ADC DMA 传输完成/半完成中断（DMA2_Stream0/1, BDMA_Channel0）
-  *   - UART7 TX DMA 传输完成中断（DMA1_Stream0）
-  *   - UART7 全局中断（错误处理 + DMA TC 路由）
+  *   - UART1 TX DMA 传输完成中断（DMA1_Stream2）
+  *   - UART1 全局中断（错误处理 + DMA TC 路由）
   *
   * 中断优先级映射（数值越小优先级越高）：
   *   ADC DMA (DMA2_Stream0/1, BDMA_Channel0) : 优先级 5,0
-  *   UART TX DMA (DMA1_Stream0)              : 优先级 6,0
-  *   UART7 全局                               : 优先级 6,0
+  *   UART TX DMA (DMA1_Stream2)              : 优先级 6,0
+  *   UART1 全局                               : 优先级 6,0
   *   SysTick                                  : 优先级 15,0（最低）
   *
   * 嵌套关系：
   *   SysTick 可被 ADC DMA 和 UART DMA 抢占（优先级 15 > 5/6）
   *   ADC DMA 可抢占 UART DMA（优先级 5 < 6）
   *   DAC DMA1_Stream1 中断已禁用（dac.c 中手动清除中断使能位）
+ * 
+ * 【2026-06-13 变更】DMA 冲突修复
+ *   - UART1 TX DMA: DMA1_Stream1 → DMA1_Stream2（避免与 DAC 冲突）
+ *   - DAC 仍使用 DMA1_Stream1
   *
   ******************************************************************************
   */
@@ -30,7 +34,7 @@
 #include "main.h"         /* systick_tx_poll() 声明 */
 #include "stm32h7xx_it.h"
 #include "adc.h"          /* hdma_adc1/2/3 DMA 句柄 */
-#include "usart.h"        /* hdebug_uart, hdma_uart7_tx 句柄 */
+#include "usart.h"        /* hdebug_uart, hdma_uart1_tx 句柄 */
 
 /* USER CODE BEGIN EV */
 /* ADC DMA 句柄 — 在 adc.c 中定义，此处 extern 引用 */
@@ -249,32 +253,32 @@ void BDMA_Channel0_IRQHandler(void)
 }
 
 /***********************************************************
-函数名：DMA1_Stream0_IRQHandler
+函数名：DMA1_Stream2_IRQHandler
 参数：  无
 返回值：无
-描述：  UART7 TX DMA 传输完成中断处理函数
-        DMA1_Stream0 连接 UART7_TX，传输优先级 6,0
-        当 UART7 DMA 发送完成时触发，HAL 内部路由到：
+描述：  UART1 TX DMA 传输完成中断处理函数
+        DMA1_Stream2 连接 UART1_TX，传输优先级 6,0
+        当 UART1 DMA 发送完成时触发，HAL 内部路由到：
           TC → HAL_UART_TxCpltCallback (main.c 中实现，仅递增计数器)
         执行流程：
           1. HAL_DMA_IRQHandler 清除 DMA 中断标志
           2. 调用 UART_DMATransmitCplt
           3. 复位 huart->gState 为 HAL_UART_STATE_READY
           4. 触发 HAL_UART_TxCpltCallback（main.c 中仅 diag_uart_q_send_cnt++）
-        2026-06-07 v7: 添加 UART7 TX DMA 支持
+        【2026-06-13 变更】从 DMA1_Stream1 改为 DMA1_Stream2（避免与 DAC 冲突）
 修改记录：
 ***********************************************************/
-void DMA1_Stream0_IRQHandler(void)
+void DMA1_Stream2_IRQHandler(void)
 {
-  HAL_DMA_IRQHandler(&hdma_uart7_tx);
+  HAL_DMA_IRQHandler(&hdma_uart1_tx);
 }
 
 /***********************************************************
-函数名：UART7_IRQHandler
+函数名：USART1_IRQHandler
 参数：  无
 返回值：无
-描述：  UART7 全局中断处理函数
-        处理 UART7 的所有中断事件，优先级 6,0
+描述：  UART1 全局中断处理函数
+        处理 UART1 的所有中断事件，优先级 6,0
         主要中断源：
           - DMA TC 完成由 HAL_DMA_IRQHandler 路由到此
           - UART 错误中断（ORE/FRE/NE）由 HAL_UART_IRQHandler 直接处理
@@ -282,14 +286,51 @@ void DMA1_Stream0_IRQHandler(void)
           1. HAL_UART_IRQHandler 检查 UART 中断标志
           2. 若是 DMA TC：调用 UART_DMATransmitCplt，复位 gState 为 READY
           3. 若是 UART 错误：调用 HAL_UART_ErrorCallback，可能中止 DMA 传输
-        注意：DMA TC 完成时，中断先进入 DMA1_Stream0_IRQHandler，
-              再通过 HAL 机制触发 UART7_IRQHandler，
+        注意：DMA TC 完成时，中断先进入 DMA1_Stream1_IRQHandler，
+              再通过 HAL 机制触发 USART1_IRQHandler，
               最终到达 HAL_UART_TxCpltCallback
+        【2026-06-12 变更】UART7 → UART1
 修改记录：
 ***********************************************************/
-void UART7_IRQHandler(void)
+void USART1_IRQHandler(void)
 {
   HAL_UART_IRQHandler(&hdebug_uart);
 }
 
-/* USER CODE END 1 */
+/* USER CODE BEGIN 2 */
+
+/* 【2026-06-13 变更】UART7 改为调试日志打印，不再使用 DMA
+ *   - UART1 (PA9/PA10): 事件帧上送 (DMA1_Stream2)
+ *   - UART7 (PE7/PE8): 调试日志打印 (普通阻塞模式)
+ */
+
+/***********************************************************
+函数名：DMA1_Stream0_IRQHandler
+参数：  无
+返回值：无
+描述：  UART7 TX DMA 传输完成中断处理函数
+        【2026-06-12】UART7 已不再使用 DMA，此中断处理保留但不激活
+        如需恢复 UART7 DMA 支持，需重新配置 DMA1_Stream0 和中断优先级
+修改记录：
+***********************************************************/
+void DMA1_Stream0_IRQHandler(void)
+{
+  /* UART7 DMA 已禁用，如需启用请在 usart.c 中重新配置 */
+}
+
+/***********************************************************
+函数名：UART7_IRQHandler
+参数：  无
+返回值：无
+描述：  UART7 全局中断处理函数
+        【2026-06-12】UART7 改为调试日志打印，使用普通阻塞模式（printf）
+        此中断处理程序保留用于错误处理
+修改记录：
+***********************************************************/
+void UART7_IRQHandler(void)
+{
+  /* UART7 使用轮询模式，不启用中断 */
+  /* 如需中断模式，参考 USART1_IRQHandler 实现 */
+}
+
+/* USER CODE END 2 */

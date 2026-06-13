@@ -107,6 +107,19 @@ void systick_tx_poll(void);
 #define TEST_MODE_UART     5
 
 /* 当前测试模式（修改此宏选择测试模式）*/
+/* ⚠️ 警告：此宏定义的测试模式在 6 通道 ADC+FFT 生产路径下不被使用。
+ *
+ * main.c 中 main() 函数实际走以下路径（由 ENABLE_DAC_SIGNAL_SOURCE 控制）：
+ *   - ENABLE_DAC_SIGNAL_SOURCE=0（生产）：6 通道 ADC+FFT 事件检测循环
+ *   - ENABLE_DAC_SIGNAL_SOURCE=1（测试）：DAC 闭环测试
+ *
+ * TEST_MODE_PWM 是 CubeMX 模板遗留/早期实验的 PWM 独立测试模式，
+ * 在 2026-06-07 的最新代码中看不见被正式路径使用。
+ *
+ * 此宏的值不应被依赖。后续重构建议完全移除这组 TEST_MODE_* 宏
+ * 或将其统一到 ENABLE_DAC_SIGNAL_SOURCE / 运行时按键选择模式。
+ *
+ * 另见：docs/CODE_REVIEW_NOTES.md::测试模式与生产路径 */
 #define CURRENT_TEST_MODE  TEST_MODE_PWM
 
 /* ============================================================================

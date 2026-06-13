@@ -26,8 +26,8 @@
   *   - 转换时间: 14 cycles (1.5 + 12.5)
   *   - 理论单ADC采样率: 56.25MHz/14 = 4.018 MSPS (2通道)
   *   - 理论每通道采样率: 2.009 MSPS (≈2MSPS目标) ✅
-  *   - ★ 实测每通道采样率: 3.515 MSPS (DMA 帧间隔反推, 高出理论值约 1.75x)
-  *        FFT 频率换算使用 adc_fs_hz=3515000.0f (main.c#L357)
+ *   - ★ 实测每通道采样率: 3.515 MSPS (DMA 帧间隔反推, EMA校准)
+ *        FFT 频率换算使用 adc_fs_hz (main.c, EMA在线校准)
   *   - DMA配置: 循环模式，高优先级
   *   - 缓冲区位置: ADC1/ADC2@AXI_SRAM, ADC3@D3_SRAM4
   *
@@ -395,30 +395,24 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
  * └─────────────────────────────────────────────────────────────────┘
    *
  * ┌─────────────────────────────────────────────────────────────────┐
- * │ 6. 实测采样率（12-bit 模式）：                                  │
- * │    diag_fft_used_fs = 7.074 MSPS/ch（FFT 实际使用值）          │
- * │    adc_fs_hz (EMA) = 7.438 MSPS/ch（帧间隔反推值）             │
+ * │ 6. 实测采样率（12-bit 模式，EMA bug 已修复）：                │
+ * │    ★ 2026-06-12 修复: 原 EMA 校准 bug 导致 adc_fs_hz ≈ 2×    │
+ * │      真实值（7.4 MSPS vs 3.5 MSPS），根因是 half 和 full 路径│
+ * │      共用 diag_last_frame_cyc，修复后改用独立 half_ema_last │
  * │                                                                │
- * │    若按 12-bit + Rev.V ÷2 计算：                               │
- * │      SAR clock = 56.25 MHz, 12-bit = 14 cycles                 │
- * │      每通道 = 56.25/(2×14) = 2.009 MSPS ← 与实测差距大        │
- * │                                                                │
- * │    若按 12-bit + 无÷2 计算：                                   │
- * │      ADC clock = 112.5 MHz, 12-bit = 14 cycles                 │
- * │      每通道 = 112.5/(2×14) = 4.018 MSPS ← 仍不匹配           │
- * │                                                                │
- * │    ★ 7.438 MSPS 的精确解释尚不明确，可能是：                   │
- * │      a) Rev.V 的 BOOST 模式下 12-bit 转换周期 < 14 cycles      │
- * │      b) EMA 帧间隔校准存在测量偏差                              │
- * │      c) DMA 双缓冲帧间隔计算中存在系统性偏移                    │
- * │    ★ 但 FFT 频率计算使用 adc_fs_hz，实测频率精度已验证正确     │
+ * │    修复后 EMA 收敛到 ~3.5 MSPS/ch（与原始测量一致）           │
+ * │    理论值（12-bit/14cyc/56.25MHz）= 2.009 MSPS，仍低于实测    │
+ * │    可能原因：Rev.V BOOST 模式下转换周期 < 14 cycles           │
+ * │    ★ FFT 频率精度已实测验证正确（使用 adc_fs_hz 校准）     │
  * └─────────────────────────────────────────────────────────────────┘
    *
  * 总结：
  *   ✅ ADC 时钟 = PLL3_R = 112.5 MHz（非 PLL3_P = 56.25 MHz）
  *   ✅ 硅片 = Rev.V（有硬件 ÷2，SAR 时钟 = 56.25 MHz）
  *   ✅ 实际分辨率 = 12-bit（CFGR RES=010，配置正确无误）
- *   ⚠️ 实测采样率 = 7.438 MSPS/ch（与理论计算不完全吻合）
+ *   ⚠️ EMA 采样率校准 bug 已修复（2026-06-12），
+ *      原 bug 导致 adc_fs_hz ≈ 2× 真实值（7.4 vs 3.5 MSPS）
+ *   ⚠️ 实测采样率 ~3.5 MSPS/ch（理论 2.009 MSPS，差距原因待查）
    */
   PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_ADC;
   PeriphClkInitStruct.PLL3.PLL3M = 5;

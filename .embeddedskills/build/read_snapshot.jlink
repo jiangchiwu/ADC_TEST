@@ -1,0 +1,11 @@
+device STM32H750VB
+if SWD
+speed 1000
+connect
+r
+g
+sleep 2000
+h
+mem32 0x38002000, 28
+g
+exit

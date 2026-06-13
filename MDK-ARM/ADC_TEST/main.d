@@ -30,6 +30,7 @@
 .\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
 .\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
 .\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
+.\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_iwdg.h
 .\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 .\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 .\adc_test\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
@@ -45,8 +46,8 @@
 .\adc_test\main.o: D:\soft\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\adc_test\main.o: ../Core/Inc/usart.h
 .\adc_test\main.o: ../Core/Inc/event_frame.h
-.\adc_test\main.o: D:\soft\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\adc_test\main.o: ../Middlewares/CMSIS/DSP/Include/arm_math.h
 .\adc_test\main.o: ../Drivers/CMSIS/Include/core_cm7.h
+.\adc_test\main.o: D:\soft\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\adc_test\main.o: ../Middlewares/CMSIS/DSP/Include/arm_const_structs.h
 .\adc_test\main.o: ../Middlewares/CMSIS/DSP/Include/arm_common_tables.h

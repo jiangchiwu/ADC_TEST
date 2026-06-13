@@ -6,8 +6,13 @@
   *          of the UART instances.
   * 
   * 串口配置：
-  * - DEBUG_UART (UART7): 调试日志打印，波特率 2000000 (2M)
+  * - DEBUG_UART (UART1): 事件帧上送，波特率 460800
   * - RS485_UART (UART4): RS485通信，波特率9600
+  * 
+  * 【2026-06-12 变更】UART7 → UART1
+  *   - 原: UART7 (PE7/PE8) - PE8 与 LCD 数据总线冲突
+  *   - 新: UART1 (PA9/PA10) - PA9=TX, PA10=RX
+  *   - DMA: DMA1_Stream1
   ******************************************************************************
   * @attention
   *
@@ -33,19 +38,23 @@ UART_HandleTypeDef hdebug_uart;
 UART_HandleTypeDef hrs485_uart;
 UART_HandleTypeDef hlog_uart;
 
-/* 2026-06-07: UART7 TX DMA 句柄（DMA1 Stream0）—— 实现零阻塞发送 */
-DMA_HandleTypeDef  hdma_uart7_tx;
+/* 2026-06-13: UART1 TX DMA 句柄（DMA1 Stream2）—— 实现零阻塞发送 */
+DMA_HandleTypeDef  hdma_uart1_tx;
 
-/* UART7 init function */
+/* UART1 init function */
 /**
- * @brief   初始化调试串口 UART7（事件帧上送 + 调试日志）
+ * @brief   初始化调试串口 UART1（事件帧上送 + 调试日志）
  * @param   None
  * @retval  None
  *
  * 【硬件连接】
- *   STM32 UART7 TX (PE8)  --> CH340 USB-Serial 芯片 RXD
- *   STM32 UART7 RX (PE7)  --> CH340 USB-Serial 芯片 TXD
- *   CH340 USB 端 --> PC (Windows 识别为 COMxx, 通常 COM13)
+ *   STM32 UART1 TX (PA9)  --> CH340 USB-Serial 芯片 RXD
+ *   STM32 UART1 RX (PA10)  --> CH340 USB-Serial 芯片 TXD
+ *   CH340 USB 端 --> PC (Windows 识别为 COMxx)
+ * 
+ * 【2026-06-12 变更】
+ *   原: UART7 (PE7/PE8)
+ *   新: UART1 (PA9/PA10)
  *
  * 【关键配置参数】
  *   - 波特率: 460800 baud
@@ -64,7 +73,6 @@ DMA_HandleTypeDef  hdma_uart7_tx;
  *     115200 baud → 到达率 22%（CH340 latency 16ms 包碎片严重）
  *     460800 baud → 到达率 100%（120 evt/s 自检模式）
  *     921600 baud → CH340 不稳定，丢帧严重
- *     2000000 baud → CH340 严重丢帧
  *   ★ 460800 是 CH340 的最佳工作点（USB 包大小 + latency 平衡）
  *
  * 【与 PC 端协同的关键约束】
@@ -75,7 +83,7 @@ DMA_HandleTypeDef  hdma_uart7_tx;
  */
 void MX_DEBUG_UART_Init(void)
 {
-  hdebug_uart.Instance = UART7;
+  hdebug_uart.Instance = USART1;
   /* === 波特率：460800 ===
    *
    * 经过完整对比测试，460800 baud 是 CH340 + Windows + pyserial 最稳定工作点：
@@ -84,7 +92,9 @@ void MX_DEBUG_UART_Init(void)
    *   - 实测 120 evt/s 自检模式 PC 端 100% 接收
    *
    * 注意：必须与 PC 端 verify_event_system.py 的 DEFAULT_BAUDRATE 完全一致 */
-  hdebug_uart.Init.BaudRate = 460800;
+//  hdebug_uart.Init.BaudRate = 115200;  /* 115200 波特率 */
+//  hdebug_uart.Init.BaudRate = 115200;  /* 115200 波特率 */
+  hdebug_uart.Init.BaudRate = 115200;  /* 115200 波特率 */
   hdebug_uart.Init.WordLength = UART_WORDLENGTH_8B;    /* 8 数据位（事件帧字节流） */
   hdebug_uart.Init.StopBits = UART_STOPBITS_1;          /* 1 停止位（标准串口） */
   hdebug_uart.Init.Parity = UART_PARITY_NONE;           /* 无校验（应用层用累加和） */
@@ -134,46 +144,58 @@ void MX_LOG_UART_Init(void)
 void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(uartHandle->Instance==UART7)
+  if(uartHandle->Instance==USART1)
   {
-    __HAL_RCC_UART7_CLK_ENABLE();
+    __HAL_RCC_USART1_CLK_ENABLE();
 
-    __HAL_RCC_GPIOE_CLK_ENABLE();
-    GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8;
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    /* PA9 = USART1_TX, PA10 = USART1_RX */
+    GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF7_UART7;
-    HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+    GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    /* === 2026-06-07 v7 - DMA 零阻塞最终版（彻底验证）===
+    /* === 2026-06-13 v8 - DMA 冲突修复（UART1 TX 改用 DMA1_Stream2）===
+     * 【问题】DMA1_Stream1 同时被 DAC (dac.c:97) 和 UART1 TX 使用，导致冲突
+     * 【修复】UART1 TX 改用 DMA1_Stream2（空闲）
+     * 
      * 关键设计：
      *   - HAL_UART_Transmit_DMA 启动时自动 SET CR3.DMAT；TC 中断自动 CLEAR
-     *   - 必须用 LINKDMA 把 hdma_uart7_tx 绑定到 huart 的 hdmatx 字段
-     *   - DMA1 Stream0 中断 + UART7 中断都要启用（缺一不可！）
-     *   - 主循环 tx_ring_poll 启动下一帧；中断回调只清状态 */
+     *   - 必须用 LINKDMA 把 hdma_uart1_tx 绑定到 huart 的 hdmatx 字段
+     *   - DMA1 Stream2 中断 + USART1 中断都要启用（缺一不可！）
+     *   - 主循环 tx_ring_poll 启动下一帧；中断回调只清状态
+     * 
+     * 【DMA 分配表】
+     *   DMA1_Stream0 - 空闲（原 UART7 已禁用）
+     *   DMA1_Stream1 - DAC (dac.c)
+     *   DMA1_Stream2 - UART1 TX (本文件) ← 新分配
+     *   DMA2_Stream0 - ADC1
+     *   DMA2_Stream1 - ADC2
+     *   BDMA_Channel0 - ADC3 */
     __HAL_RCC_DMA1_CLK_ENABLE();
 
-    hdma_uart7_tx.Instance                 = DMA1_Stream0;
-    hdma_uart7_tx.Init.Request             = DMA_REQUEST_UART7_TX;
-    hdma_uart7_tx.Init.Direction           = DMA_MEMORY_TO_PERIPH;
-    hdma_uart7_tx.Init.PeriphInc           = DMA_PINC_DISABLE;
-    hdma_uart7_tx.Init.MemInc              = DMA_MINC_ENABLE;
-    hdma_uart7_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-    hdma_uart7_tx.Init.MemDataAlignment    = DMA_MDATAALIGN_BYTE;
-    hdma_uart7_tx.Init.Mode                = DMA_NORMAL;
-    hdma_uart7_tx.Init.Priority            = DMA_PRIORITY_MEDIUM;
-    hdma_uart7_tx.Init.FIFOMode            = DMA_FIFOMODE_DISABLE;
-    if(HAL_DMA_Init(&hdma_uart7_tx) != HAL_OK) { Error_Handler(); }
-    __HAL_LINKDMA(uartHandle, hdmatx, hdma_uart7_tx);
+    hdma_uart1_tx.Instance                 = DMA1_Stream2;
+    hdma_uart1_tx.Init.Request             = DMA_REQUEST_USART1_TX;
+    hdma_uart1_tx.Init.Direction           = DMA_MEMORY_TO_PERIPH;
+    hdma_uart1_tx.Init.PeriphInc           = DMA_PINC_DISABLE;
+    hdma_uart1_tx.Init.MemInc              = DMA_MINC_ENABLE;
+    hdma_uart1_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_uart1_tx.Init.MemDataAlignment    = DMA_MDATAALIGN_BYTE;
+    hdma_uart1_tx.Init.Mode                = DMA_NORMAL;
+    hdma_uart1_tx.Init.Priority            = DMA_PRIORITY_MEDIUM;
+    hdma_uart1_tx.Init.FIFOMode            = DMA_FIFOMODE_DISABLE;
+    if(HAL_DMA_Init(&hdma_uart1_tx) != HAL_OK) { Error_Handler(); }
+    __HAL_LINKDMA(uartHandle, hdmatx, hdma_uart1_tx);
 
-    /* DMA1 Stream0 中断 - 优先级 6 (高于 SysTick 15, 低于 ADC DMA 0) */
-    HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 6, 0);
-    HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
+    /* DMA1 Stream2 中断 - 优先级 6 (高于 SysTick 15, 低于 ADC DMA 5) */
+    HAL_NVIC_SetPriority(DMA1_Stream2_IRQn, 6, 0);
+    HAL_NVIC_EnableIRQ(DMA1_Stream2_IRQn);
 
-    /* UART7 中断 - DMA TC 完成时 HAL_DMA_IRQHandler → HAL_UART_TxCpltCallback 触发 */
-    HAL_NVIC_SetPriority(UART7_IRQn, 6, 0);
-    HAL_NVIC_EnableIRQ(UART7_IRQn);
+    /* USART1 中断 - DMA TC 完成时 HAL_DMA_IRQHandler → HAL_UART_TxCpltCallback 触发 */
+    HAL_NVIC_SetPriority(USART1_IRQn, 6, 0);
+    HAL_NVIC_EnableIRQ(USART1_IRQn);
   }
   else if(uartHandle->Instance==UART4)
   {
@@ -211,10 +233,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
 
 void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 {
-  if(uartHandle->Instance==UART7)
+  if(uartHandle->Instance==USART1)
   {
-    __HAL_RCC_UART7_CLK_DISABLE();
-    HAL_GPIO_DeInit(GPIOE, GPIO_PIN_7|GPIO_PIN_8);
+    __HAL_RCC_USART1_CLK_DISABLE();
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
   }
   else if(uartHandle->Instance==UART4)
   {
@@ -237,16 +259,25 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 #endif /* __GNUC__ */
 
+/* ★ 2026-06-12 优化：将 __io_putchar 从 HAL_MAX_DELAY 阻塞改为非阻塞
+ *   原实现 HAL_UART_Transmit(HAL_MAX_DELAY) 在 UART busy 时会无限等待，
+ *   如果 debug_poll() 的 DMA 发送未完成，printf 会阻塞主循环。
+ *   改为 timeout=0（纯轮询，不等待）：DMA 忙时直接丢弃该字符。
+ *   printf 仅用于 debug 诊断输出，丢字符不影响功能。
+ *   事件帧走独立的 DMA ring buffer（debug.c），不走此路径。 */
 PUTCHAR_PROTOTYPE
 {
-  HAL_UART_Transmit(&hdebug_uart, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  HAL_UART_Transmit(&hdebug_uart, (uint8_t *)&ch, 1, 0);
   return ch;
 }
 
 int __io_getchar(void)
 {
   uint8_t ch;
-  HAL_UART_Receive(&hdebug_uart, &ch, 1, HAL_MAX_DELAY);
+  /* 非阻塞读取：无数据时立即返回 */
+  if(HAL_UART_Receive(&hdebug_uart, &ch, 1, 0) != HAL_OK) {
+    return -1;
+  }
   return ch;
 }
 

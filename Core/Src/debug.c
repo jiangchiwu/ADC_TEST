@@ -46,6 +46,8 @@ void debug_init(void)
   dbg_head = 0;
   dbg_tail = 0;
   dbg_drop_bytes = 0;
+  /* 【2026-06-12 修复】清零 dbg_ring，避免 AXI_SRAM 残留数据被 DMA 发送 */
+  memset((void*)dbg_ring, 0, DBG_RING_SIZE);
 }
 
 /* 非阻塞：vsnprintf 后塞入环形缓冲，立即返回 */

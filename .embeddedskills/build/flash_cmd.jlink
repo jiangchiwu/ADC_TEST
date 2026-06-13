@@ -1,0 +1,10 @@
+device STM32H750VB
+if SWD
+speed 1000
+connect
+h
+erase
+loadfile F:\work\ADC_TEST\MDK-ARM\ADC_TEST\ADC_TEST.hex
+r
+g
+exit

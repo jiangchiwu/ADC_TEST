@@ -37,21 +37,26 @@ extern "C" {
  * 串口定义
  * 
  * 命名规则：用途_UART
- * - DEBUG_UART:  UART7 (PE7 RX, PE8 TX) - 调试日志打印
+ * - DEBUG_UART:  UART1 (PA9 TX, PA10 RX) - 事件帧上送 + 调试日志
  * - RS485_UART:  UART4 (PA0 TX, PA1 RX, PE9 DE/RE) - RS485通信
  * - LOG_UART:    USART3 (PB10 TX, PB11 RX) - 额外日志输出
  * 
  * 功能说明：
- * - DEBUG_UART: 用于调试信息输出，波特率115200
+ * - DEBUG_UART: 用于事件帧上送，波特率460800
  * - RS485_UART: 用于RS485总线通信，波特率9600，带DE/RE控制
  * - LOG_UART:   用于额外日志输出，波特率115200
+ * 
+ * 【2026-06-13 变更】UART7 → UART1，DMA 冲突修复
+ *   - 原: UART7 (PE7/PE8) - 因 PE8 与 LCD 数据总线冲突，改为 PA9/PA10
+ *   - 新: UART1 (PA9/PA10) - PA9=TX, PA10=RX
+ *   - DMA: DMA1_Stream2（避免与 DAC 的 DMA1_Stream1 冲突）
  * ============================================================================*/
 
-/* DEBUG_UART - 调试串口（UART7）*/
+/* DEBUG_UART - 调试串口（UART1）*/
 extern UART_HandleTypeDef hdebug_uart;
-extern DMA_HandleTypeDef  hdma_uart7_tx;  /* 2026-06-07: TX DMA 句柄（零阻塞发送） */
-#define DEBUG_UART_INSTANCE      UART7
-#define DEBUG_UART_BAUDRATE      460800    /* 【2026-06-09 修复】与 usart.c 实际初始化一致 */
+extern DMA_HandleTypeDef  hdma_uart1_tx;  /* 2026-06-13: TX DMA 句柄（DMA1_Stream2，零阻塞发送） */
+#define DEBUG_UART_INSTANCE      USART1
+#define DEBUG_UART_BAUDRATE      2000000    /* 2M 波特率 */
 
 /* RS485_UART - RS485通信串口（UART4）*/
 extern UART_HandleTypeDef hrs485_uart;
@@ -75,8 +80,9 @@ extern UART_HandleTypeDef hlog_uart;
 函数名：MX_DEBUG_UART_Init
 参数：  无
 返回值：无
-描述：  初始化调试串口UART7（事件帧上送+调试日志）
-        波特率460800, 8N1, TX=DMA1_Stream0(零阻塞)
+描述：  初始化调试串口UART1（事件帧上送+调试日志）
+        波特率460800, 8N1, TX=DMA1_Stream2(零阻塞)
+        【2026-06-13 变更】UART7 → UART1 (PA9/PA10), DMA1_Stream2
 ***********************************************************/
 void MX_DEBUG_UART_Init(void);
 

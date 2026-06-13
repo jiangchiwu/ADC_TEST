@@ -29,6 +29,7 @@
 .\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
 .\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
 .\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
+.\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_iwdg.h
 .\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 .\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 .\adc_test\stm32h7xx_hal_adc_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h

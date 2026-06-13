@@ -1,0 +1,11 @@
+Build target 'ADC_TEST'
+compiling usart.c...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/usart.c(284): warning:  #1-D: last line of file ends without a newline
+  /* USER CODE END 1 */
+../Core/Src/usart.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=36628 RO-data=79712 RW-data=160108 ZI-data=348104  
+FromELF: creating hex file...
+".\ADC_TEST\ADC_TEST.axf" - 0 Error(s), 2 Warning(s).

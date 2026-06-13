@@ -1,7 +1,7 @@
 {
   "last_build": {
     "provider": "keil",
-    "action": "build",
+    "action": "rebuild",
     "project": "MDK-ARM/07-ADC_Test.uvprojx",
     "target": "ADC_TEST",
     "log_dir": ".embeddedskills/build",
@@ -12,7 +12,7 @@
       "flash_file": "MDK-ARM/ADC_TEST/ADC_TEST.hex",
       "debug_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
       "output_dir": "MDK-ARM/ADC_TEST",
-      "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-build.log"
+      "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-rebuild.log"
     },
     "axf_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
     "hex_file": "MDK-ARM/ADC_TEST/ADC_TEST.hex",
@@ -20,33 +20,33 @@
     "flash_file": "MDK-ARM/ADC_TEST/ADC_TEST.hex",
     "debug_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
     "output_dir": "MDK-ARM/ADC_TEST",
-    "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-build.log",
-    "timestamp": "2026-06-12T21:26:06+08:00"
+    "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-rebuild.log",
+    "timestamp": "2026-06-13T21:27:02+08:00"
   },
   "last_observe": {
-    "type": "serial_monitor",
-    "port": "COM14",
+    "type": "serial_hex",
+    "port": "COM29",
     "baudrate": 2000000,
-    "lines": 933,
-    "duration_sec": 10.0,
-    "timestamp": "2026-05-25T08:33:39+08:00"
+    "bytes_received": 0,
+    "duration_sec": 5.0,
+    "timestamp": "2026-06-13T20:14:08+08:00"
   },
   "last_debug": {
     "provider": "jlink",
-    "action": "reset",
+    "action": "info",
     "device": "STM32H750VBTx",
     "interface": "SWD",
     "speed": "4000",
     "serial_no": "",
-    "timestamp": "2026-06-12T21:26:43+08:00"
+    "timestamp": "2026-06-12T22:31:03+08:00"
   },
   "last_flash": {
     "provider": "jlink",
     "action": "flash",
-    "device": "STM32H750VBTx",
+    "device": "STM32H750VB",
     "interface": "SWD",
     "speed": "4000",
     "serial_no": "",
-    "timestamp": "2026-06-12T21:26:27+08:00"
+    "timestamp": "2026-06-13T00:50:04+08:00"
   }
 }

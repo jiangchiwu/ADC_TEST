@@ -6,7 +6,8 @@
   *          ADC1: PC0(INP10) + PC1(INP11)  → 逻辑通道 CH1/CH2
   *          ADC2: PA3(INP15) + PA4(INP18)  → 逻辑通道 CH5/CH6
   *          ADC3: PC2(INP0)  + PC3(INP1)   → 逻辑通道 CH3/CH4
-  *          12-bit resolution, DMA circular mode, ~3.515 MSPS/channel
+  *          12-bit resolution, DMA circular mode, ~3.5 MSPS/channel
+ *          DMA buf: 8KB/ADC (1024 samples/ch per half, matches FFT_LENGTH)
   *
   *          注：PA3/PA4 在 ADC3 上不可用（仅 ADC1/2），故分配到 ADC2；
   *              PC2/PC3 同时可用于 ADC1/2/3，分配到 ADC3 以分散负载。
@@ -58,12 +59,19 @@ extern DMA_HandleTypeDef hdma_adc3;    /* ADC3 DMA: BDMA_Channel0 */
 
 /* ====================================================================== */
 /*  DMA缓冲区大小定义                                                     */
-/*  每个ADC缓冲区16384个uint16_t = 32KB                                  */
-/*  DMA循环模式: 前半8192=HT中断, 后半8192=TC中断                        */
-/*  半区每通道4096样本(ADC_HALF_SCANS), 约1.165ms@3.515MSPS              */
+/*  ★ 2026-06-12 优化：从 32KB/ADC 缩减到 8KB/ADC                      */
+/*    原: ADC_HALF_SCANS=4096, BUF=16384, 32KB/ADC (3×32=96KB 总占用)   */
+/*    新: ADC_HALF_SCANS=1024, BUF=4096,  8KB/ADC (3×8 =24KB 总占用)    */
+/*    释放 72KB AXI SRAM 供后续扩展使用                                  */
+/*    依据：FFT_LENGTH=1024，半区每通道 1024 样本正好填满一次 FFT       */
+/*    DMA循环模式: 前半2048=HT中断, 后半2048=TC中断                     */
 /* ====================================================================== */
-#define ADC_HALF_SCANS       4096   /* 每个 ADC 半区每通道样本数 */
-#define ADC_DMA_BUF_SIZE     (ADC_HALF_SCANS * ADC_CH_PER_INST * 2)  /* 16384 = full buf per ADC */
+/* ADC_DMA_BUF_SIZE = ADC_HALF_SCANS(每通道半区样本数) × ADC_CH_PER_INST(每 ADC 通道数 2) × 2(双缓冲)
+ *   = 1024 × 2 × 2 = 4096 uint16_t per ADC (= 8 KB)
+ * 布局：buf[0..2047] = 半区0，buf[2048..4095] = 半区1
+ * 每个半区内：数据按 rank1, rank2, rank1, rank2,... 交织排列 */
+#define ADC_HALF_SCANS       1024  /* 每个 ADC 半区每通道样本数 (匹配 FFT_LENGTH) */
+#define ADC_DMA_BUF_SIZE     (ADC_HALF_SCANS * ADC_CH_PER_INST * 2)  /* 4096 = full buf per ADC */
 
 /* ====================================================================== */
 /*  DMA缓冲区 — 固定地址分配                                              */
