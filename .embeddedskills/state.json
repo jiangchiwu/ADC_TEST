@@ -1,7 +1,7 @@
 {
   "last_build": {
     "provider": "keil",
-    "action": "rebuild",
+    "action": "build",
     "project": "MDK-ARM/07-ADC_Test.uvprojx",
     "target": "ADC_TEST",
     "log_dir": ".embeddedskills/build",
@@ -12,7 +12,7 @@
       "flash_file": "MDK-ARM/ADC_TEST/ADC_TEST.hex",
       "debug_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
       "output_dir": "MDK-ARM/ADC_TEST",
-      "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-rebuild.log"
+      "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-build.log"
     },
     "axf_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
     "hex_file": "MDK-ARM/ADC_TEST/ADC_TEST.hex",
@@ -20,8 +20,8 @@
     "flash_file": "MDK-ARM/ADC_TEST/ADC_TEST.hex",
     "debug_file": "MDK-ARM/ADC_TEST/ADC_TEST.axf",
     "output_dir": "MDK-ARM/ADC_TEST",
-    "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-rebuild.log",
-    "timestamp": "2026-06-13T21:27:02+08:00"
+    "log_file": ".embeddedskills/build/07-ADC_Test-ADC_TEST-build.log",
+    "timestamp": "2026-06-14T08:21:32+08:00"
   },
   "last_observe": {
     "type": "serial_hex",

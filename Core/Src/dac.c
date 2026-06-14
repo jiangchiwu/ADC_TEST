@@ -93,7 +93,7 @@ void MX_DAC1_Init(void)
   DAC1->CR = 0;
   DAC1->MCR = 0;
 
-  /* DMA1_Stream1 - TIM7_UP drives writes to DAC1_CH2 data register. */
+  /* DMA1_Stream1 - TIM7_UP request periodically writes waveform samples to DAC1->DHR12R2. */
   hdma_dac1_ch2.Instance = DMA1_Stream1;
   hdma_dac1_ch2.Init.Request = DMA_REQUEST_TIM7_UP;
   hdma_dac1_ch2.Init.Direction = DMA_MEMORY_TO_PERIPH;
@@ -105,6 +105,7 @@ void MX_DAC1_Init(void)
   hdma_dac1_ch2.Init.Priority = DMA_PRIORITY_HIGH;
   hdma_dac1_ch2.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
   HAL_DMA_Init(&hdma_dac1_ch2);
+  DMAMUX1_Channel1->CCR = DMA_REQUEST_TIM7_UP;
 }
 
 /* TIM7 init - DAC2 trigger timer (用于正弦波) */
@@ -136,7 +137,7 @@ static void dac_sine_table_init(void)
   float phase;
   for(i = 0; i < SINE_TABLE_LEN; i++) {
     phase = 2.0f * 3.14159265358979f * (float)i / (float)SINE_TABLE_LEN;
-    dac_sine_table[i] = (uint32_t)(DAC_OFFSET + (float)current_sine_amp * sinf(phase));
+    dac_sine_table[i] = (uint32_t)(DAC_OFFSET + (float)current_sine_amp * cosf(phase));
     /* PWM 方波表: 前半HIGH，后半LOW */
     if(i < SINE_TABLE_LEN / 2) {
       dac_pwm_table[i] = DAC_PWM_HIGH;
@@ -192,9 +193,9 @@ void DAC_Build_Composite_Waveform(uint16_t amp_fund_mv,
 
   for(i = 0; i < SINE_TABLE_LEN; i++) {
     phase = 2.0f * 3.14159265358979f * (float)i / (float)SINE_TABLE_LEN;
-    val  = fund_dac * sinf(phase);
-    val += h2_dac   * sinf(2.0f * phase);
-    val += h3_dac   * sinf(3.0f * phase);
+    val  = fund_dac * cosf(phase);
+    val += h2_dac   * cosf(2.0f * phase);
+    val += h3_dac   * cosf(3.0f * phase);
     if(noise_pct > 0U) {
       /* (-1..+1) × noise_dac */
       val += ((float)dac_quick_rand() / 32767.5f - 1.0f) * noise_dac;
@@ -314,15 +315,14 @@ void DAC_Output_PWM(uint32_t freq_hz)
   /* 关闭 DAC DMA 所有中断使能位（同 DAC_Output_Sine 注释） */
   ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->CR &= ~(DMA_SxCR_TCIE | DMA_SxCR_HTIE | DMA_SxCR_TEIE | DMA_SxCR_DMEIE);
   
-  /* 启动 TIM7 Update DMA 触发 */
+  /* TIM7_UP 直接触发 DMA 写 DHR12R2；DAC CH2 关闭触发，DHR 写入后 PA5 直接跟随。 */
+  cr = DAC1->CR;
+  cr &= ~((0xFUL << 18) | (1UL << 17) | (1UL << 28) | (1UL << 30));
+  cr |= (1UL << 16);      /* EN2 */
+  DAC1->CR = cr;
+
   htim7.Instance->DIER |= TIM_DIER_UDE;
   HAL_TIM_Base_Start(&htim7);
-  
-  /* DAC CH2 direct output; DMA is triggered by TIM7_UP through DMAMUX. */
-  cr = DAC1->CR;
-  cr &= ~((1UL << 17) | (1UL << 28) | (1UL << 30));
-  cr |= (1UL << 16);
-  DAC1->CR = cr;
 }
 
 /* 启动DAC输出正弦波 (50KHz) */
@@ -357,16 +357,18 @@ void DAC_Output_Sine(uint32_t freq_hz)
    * HAL_DMA_Start 内部会 enable HTIE/TCIE/TEIE/DMEIE，但 DAC 在循环模式下根本不需要 ISR，
    * 每秒 256×40K=10M 次 HT/TC 中断会让 CPU 100% 卡在 IRQHandler 里，主循环饿死。 */
   ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->CR &= ~(DMA_SxCR_TCIE | DMA_SxCR_HTIE | DMA_SxCR_TEIE | DMA_SxCR_DMEIE);
+  DMA1->LIFCR = (DMA_LIFCR_CTCIF1 | DMA_LIFCR_CHTIF1 | DMA_LIFCR_CTEIF1
+               | DMA_LIFCR_CDMEIF1 | DMA_LIFCR_CFEIF1);
+  ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->CR |= DMA_SxCR_EN;
 
-  /* 启动 TIM7 Update DMA 触发 */
+  /* TIM7_UP 直接触发 DMA 写 DHR12R2；DAC CH2 关闭触发，DHR 写入后 PA5 直接跟随。 */
+  cr = DAC1->CR;
+  cr &= ~((0xFUL << 18) | (1UL << 17) | (1UL << 28) | (1UL << 30));
+  cr |= (1UL << 16);      /* EN2 */
+  DAC1->CR = cr;
+
   htim7.Instance->DIER |= TIM_DIER_UDE;
   HAL_TIM_Base_Start(&htim7);
-
-  /* DAC CH2 direct output; DMA is triggered by TIM7_UP through DMAMUX. */
-  cr = DAC1->CR;
-  cr &= ~((1UL << 17) | (1UL << 28) | (1UL << 30));
-  cr |= (1UL << 16);
-  DAC1->CR = cr;
 }
 
 /* 原有兼容接口 */

@@ -5,7 +5,7 @@ connect
 r
 h
 erase
-loadbin F:\work\ADC_TEST\MDK-ARM\ADC_TEST\ADC_TEST.bin, 0x08000000
+loadfile F:\work\ADC_TEST\MDK-ARM\ADC_TEST\ADC_TEST.hex
 r
 g
 exit

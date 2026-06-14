@@ -139,9 +139,9 @@
  *     - 低于真实信号触发要求（仍接近客户 80mV 要求）
  *   噪声倍数从 5 提到 8，进一步抵抗短时毛刺。
  * ========================================================================= */
-#define DEV_THRESHOLD_260MV 320   /**< 偏离阈值≈260mV；示波器实测 ADC 引脚有效信号通常>200mV，
-                                    *   保留余量滤除小幅杂波，同时避免 400LSB 门限过高漏检 */
-#define DEV_THRESHOLD_MIN  DEV_THRESHOLD_260MV  /**< 主门限：约260mV 阈值 */
+#define DEV_THRESHOLD_200MV 248   /**< 偏离阈值≈200mV：200/3300*4096≈248 LSB，用于候选起点预扫描 */
+#define PEAK_TRIGGER_400MV 496    /**< 首个波峰/波谷触发点门限≈400mV：400/3300*4096≈496 LSB */
+#define DEV_THRESHOLD_MIN  DEV_THRESHOLD_200MV  /**< 主门限：约200mV 阈值 */
 #define DEV_NOISE_MULT     8      /**< 噪声倍数（max_dev 必须 >= 噪声基线 × 8 才触发）*/
 #define DEV_THRESHOLD_MIN_WEAK  DEV_THRESHOLD_MIN  /**< 弱信号路径使用相同门限 */
 #define DEV_NOISE_MULT_WEAK     DEV_NOISE_MULT     /**< 弱信号路径使用相同倍数 */
@@ -217,8 +217,8 @@
  *   上电时每通道发 1 帧自检帧（验证 PC 端能否解析）
  * ========================================================================= */
 #define ENABLE_DAC_SIGNAL_SOURCE  0    /**< 0=外部检测模式（正式 + 闭环测试也用） */
-#define DAC_AS_EXTERNAL_TEST_SRC  0    /**< 1=ENABLE_DAC_SIGNAL_SOURCE=0 时仍输出 PA5 持续突发，
-                                        *   配合 PA5→6路运放 验证 6 通道触发均匀性 */
+#define DAC_AS_EXTERNAL_TEST_SRC  1    /**< 1=ENABLE_DAC_SIGNAL_SOURCE=0 时仍输出 PA5 持续突发，
+                                        *   配合 PA5→外部处理链路→ADC 引脚闭环验证触发时间 */
 #define ENABLE_UART_SELF_TEST     0    /**< 1=UART 自检模式（无 ADC 检测）*/
 #define ENABLE_BOOT_SELF_TEST     0    /**< 1=上电自检每通道发 1 帧 */
 
@@ -274,6 +274,8 @@ static inline void fmt_time_us(uint64_t total_us, uint32_t *s, uint32_t *ms, uin
 
 #define HALF_SAMPLES_PER_CH   (ADC_HALF_SCANS)
 #define FRAME_POOL_SIZE       8
+#define DMA_EVENT_DELAY_FRAMES 3U
+#define DMA_EVENT_WINDOW_FRAMES (DMA_EVENT_DELAY_FRAMES + 1U)
 
 typedef struct {
   uint16_t data[HALF_SAMPLES_PER_CH * ADC_NCH];
@@ -383,6 +385,9 @@ volatile uint32_t diag_lock_burst_cnt = 0;       /* 锁定的 burst 计数 */
 volatile uint32_t diag_last_noise_pp[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};  /* 噪声峰峰值 */
 volatile uint32_t diag_last_thr[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};       /* 阈值 */
 volatile uint32_t diag_last_max_dev[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};   /* 最大偏移 */
+volatile uint32_t diag_last_trans_idx[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};
+volatile uint32_t diag_last_peak_idx[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};
+volatile uint32_t diag_last_event_offset_us[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};
 volatile uint32_t diag_burst_max_dev[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};   /* Burst 最大偏移 */
 volatile uint32_t diag_lock_score[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0};     /* 锁定分数 */
 volatile uint32_t diag_ac_present_cnt[ADC_NCH] __attribute__((section(".AXI_SRAM"))) = {0}; /* AC 存在计数 */
@@ -471,12 +476,20 @@ typedef struct {
   uint32_t stress_cur_idx;
   uint32_t dac_cr;
   uint32_t dac_dhr12r2;
+  uint32_t dac_dor2;
+  uint32_t dac_mcr;
+  uint32_t dac_sr;
+  uint32_t rcc_apb1lenr;
+  uint32_t gpioa_moder;
   uint32_t tim7_cr1;
   uint32_t tim7_cnt;
   uint32_t tim7_arr;
   uint32_t tim7_dier;
   uint32_t dma1s1_cr;
   uint32_t dma1s1_ndtr;
+  uint32_t dma1s1_par;
+  uint32_t dma1s1_m0ar;
+  uint32_t dmamux1_c1cr;
   uint32_t dac_actual_freq_hz;
   uint32_t ch_fft_freq[ADC_NCH];
   uint32_t ch_evt_freq[ADC_NCH];
@@ -489,6 +502,9 @@ typedef struct {
   uint32_t adc_dma_full_cyc[3];
   uint32_t adc_dma_half_delta_cyc[3];
   uint32_t adc_dma_full_delta_cyc[3];
+  uint32_t ch_trans_idx[ADC_NCH];
+  uint32_t ch_peak_idx[ADC_NCH];
+  uint32_t ch_event_offset_us[ADC_NCH];
   uint32_t checksum;
 } diag_snapshot_t;
 
@@ -745,15 +761,24 @@ static void diag_snapshot_update(void)
   diag_snapshot.last_filtered_mask = diag_last_filtered_mask;
   diag_snapshot.locked_input_mask = diag_locked_input_mask;
   diag_snapshot.stress_burst_total = diag_stress_burst_total;
-  diag_snapshot.stress_cur_idx = (uint32_t)diag_stress_cur_idx;
+  diag_snapshot.stress_cur_idx = ((uint32_t)diag_dac_burst_cnt << 16) |
+                                 ((uint32_t)diag_dac_dc_cnt & 0xFFFFU);
   diag_snapshot.dac_cr = DAC1->CR;
   diag_snapshot.dac_dhr12r2 = DAC1->DHR12R2;
+  diag_snapshot.dac_dor2 = DAC1->DOR2;
+  diag_snapshot.dac_mcr = DAC1->MCR;
+  diag_snapshot.dac_sr = DAC1->SR;
+  diag_snapshot.rcc_apb1lenr = RCC->APB1LENR;
+  diag_snapshot.gpioa_moder = GPIOA->MODER;
   diag_snapshot.tim7_cr1 = htim7.Instance->CR1;
   diag_snapshot.tim7_cnt = htim7.Instance->CNT;
   diag_snapshot.tim7_arr = htim7.Instance->ARR;
   diag_snapshot.tim7_dier = htim7.Instance->DIER;
   diag_snapshot.dma1s1_cr = ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->CR;
   diag_snapshot.dma1s1_ndtr = ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->NDTR;
+  diag_snapshot.dma1s1_par = ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->PAR;
+  diag_snapshot.dma1s1_m0ar = ((DMA_Stream_TypeDef*)hdma_dac1_ch2.Instance)->M0AR;
+  diag_snapshot.dmamux1_c1cr = DMAMUX1_Channel1->CCR;
   diag_snapshot.dac_actual_freq_hz = dac_diag_actual_freq_hz;
   for(i = 0; i < ADC_NCH; i++) {
     diag_snapshot.ch_fft_freq[i] = diag_ch_last_fft_freq[i];
@@ -763,6 +788,9 @@ static void diag_snapshot_update(void)
     diag_snapshot.ch_max_dev[i] = diag_last_max_dev[i];
     diag_snapshot.ch_thr[i] = diag_last_thr[i];
     diag_snapshot.ch_noise_pp[i] = diag_last_noise_pp[i];
+    diag_snapshot.ch_trans_idx[i] = diag_last_trans_idx[i];
+    diag_snapshot.ch_peak_idx[i] = diag_last_peak_idx[i];
+    diag_snapshot.ch_event_offset_us[i] = diag_last_event_offset_us[i];
   }
   diag_snapshot.adc_dma_half_cyc[0] = adc1_dma_half_cyc;
   diag_snapshot.adc_dma_half_cyc[1] = adc2_dma_half_cyc;
@@ -824,6 +852,18 @@ void systick_tx_poll(void)
               3.记录帧ID/时间戳 4.CleanDCache 5.更新frame写入索引
 修改记录：
 ***********************************************************/
+static uint8_t FramePool_QueuedCount(void)
+{
+  uint8_t w = frame_w_idx;
+  uint8_t r = frame_r_idx;
+  return (w >= r) ? (uint8_t)(w - r) : (uint8_t)(FRAME_POOL_SIZE - r + w);
+}
+
+static adc_frame_t *FramePool_AtOffset(uint8_t off)
+{
+  return &frame_pool[(frame_r_idx + off) % FRAME_POOL_SIZE];
+}
+
 static void push_frame_from_dma(uint8_t half_idx, const uint64_t ch_start_us[ADC_NCH])
 {
   uint8_t next = (frame_w_idx + 1) % FRAME_POOL_SIZE;
@@ -1522,39 +1562,37 @@ static uint16_t Detect_Transition_in_Frame(const uint16_t *buf, uint16_t n_sampl
   return 0xFFFF;
 }
 
-/***********************************************************
-函数名：Verify_Sustain_in_Frame
-参数：  buf - ADC帧缓冲区, n_samples - 样本数, ch - 通道号
-        baseline - 直流基线值, threshold - 触发阈值, trans_idx - 跳变索引
-返回值：uint8_t  1=持续性验证通过, 0=不通过
-描述：  验证跳变后信号是否持续超过阈值
-        在trans_idx开始的SUSTAIN_SAMPLES个样本中，
-        至少SUSTAIN_MIN_HIT个样本偏移超过threshold才判定有效
-        防止噪声毛刺误触发
-修改记录：
-***********************************************************/
-static uint8_t Verify_Sustain_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
-                                       int32_t baseline, uint16_t threshold, uint16_t trans_idx)
+static uint16_t FrameWindow_ReadCh(adc_frame_t **frames, uint8_t frame_cnt,
+                                   uint32_t sample_idx, uint8_t ch)
 {
-  uint16_t end_i = trans_idx + SUSTAIN_SAMPLES;
-  uint16_t tail_start;
+  uint8_t frame_off = (uint8_t)(sample_idx / HALF_SAMPLES_PER_CH);
+  uint16_t in_frame_idx = (uint16_t)(sample_idx % HALF_SAMPLES_PER_CH);
+  if(frame_off >= frame_cnt) return 0;
+  return frames[frame_off]->data[in_frame_idx * ADC_NCH + ch] & 0x0FFF;
+}
+
+static uint8_t Verify_Sustain_in_Window(adc_frame_t **frames, uint8_t frame_cnt, uint8_t ch,
+                                        int32_t baseline, uint16_t threshold, uint32_t trans_idx)
+{
+  uint32_t total_samples = (uint32_t)frame_cnt * HALF_SAMPLES_PER_CH;
+  uint32_t end_i = trans_idx + SUSTAIN_SAMPLES;
+  uint32_t tail_start;
   uint16_t hit_cnt = 0;
   uint16_t tail_hit_cnt = 0;
-  uint16_t i;
-  int32_t d;
-  uint32_t ab;
-  if(end_i > n_samples) end_i = n_samples;
+  uint32_t i;
+  if(end_i > total_samples) end_i = total_samples;
   if((end_i - trans_idx) < SUSTAIN_SAMPLES) return 0;
   tail_start = end_i - SUSTAIN_TAIL_SAMPLES;
+
   for(i = trans_idx; i < end_i; i++) {
-    d = (int32_t)buf[i * ADC_NCH + ch] - baseline;
-    ab = (d < 0) ? (uint32_t)(-d) : (uint32_t)d;
+    int32_t d = (int32_t)FrameWindow_ReadCh(frames, frame_cnt, i, ch) - baseline;
+    uint32_t ab = (d < 0) ? (uint32_t)(-d) : (uint32_t)d;
     if(ab > threshold) {
       hit_cnt++;
       if(i >= tail_start) tail_hit_cnt++;
     }
   }
-  return (hit_cnt >= SUSTAIN_MIN_HIT && tail_hit_cnt >= SUSTAIN_TAIL_MIN_HIT) ? 1 : 0;
+  return (hit_cnt >= SUSTAIN_MIN_HIT && tail_hit_cnt >= SUSTAIN_TAIL_MIN_HIT) ? 1U : 0U;
 }
 
 /***********************************************************
@@ -1638,52 +1676,51 @@ static float Refine_Transition_SubSample(const uint16_t *buf, uint16_t n_samples
         不同通道因相位不同，极值可能是峰或谷，独立判断
 修改记录：
 ***********************************************************/
-static uint16_t Find_FirstPeak_in_Frame(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
-                                        int32_t baseline, uint16_t trans_idx)
+static uint32_t Find_FirstPeak_in_Window(adc_frame_t **frames, uint8_t frame_cnt, uint8_t ch,
+                                         int32_t baseline, uint32_t trans_idx)
 {
-  uint16_t end_i = trans_idx + 192;
-  uint16_t peak_idx = trans_idx;
+  uint32_t total_samples = (uint32_t)frame_cnt * HALF_SAMPLES_PER_CH;
+  uint32_t end_i = trans_idx + 192U;
+  uint32_t peak_idx = trans_idx;
   int16_t  max_abs_dev = 0;
   int16_t  valid_thr;
-  int16_t  prev_dev;
   int16_t  prev_abs;
   uint8_t  rising_abs = 1;
-  uint16_t i;
-  if(end_i > n_samples) end_i = n_samples;
+  uint32_t i;
+  if(end_i > total_samples) end_i = total_samples;
+  if(end_i <= trans_idx) return peak_idx;
 
-  /* 第 1 遍：扫描整段，找绝对值最大幅值（峰或谷都行） */
   for(i = trans_idx; i < end_i; i++) {
-    int16_t d = (int16_t)buf[i * ADC_NCH + ch] - baseline;
+    int16_t d = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, i, ch) - baseline;
     int16_t ad = (d < 0) ? -d : d;
     if(ad > max_abs_dev) max_abs_dev = ad;
   }
-  valid_thr = (int16_t)(((int32_t)max_abs_dev * 70) / 100);
-  if(valid_thr < 3) valid_thr = 3;
+  valid_thr = (int16_t)PEAK_TRIGGER_400MV;
+  if(max_abs_dev < valid_thr) valid_thr = max_abs_dev;
 
-  /* 第 2 遍：找第一个 |d| 达到 valid_thr 的极值（峰或谷），由 |d| 单调反转判定 */
-  prev_dev = (int16_t)buf[trans_idx * ADC_NCH + ch] - baseline;
-  prev_abs = (prev_dev < 0) ? -prev_dev : prev_dev;
-  for(i = trans_idx + 1; i < end_i; i++) {
-    int16_t d = (int16_t)buf[i * ADC_NCH + ch] - baseline;
+  {
+    int16_t prev_dev = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, trans_idx, ch) - baseline;
+    prev_abs = (prev_dev < 0) ? -prev_dev : prev_dev;
+  }
+  for(i = trans_idx + 1U; i < end_i; i++) {
+    int16_t d = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, i, ch) - baseline;
     int16_t ad = (d < 0) ? -d : d;
     if(rising_abs && ad < prev_abs) {
-      /* |d| 开始下降 → 上一个样本是极值（峰或谷） */
       if(prev_abs >= valid_thr) {
-        peak_idx = i - 1;
+        peak_idx = i - 1U;
         return peak_idx;
       }
       rising_abs = 0;
     }
     if(ad > prev_abs) rising_abs = 1;
     else if(ad < prev_abs) rising_abs = 0;
-    prev_dev = d;
     prev_abs = ad;
   }
-  /* 兜底：全段绝对值最大点 */
+
   {
     int16_t best_abs = -1;
     for(i = trans_idx; i < end_i; i++) {
-      int16_t d = (int16_t)buf[i * ADC_NCH + ch] - baseline;
+      int16_t d = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, i, ch) - baseline;
       int16_t ad = (d < 0) ? -d : d;
       if(ad > best_abs) { best_abs = ad; peak_idx = i; }
     }
@@ -1702,17 +1739,18 @@ static uint16_t Find_FirstPeak_in_Frame(const uint16_t *buf, uint16_t n_samples,
         返回插值后的精确峰值位置（用于零交叉法频率计算）
 修改记录：
 ***********************************************************/
-static float Refine_Peak_SubSample(const uint16_t *buf, uint16_t n_samples, uint8_t ch,
-                                   int32_t baseline, uint16_t peak_idx)
+static float Refine_Peak_SubSample_Window(adc_frame_t **frames, uint8_t frame_cnt, uint8_t ch,
+                                          int32_t baseline, uint32_t peak_idx)
 {
+  uint32_t total_samples = (uint32_t)frame_cnt * HALF_SAMPLES_PER_CH;
   int32_t y_m1, y_0, y_p1;
   int32_t denom;
   float delta;
-  if(peak_idx == 0 || peak_idx >= n_samples - 1) return 0.0f;
+  if(peak_idx == 0U || peak_idx >= total_samples - 1U) return 0.0f;
   {
-    int16_t a = (int16_t)buf[(peak_idx - 1) * ADC_NCH + ch] - baseline;
-    int16_t b = (int16_t)buf[(peak_idx    ) * ADC_NCH + ch] - baseline;
-    int16_t c = (int16_t)buf[(peak_idx + 1) * ADC_NCH + ch] - baseline;
+    int16_t a = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, peak_idx - 1U, ch) - baseline;
+    int16_t b = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, peak_idx, ch) - baseline;
+    int16_t c = (int16_t)FrameWindow_ReadCh(frames, frame_cnt, peak_idx + 1U, ch) - baseline;
     y_m1 = (a < 0) ? -a : a;
     y_0  = (b < 0) ? -b : b;
     y_p1 = (c < 0) ? -c : c;
@@ -2294,8 +2332,9 @@ int main(void)
     }
   }
 #endif
-#if ENABLE_DAC_SIGNAL_SOURCE
+#if ENABLE_DAC_SIGNAL_SOURCE || DAC_AS_EXTERNAL_TEST_SRC
   DAC_Output_DC();
+  diag_dac_dc_cnt++;
 #endif
   last_dac_switch_ms = HAL_GetTick();
 
@@ -2374,12 +2413,14 @@ int main(void)
      *  - 每个 burst 周期换一种 stress 场景（基波/谐波/噪声），
      *    通过 DAC_Build_Composite_Waveform 重写表内容（DMA 持续从表里读）。
      *
-     * 时序：50ms DC + 10ms burst 持续循环，每 burst 切换场景。 */
+     * 时序：1000ms DC + 1000ms burst 持续循环，便于自动快照和示波器验证。 */
     {
       static uint32_t dac_test_last_ms = 0;
       static uint8_t  dac_test_phase   = 0;   /* 0=DC(TIM7 停), 1=Burst(TIM7 跑) */
       static uint8_t  dac_test_inited  = 0;
       static uint8_t  stress_idx       = 0;
+      const uint32_t dac_dc_ms = 1000U;
+      const uint32_t dac_burst_ms = 1000U;
       const stress_case_t *sc;
 
       if(!dac_test_inited) {
@@ -2389,21 +2430,23 @@ int main(void)
         dac_test_inited  = 1;
       }
       if(dac_test_phase == 0) {
-        if(now - dac_test_last_ms >= 50U) {     /* DC 50ms */
+        if(now - dac_test_last_ms >= dac_dc_ms) {
           /* burst 开始：重建波形并重新启动 DAC DMA，使每次 burst 相位从表起点开始 */
           sc = &stress_cases[stress_idx];
           DAC_Build_Composite_Waveform(sc->amp_mv, sc->h2_pct, sc->h3_pct, sc->noise_pct);
           DAC_Output_Sine(sc->freq_hz);
           diag_stress_cur_idx = stress_idx;
+          diag_dac_burst_cnt++;
           dac_test_phase   = 1;
           dac_test_last_ms = now;
         }
       } else {
-        if(now - dac_test_last_ms >= 10U) {     /* Burst 10ms */
+        if(now - dac_test_last_ms >= dac_burst_ms) {
           DAC_Output_DC();                      /* burst 结束后强制回固定 1.65V DC */
+          diag_dac_dc_cnt++;
           dac_test_phase   = 0;
           dac_test_last_ms = now;
-          stress_idx = (uint8_t)((stress_idx + 1U) % STRESS_CASE_COUNT);
+          stress_idx = 0U;
           diag_stress_burst_total++;
         }
       }
@@ -2869,8 +2912,9 @@ int main(void)
      * 从 frame_pool 取帧，做轻量预扫检测触发通道，
      * 对触发通道提取 1024 点数据 + 触发点位置，push 到 trig_queue。
      * 不做 FFT（FFT 在 Step B 中完成）。 */
-    while(frame_r_idx != frame_w_idx) {
-      adc_frame_t *fr = &frame_pool[frame_r_idx];
+    while(FramePool_QueuedCount() > DMA_EVENT_DELAY_FRAMES) {
+      adc_frame_t *fr = FramePool_AtOffset(0);
+      adc_frame_t *win_frames[DMA_EVENT_WINDOW_FRAMES];
       uint8_t  allow_trigger;
       uint8_t  has_trans[ADC_NCH] = {0};
       uint16_t thr_ch[ADC_NCH];
@@ -2879,8 +2923,13 @@ int main(void)
       uint16_t trans[ADC_NCH];
       int32_t  baselines[ADC_NCH];
       uint16_t noises[ADC_NCH];
+      uint8_t  wf;
 
-      if(!fr->ready) break;
+      for(wf = 0; wf < DMA_EVENT_WINDOW_FRAMES; wf++) {
+        win_frames[wf] = FramePool_AtOffset(wf);
+        if(!win_frames[wf]->ready) break;
+      }
+      if(wf < DMA_EVENT_WINDOW_FRAMES) break;
       diag_frame_seen_cnt++;
       diag_last_state = 2;
 
@@ -2911,10 +2960,6 @@ int main(void)
         uint16_t noise_n;
         const uint16_t *src;
         uint16_t v;
-        uint16_t verify_hits;
-        uint16_t end_i;
-        int32_t d;
-        uint32_t ab;
 #if FRAME_LEVEL_SKIP_MS > 0
         if(last_event_ms[ch] != 0 && (now - last_event_ms[ch]) < FRAME_LEVEL_SKIP_MS) continue;
 #endif
@@ -2953,23 +2998,15 @@ int main(void)
         }
 
         trans[ch] = Detect_Transition_in_Frame(fr->data, HALF_SAMPLES_PER_CH, ch, baselines[ch], thr);
-        if(trans[ch] != 0xFFFF) {
-          if(Verify_Sustain_in_Frame(fr->data, HALF_SAMPLES_PER_CH, ch, baselines[ch], thr, trans[ch])) {
-            if(ch_active[ch] == 0U) {
-              has_trans[ch] = 1;
-              n_trig++;
-              diag_prescan_hit_cnt++;
-            }
-            ch_active[ch] = 1U;
-            ch_silent_cnt[ch] = 0U;
-          } else {
-            if(ch_silent_cnt[ch] < 3U) {
-              ch_silent_cnt[ch]++;
-            }
-            if(ch_silent_cnt[ch] >= 2U) {
-              ch_active[ch] = 0U;
-            }
+        if(trans[ch] != 0xFFFF &&
+           Verify_Sustain_in_Window(win_frames, DMA_EVENT_WINDOW_FRAMES, ch, baselines[ch], thr, trans[ch])) {
+          if(ch_active[ch] == 0U) {
+            has_trans[ch] = 1;
+            n_trig++;
+            diag_prescan_hit_cnt++;
           }
+          ch_active[ch] = 1U;
+          ch_silent_cnt[ch] = 0U;
         } else {
           if(ch_silent_cnt[ch] < 3U) {
             ch_silent_cnt[ch]++;
@@ -2984,12 +3021,13 @@ int main(void)
 
       /* ─── 对每个触发通道：提取 1024 点数据 → push trig_queue ─── */
       for(ch = 0; ch < ADC_NCH; ch++) {
-        uint16_t fft_start_eff;
-        uint16_t peak_idx;
+        uint32_t fft_start_eff;
+        uint32_t peak_idx;
+        uint32_t peak_in_frame;
         float    peak_frac;
         float    eff_idx;
         uint64_t event_us_in_frame;
-        uint16_t copy_start;
+        uint32_t copy_start;
         uint16_t j;
 
         if(!has_trans[ch]) continue;
@@ -3027,23 +3065,28 @@ int main(void)
         }
 #endif
 
-        peak_idx = Find_FirstPeak_in_Frame(fr->data, HALF_SAMPLES_PER_CH, ch, baselines[ch], trans[ch]);
-        peak_frac = Refine_Peak_SubSample(fr->data, HALF_SAMPLES_PER_CH, ch, baselines[ch], peak_idx);
-        eff_idx = (float)peak_idx + peak_frac;
+        peak_idx = Find_FirstPeak_in_Window(win_frames, DMA_EVENT_WINDOW_FRAMES, ch, baselines[ch], trans[ch]);
+        {
+          int32_t pd = (int32_t)FrameWindow_ReadCh(win_frames, DMA_EVENT_WINDOW_FRAMES, peak_idx, ch) - baselines[ch];
+          uint32_t pab = (pd < 0) ? (uint32_t)(-pd) : (uint32_t)pd;
+          if(pab < PEAK_TRIGGER_400MV) {
+            diag_external_noise_filter_cnt++;
+            continue;
+          }
+        }
+        peak_frac = Refine_Peak_SubSample_Window(win_frames, DMA_EVENT_WINDOW_FRAMES, ch, baselines[ch], peak_idx);
+        peak_in_frame = (uint32_t)peak_idx % HALF_SAMPLES_PER_CH;
+        eff_idx = (float)peak_in_frame + peak_frac;
         if(eff_idx < 0.0f) eff_idx = 0.0f;
         event_us_in_frame = (uint64_t)(eff_idx / adc_fs_hz * 1e6f + 0.5f);
+        diag_last_trans_idx[ch] = trans[ch];
+        diag_last_peak_idx[ch] = peak_in_frame;
+        diag_last_event_offset_us[ch] = (uint32_t)event_us_in_frame;
 
-        /* 计算 FFT 数据提取起始位置（同原逻辑的 fallback） */
-        fft_start_eff = trans[ch] + FFT_STEADY_SKIP;
-        if(fft_start_eff + FFT_LENGTH >= HALF_SAMPLES_PER_CH) {
+        /* 计算 FFT 数据提取起始位置；缓存了后续3帧，可跨DMA半帧连续取1024点 */
+        fft_start_eff = (uint32_t)trans[ch] + FFT_STEADY_SKIP;
+        if(fft_start_eff + FFT_LENGTH > (uint32_t)DMA_EVENT_WINDOW_FRAMES * HALF_SAMPLES_PER_CH) {
           fft_start_eff = trans[ch];
-          if(fft_start_eff + FFT_LENGTH >= HALF_SAMPLES_PER_CH) {
-            if(HALF_SAMPLES_PER_CH > FFT_LENGTH) {
-              fft_start_eff = (uint16_t)(HALF_SAMPLES_PER_CH - FFT_LENGTH);
-            } else {
-              fft_start_eff = 0;
-            }
-          }
         }
         copy_start = fft_start_eff;
 
@@ -3059,16 +3102,12 @@ int main(void)
           } else {
             te = &trig_queue[trig_q_head];
             te->ch = ch;
-            te->trigger_idx = peak_idx;
-            te->start_time_us = fr->ch_start_time_us[ch] + event_us_in_frame;
+            te->trigger_idx = (uint16_t)peak_in_frame;
+            te->start_time_us = win_frames[peak_idx / HALF_SAMPLES_PER_CH]->ch_start_time_us[ch] + event_us_in_frame;
 
-            /* 提取 1024 点单通道数据（交织帧中解交织） */
-            for(j = 0; j < TRIG_DATA_LEN && (copy_start + j) < HALF_SAMPLES_PER_CH; j++) {
-              te->data[j] = fr->data[(copy_start + j) * ADC_NCH + ch] & 0x0FFF;
-            }
-            /* 如果帧内不够 1024 点，用 0 补齐（FFT 会处理） */
-            for(; j < TRIG_DATA_LEN; j++) {
-              te->data[j] = 0;
+            /* 提取 1024 点单通道数据；缓存窗口允许跨DMA半帧连续取样 */
+            for(j = 0; j < TRIG_DATA_LEN; j++) {
+              te->data[j] = FrameWindow_ReadCh(win_frames, DMA_EVENT_WINDOW_FRAMES, copy_start + j, ch);
             }
 
             trig_q_head = next_head;
